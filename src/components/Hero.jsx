@@ -30,10 +30,7 @@ export function Hero() {
             </div>
           </h1>
           <div className="mt-6 space-y-6 font-display text-2xl tracking-tight text-[#5C3A5C]">
-            <p>
-              Um evento único que celebra a excelência musical e reúne os
-              melhores saxofonistas do mundo na histórica cidade de Guimarães.
-            </p>
+            <p>Um texto bonito aqui</p>
             <p>
               Durante quatro dias, desfrute de concertos, masterclasses e
               workshops com artistas de renome internacional, numa experiência
