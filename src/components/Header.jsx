@@ -14,7 +14,7 @@ export function Header() {
           <div className="mx-auto flex items-center gap-4 px-4">
             <p>
               <time dateTime="2028-07-01">Julho</time>{' '}
-              <time dateTime="2028-07-31">2028</time>
+              <time dateTime="2028-07-31">2025</time>
             </p>
             <DiamondIcon className="h-1.5 w-1.5 overflow-visible fill-current stroke-current" />
             <p>Conservatório de Guimarães</p>
