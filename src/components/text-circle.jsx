@@ -11,7 +11,8 @@ export const TextCircle = ({ text, duration = 20, className }) => {
   return (
     <div
       className={cn(
-        'relative h-[200px] w-[200px] rounded-full text-center text-2xl text-[#4c0e40]',
+        'relative h-[200px] w-[200px] rounded-full text-center text-2xl text-[#ffffff]',
+        // text-[#4c0e40]
         className,
       )}
     >

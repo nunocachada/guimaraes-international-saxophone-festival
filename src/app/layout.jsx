@@ -1,4 +1,4 @@
-import { DM_Sans, Inter, Dancing_Script } from 'next/font/google'
+import { DM_Sans, Inter, Dancing_Script, Syne } from 'next/font/google'
 import clsx from 'clsx'
 
 import '@/styles/tailwind.css'
@@ -14,6 +14,13 @@ const dmSans = DM_Sans({
   weight: ['400', '500', '700'],
   display: 'swap',
   variable: '--font-dm-sans',
+})
+
+const syne = Syne({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  display: 'swap',
+  variable: '--font-syne',
 })
 
 const dancingScript = Dancing_Script({
@@ -37,10 +44,11 @@ export default function RootLayout({ children }) {
     <html
       lang="en"
       className={clsx(
-        'h-full bg-white antialiased',
+        'h-full antialiased',
         inter.variable,
         dmSans.variable,
         dancingScript.variable,
+        syne.variable,
       )}
     >
       <body className="flex min-h-full">

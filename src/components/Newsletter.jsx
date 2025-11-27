@@ -23,7 +23,7 @@ export function Newsletter() {
   return (
     <section id="newsletter" aria-label="Newsletter">
       <Container>
-        <div className="relative -mx-4 overflow-hidden bg-slate-50 px-4 py-20 sm:-mx-6 sm:px-6 md:mx-0 md:rounded-5xl md:px-16 xl:px-24 xl:py-36">
+        <div className="relative -mx-4 overflow-hidden bg-[#2a1f2a] px-4 py-20 sm:-mx-6 sm:px-6 md:mx-0 md:rounded-5xl md:px-16 xl:px-24 xl:py-36">
           <Image
             className="absolute top-0 left-1/2 translate-x-[-10%] translate-y-[-45%] lg:translate-x-[-32%]"
             src={backgroundImage}
@@ -34,27 +34,27 @@ export function Newsletter() {
           />
           <div className="relative mx-auto grid max-w-2xl grid-cols-1 gap-x-32 gap-y-14 xl:max-w-none xl:grid-cols-2">
             <div>
-              <p className="font-display text-4xl font-medium tracking-tighter text-[#5C3A5C] sm:text-5xl">
+              <p className="font-display text-4xl font-medium tracking-tighter text-slate-200 sm:text-5xl">
                 Mantenha-se atualizado
               </p>
-              <p className="mt-4 text-lg tracking-tight text-[#5C3A5C]">
+              <p className="mt-4 text-lg tracking-tight text-slate-300">
                 Receba atualizações sobre todos os nossos eventos e seja o
                 primeiro a ser notificado quando os bilhetes estiverem
                 disponíveis.
               </p>
             </div>
             <form>
-              <h3 className="text-lg font-semibold tracking-tight text-[#5C3A5C]">
+              <h3 className="text-lg font-semibold tracking-tight text-slate-200">
                 Subscreva a nossa newsletter{' '}
                 <span aria-hidden="true">&darr;</span>
               </h3>
-              <div className="mt-5 flex rounded-3xl bg-white py-2.5 pr-2.5 shadow-xl shadow-[#5C3A5C]/5 focus-within:ring-2 focus-within:ring-[#5C3A5C]">
+              <div className="mt-5 flex rounded-3xl bg-[#1a0f1a] py-2.5 pr-2.5 shadow-xl shadow-[#5C3A5C]/20 focus-within:ring-2 focus-within:ring-[#A87B3F]">
                 <input
                   type="email"
                   required
                   placeholder="Endereço de email"
                   aria-label="Endereço de email"
-                  className="-my-2.5 flex-auto bg-transparent pr-2.5 pl-6 text-base text-slate-900 placeholder:text-slate-400 focus:outline-hidden"
+                  className="-my-2.5 flex-auto bg-transparent pr-2.5 pl-6 text-base text-slate-200 placeholder:text-slate-500 focus:outline-hidden"
                 />
                 <Button type="submit">
                   <span className="sr-only sm:not-sr-only">Subscrever</span>

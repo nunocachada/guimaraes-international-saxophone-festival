@@ -161,11 +161,11 @@ export function Speakers() {
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2
             id="speakers-title"
-            className="font-display text-4xl font-medium tracking-tighter text-[#5C3A5C] sm:text-5xl"
+            className="font-display text-4xl font-medium tracking-tighter text-slate-200 sm:text-5xl"
           >
             Artistas
           </h2>
-          <p className="mt-4 font-display text-2xl tracking-tight text-[#5C3A5C]">
+          <p className="mt-4 font-display text-2xl tracking-tight text-slate-300">
             Conheça os melhores saxofonistas do mundo e desfrute de concertos,
             masterclasses e workshops únicos.
           </p>
@@ -175,7 +175,7 @@ export function Speakers() {
           vertical={tabOrientation === 'vertical'}
         >
           <div className="relative -mx-4 flex overflow-x-auto pb-4 sm:mx-0 sm:block sm:overflow-visible sm:pb-0">
-            <div className="absolute top-2 bottom-0 left-0.5 hidden w-px bg-slate-200 lg:block" />
+            <div className="absolute top-2 bottom-0 left-0.5 hidden w-px bg-[#5C3A5C]/30 lg:block" />
             <TabList className="grid auto-cols-auto grid-flow-col justify-start gap-x-8 gap-y-10 px-4 whitespace-nowrap sm:mx-auto sm:max-w-2xl sm:grid-cols-4 sm:px-0 sm:text-center lg:grid-flow-row lg:grid-cols-1 lg:text-left">
               {({ selectedIndex }) => (
                 <>
@@ -185,8 +185,8 @@ export function Speakers() {
                         className={clsx(
                           'absolute top-2.25 left-[-0.5px] hidden h-1.5 w-1.5 overflow-visible lg:block',
                           dayIndex === selectedIndex
-                            ? 'fill-[#5C3A5C] stroke-[#5C3A5C]'
-                            : 'fill-transparent stroke-slate-400',
+                            ? 'fill-[#A87B3F] stroke-[#A87B3F]'
+                            : 'fill-transparent stroke-[#5C3A5C]/40',
                         )}
                       />
                       <div className="relative">
@@ -194,8 +194,8 @@ export function Speakers() {
                           className={clsx(
                             'font-mono text-sm',
                             dayIndex === selectedIndex
-                              ? 'text-[#5C3A5C]'
-                              : 'text-slate-500',
+                              ? 'text-[#A87B3F]'
+                              : 'text-slate-400',
                           )}
                         >
                           <Tab className="data-selected:not-data-focus:outline-hidden">
@@ -205,7 +205,7 @@ export function Speakers() {
                         </div>
                         <time
                           dateTime={day.dateTime}
-                          className="mt-1.5 block text-2xl font-semibold tracking-tight text-[#5C3A5C]"
+                          className="mt-1.5 block text-2xl font-semibold tracking-tight text-slate-200"
                         >
                           {day.date}
                         </time>
@@ -237,7 +237,7 @@ export function Speakers() {
                         )}
                       />
                       <div
-                        className="absolute inset-0 bg-slate-50"
+                        className="absolute inset-0 bg-[#2a1f2a]"
                         style={{ clipPath: `url(#${id}-${speakerIndex % 3})` }}
                       >
                         <Image
@@ -249,10 +249,10 @@ export function Speakers() {
                         />
                       </div>
                     </div>
-                    <h3 className="mt-8 font-display text-xl font-bold tracking-tight text-slate-900">
+                    <h3 className="mt-8 font-display text-xl font-bold tracking-tight text-[#A87B3F]">
                       {speaker.name}
                     </h3>
-                    <p className="mt-1 text-base tracking-tight text-slate-500">
+                    <p className="mt-1 text-base tracking-tight text-slate-400">
                       {speaker.role}
                     </p>
                   </div>

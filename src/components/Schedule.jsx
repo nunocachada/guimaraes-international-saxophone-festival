@@ -277,10 +277,10 @@ function ScheduleTabbed() {
 function DaySummary({ day }) {
   return (
     <>
-      <h3 className="text-2xl font-semibold tracking-tight text-[#5C3A5C]">
+      <h3 className="text-2xl font-semibold tracking-tight text-slate-200">
         <time dateTime={day.dateTime}>{day.date}</time>
       </h3>
-      <p className="mt-1.5 text-base tracking-tight text-[#5C3A5C]">
+      <p className="mt-1.5 text-base tracking-tight text-slate-300">
         {day.summary}
       </p>
     </>
@@ -293,7 +293,7 @@ function TimeSlots({ day, className }) {
       role="list"
       className={clsx(
         className,
-        'space-y-8 bg-white/60 px-10 py-14 text-center shadow-xl shadow-[#5C3A5C]/5 backdrop-blur-sm',
+        'space-y-8 bg-[#2a1f2a]/80 px-10 py-14 text-center shadow-xl shadow-[#5C3A5C]/20 backdrop-blur-sm',
       )}
     >
       {day.timeSlots.map((timeSlot, timeSlotIndex) => (
@@ -304,15 +304,15 @@ function TimeSlots({ day, className }) {
           {timeSlotIndex > 0 && (
             <div className="mx-auto mb-8 h-px w-48 bg-[#5C3A5C]/10" />
           )}
-          <h4 className="text-lg font-semibold tracking-tight text-[#5C3A5C]">
+          <h4 className="text-lg font-semibold tracking-tight text-slate-200">
             {timeSlot.name}
           </h4>
           {timeSlot.description && (
-            <p className="mt-1 tracking-tight text-[#5C3A5C]">
+            <p className="mt-1 tracking-tight text-slate-300">
               {timeSlot.description}
             </p>
           )}
-          <p className="mt-1 font-mono text-sm text-slate-500">
+          <p className="mt-1 font-mono text-sm text-[#A87B3F]">
             <time dateTime={`${day.dateTime}T${timeSlot.start}:00+01:00`}>
               {timeSlot.start}
             </time>{' '}
@@ -345,11 +345,11 @@ export function Schedule() {
     <section id="schedule" aria-label="Schedule" className="py-20 sm:py-32">
       <Container className="relative z-10">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-4xl lg:pr-24">
-          <h2 className="font-display text-4xl font-medium tracking-tighter text-[#5C3A5C] sm:text-5xl">
+          <h2 className="font-display text-4xl font-medium tracking-tighter text-slate-200 sm:text-5xl">
             Quatro dias repletos de música, aprendizagem e celebração do
             saxofone.
           </h2>
-          <p className="mt-4 font-display text-2xl tracking-tight text-[#5C3A5C]">
+          <p className="mt-4 font-display text-2xl tracking-tight text-slate-300">
             Um programa completo com concertos, masterclasses e workshops com os
             melhores saxofonistas do mundo. Uma experiência única para músicos e
             amantes da música.
