@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import backgroundImage from '@/images/background-newsletter.jpg'
+import backgroundImageCastelo from '@/images/sax.svg'
 
 function ArrowRightIcon(props) {
   return (
@@ -23,23 +24,23 @@ export function Newsletter() {
   return (
     <section id="newsletter" aria-label="Newsletter">
       <Container>
-        <div className="relative -mx-4 overflow-hidden bg-[#2a1f2a] px-4 py-20 sm:-mx-6 sm:px-6 md:mx-0 md:rounded-5xl md:px-16 xl:px-24 xl:py-36">
+        <div className="relative -mx-4 overflow-hidden bg-[#2a1f2a]/60 px-4 py-20 sm:-mx-6 sm:px-6 md:mx-0 md:rounded-5xl md:px-16 xl:px-24 xl:py-36">
           <Image
-            className="absolute top-0 left-1/2 translate-x-[-10%] translate-y-[-45%] lg:translate-x-[-32%]"
-            src={backgroundImage}
+            className="absolute top-1/2 right-0 -translate-y-1/2 object-contain opacity-20"
+            src={backgroundImageCastelo}
             alt=""
-            width={919}
-            height={1351}
+            width={400}
+            height={400}
             unoptimized
           />
           <div className="relative mx-auto grid max-w-2xl grid-cols-1 gap-x-32 gap-y-14 xl:max-w-none xl:grid-cols-2">
             <div>
               <p className="font-display text-4xl font-medium tracking-tighter text-slate-200 sm:text-5xl">
-                Mantenha-se atualizado
+                Mantenha-se atualizado sobre o festival
               </p>
               <p className="mt-4 text-lg tracking-tight text-slate-300">
                 Receba atualizações sobre todos os nossos eventos e seja o
-                primeiro a ser notificado quando os bilhetes estiverem
+                primeiro a ser notificado quando as inscrições estiverem
                 disponíveis.
               </p>
             </div>

@@ -23,14 +23,13 @@ export function Hero() {
             </div>
           </h1>
           <div className="mt-6 space-y-6 font-syne text-2xl tracking-tight text-slate-300">
-            <p>
+            {/* <p>
               Um evento único que celebra a excelência musical e reúne os
               melhores saxofonistas do mundo na histórica cidade de Guimarães.
-            </p>
+            </p> */}
             <p>
               Durante quatro dias, desfrute de concertos, masterclasses e
-              workshops com artistas de renome internacional, numa experiência
-              musical inesquecível.
+              workshops com artistas de renome internacional.
             </p>
           </div>
           <Button
@@ -40,16 +39,17 @@ export function Hero() {
           >
             Participar
           </Button>
-          <dl className="mt-10 grid grid-cols-2 gap-x-10 gap-y-6 sm:mt-16 sm:gap-x-16 sm:gap-y-10 sm:text-center lg:auto-cols-auto lg:grid-flow-col lg:grid-cols-none lg:justify-start lg:text-left">
+          <dl className="mt-10 grid grid-cols-2 gap-x-10 gap-y-6 text-lg uppercase sm:mt-16 sm:gap-x-16 sm:gap-y-10 sm:text-center lg:auto-cols-auto lg:grid-flow-col lg:grid-cols-none lg:justify-start lg:text-left">
             {[
-              ['Artistas', '18'],
-              ['Participantes', '500+'],
-              ['Local', 'Conservatório de Guimarães'],
+              // ['Artistas', '18'],
+              // ['Participantes', '500+'],
+
               ['Data', '7 a 10 de julho de 2026'],
+              ['Local', 'Conservatório de Guimarães'],
             ].map(([name, value]) => (
               <div key={name}>
                 <dt className="font-mono text-sm text-slate-400">{name}</dt>
-                <dd className="mt-0.5 text-2xl font-semibold tracking-tight text-slate-200">
+                <dd className="mt-0.5 text-lg font-semibold tracking-tight text-slate-200">
                   {value}
                 </dd>
               </div>
