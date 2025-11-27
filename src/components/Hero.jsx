@@ -13,9 +13,9 @@ export function Hero() {
               Guimarães International Saxophone Festival -{' '}
             </span>
             <div className="flex flex-col">
-              <span className="text-4xl font-bold tracking-tight text-slate-200 uppercase sm:text-5xl">
+              <span className="text-3xl font-bold tracking-tight text-slate-200 uppercase sm:text-5xl">
                 GUIMARÃES International
-                <span className="my-2 block font-script text-5xl font-semibold text-[#A87B3F] sm:text-7xl">
+                <span className="my-2 block font-syne text-5xl font-semibold text-[#A87B3F] sm:text-7xl">
                   SAXOPHONE{' '}
                 </span>
                 Festival
@@ -33,8 +33,12 @@ export function Hero() {
               musical inesquecível.
             </p>
           </div>
-          <Button href="#" className="mt-10 w-full sm:hidden">
-            Obter bilhetes
+          <Button
+            href="#"
+            className="mt-10 w-full bg-[#A87B3F] text-white hover:bg-[#8B6A3F] sm:hidden"
+            variant="outline"
+          >
+            Participar
           </Button>
           <dl className="mt-10 grid grid-cols-2 gap-x-10 gap-y-6 sm:mt-16 sm:gap-x-16 sm:gap-y-10 sm:text-center lg:auto-cols-auto lg:grid-flow-col lg:grid-cols-none lg:justify-start lg:text-left">
             {[

@@ -9,7 +9,7 @@ export function Header() {
     <header className="relative z-50 flex-none lg:pt-11">
       <Container className="flex flex-wrap items-center justify-center sm:justify-between lg:flex-nowrap">
         <div className="mt-10 lg:mt-0 lg:grow lg:basis-0">
-          <Logo className="font-syne h-12 w-auto text-[#A87B3F]" />
+          <Logo className="h-12 w-auto text-[#A87B3F]" />
         </div>
         <div className="order-first -mx-4 flex flex-auto basis-full overflow-x-auto border-b border-[#5C3A5C]/10 py-4 font-mono text-sm whitespace-nowrap text-yellow-500 md:-mx-6 lg:order-0 lg:mx-0 lg:basis-auto lg:border-0 lg:py-0">
           <div className="mx-auto flex items-center gap-4 px-4">
@@ -30,7 +30,13 @@ export function Header() {
           </div>
         </div>
         <div className="hidden sm:mt-10 sm:flex lg:mt-0 lg:grow lg:basis-0 lg:justify-end">
-          <Button href="#">Bilhetes</Button>
+          <Button
+            variant="outline"
+            className="bg-[#A87B3F] font-mono text-white hover:bg-[#8B6A3F]"
+            href="#"
+          >
+            Participar
+          </Button>
         </div>
       </Container>
     </header>
