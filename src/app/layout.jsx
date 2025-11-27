@@ -32,17 +32,46 @@ const dancingScript = Dancing_Script({
 
 export const metadata = {
   title: {
-    template: '%s - DeceptiConf',
-    default: 'DeceptiConf - A community-driven design conference',
+    template: '%s - Guimarães Sax Fest',
+    default: 'Guimarães International Saxophone Festival - Guimarães Sax Fest',
   },
   description:
-    'At DeceptiConf you’ll learn about the latest dark patterns being developed to trick even the smartest visitors, and you’ll learn how to deploy them without ever being detected.',
+    'Um evento único que celebra a excelência musical e reúne alguns dos melhores saxofonistas do mundo na histórica cidade de Guimarães. Durante quatro dias, desfrute de concertos, masterclasses e workshops com artistas de renome internacional.',
+  keywords: [
+    'Guimarães',
+    'Saxophone Festival',
+    'Festival de Saxofone',
+    'Música',
+    'Concertos',
+    'Masterclasses',
+    'Workshops',
+    'Saxofonistas',
+    'Portugal',
+    'Conservatório de Guimarães',
+  ],
+  authors: [{ name: 'Guimarães Sax Fest' }],
+  openGraph: {
+    title: 'Guimarães International Saxophone Festival',
+    description:
+      'Um evento único que celebra a excelência musical e reúne os melhores saxofonistas do mundo na histórica cidade de Guimarães.',
+    type: 'website',
+    locale: 'pt_PT',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Guimarães International Saxophone Festival',
+    description:
+      'Um evento único que celebra a excelência musical e reúne os melhores saxofonistas do mundo na histórica cidade de Guimarães.',
+  },
+  other: {
+    'apple-mobile-web-app-title': 'Guimarães Sax Fest',
+  },
 }
 
 export default function RootLayout({ children }) {
   return (
     <html
-      lang="en"
+      lang="pt"
       className={clsx(
         'h-full antialiased',
         inter.variable,
