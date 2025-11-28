@@ -1,9 +1,8 @@
-import { Button } from '@/components/ui/Button'
 import { Container } from '@/components/Container'
 import { Logo } from '@/components/Logo'
 import Image from 'next/image'
 import saxImage from '@/images/sax.svg'
-import { RainbowButton } from '@/components/ui/rainbow-button'
+
 import { Formulario } from './Formulario'
 export function Header() {
   return (

@@ -1,5 +1,4 @@
 import { BackgroundImage } from '@/components/BackgroundImage'
-import { Button } from '@/components/ui/Button'
 import { Container } from '@/components/Container'
 import { TextRipple } from '@/components/ui/text-ripple-sax'
 import { Formulario } from './Formulario'
