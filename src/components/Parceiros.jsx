@@ -27,7 +27,7 @@ export function Parceiros() {
           Apoios
         </h2>
         <div className="relative mx-auto mt-20 flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg py-20 md:shadow-xl">
-          <Marquee reverse pauseOnHover className="[--duration:20s]">
+          <Marquee>
             {parceiros.map((parceiro) => (
               <div
                 key={parceiro.name}
