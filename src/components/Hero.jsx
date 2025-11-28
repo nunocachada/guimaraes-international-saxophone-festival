@@ -1,6 +1,8 @@
 import { BackgroundImage } from '@/components/BackgroundImage'
-import { Button } from '@/components/Button'
+import { Button } from '@/components/ui/Button'
 import { Container } from '@/components/Container'
+import { TextRipple } from '@/components/ui/text-ripple-sax'
+import { Formulario } from './Formulario'
 
 export function Hero() {
   return (
@@ -13,16 +15,23 @@ export function Hero() {
               Guimarães International Saxophone Festival -{' '}
             </span>
             <div className="flex flex-col">
-              <span className="text-3xl font-bold tracking-tight text-slate-200 uppercase sm:text-5xl">
+              <span className="text-3xl font-bold tracking-tight text-neutral-200 uppercase sm:text-5xl">
                 GUIMARÃES International
-                <span className="my-2 block font-syne text-5xl font-semibold text-[#A87B3F] sm:text-7xl">
+                {/* <span className="my-2 block font-syne text-5xl font-semibold text-[#A87B3F] sm:text-7xl">
                   SAXOPHONE{' '}
-                </span>
+                </span> */}
+                <TextRipple
+                  className="my-2 block font-syne text-5xl font-semibold text-[#A87B3F] sm:text-7xl"
+                  falloff={0.15}
+                  maxScale={3}
+                >
+                  Saxophone
+                </TextRipple>
                 Festival
               </span>
             </div>
           </h1>
-          <div className="mt-6 space-y-6 font-syne text-2xl tracking-tight text-slate-300">
+          <div className="mt-6 space-y-6 font-mono text-xl leading-6 tracking-tight text-neutral-300 sm:text-2xl sm:leading-8">
             {/* <p>
               Um evento único que celebra a excelência musical e reúne os
               melhores saxofonistas do mundo na histórica cidade de Guimarães.
@@ -32,13 +41,13 @@ export function Hero() {
               workshops com artistas de renome internacional.
             </p>
           </div>
-          <Button
+          {/* <Button
             href="#"
             className="mt-10 w-full bg-[#A87B3F] text-white hover:bg-[#8B6A3F] sm:hidden"
-            variant="outline"
           >
             Participar
-          </Button>
+          </Button> */}
+          <Formulario className="mt-10 sm:hidden" />
           <dl className="mt-10 grid grid-cols-2 gap-x-10 gap-y-6 text-lg uppercase sm:mt-16 sm:gap-x-16 sm:gap-y-10 sm:text-center lg:auto-cols-auto lg:grid-flow-col lg:grid-cols-none lg:justify-start lg:text-left">
             {[
               // ['Artistas', '18'],
@@ -48,8 +57,8 @@ export function Hero() {
               ['Local', 'Conservatório de Guimarães'],
             ].map(([name, value]) => (
               <div key={name}>
-                <dt className="font-mono text-sm text-slate-400">{name}</dt>
-                <dd className="mt-0.5 text-lg font-semibold tracking-tight text-slate-200">
+                <dt className="font-mono text-sm text-[#A87B3F]">{name}</dt>
+                <dd className="mt-0.5 text-lg font-semibold tracking-tight text-neutral-200">
                   {value}
                 </dd>
               </div>

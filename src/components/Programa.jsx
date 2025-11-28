@@ -7,7 +7,7 @@ import clsx from 'clsx'
 import { BackgroundImage } from '@/components/BackgroundImage'
 import { Container } from '@/components/Container'
 
-const schedule = [
+const programa = [
   {
     date: '7 de Julho',
     dateTime: '2026-07-07',
@@ -210,7 +210,7 @@ const schedule = [
   },
 ]
 
-function ScheduleTabbed() {
+function ProgramaTabbed() {
   let [tabOrientation, setTabOrientation] = useState('horizontal')
 
   useEffect(() => {
@@ -236,7 +236,7 @@ function ScheduleTabbed() {
       <TabList className="-mx-4 flex gap-x-4 gap-y-10 overflow-x-auto pb-4 pl-4 sm:mx-0 sm:flex-col sm:pr-8 sm:pb-0 sm:pl-0">
         {({ selectedIndex }) => (
           <>
-            {schedule.map((day, dayIndex) => (
+            {programa.map((day, dayIndex) => (
               <div
                 key={day.dateTime}
                 className={clsx(
@@ -261,7 +261,7 @@ function ScheduleTabbed() {
         )}
       </TabList>
       <TabPanels>
-        {schedule.map((day) => (
+        {programa.map((day) => (
           <TabPanel
             key={day.dateTime}
             className="data-selected:not-data-focus:outline-hidden"
@@ -327,10 +327,10 @@ function TimeSlots({ day, className }) {
   )
 }
 
-function ScheduleStatic() {
+function ProgramaStatic() {
   return (
     <div className="hidden lg:grid lg:grid-cols-4 lg:gap-x-8">
-      {schedule.map((day) => (
+      {programa.map((day) => (
         <section key={day.dateTime}>
           <DaySummary day={day} />
           <TimeSlots day={day} className="mt-10" />
@@ -340,9 +340,9 @@ function ScheduleStatic() {
   )
 }
 
-export function Schedule() {
+export function Programa() {
   return (
-    <section id="schedule" aria-label="Schedule" className="py-20 sm:py-32">
+    <section id="programa" aria-label="Programa" className="py-20 sm:py-32">
       <Container className="relative z-10">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-4xl lg:pr-24">
           <h2 className="font-display text-4xl font-medium tracking-tighter text-slate-200 sm:text-5xl">
@@ -356,11 +356,14 @@ export function Schedule() {
           </p>
         </div>
       </Container>
-      <div className="relative mt-14 sm:mt-24">
-        <BackgroundImage position="right" className="-top-40 -bottom-32" />
+      <div className="relative mt-24 sm:mt-44">
+        <BackgroundImage
+          position="right"
+          className="-top-10 -bottom-32 sm:-top-20"
+        />
         <Container className="relative">
-          <ScheduleTabbed />
-          <ScheduleStatic />
+          <ProgramaTabbed />
+          <ProgramaStatic />
         </Container>
       </div>
     </section>

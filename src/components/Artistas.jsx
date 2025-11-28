@@ -17,7 +17,7 @@ const days = [
     name: 'Dia de Abertura',
     date: '7 de Julho',
     dateTime: '2026-07-07',
-    speakers: [
+    artistas: [
       {
         name: 'Henk Van Twillert',
         role: 'Saxofone',
@@ -44,7 +44,7 @@ const days = [
     name: 'Concertos & Masterclasses',
     date: '8 de Julho',
     dateTime: '2026-07-08',
-    speakers: [
+    artistas: [
       {
         name: 'Nicolas Arsinejevic',
         role: 'CNSMP, França',
@@ -66,7 +66,7 @@ const days = [
     name: 'Workshops & Masterclasses',
     date: '9 de Julho',
     dateTime: '2026-07-09',
-    speakers: [
+    artistas: [
       {
         name: 'Nicolas Arsinejevic',
         role: 'CNSMP, França',
@@ -93,7 +93,7 @@ const days = [
     name: 'Encerramento',
     date: '10 de Julho',
     dateTime: '2026-07-10',
-    speakers: [
+    artistas: [
       {
         name: 'Nicolas Arsinejevic',
         role: 'CNSMP, França',
@@ -131,7 +131,7 @@ function ImageClipPaths({ id, ...props }) {
   )
 }
 
-export function Speakers() {
+export function Artistas() {
   let id = useId()
   let [tabOrientation, setTabOrientation] = useState('horizontal')
 
@@ -152,22 +152,22 @@ export function Speakers() {
 
   return (
     <section
-      id="speakers"
-      aria-labelledby="speakers-title"
+      id="artistas"
+      aria-labelledby="artistas-title"
       className="py-20 sm:py-32"
     >
       <ImageClipPaths id={id} />
       <Container>
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2
-            id="speakers-title"
+            id="artistas-title"
             className="font-display text-4xl font-medium tracking-tighter text-slate-200 sm:text-5xl"
           >
-            Artistas
+            Programação
           </h2>
           <p className="mt-4 font-display text-2xl tracking-tight text-slate-300">
-            Conheça os melhores saxofonistas do mundo e desfrute de concertos,
-            masterclasses e workshops únicos.
+            Quatro dias repletos de música, aprendizagem e celebração do
+            saxofone.
           </p>
         </div>
         <TabGroup
@@ -223,8 +223,8 @@ export function Speakers() {
                 className="grid grid-cols-1 gap-x-8 gap-y-10 data-selected:not-data-focus:outline-hidden sm:grid-cols-2 sm:gap-y-16 md:grid-cols-3"
                 unmount={false}
               >
-                {day.speakers.map((speaker, speakerIndex) => (
-                  <div key={speakerIndex}>
+                {day.artistas.map((artista, artistaIndex) => (
+                  <div key={artistaIndex}>
                     <div className="group relative h-70 transform overflow-hidden rounded-4xl">
                       <div
                         className={clsx(
@@ -233,16 +233,16 @@ export function Speakers() {
                             'border-[#5C3A5C]/30',
                             'border-[#B8860B]/30',
                             'border-[#C85A64]/30',
-                          ][speakerIndex % 3],
+                          ][artistaIndex % 3],
                         )}
                       />
                       <div
                         className="absolute inset-0 bg-[#2a1f2a]"
-                        style={{ clipPath: `url(#${id}-${speakerIndex % 3})` }}
+                        style={{ clipPath: `url(#${id}-${artistaIndex % 3})` }}
                       >
                         <Image
                           className="absolute inset-0 h-full w-full object-cover grayscale transition duration-300 group-hover:scale-110"
-                          src={speaker.image}
+                          src={artista.image}
                           alt=""
                           priority
                           sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
@@ -250,10 +250,10 @@ export function Speakers() {
                       </div>
                     </div>
                     <h3 className="mt-8 font-display text-xl font-bold tracking-tight text-[#A87B3F]">
-                      {speaker.name}
+                      {artista.name}
                     </h3>
                     <p className="mt-1 text-base tracking-tight text-slate-400">
-                      {speaker.role}
+                      {artista.role}
                     </p>
                   </div>
                 ))}
