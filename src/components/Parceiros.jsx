@@ -26,7 +26,7 @@ export function Parceiros() {
         <h2 className="mx-auto max-w-2xl text-center font-mono text-4xl font-medium tracking-tighter text-neutral-200 uppercase sm:text-5xl">
           Apoios
         </h2>
-        <div className="relative mx-auto mt-20 flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg py-20 md:shadow-xl">
+        {/* <div className="relative mx-auto mt-20 flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg py-20 md:shadow-xl">
           <Marquee>
             {parceiros.map((parceiro) => (
               <div
@@ -44,8 +44,8 @@ export function Parceiros() {
           </Marquee>
           <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-linear-to-r from-background"></div>
           <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-linear-to-l from-background"></div>
-        </div>
-        {/* <div className="mx-auto mt-20 grid max-w-max grid-cols-1 place-content-center gap-x-32 gap-y-12 sm:grid-cols-3 md:gap-x-16 lg:gap-x-32">
+        </div> */}
+        <div className="mx-auto mt-20 grid max-w-max grid-cols-1 place-content-center gap-x-32 gap-y-12 sm:grid-cols-3 md:gap-x-16 lg:gap-x-32">
           {parceiros.map((parceiro) => (
             <div
               key={parceiro.name}
@@ -59,7 +59,7 @@ export function Parceiros() {
               />
             </div>
           ))}
-        </div> */}
+        </div>
       </Container>
     </section>
   )
