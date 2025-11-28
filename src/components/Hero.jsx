@@ -9,7 +9,7 @@ import Patrocinadores from './Patrocinadores'
 
 export function Hero() {
   return (
-    <div className="relative py-20 sm:pt-36 sm:pb-24">
+    <div className="relative p-0 pt-20 sm:pt-20 sm:pt-36 sm:pb-10 sm:pb-24">
       <BackgroundImage className="-top-36 -bottom-14" />
       <Container className="relative">
         <div className="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
@@ -34,7 +34,7 @@ export function Hero() {
               </span>
             </div>
           </h1>
-          <div className="mt-6 space-y-6 font-mono text-xl leading-6 tracking-tight text-neutral-300 sm:text-2xl sm:leading-8">
+          <div className="mt-6 hidden space-y-6 font-mono text-xl leading-6 tracking-tight text-neutral-300 sm:block sm:text-2xl sm:leading-8">
             {/* <p>
               Um evento único que celebra a excelência musical e reúne os
               melhores saxofonistas do mundo na histórica cidade de Guimarães.
@@ -60,8 +60,10 @@ export function Hero() {
               ['Local', 'Conservatório de Guimarães'],
             ].map(([name, value]) => (
               <div key={name}>
-                <dt className="font-mono text-sm text-[#A87B3F]">{name}</dt>
-                <dd className="mt-0.5 text-lg font-semibold tracking-tight text-neutral-200">
+                <dt className="font-mono text-xs text-[#A87B3F] sm:text-sm">
+                  {name}
+                </dt>
+                <dd className="mt-0.5 text-sm font-semibold tracking-tight text-neutral-200 sm:text-lg">
                   {value}
                 </dd>
               </div>

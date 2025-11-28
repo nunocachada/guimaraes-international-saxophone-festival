@@ -22,11 +22,11 @@ const parceiros = [
 function Patrocinadores() {
   return (
     <>
-      <section className="pt-20 sm:pt-32">
+      <section className="overflow-hidden">
         <div className="mb-8 pt-10 font-mono">
           <div className="group relative m-auto max-w-2xl lg:max-w-4xl lg:px-12">
             <div className="flex flex-col items-center md:flex-row">
-              <div className="mb-4 md:mb-0 md:max-w-44 md:border-r md:border-gray-600 md:pr-6">
+              <div className="mb-4 hidden sm:block md:mb-0 md:max-w-44 md:border-r md:border-gray-600 md:pr-6">
                 <p className="text-end text-sm text-gray-400">Patrocinadores</p>
               </div>
               <div className="relative py-6 md:w-[calc(100%-11rem)]">
@@ -40,7 +40,7 @@ function Patrocinadores() {
                         src={parceiro.logo}
                         alt={parceiro.name}
                         unoptimized
-                        className="h-10 w-auto opacity-60 brightness-0 invert transition-opacity hover:opacity-100"
+                        className="h-6 w-auto opacity-60 brightness-0 invert transition-opacity hover:opacity-100"
                       />
                     </div>
                   ))}
