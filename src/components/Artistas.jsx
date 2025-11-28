@@ -161,11 +161,11 @@ export function Artistas() {
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2
             id="artistas-title"
-            className="font-display text-4xl font-medium tracking-tighter text-slate-200 sm:text-5xl"
+            className="font-mono text-4xl font-medium tracking-tighter text-neutral-200 sm:text-5xl"
           >
-            Programação
+            Programa completo
           </h2>
-          <p className="mt-4 font-display text-2xl tracking-tight text-slate-300">
+          <p className="mt-4 font-mono text-2xl tracking-tight text-neutral-300">
             Quatro dias repletos de música, aprendizagem e celebração do
             saxofone.
           </p>
@@ -195,7 +195,7 @@ export function Artistas() {
                             'font-mono text-sm',
                             dayIndex === selectedIndex
                               ? 'text-[#A87B3F]'
-                              : 'text-slate-400',
+                              : 'text-neutral-400',
                           )}
                         >
                           <Tab className="data-selected:not-data-focus:outline-hidden">
@@ -205,7 +205,7 @@ export function Artistas() {
                         </div>
                         <time
                           dateTime={day.dateTime}
-                          className="mt-1.5 block text-2xl font-semibold tracking-tight text-slate-200"
+                          className="mt-1.5 block text-2xl font-semibold tracking-tight text-neutral-200"
                         >
                           {day.date}
                         </time>
@@ -249,10 +249,10 @@ export function Artistas() {
                         />
                       </div>
                     </div>
-                    <h3 className="mt-8 font-display text-xl font-bold tracking-tight text-[#A87B3F]">
+                    <h3 className="mt-8 font-mono text-xl font-bold tracking-tight text-[#A87B3F]">
                       {artista.name}
                     </h3>
-                    <p className="mt-1 text-base tracking-tight text-slate-400">
+                    <p className="mt-1 text-base tracking-tight text-neutral-400">
                       {artista.role}
                     </p>
                   </div>

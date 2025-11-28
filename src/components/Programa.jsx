@@ -277,10 +277,10 @@ function ProgramaTabbed() {
 function DaySummary({ day }) {
   return (
     <>
-      <h3 className="text-2xl font-semibold tracking-tight text-slate-200">
+      <h3 className="text-2xl font-semibold tracking-tight text-neutral-200">
         <time dateTime={day.dateTime}>{day.date}</time>
       </h3>
-      <p className="mt-1.5 text-base tracking-tight text-slate-300">
+      <p className="mt-1.5 text-base tracking-tight text-neutral-300">
         {day.summary}
       </p>
     </>
@@ -304,11 +304,11 @@ function TimeSlots({ day, className }) {
           {timeSlotIndex > 0 && (
             <div className="mx-auto mb-8 h-px w-48 bg-[#5C3A5C]/10" />
           )}
-          <h4 className="text-lg font-semibold tracking-tight text-slate-200">
+          <h4 className="text-lg font-semibold tracking-tight text-neutral-200">
             {timeSlot.name}
           </h4>
           {timeSlot.description && (
-            <p className="mt-1 tracking-tight text-slate-300">
+            <p className="mt-1 tracking-tight text-neutral-300">
               {timeSlot.description}
             </p>
           )}
@@ -345,14 +345,13 @@ export function Programa() {
     <section id="programa" aria-label="Programa" className="py-20 sm:py-32">
       <Container className="relative z-10">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-4xl lg:pr-24">
-          <h2 className="font-display text-4xl font-medium tracking-tighter text-slate-200 sm:text-5xl">
+          <h2 className="font-syne text-4xl font-medium tracking-tighter text-neutral-200 sm:text-5xl">
             Quatro dias repletos de música, aprendizagem e celebração do
             saxofone.
           </h2>
-          <p className="mt-4 font-display text-2xl tracking-tight text-slate-300">
-            Um programa completo com concertos, masterclasses e workshops com os
-            melhores saxofonistas do mundo. Uma experiência única para músicos e
-            amantes da música.
+          <p className="mt-4 font-mono text-2xl tracking-tight text-neutral-300">
+            Um programa completo com concertos, masterclasses e workshops. Uma
+            experiência única para músicos e amantes da música.
           </p>
         </div>
       </Container>

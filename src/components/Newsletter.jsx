@@ -35,17 +35,17 @@ export function Newsletter() {
           />
           <div className="relative mx-auto grid max-w-2xl grid-cols-1 gap-x-32 gap-y-14 xl:max-w-none xl:grid-cols-2">
             <div>
-              <p className="font-display text-4xl font-medium tracking-tighter text-slate-200 sm:text-5xl">
+              <p className="font-mono text-4xl font-medium tracking-tighter text-neutral-200 sm:text-5xl">
                 Mantenha-se atualizado sobre o festival
               </p>
-              <p className="mt-4 text-lg tracking-tight text-slate-300">
+              <p className="mt-4 text-lg tracking-tight text-neutral-300">
                 Receba atualizações sobre todos os nossos eventos e seja o
                 primeiro a ser notificado quando as inscrições estiverem
                 disponíveis.
               </p>
             </div>
             <form>
-              <h3 className="text-lg font-semibold tracking-tight text-slate-200">
+              <h3 className="text-lg font-semibold tracking-tight text-neutral-200">
                 Subscreva a nossa newsletter{' '}
                 <span aria-hidden="true">&darr;</span>
               </h3>
@@ -55,7 +55,7 @@ export function Newsletter() {
                   required
                   placeholder="Endereço de email"
                   aria-label="Endereço de email"
-                  className="-my-2.5 flex-auto bg-transparent pr-2.5 pl-6 text-base text-slate-200 placeholder:text-slate-500 focus:outline-hidden"
+                  className="-my-2.5 flex-auto bg-transparent pr-2.5 pl-6 text-base text-neutral-200 placeholder:text-neutral-500 focus:outline-hidden"
                 />
                 <Button type="submit">
                   <span className="sr-only sm:not-sr-only">Subscrever</span>

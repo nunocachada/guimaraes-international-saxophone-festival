@@ -23,7 +23,7 @@ export function Parceiros() {
   return (
     <section id="parceiros" aria-label="Parceiros" className="py-20 sm:py-32">
       <Container>
-        <h2 className="mx-auto max-w-2xl text-center font-display text-4xl font-medium tracking-tighter text-neutral-200 uppercase sm:text-5xl">
+        <h2 className="mx-auto max-w-2xl text-center font-mono text-4xl font-medium tracking-tighter text-neutral-200 uppercase sm:text-5xl">
           Apoios
         </h2>
         <div className="relative mx-auto mt-20 flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg py-20 md:shadow-xl">
