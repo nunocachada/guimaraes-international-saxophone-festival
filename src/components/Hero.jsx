@@ -2,6 +2,10 @@ import { BackgroundImage } from '@/components/BackgroundImage'
 import { Container } from '@/components/Container'
 import { TextRipple } from '@/components/ui/text-ripple-sax'
 import { Formulario } from './Formulario'
+import { ProgressiveBlur } from './ui/progressive-blur'
+import { InfiniteSlider } from './ui/infinite-slider'
+import { Logo } from './Logo-YGM'
+import Patrocinadores from './Patrocinadores'
 
 export function Hero() {
   return (
@@ -65,6 +69,7 @@ export function Hero() {
           </dl>
         </div>
       </Container>
+      <Patrocinadores />
     </div>
   )
 }
