@@ -20,7 +20,7 @@ const days = [
     artistas: [
       {
         name: 'Henk Van Twillert',
-        role: 'Saxofone',
+        role: 'HOLANDA',
         image: henkVanTwillertImage,
       },
       {

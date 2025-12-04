@@ -16,8 +16,8 @@ export function Logo(props) {
     //   {...props}
     // />
     <TextCircle
-      text="Guimarães Sax Fest * 7 a 10 julho * "
-      className="t max-h-[100px] text-xs uppercase"
+      text="Guimarães International Saxophone Festival * 2026 * "
+      className="max-h-[100px] font-sans text-[8px] uppercase"
     />
   )
 }

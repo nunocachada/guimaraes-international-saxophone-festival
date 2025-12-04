@@ -44,7 +44,7 @@ export const TextCircle = ({ text, duration = 20, className }) => {
       </motion.div>
       <div className="absolute inset-0 z-10 flex items-center justify-center">
         <Image
-          src={saxImage}
+          src={saxCastelo}
           alt="Saxophone"
           width={45}
           className="object-contain"
