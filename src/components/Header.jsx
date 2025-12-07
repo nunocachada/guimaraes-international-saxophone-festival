@@ -8,7 +8,7 @@ export function Header() {
   return (
     <header className="relative z-50 flex-none lg:pt-11">
       <Container className="flex flex-wrap items-center justify-center sm:justify-between lg:flex-nowrap">
-        <div className="mt-10 hidden sm:block lg:mt-0 lg:grow lg:basis-0">
+        <div className="mt-10 lg:mt-0 lg:grow lg:basis-0">
           <Logo className="h-12 w-auto text-[#A87B3F]" />
         </div>
         <div className="order-first -mx-4 flex flex-auto basis-full overflow-x-auto border-b border-[#5C3A5C]/10 py-4 font-mono text-xs whitespace-nowrap text-[#A87B3F] sm:text-sm md:-mx-6 lg:order-0 lg:mx-0 lg:basis-auto lg:border-0 lg:py-0">

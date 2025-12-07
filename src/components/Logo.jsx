@@ -1,5 +1,3 @@
-import Image from 'next/image'
-import logoImage from '@/images/logo.jpg'
 import { TextCircle } from '@/components/text-circle'
 
 export function Logo(props) {
