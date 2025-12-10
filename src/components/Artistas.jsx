@@ -11,11 +11,11 @@ import henkVanTwillertImage from '@/images/avatars/henk-van-twillert.jpg'
 import tiesMellemmaImage from '@/images/Ties_Mellema.webp'
 import nunoSilvaImage from '@/images/nuno_silva.jpg'
 import nicolasArsinejevicImage from '@/images/Nicolas_Arsenijevic.webp'
-
+import miguelPaisClementeImage from '@/images/miguel-pais-clemente.webp'
 const days = [
   {
     name: 'Dia de Abertura',
-    date: '7 de Julho',
+    date: 'Artistas',
     dateTime: '2026-07-07',
     artistas: [
       {
@@ -25,23 +25,28 @@ const days = [
       },
       {
         name: 'Nicolas Arsinejevic',
-        role: 'CNSMP, França',
+        role: 'França',
         image: nicolasArsinejevicImage,
       },
       {
         name: 'Ties Mellemma',
-        role: 'Fontys Arts University, Holanda',
+        role: 'HOLANDA',
         image: tiesMellemmaImage,
       },
       {
         name: 'Nuno Silva',
-        role: 'Breda Conservatory, Portugal',
+        role: 'PORTUGAL',
         image: nunoSilvaImage,
+      },
+      {
+        name: 'Miguel Pais Clemente',
+        role: 'PORTUGAL',
+        image: miguelPaisClementeImage,
       },
     ],
   },
   {
-    name: 'Concertos & Masterclasses',
+    name: 'Concertos',
     date: '8 de Julho',
     dateTime: '2026-07-08',
     artistas: [
