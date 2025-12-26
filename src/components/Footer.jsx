@@ -12,17 +12,17 @@ export function Footer() {
           {new Date().getFullYear()} &copy; Guimarães International Saxophone
           Festival
         </p>
-        <p className="text-center text-base text-sm text-neutral-400 md:mt-0">
-          Developed by{' '}
+        {/* <p className="text-center text-base text-sm text-neutral-400 md:mt-0">
+          Powered by{' '}
           <a
             href="https://www.linkedin.com/in/nunocachada/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-neutral-400 underline hover:text-neutral-300"
           >
-            Nuno Cachada
+            Sociedade Musical de Guimarães
           </a>
-        </p>
+        </p> */}
       </Container>
     </footer>
   )
