@@ -1,7 +1,7 @@
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 
-export function Layout({ children, showFooter = true }) {
+export function Layout({ children, showFooter = false }) {
   return (
     <>
       <Header />

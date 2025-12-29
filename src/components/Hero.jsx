@@ -9,7 +9,8 @@ import Patrocinadores from './Patrocinadores'
 
 export function Hero() {
   return (
-    <div className="relative p-0 pt-20 sm:pt-20 sm:pt-36 sm:pb-10 sm:pb-24">
+    <div className="relative bg-[#1a0f1a] p-0 pt-20 sm:pt-20 sm:pt-36 sm:pb-10 sm:pb-24">
+      {/* <BackgroundImage className="-top-36 -bottom-14" /> */}
       <BackgroundImage className="-top-36 -bottom-14" />
       <Container className="relative">
         <div className="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
