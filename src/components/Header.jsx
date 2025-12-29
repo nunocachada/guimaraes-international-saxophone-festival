@@ -36,7 +36,7 @@ export function Header() {
           >
             Participar
           </Button> */}
-          <Formulario className="mt-10 font-mono" />
+          {/* <Formulario className="mt-10 font-mono" /> */}
         </div>
       </Container>
     </header>
