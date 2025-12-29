@@ -33,7 +33,7 @@ const dancingScript = Dancing_Script({
 export const metadata = {
   title: {
     template: '%s - Guimarães Sax Fest',
-    default: 'Guimarães International Saxophone Festival - Guimarães Sax Fest',
+    default: 'Guimarães International Saxophone Festival - GISF',
   },
   description:
     'Um evento único que celebra a excelência musical e reúne alguns dos melhores saxofonistas do mundo na histórica cidade de Guimarães. Durante quatro dias, desfrute de concertos, masterclasses e workshops com artistas de renome internacional.',
@@ -54,6 +54,8 @@ export const metadata = {
     title: 'Guimarães International Saxophone Festival',
     description:
       'Um evento único que celebra a excelência musical e reúne os melhores saxofonistas do mundo na histórica cidade de Guimarães.',
+    url: 'https://www.guimaraessaxfest.com',
+    siteName: 'Guimarães International Saxophone Festival',
     type: 'website',
     locale: 'pt_PT',
   },
@@ -62,7 +64,14 @@ export const metadata = {
     title: 'Guimarães International Saxophone Festival',
     description:
       'Um evento único que celebra a excelência musical e reúne os melhores saxofonistas do mundo na histórica cidade de Guimarães.',
+    locale: 'pt_PT',
+    type: 'website',
   },
+  metadataBase: new URL('https://www.guimaraessaxfest.com'),
+  alternates: {
+    canonical: 'https://www.guimaraessaxfest.com',
+  },
+
   other: {
     'apple-mobile-web-app-title': 'Guimarães Sax Fest',
   },
