@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import clsx from 'clsx'
 
-import backgroundImage from '@/images/background.jpg'
 import backgroundImageCastelo from '@/images/sax-castelo.svg'
 
 export function BackgroundImage({ className, position = 'left' }) {

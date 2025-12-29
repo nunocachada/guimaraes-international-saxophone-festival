@@ -37,6 +37,14 @@ export const metadata = {
   },
   description:
     'Um evento único que celebra a excelência musical e reúne alguns dos melhores saxofonistas do mundo na histórica cidade de Guimarães. Durante quatro dias, desfrute de concertos, masterclasses e workshops com artistas de renome internacional.',
+  images: [
+    {
+      url: 'https://www.guimaraessaxfest.com/og-image.jpg',
+      width: 1200,
+      height: 630,
+      alt: 'Guimarães International Saxophone Festival',
+    },
+  ],
   keywords: [
     'Guimarães',
     'Saxophone Festival',
