@@ -16,11 +16,11 @@ async function loadEntries(directory, metaName) {
         },
       ),
     )
-  ).sort((a, b) => b.date.localeCompare(a.date))
+  ).sort((a, b) => b.data.localeCompare(a.data))
 }
 
-export function loadArticles() {
-  return loadEntries('noticias', 'article')
+export function carregarNoticias() {
+  return loadEntries('noticias', 'noticia')
 }
 
 // export function loadCaseStudies() {

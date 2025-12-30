@@ -26,21 +26,21 @@ function PageLink({ page }) {
         className="relative flex flex-col items-start pl-8"
       >
         <h3 className="mt-6 font-syne text-base font-semibold text-[#A87B3F]">
-          {page.title}
+          {page.titulo}
         </h3>
         <time
-          dateTime={page.date}
+          dateTime={page.data}
           className="order-first font-mono text-sm text-neutral-500"
         >
-          {formatDate(page.date)}
+          {formatDate(page.data)}
         </time>
         <p className="mt-2.5 font-mono text-base text-neutral-500">
-          {page.description}
+          {page.descricao}
         </p>
         <Link
           href={page.href}
           className="mt-6 flex gap-x-3 font-mono text-base font-semibold text-[#A87B3F] transition hover:text-[#8B6A3F]"
-          aria-label={`Ler mais: ${page.title}`}
+          aria-label={`Ler mais: ${page.titulo}`}
         >
           Ler mais
           <ArrowIcon className="w-6 flex-none fill-current" />
