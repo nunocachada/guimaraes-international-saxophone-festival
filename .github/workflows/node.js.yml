@@ -22,15 +22,42 @@ jobs:
       # Install dependencies and build the project
       # if you have env variables in the project add them like below so that
       # the build process wont fail
-      - name: Install dependencies and build
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build project
+        run: npm run build
+
+      # Verify that build was successful
+      - name: Verify build output
         run: |
-          npm install
-          npm run build 
+          echo "=== Checking if .next directory exists ==="
+          if [ -d ".next" ]; then
+            echo "✅ .next directory found!"
+            echo "=== Contents of .next ==="
+            ls -la .next/
+            echo "=== Checking .next/static ==="
+            if [ -d ".next/static" ]; then
+              echo "✅ .next/static found!"
+              ls -la .next/static/ | head -10
+            else
+              echo "❌ ERROR: .next/static not found!"
+              exit 1
+            fi
+          else
+            echo "❌ ERROR: .next directory not found! Build may have failed."
+            exit 1
+          fi
+
       # Prepare the deployment directory
       - name: Prepare Deployment Directory
         run: |
+          echo "=== Preparing deployment ==="
           rm -rf node_modules
           rm -rf .git
+          echo "✅ Removed node_modules and .git"
+          echo "=== Verifying .next still exists ==="
+          ls -la .next/ || echo "❌ WARNING: .next was removed!"
 
       # Deploy files to FTP server
       - name: Deploy via FTP
@@ -40,4 +67,8 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           server-dir: app/
-          exclude: .git/*
+          exclude: |
+            **/.git*
+            **/node_modules
+            **/.DS_Store
+          log-level: verbose
