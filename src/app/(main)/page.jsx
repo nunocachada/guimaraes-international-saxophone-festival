@@ -9,9 +9,9 @@ export default function Home() {
     <>
       <Hero />
 
-      {/* <Artistas />
+      <Artistas />
       <Programa />
-      <Parceiros />
+      {/* <Parceiros />
       <Newsletter /> */}
     </>
   )
