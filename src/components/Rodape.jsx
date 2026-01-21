@@ -74,39 +74,55 @@ const navegacao = {
 
 export default function Rodape() {
   return (
-    <footer className="bg-[#1a0f1a]">
-      <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
-        <nav
-          aria-label="Rodapé"
-          className="-mb-6 flex flex-wrap justify-center gap-x-12 gap-y-3 font-mono text-sm/6"
-        >
-          {navegacao.principal.map((item) => (
-            <a
-              key={item.nome}
-              href={item.href}
-              className="text-neutral-300 transition-colors hover:text-[#A87B3F]"
-            >
-              {item.nome}
-            </a>
-          ))}
-        </nav>
-        <div className="mt-16 flex justify-center gap-x-10">
-          {navegacao.redesSociais.map((item) => (
-            <a
-              key={item.nome}
-              href={item.href}
-              className="text-neutral-400 transition-colors hover:text-[#A87B3F]"
-            >
-              <span className="sr-only">{item.nome}</span>
-              <item.icone aria-hidden="true" className="size-6" />
-            </a>
-          ))}
+    <>
+      {/* Divider */}
+      <div className="relative bg-[#000000] py-8">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="relative">
+            <div className="absolute inset-0 flex items-center">
+              <div className="w-full border-t border-neutral-800"></div>
+            </div>
+            <div className="relative flex justify-center">
+              <div className="h-px w-32 bg-gradient-to-r from-transparent via-[#A87B3F] to-transparent"></div>
+            </div>
+          </div>
         </div>
-        <p className="mt-10 text-center font-mono text-sm/6 text-neutral-400">
-          {new Date().getFullYear()} &copy; Sociedade Musical de Guimarães.
-          Todos os direitos reservados.
-        </p>
       </div>
-    </footer>
+      {/* <footer className="bg-[#1a0f1a]"> */}
+      <footer className="bg-[#000000]">
+        <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
+          <nav
+            aria-label="Rodapé"
+            className="-mb-6 flex flex-wrap justify-center gap-x-12 gap-y-3 font-mono text-sm/6"
+          >
+            {navegacao.principal.map((item) => (
+              <a
+                key={item.nome}
+                href={item.href}
+                className="text-neutral-300 transition-colors hover:text-[#A87B3F]"
+              >
+                {item.nome}
+              </a>
+            ))}
+          </nav>
+          <div className="mt-16 flex justify-center gap-x-10">
+            {navegacao.redesSociais.map((item) => (
+              <a
+                key={item.nome}
+                href={item.href}
+                className="text-neutral-400 transition-colors hover:text-[#A87B3F]"
+              >
+                <span className="sr-only">{item.nome}</span>
+                <item.icone aria-hidden="true" className="size-6" />
+              </a>
+            ))}
+          </div>
+          <p className="mt-10 text-center font-mono text-sm/6 text-neutral-400">
+            {new Date().getFullYear()} &copy; Guimarães International Saxophone
+            Festival. Todos os direitos reservados.
+          </p>
+        </div>
+      </footer>
+    </>
   )
 }

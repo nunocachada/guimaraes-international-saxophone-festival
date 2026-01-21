@@ -19,7 +19,7 @@ export default async function Noticias() {
 
   return (
     <>
-      <Container className="mt-16 sm:mt-24 lg:mt-32">
+      <Container className="mt-16 mb-16 sm:mt-24 lg:mt-32">
         <div className="mb-16 text-center">
           <h1 className="font-syne text-4xl font-semibold text-[#A87B3F] sm:text-5xl lg:text-6xl">
             Notícias
