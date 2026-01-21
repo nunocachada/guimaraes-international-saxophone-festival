@@ -336,13 +336,14 @@ export default function Termos() {
                   <li>O Regulamento Geral de Proteção de Dados (RGPD)</li>
                   <li>A Lei n.º 58/2019 (Lei de Proteção de Dados Pessoais)</li>
                   <li>
+                    A nossa{' '}
                     <a
                       href="https://www.guimaraessaxfest.com/masterclass/privacidade.php"
                       className="text-[#A87B3F] underline transition-colors hover:text-[#B8860B]"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      A nossa Política de Privacidade
+                      Política de Privacidade
                     </a>
                   </li>
                 </ul>
