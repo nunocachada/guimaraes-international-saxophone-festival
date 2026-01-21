@@ -1,6 +1,10 @@
 const navegacao = {
   principal: [
     {
+      nome: 'Notícias',
+      href: '/noticias',
+    },
+    {
       nome: 'Termos',
       href: 'https://www.guimaraessaxfest.com/masterclass/termos.php',
     },
