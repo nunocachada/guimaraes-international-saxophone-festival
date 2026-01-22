@@ -3,6 +3,7 @@ import { cn } from '@/lib/utils'
 import { AnimatePresence, motion } from 'motion/react'
 import React, {
   createContext,
+  useCallback,
   useContext,
   useEffect,
   useRef,
@@ -49,7 +50,7 @@ export const ModalTrigger = ({ children, className }) => {
 }
 
 export const ModalBody = ({ children, className }) => {
-  const { open } = useModal()
+  const { open, setOpen } = useModal()
 
   useEffect(() => {
     if (open) {
@@ -60,11 +61,14 @@ export const ModalBody = ({ children, className }) => {
   }, [open])
 
   const modalRef = useRef(null)
-  const { setOpen } = useModal()
-  useOutsideClick(modalRef, () => setOpen(false))
+  const handleClose = useCallback(() => {
+    setOpen(false)
+  }, [setOpen])
+
+  useOutsideClick(modalRef, handleClose)
 
   return (
-    <AnimatePresence>
+    <AnimatePresence mode="wait">
       {open && (
         <motion.div
           initial={{
@@ -107,8 +111,9 @@ export const ModalBody = ({ children, className }) => {
             }}
             transition={{
               type: 'spring',
-              stiffness: 260,
-              damping: 15,
+              stiffness: 300,
+              damping: 25,
+              duration: 0.3,
             }}
           >
             <CloseIcon stroke="white" />
@@ -165,7 +170,8 @@ const CloseIcon = ({ stroke }) => {
   return (
     <button
       onClick={() => setOpen(false)}
-      className="group absolute top-4 right-4"
+      className="group absolute top-4 right-4 z-50"
+      aria-label="Fechar modal"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -177,7 +183,7 @@ const CloseIcon = ({ stroke }) => {
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
-        className="h-4 w-4 text-black transition duration-200 group-hover:scale-125 group-hover:rotate-3 dark:text-white"
+        className="h-4 w-4 cursor-pointer text-white transition duration-200 group-hover:scale-125 group-hover:rotate-3"
       >
         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
         <path d="M18 6l-12 12" />

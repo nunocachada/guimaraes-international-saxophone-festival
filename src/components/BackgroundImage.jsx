@@ -3,12 +3,17 @@ import clsx from 'clsx'
 
 import backgroundImageCastelo from '@/images/sax-castelo.svg'
 
-export function BackgroundImage({ className, position = 'left' }) {
+export function BackgroundImage({
+  className,
+  position = 'left',
+  backgroundColor = 'bg-[#1a0f1a]',
+}) {
   return (
     <div
       className={clsx(
-        'absolute inset-0 overflow-hidden bg-[#1a0f1a]',
+        'absolute inset-0 overflow-hidden',
         className,
+        backgroundColor,
       )}
     >
       <Image
