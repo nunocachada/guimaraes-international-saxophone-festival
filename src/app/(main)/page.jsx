@@ -12,7 +12,7 @@ export default function Home() {
       <Artistas />
       <Programa />
       <Parceiros />
-      <Newsletter />
+      {/* <Newsletter /> */}
     </>
   )
 }

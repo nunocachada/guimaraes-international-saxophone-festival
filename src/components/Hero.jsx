@@ -15,34 +15,30 @@ export function Hero() {
       <BackgroundImage className="-top-36 -bottom-14" />
       <Container className="relative">
         <div className="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
-          <h1 className="font-syne">
+          <h1 className="font-fonty">
             <span className="sr-only">
               Guimarães International Saxophone Festival -{' '}
             </span>
             <div className="flex flex-col">
-              <span className="text-3xl font-bold tracking-tight text-neutral-200 uppercase sm:text-5xl">
+              <span className="text-5xl tracking-tight text-neutral-200 uppercase sm:text-7xl">
                 GUIMARÃES International
-                {/* <span className="my-2 block font-syne text-5xl font-semibold text-[#A87B3F] sm:text-7xl">
+                {/* <span className="my-2 block font-syne text-5xl font-semibold text-sax-gold sm:text-7xl">
                   SAXOPHONE{' '}
                 </span> */}
                 {/* <TextRipple
-                  className="my-2 block font-syne text-5xl font-semibold text-[#A87B3F] sm:text-7xl"
+                  className="my-2 block font-fonty text-5xl font-semibold text-sax-gold sm:text-7xl"
                   falloff={0.15}
                   maxScale={3}
                 >
                   Saxophone
                 </TextRipple> */}
-                <span className="mx-2 my-2 block font-syne text-5xl font-semibold text-[#A87B3F] sm:text-7xl">
-                  SAXOPH
-                  <TextRipple2
-                    className="font-syne text-5xl font-semibold text-[#A87B3F] sm:text-7xl"
-                    falloff={0.15}
-                    maxScale={2}
-                  >
-                    O
-                  </TextRipple2>
-                  NE
-                </span>
+                <TextRipple2
+                  className="my-2 block font-fonty text-6xl font-semibold text-sax-gold-dark hover:text-sax-gold sm:text-9xl"
+                  falloff={0.15}
+                  maxScale={1.2}
+                >
+                  SAXOPHONE
+                </TextRipple2>
                 Festival
               </span>
             </div>
@@ -59,7 +55,7 @@ export function Hero() {
           </div>
           {/* <Button
             href="#"
-            className="mt-10 w-full bg-[#A87B3F] text-white hover:bg-[#8B6A3F] sm:hidden"
+            className="mt-10 w-full bg-sax-gold text-white hover:bg-sax-gold-dark sm:hidden"
           >
             Participar
           </Button> */}
@@ -73,7 +69,7 @@ export function Hero() {
               ['Local', 'Conservatório de Guimarães'],
             ].map(([name, value]) => (
               <div key={name}>
-                <dt className="font-mono text-xs text-[#A87B3F] sm:text-sm">
+                <dt className="font-mono text-xs text-sax-gold sm:text-sm">
                   {name}
                 </dt>
                 <dd className="mt-0.5 text-sm font-semibold tracking-tight text-neutral-200 sm:text-lg">

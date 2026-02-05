@@ -21,7 +21,7 @@ export default async function Noticias() {
     <>
       <Container className="mt-16 mb-16 sm:mt-24 lg:mt-32">
         <div className="mb-16 text-center">
-          <h1 className="font-syne text-4xl font-semibold text-[#A87B3F] sm:text-5xl lg:text-6xl">
+          <h1 className="font-syne text-4xl font-semibold text-sax-gold sm:text-5xl lg:text-6xl">
             Notícias
           </h1>
           <p className="mx-auto mt-6 max-w-2xl font-mono text-lg text-neutral-500">
@@ -36,7 +36,7 @@ export default async function Noticias() {
                 <Border className="pt-12">
                   <div className="relative lg:-mx-4 lg:flex lg:justify-end">
                     <div className="pt-10 lg:w-2/3 lg:flex-none lg:px-4 lg:pt-0">
-                      <h2 className="font-syne text-2xl font-semibold text-[#A87B3F] transition-colors hover:text-[#8B6A3F]">
+                      <h2 className="font-syne text-2xl font-semibold text-sax-gold transition-colors hover:text-sax-gold-dark">
                         <Link href={noticia.href}>{noticia.titulo}</Link>
                       </h2>
                       <dl className="lg:absolute lg:top-0 lg:left-0 lg:w-1/3 lg:px-4">

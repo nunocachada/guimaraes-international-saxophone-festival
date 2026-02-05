@@ -25,7 +25,7 @@ export default function Termos() {
           <div className="mt-16 space-y-12">
             {/* Secção 1 */}
             <section className="rounded-lg bg-[#000000]/80 px-4 py-6 shadow-xl shadow-[#5C3A5C]/20 backdrop-blur-sm sm:px-8 sm:py-10">
-              <h2 className="font-syne text-2xl font-semibold tracking-tight text-[#A87B3F] sm:text-3xl">
+              <h2 className="font-syne text-2xl font-semibold tracking-tight text-sax-gold sm:text-3xl">
                 1. Identificação da Entidade
               </h2>
               <div className="mt-6 space-y-4 font-mono text-base leading-7 text-neutral-300">
@@ -38,41 +38,41 @@ export default function Termos() {
                 </p>
                 <dl className="mt-4 space-y-2">
                   <div className="flex flex-col gap-2 border-b border-[#5C3A5C]/20 pb-2 sm:flex-row sm:justify-between">
-                    <dt className="text-sm text-[#A87B3F]">Entidade</dt>
+                    <dt className="text-sm text-sax-gold">Entidade</dt>
                     <dd className="text-neutral-200 sm:text-right">
                       Sociedade Musical de Guimarães
                     </dd>
                   </div>
                   <div className="flex flex-col gap-2 border-b border-[#5C3A5C]/20 pb-2 sm:flex-row sm:justify-between">
-                    <dt className="text-sm text-[#A87B3F]">NIF</dt>
+                    <dt className="text-sm text-sax-gold">NIF</dt>
                     <dd className="text-neutral-200 sm:text-right">
                       501 631 542
                     </dd>
                   </div>
                   <div className="flex flex-col gap-2 border-b border-[#5C3A5C]/20 pb-2 sm:flex-row sm:justify-between">
-                    <dt className="text-sm text-[#A87B3F]">Morada</dt>
+                    <dt className="text-sm text-sax-gold">Morada</dt>
                     <dd className="break-words text-neutral-200 sm:text-right">
                       Rua de Vila Flor – Portaria Teatro Jordão, 4810-255
                       Guimarães
                     </dd>
                   </div>
                   <div className="flex flex-col gap-2 border-b border-[#5C3A5C]/20 pb-2 sm:flex-row sm:justify-between">
-                    <dt className="text-sm text-[#A87B3F]">Telefone</dt>
+                    <dt className="text-sm text-sax-gold">Telefone</dt>
                     <dd className="text-neutral-200 sm:text-right">
                       <a
                         href="tel:+351253517049"
-                        className="transition-colors hover:text-[#A87B3F]"
+                        className="transition-colors hover:text-sax-gold"
                       >
                         +351 253 517 049
                       </a>
                     </dd>
                   </div>
                   <div className="flex flex-col gap-2 sm:flex-row sm:justify-between">
-                    <dt className="text-sm text-[#A87B3F]">Email</dt>
+                    <dt className="text-sm text-sax-gold">Email</dt>
                     <dd className="break-all text-neutral-200 sm:text-right sm:break-normal">
                       <a
                         href="mailto:geral@smguimaraes.pt"
-                        className="transition-colors hover:text-[#A87B3F]"
+                        className="transition-colors hover:text-sax-gold"
                       >
                         geral@smguimaraes.pt
                       </a>
@@ -84,7 +84,7 @@ export default function Termos() {
 
             {/* Secção 2 */}
             <section className="rounded-lg bg-[#000000]/80 px-4 py-6 shadow-xl shadow-[#5C3A5C]/20 backdrop-blur-sm sm:px-8 sm:py-10">
-              <h2 className="font-syne text-2xl font-semibold tracking-tight text-[#A87B3F] sm:text-3xl">
+              <h2 className="font-syne text-2xl font-semibold tracking-tight text-sax-gold sm:text-3xl">
                 2. Objeto
               </h2>
               <div className="mt-6 space-y-4 font-mono text-base leading-7 text-neutral-300">
@@ -109,7 +109,7 @@ export default function Termos() {
 
             {/* Secção 3 */}
             <section className="rounded-lg bg-[#000000]/80 px-4 py-6 shadow-xl shadow-[#5C3A5C]/20 backdrop-blur-sm sm:px-8 sm:py-10">
-              <h2 className="font-syne text-2xl font-semibold tracking-tight text-[#A87B3F] sm:text-3xl">
+              <h2 className="font-syne text-2xl font-semibold tracking-tight text-sax-gold sm:text-3xl">
                 3. Inscrição
               </h2>
               <div className="mt-6 space-y-4 font-mono text-base leading-7 text-neutral-300">
@@ -132,7 +132,7 @@ export default function Termos() {
 
             {/* Secção 4 */}
             <section className="rounded-lg bg-[#000000]/80 px-4 py-6 shadow-xl shadow-[#5C3A5C]/20 backdrop-blur-sm sm:px-8 sm:py-10">
-              <h2 className="font-syne text-2xl font-semibold tracking-tight text-[#A87B3F] sm:text-3xl">
+              <h2 className="font-syne text-2xl font-semibold tracking-tight text-sax-gold sm:text-3xl">
                 4. Preços e Pagamento
               </h2>
               <div className="mt-6 space-y-4 font-mono text-base leading-7 text-neutral-300">
@@ -141,10 +141,10 @@ export default function Termos() {
                   <table className="w-full border-collapse">
                     <thead>
                       <tr className="border-b border-[#5C3A5C]/40 bg-[#1a0f1a]/50">
-                        <th className="px-2 pt-4 pb-3 text-left text-sm font-semibold text-[#A87B3F] sm:px-4 sm:text-base">
+                        <th className="px-2 pt-4 pb-3 text-left text-sm font-semibold text-sax-gold sm:px-4 sm:text-base">
                           Modalidade
                         </th>
-                        <th className="px-2 pt-4 pb-3 text-right text-sm font-semibold text-[#A87B3F] sm:px-4 sm:text-base">
+                        <th className="px-2 pt-4 pb-3 text-right text-sm font-semibold text-sax-gold sm:px-4 sm:text-base">
                           Preço
                         </th>
                       </tr>
@@ -207,7 +207,7 @@ export default function Termos() {
                   </p>
                   <dl className="space-y-3">
                     <div className="flex flex-col gap-2 border-b border-[#5C3A5C]/30 pb-3 sm:flex-row sm:justify-between">
-                      <dt className="text-sm font-semibold text-[#A87B3F]">
+                      <dt className="text-sm font-semibold text-sax-gold">
                         IBAN
                       </dt>
                       <dd className="font-mono text-base font-semibold break-all text-neutral-200 sm:text-right sm:break-normal">
@@ -215,13 +215,13 @@ export default function Termos() {
                       </dd>
                     </div>
                     <div className="flex flex-col gap-2 sm:flex-row sm:justify-between">
-                      <dt className="text-sm font-semibold text-[#A87B3F]">
+                      <dt className="text-sm font-semibold text-sax-gold">
                         Email para comprovativo
                       </dt>
                       <dd className="break-all text-neutral-200 sm:text-right sm:break-normal">
                         <a
                           href="mailto:tesouraria@smguimaraes.pt"
-                          className="font-semibold transition-colors hover:text-[#A87B3F]"
+                          className="font-semibold transition-colors hover:text-sax-gold"
                         >
                           tesouraria@smguimaraes.pt
                         </a>
@@ -238,7 +238,7 @@ export default function Termos() {
 
             {/* Secção 5 */}
             <section className="rounded-lg bg-[#000000]/80 px-4 py-6 shadow-xl shadow-[#5C3A5C]/20 backdrop-blur-sm sm:px-8 sm:py-10">
-              <h2 className="font-syne text-2xl font-semibold tracking-tight text-[#A87B3F] sm:text-3xl">
+              <h2 className="font-syne text-2xl font-semibold tracking-tight text-sax-gold sm:text-3xl">
                 5. Cancelamento e Reembolso
               </h2>
               <div className="mt-6 space-y-4 font-mono text-base leading-7 text-neutral-300">
@@ -276,7 +276,7 @@ export default function Termos() {
 
             {/* Secção 6 */}
             <section className="rounded-lg bg-[#000000]/80 px-4 py-6 shadow-xl shadow-[#5C3A5C]/20 backdrop-blur-sm sm:px-8 sm:py-10">
-              <h2 className="font-syne text-2xl font-semibold tracking-tight text-[#A87B3F] sm:text-3xl">
+              <h2 className="font-syne text-2xl font-semibold tracking-tight text-sax-gold sm:text-3xl">
                 6. Responsabilidades
               </h2>
               <div className="mt-6 space-y-4 font-mono text-base leading-7 text-neutral-300">
@@ -302,7 +302,7 @@ export default function Termos() {
 
             {/* Secção 7 */}
             <section className="rounded-lg bg-[#000000]/80 px-4 py-6 shadow-xl shadow-[#5C3A5C]/20 backdrop-blur-sm sm:px-8 sm:py-10">
-              <h2 className="font-syne text-2xl font-semibold tracking-tight text-[#A87B3F] sm:text-3xl">
+              <h2 className="font-syne text-2xl font-semibold tracking-tight text-sax-gold sm:text-3xl">
                 7. Direitos de Imagem
               </h2>
               <div className="mt-6 space-y-4 font-mono text-base leading-7 text-neutral-300">
@@ -324,7 +324,7 @@ export default function Termos() {
 
             {/* Secção 8 */}
             <section className="rounded-lg bg-[#000000]/80 px-4 py-6 shadow-xl shadow-[#5C3A5C]/20 backdrop-blur-sm sm:px-8 sm:py-10">
-              <h2 className="font-syne text-2xl font-semibold tracking-tight text-[#A87B3F] sm:text-3xl">
+              <h2 className="font-syne text-2xl font-semibold tracking-tight text-sax-gold sm:text-3xl">
                 8. Proteção de Dados
               </h2>
               <div className="mt-6 space-y-4 font-mono text-base leading-7 text-neutral-300">
@@ -339,7 +339,7 @@ export default function Termos() {
                     A nossa{' '}
                     <a
                       href="https://www.guimaraessaxfest.com/masterclass/privacidade.php"
-                      className="text-[#A87B3F] underline transition-colors hover:text-[#B8860B]"
+                      className="text-sax-gold underline transition-colors hover:text-sax-gold-dark"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -352,7 +352,7 @@ export default function Termos() {
 
             {/* Secção 9 */}
             <section className="rounded-lg bg-[#000000]/80 px-4 py-6 shadow-xl shadow-[#5C3A5C]/20 backdrop-blur-sm sm:px-8 sm:py-10">
-              <h2 className="font-syne text-2xl font-semibold tracking-tight text-[#A87B3F] sm:text-3xl">
+              <h2 className="font-syne text-2xl font-semibold tracking-tight text-sax-gold sm:text-3xl">
                 9. Alterações ao Programa
               </h2>
               <div className="mt-6 space-y-4 font-mono text-base leading-7 text-neutral-300">
@@ -371,7 +371,7 @@ export default function Termos() {
 
             {/* Secção 10 */}
             <section className="rounded-lg bg-[#000000]/80 px-4 py-6 shadow-xl shadow-[#5C3A5C]/20 backdrop-blur-sm sm:px-8 sm:py-10">
-              <h2 className="font-syne text-2xl font-semibold tracking-tight text-[#A87B3F] sm:text-3xl">
+              <h2 className="font-syne text-2xl font-semibold tracking-tight text-sax-gold sm:text-3xl">
                 10. Lei Aplicável e Foro
               </h2>
               <div className="mt-6 space-y-4 font-mono text-base leading-7 text-neutral-300">

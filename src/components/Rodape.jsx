@@ -47,7 +47,7 @@ export default function Rodape() {
               <div className="w-full border-t border-neutral-800"></div>
             </div>
             <div className="relative flex justify-center">
-              <div className="h-px w-32 bg-gradient-to-r from-transparent via-[#A87B3F] to-transparent"></div>
+              <div className="h-px w-32 bg-gradient-to-r from-transparent via-sax-gold to-transparent"></div>
             </div>
           </div>
         </div>
@@ -63,7 +63,7 @@ export default function Rodape() {
               <a
                 key={item.nome}
                 href={item.href}
-                className="text-neutral-300 transition-colors hover:text-[#A87B3F]"
+                className="text-neutral-300 transition-colors hover:text-sax-gold"
               >
                 {item.nome}
               </a>

@@ -16,7 +16,7 @@ export const TextCircle = ({ text, duration = 20, className }) => {
         ease: 'linear',
       }}
       className={cn(
-        'relative h-[200px] w-[200px] rounded-full text-center text-2xl font-semibold text-[#A87B3F]',
+        'relative h-[200px] w-[200px] rounded-full text-center text-2xl font-semibold text-sax-gold',
         className,
       )}
     >

@@ -95,10 +95,10 @@ export default function Contactos() {
                   href={contacto.href}
                   className="group flex flex-col items-center rounded-lg bg-[#2a1f2a]/80 p-8 text-center shadow-xl shadow-[#5C3A5C]/20 backdrop-blur-sm transition-all hover:bg-[#2a1f2a] hover:shadow-[#5C3A5C]/40"
                 >
-                  <div className="text-[#A87B3F] transition-colors group-hover:text-[#B8860B]">
+                  <div className="text-sax-gold transition-colors group-hover:text-[#B8860B]">
                     {contacto.icone}
                   </div>
-                  {/* <dt className="mt-4 font-mono text-sm font-semibold tracking-tight text-[#A87B3F] uppercase">
+                  {/* <dt className="mt-4 font-mono text-sm font-semibold tracking-tight text-sax-gold uppercase">
                     {contacto.tipo}
                   </dt> */}
                   <dd className="mt-2 text-base font-medium text-neutral-200">
@@ -107,8 +107,8 @@ export default function Contactos() {
                 </a>
               ) : (
                 <div className="flex flex-col items-center rounded-lg bg-[#2a1f2a]/80 p-8 text-center shadow-xl shadow-[#5C3A5C]/20 backdrop-blur-sm">
-                  <div className="text-[#A87B3F]">{contacto.icone}</div>
-                  <dt className="mt-4 font-mono text-sm font-semibold tracking-tight text-[#A87B3F] uppercase">
+                  <div className="text-sax-gold">{contacto.icone}</div>
+                  <dt className="mt-4 font-mono text-sm font-semibold tracking-tight text-sax-gold uppercase">
                     {contacto.tipo}
                   </dt>
                   <dd className="mt-2 text-base font-medium text-neutral-200">
@@ -127,7 +127,7 @@ export default function Contactos() {
             </h2>
             <dl className="mt-6 space-y-4">
               <div className="flex justify-between border-b border-[#5C3A5C]/20 pb-4">
-                <dt className="font-mono text-sm text-[#A87B3F]">
+                <dt className="font-mono text-sm text-sax-gold">
                   Conservatório de Guimarães
                 </dt>
                 <dd className="text-base text-neutral-200">
@@ -135,11 +135,11 @@ export default function Contactos() {
                 </dd>
               </div>
               <div className="flex justify-between border-b border-[#5C3A5C]/20 pb-4">
-                <dt className="font-mono text-sm text-[#A87B3F]">Rua</dt>
+                <dt className="font-mono text-sm text-sax-gold">Rua</dt>
                 <dd className="text-base text-neutral-200">Rua de Vila Flor</dd>
               </div>
               <div className="flex justify-between border-b border-[#5C3A5C]/20 pb-4">
-                <dt className="font-mono text-sm text-[#A87B3F]">
+                <dt className="font-mono text-sm text-sax-gold">
                   Código Postal
                 </dt>
                 <dd className="text-base text-neutral-200">
@@ -147,13 +147,13 @@ export default function Contactos() {
                 </dd>
               </div>
               {/* <div className="flex justify-between border-b border-[#5C3A5C]/20 pb-4">
-                <dt className="font-mono text-sm text-[#A87B3F]">
+                <dt className="font-mono text-sm text-sax-gold">
                   Telefone Fixo
                 </dt>
                 <dd className="text-base text-neutral-200">
                   <a
                     href="tel:+351253517049"
-                    className="transition-colors hover:text-[#A87B3F]"
+                    className="transition-colors hover:text-sax-gold"
                   >
                     +351 253 517 049
                   </a>
@@ -163,13 +163,13 @@ export default function Contactos() {
                 </dd>
               </div> */}
               {/* <div className="flex justify-between">
-                <dt className="font-mono text-sm text-[#A87B3F]">
+                <dt className="font-mono text-sm text-sax-gold">
                   Telefone Móvel
                 </dt>
                 <dd className="text-base text-neutral-200">
                   <a
                     href="tel:+351969508075"
-                    className="transition-colors hover:text-[#A87B3F]"
+                    className="transition-colors hover:text-sax-gold"
                   >
                     +351 969 508 075
                   </a>

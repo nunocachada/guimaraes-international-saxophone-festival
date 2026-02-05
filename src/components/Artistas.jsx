@@ -516,7 +516,7 @@ const ArtistaCard = ({ artista, artistaIndex, clipPathId }) => {
   return (
     <div>
       <Modal>
-        <ModalTrigger className="group relative h-70 w-full transform cursor-pointer overflow-hidden rounded-4xl focus:ring-2 focus:ring-[#A87B3F] focus:ring-offset-2 focus:ring-offset-[#2a1f2a] focus:outline-none">
+        <ModalTrigger className="group relative h-70 w-full transform cursor-pointer overflow-hidden rounded-4xl focus:ring-2 focus:ring-sax-gold focus:ring-offset-2 focus:ring-offset-[#2a1f2a] focus:outline-none">
           <div
             className={clsx(
               'absolute top-0 right-4 bottom-6 left-0 rounded-4xl border transition duration-300 group-hover:scale-95 xl:right-6',
@@ -549,7 +549,7 @@ const ArtistaCard = ({ artista, artistaIndex, clipPathId }) => {
             <div className="space-y-6">
               {/* Nome */}
               <div>
-                <h2 className="mb-4 text-center font-mono text-3xl font-bold tracking-tight text-[#A87B3F]">
+                <h2 className="mb-4 text-center font-mono text-3xl font-bold tracking-tight text-sax-gold">
                   {artista.nome}
                 </h2>
                 <div className="mb-8 flex justify-center">
@@ -676,7 +676,7 @@ const ArtistaCard = ({ artista, artistaIndex, clipPathId }) => {
           </ModalFooter>
         </ModalBody>
       </Modal>
-      <h3 className="mt-8 font-mono text-xl font-bold tracking-tight text-[#A87B3F]">
+      <h3 className="mt-8 font-mono text-xl font-bold tracking-tight text-sax-gold">
         {artista.nome}
       </h3>
       <p className="mt-1 text-base tracking-tight text-neutral-400">
@@ -730,7 +730,7 @@ const AtividadeCard = ({ atividade, atividadeIndex, clipPathId }) => {
   return (
     <div>
       <Modal>
-        <ModalTrigger className="group relative h-70 w-full transform cursor-pointer overflow-hidden rounded-4xl focus:ring-2 focus:ring-[#A87B3F] focus:ring-offset-2 focus:ring-offset-[#2a1f2a] focus:outline-none">
+        <ModalTrigger className="group relative h-70 w-full transform cursor-pointer overflow-hidden rounded-4xl focus:ring-2 focus:ring-sax-gold focus:ring-offset-2 focus:ring-offset-[#2a1f2a] focus:outline-none">
           <div
             className={clsx(
               'absolute top-0 right-4 bottom-6 left-0 rounded-4xl border transition duration-300 group-hover:scale-95 xl:right-6',
@@ -746,7 +746,7 @@ const AtividadeCard = ({ atividade, atividadeIndex, clipPathId }) => {
             style={{ clipPath: `url(#${clipPathId}-${atividadeIndex % 3})` }}
           >
             <IconComponent
-              className="h-16 w-16 text-[#A87B3F] transition duration-300 group-hover:scale-110"
+              className="h-16 w-16 text-sax-gold transition duration-300 group-hover:scale-110"
               strokeWidth={1.5}
             />
           </div>
@@ -760,12 +760,12 @@ const AtividadeCard = ({ atividade, atividadeIndex, clipPathId }) => {
             <div className="space-y-6">
               {/* Nome */}
               <div>
-                <h2 className="mb-4 text-center font-mono text-3xl font-bold tracking-tight text-[#A87B3F]">
+                <h2 className="mb-4 text-center font-mono text-3xl font-bold tracking-tight text-sax-gold">
                   {atividade.nome}
                 </h2>
                 <div className="mb-8 flex justify-center">
                   <IconComponent
-                    className="h-16 w-16 text-[#A87B3F]"
+                    className="h-16 w-16 text-sax-gold"
                     strokeWidth={1.5}
                   />
                 </div>
@@ -826,7 +826,7 @@ const AtividadeCard = ({ atividade, atividadeIndex, clipPathId }) => {
           </ModalFooter>
         </ModalBody>
       </Modal>
-      <h3 className="mt-8 font-mono text-xl font-bold tracking-tight text-[#A87B3F]">
+      <h3 className="mt-8 font-mono text-xl font-bold tracking-tight text-sax-gold">
         {atividade.nome}
       </h3>
       {atividade.descricao && (
@@ -895,7 +895,7 @@ export function Artistas() {
                         className={clsx(
                           'absolute top-2.25 left-[-0.5px] hidden h-1.5 w-1.5 overflow-visible lg:block',
                           dayIndex === selectedIndex
-                            ? 'fill-[#A87B3F] stroke-[#A87B3F]'
+                            ? 'fill-sax-gold stroke-sax-gold'
                             : 'fill-transparent stroke-[#5C3A5C]/40',
                         )}
                       />
@@ -904,7 +904,7 @@ export function Artistas() {
                           className={clsx(
                             'font-mono text-sm',
                             dayIndex === selectedIndex
-                              ? 'text-[#A87B3F]'
+                              ? 'text-sax-gold'
                               : 'text-neutral-400',
                           )}
                         >

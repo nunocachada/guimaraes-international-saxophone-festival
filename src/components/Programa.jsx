@@ -304,7 +304,7 @@ function TimeSlots({ day, className }) {
               {timeSlot.description}
             </p>
           )}
-          <p className="mt-1 font-mono text-sm text-[#A87B3F]">
+          <p className="mt-1 font-mono text-sm text-sax-gold">
             <time dateTime={`${day.dateTime}T${timeSlot.start}:00+01:00`}>
               {timeSlot.start}
             </time>{' '}

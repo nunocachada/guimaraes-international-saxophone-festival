@@ -36,7 +36,7 @@ export function Parceiros() {
   return (
     <section id="parceiros" aria-label="Parceiros" className="py-20 sm:py-32">
       <Container>
-        <h2 className="mx-auto max-w-2xl text-center font-mono text-2xl font-medium tracking-tighter text-neutral-200 uppercase underline sm:text-3xl">
+        <h2 className="mx-auto max-w-2xl text-center font-fonty text-4xl font-medium tracking-tighter text-neutral-200 uppercase underline sm:text-6xl">
           Apoios
         </h2>
         {/* <div className="relative mx-auto mt-20 flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg py-20 md:shadow-xl">
@@ -76,8 +76,8 @@ export function Parceiros() {
           ))}
         </div>
       </Container>
-      <Container className="mt-20">
-        <h2 className="mx-auto max-w-2xl text-center font-mono text-3xl font-medium tracking-tighter text-neutral-200 uppercase underline sm:text-3xl">
+      <Container className="mt-40">
+        <h2 className="mx-auto max-w-2xl text-center font-fonty text-4xl font-medium tracking-tighter text-neutral-200 uppercase underline sm:text-5xl">
           Patrocinadores
         </h2>
         {/* <div className="relative mx-auto mt-20 flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg py-20 md:shadow-xl">

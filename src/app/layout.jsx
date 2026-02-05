@@ -1,7 +1,18 @@
 import { DM_Sans, Inter, Dancing_Script, Syne } from 'next/font/google'
+import localFont from 'next/font/local'
 import clsx from 'clsx'
 
 import '@/styles/tailwind.css'
+
+const saloAldo = localFont({
+  src: [
+    { path: '../fonts/salo-aldo.ttf', weight: '400' },
+    { path: '../fonts/salo-aldo.otf', weight: '400' },
+  ],
+  display: 'swap',
+  variable: '--font-salo-aldo',
+  fallback: ['Syne', 'sans-serif'],
+})
 
 const inter = Inter({
   subsets: ['latin'],
@@ -36,7 +47,7 @@ export const metadata = {
     default: 'Guimarães International Saxophone Festival - GISF',
   },
   description:
-    'Um evento único que celebra a excelência musical e reúne alguns dos melhores saxofonistas do mundo na histórica cidade de Guimarães. Durante quatro dias, desfrute de concertos, masterclasses e workshops com artistas de renome internacional.',
+    'Um evento único que celebra a excelência musical e reúne alguns dos melhores saxofonistas do mundo na histórica cidade de Guimarães. Durante quatro dias, desfrute de concertos, masterclasses e workshops com artistas de renome.',
   images: [
     {
       url: 'https://www.guimaraessaxfest.com/og-image.jpg',
@@ -95,6 +106,7 @@ export default function RootLayout({ children }) {
         dmSans.variable,
         dancingScript.variable,
         syne.variable,
+        saloAldo.variable,
       )}
     >
       <body className="flex min-h-full">

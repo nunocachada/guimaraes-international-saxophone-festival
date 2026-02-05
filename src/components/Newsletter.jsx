@@ -48,7 +48,7 @@ export function Newsletter() {
                 Subscreva a nossa newsletter{' '}
                 <span aria-hidden="true">&darr;</span>
               </h3>
-              <div className="mt-5 flex rounded-3xl bg-[#1a0f1a] py-2.5 pr-2.5 shadow-xl shadow-[#5C3A5C]/20 focus-within:ring-2 focus-within:ring-[#A87B3F]">
+              <div className="mt-5 flex rounded-3xl bg-[#1a0f1a] py-2.5 pr-2.5 shadow-xl shadow-[#5C3A5C]/20 focus-within:ring-2 focus-within:ring-sax-gold">
                 <input
                   type="email"
                   required

@@ -29,7 +29,7 @@ export function Formulario({ className }) {
   return (
     <div className={cn('flex items-center justify-start font-mono', className)}>
       <Modal>
-        <ModalTrigger className="group/modal-btn flex justify-center bg-[#A87B3F] text-white hover:bg-[#8B6A3F]">
+        <ModalTrigger className="group/modal-btn flex justify-center bg-sax-gold text-white hover:bg-sax-gold-dark">
           <span className="text-center transition duration-500 group-hover/modal-btn:translate-x-40">
             Participar
           </span>

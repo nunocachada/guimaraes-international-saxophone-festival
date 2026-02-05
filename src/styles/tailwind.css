@@ -39,6 +39,8 @@
   --font-display: var(--font-dm-sans);
   --font-script: var(--font-dancing-script);
   --font-syne: var(--font-syne);
+  /* Fonty: local Salo Aldo with Syne fallback for broad browser support */
+  --font-fonty: var(--font-salo-aldo), var(--font-syne);
 
   --container-2xl: 40rem;
 
@@ -49,6 +51,9 @@
   --color-festival-gold: #b8860b;
   --color-festival-gold-light: #d4a017;
   --color-festival-gold-dark: #9a7209;
+  /* Brand accent – change here to update app-wide */
+  --color-sax-gold: #f4bb3e;
+  --color-sax-gold-dark: #8b6a3f;
   --color-festival-gradient-start: #f7b500;
   --color-festival-gradient-mid: #c85a64;
   --color-festival-gradient-end: #8a2be2;

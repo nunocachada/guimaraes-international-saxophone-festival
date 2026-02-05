@@ -16,7 +16,7 @@ export default async function NoticiaWrapper({ noticia, children }) {
       <Container as="article" className="mt-16 sm:mt-24 lg:mt-32">
         <FadeIn>
           <header className="mx-auto flex max-w-5xl flex-col text-center">
-            <h1 className="mt-6 font-syne text-4xl font-medium tracking-tight text-balance text-[#A87B3F] sm:text-5xl lg:text-6xl">
+            <h1 className="mt-6 font-syne text-4xl font-medium tracking-tight text-balance text-sax-gold sm:text-5xl lg:text-6xl">
               {noticia.titulo}
             </h1>
             <time
