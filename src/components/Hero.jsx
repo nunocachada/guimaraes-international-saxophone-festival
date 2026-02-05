@@ -1,6 +1,7 @@
 import { BackgroundImage } from '@/components/BackgroundImage'
 import { Container } from '@/components/Container'
 import { TextRipple } from '@/components/ui/text-ripple-sax'
+import { TextRipple2 } from '@/components/ui/text-ripple-2'
 import { Formulario } from './Formulario'
 import { ProgressiveBlur } from './ui/progressive-blur'
 import { InfiniteSlider } from './ui/infinite-slider'
@@ -24,13 +25,24 @@ export function Hero() {
                 {/* <span className="my-2 block font-syne text-5xl font-semibold text-[#A87B3F] sm:text-7xl">
                   SAXOPHONE{' '}
                 </span> */}
-                <TextRipple
+                {/* <TextRipple
                   className="my-2 block font-syne text-5xl font-semibold text-[#A87B3F] sm:text-7xl"
                   falloff={0.15}
                   maxScale={3}
                 >
                   Saxophone
-                </TextRipple>
+                </TextRipple> */}
+                <span className="mx-2 my-2 block font-syne text-5xl font-semibold text-[#A87B3F] sm:text-7xl">
+                  SAXOPH
+                  <TextRipple2
+                    className="font-syne text-5xl font-semibold text-[#A87B3F] sm:text-7xl"
+                    falloff={0.15}
+                    maxScale={2}
+                  >
+                    O
+                  </TextRipple2>
+                  NE
+                </span>
                 Festival
               </span>
             </div>

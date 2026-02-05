@@ -3,20 +3,34 @@ import Image from 'next/image'
 import { ProgressiveBlur } from './ui/progressive-blur'
 import { InfiniteSlider } from './ui/infinite-slider'
 import { Logo } from './Logo-YGM'
-import logoSmg from '@/images/logos/smg.png'
+import logoSmg from '@/images/logos/smg2.png'
 import logoMaferMusica from '@/images/logos/mafer-musica.svg'
 import logoFundacao from '@/images/logos/fundacao.svg'
-import logoMotaEngil from '@/images/logos/mota-engil.svg'
+// import logoMotaEngil from '@/images/logos/mota-engil.svg'
 import logoSonsDoClassico from '@/images/logos/sons-do-classico.png'
 import logoFersanGroup from '@/images/logos/fersan-group.png'
+import logoYamaha from '@/images/logos/yamaha.png'
+import logoDaddario from '@/images/logos/daddario.png'
+import logoSelmer from '@/images/logos/selmer.svg'
+import logoCardosoConceicao from '@/images/logos/cardoso-conceicao.png'
+import logoBuffetCrampon from '@/images/logos/buffet-crampon.png'
+import logoEsmae from '@/images/logos/esmae.png'
+import logoMunicipio from '@/images/logos/municipio.svg'
 
 const parceiros = [
   { name: 'Sociedade Musical de Guimarães', logo: logoSmg },
   { name: 'Fundação Manuel António da Mota', logo: logoFundacao },
-  { name: 'Mota Engil Mecenas', logo: logoMotaEngil },
+  // { name: 'Mota Engil Mecenas', logo: logoMotaEngil },
   { name: 'MaferMúsica', logo: logoMaferMusica },
   { name: 'Fersan Group', logo: logoFersanGroup },
   { name: 'Sons do Clássico', logo: logoSonsDoClassico },
+  { name: 'Yamaha', logo: logoYamaha },
+  { name: 'Daddario', logo: logoDaddario },
+  { name: 'Selmer', logo: logoSelmer },
+  { name: 'Cardoso & Conceição', logo: logoCardosoConceicao },
+  { name: 'Buffet Crampon', logo: logoBuffetCrampon },
+  { name: 'Esmae', logo: logoEsmae },
+  { name: 'Municipio de Guimarães', logo: logoMunicipio },
 ]
 
 function Patrocinadores() {
@@ -34,13 +48,15 @@ function Patrocinadores() {
                   {parceiros.map((parceiro) => (
                     <div
                       key={parceiro.name}
-                      className="flex items-center justify-center"
+                      className="flex h-12 w-28 shrink-0 items-center justify-center"
                     >
                       <Image
                         src={parceiro.logo}
                         alt={parceiro.name}
                         unoptimized
-                        className="h-6 w-auto opacity-60 brightness-0 invert transition-opacity hover:opacity-100"
+                        width={112}
+                        height={48}
+                        className="h-full w-full object-contain opacity-60 brightness-0 invert transition-opacity hover:opacity-100"
                       />
                     </div>
                   ))}

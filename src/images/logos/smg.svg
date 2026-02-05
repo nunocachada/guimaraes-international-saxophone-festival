@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Foreground" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 492.44 115.7">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: 0em;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3 {
+        fill-rule: evenodd;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #ec2e38;
+      }
+
+      .cls-5 {
+        letter-spacing: -.06em;
+      }
+
+      .cls-6 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-7 {
+        fill: #fff;
+        font-family: Seravek-ExtraLight, Seravek;
+        font-size: 28px;
+        font-weight: 200;
+      }
+
+      .cls-8 {
+        letter-spacing: -.06em;
+      }
+
+      .cls-9 {
+        letter-spacing: 0em;
+      }
+
+      .cls-10 {
+        letter-spacing: 0em;
+      }
+
+      .cls-11 {
+        letter-spacing: .01em;
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="cls-4" d="M127.79,45.46c0-10.72,52.43-19.41,117.1-19.41s117.1,8.69,117.1,19.41c0,.65-.2,1.3-.58,1.94-5.87-9.81-55.8-17.47-116.52-17.47s-110.65,7.66-116.52,17.47c-.38-.64-.58-1.29-.58-1.94Z"/>
+    <path class="cls-4" d="M174.63,53.22c0-6.43,31.46-11.64,70.26-11.64s70.26,5.21,70.26,11.64c0,.66-.33,1.31-.97,1.94-5.58-5.51-34.47-9.7-69.29-9.7s-63.71,4.2-69.29,9.7c-.64-.63-.97-1.28-.97-1.94Z"/>
+    <path class="cls-3" d="M291.74,57.1c0,4.29-20.99,7.76-46.86,7.76s-46.84-3.48-46.84-7.76v-3.88c0,4.29,20.97,7.76,46.84,7.76s46.84-3.47,46.84-7.76l.02,3.88Z"/>
+    <path class="cls-3" d="M151.21,49.34c0-8.57,41.94-15.52,93.68-15.52s93.68,6.95,93.68,15.52c0,.65-.24,1.3-.72,1.93-5.79-7.65-45.2-13.57-92.95-13.57s-87.21,5.93-92.97,13.59c-.48-.64-.73-1.28-.73-1.94Z"/>
+    <path class="cls-4" d="M104.37,41.58c0-12.86,62.91-23.29,140.52-23.29s140.52,10.43,140.52,23.29c0,.65-.16,1.3-.48,1.94-5.95-11.95-66.37-21.35-140.04-21.35s-134.09,9.39-140.04,21.35c-.32-.64-.48-1.29-.48-1.94Z"/>
+    <path class="cls-4" d="M80.95,37.7c0-15,73.4-27.17,163.94-27.17s163.94,12.16,163.94,27.17c0,.65-.14,1.3-.41,1.94-6-14.1-76.92-25.23-163.53-25.23s-157.52,11.13-163.53,25.23c-.27-.64-.41-1.29-.41-1.94Z"/>
+  </g>
+  <text class="cls-7" transform="translate(8.65 107.46)"><tspan x="0" y="0">SMG - </tspan><tspan class="cls-9" x="78.03" y="0">C</tspan><tspan x="94.55" y="0">ONSE</tspan><tspan class="cls-10" x="161.67" y="0">R</tspan><tspan class="cls-5" x="177.13" y="0">V</tspan><tspan class="cls-8" x="191.18" y="0">A</tspan><tspan class="cls-6" x="207.39" y="0">T</tspan><tspan class="cls-1" x="221.06" y="0">ÓRIO DE GUIMA</tspan><tspan class="cls-11" x="413.42" y="0">R</tspan><tspan class="cls-2" x="429.57" y="0">ÃES</tspan></text>
+</svg>

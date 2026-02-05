@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 import { motion } from 'motion/react'
 import clsx from 'clsx'
+import { useRouter } from 'next/navigation'
 
 import { Container } from '@/components/Container'
 import { DiamondIcon } from '@/components/DiamondIcon'
@@ -35,34 +36,34 @@ import tiesMellemmaImage from '@/images/Ties_Mellema.webp'
 import nunoSilvaImage from '@/images/nuno_silva.jpg'
 import nicolasArsinejevicImage from '@/images/Nicolas_Arsenijevic.webp'
 import miguelPaisClementeImage from '@/images/miguel-pais-clemente.webp'
+import luisMiguelImage from '@/images/luis-miguel.jpg'
+import brunoSantosImage from '@/images/bruno-santos.jpg'
 import saxImage from '@/images/sax.svg'
 
 // Mapeamento de informações detalhadas dos artistas
 const artistasInfo = {
   'Henk Van Twillert': {
-    biography:
+    biografia:
       'Henk Van Twillert é um renomado saxofonista holandês com uma carreira internacional destacada. Especialista em pedagogia do saxofone e performance contemporânea.',
-    informacoes:
-      'As atividades vao decorrer no Piso 2 do Teatro Jordão. A entrada é feita pela portaria na rua de Vila Flor. etc....',
+    informacoes: 'em breve',
     eventos: [
       'Dia de Abertura - Stars of the Future (primeira sessão)',
       'Workshops & Masterclasses - 9 de Julho',
       'Conferência - 7 de Julho',
     ],
-    images: [henkVanTwillertImage, henkVanTwillertImage, henkVanTwillertImage],
+    imagens: [henkVanTwillertImage],
   },
   'Nicolas Arsinejevic': {
-    biography:
+    biografia:
       'Nicolas Arsinejevic é professor no CNSMP (Conservatoire National Supérieur de Musique et de Danse de Paris), França. Reconhecido internacionalmente pela sua excelência técnica e artística.',
-    informacoes:
-      'As atividades vao decorrer no Piso 2 do Teatro Jordão. A entrada é feita pela portaria na rua de Vila Flor. etc....',
+    informacoes: 'em breve',
     eventos: [
       'Dia de Abertura - 7 de Julho',
       'Concertos - 8 de Julho (Conservatório)',
       'Workshops & Masterclasses - 9 de Julho',
       'Encerramento - 10 de Julho',
     ],
-    images: [
+    imagens: [
       nicolasArsinejevicImage,
       nicolasArsinejevicImage,
       nicolasArsinejevicImage,
@@ -70,10 +71,9 @@ const artistasInfo = {
     ],
   },
   'Ties Mellemma': {
-    biography:
-      'Ties Mellemma é professor na Fontys Arts University, Holanda. Conhecido pela sua abordagem inovadora ao ensino e performance do saxofone, com foco em encontrar a própria voz artística.',
-    informacoes:
-      'As atividades vao decorrer no Piso 2 do Teatro Jordão. A entrada é feita pela portaria na rua de Vila Flor. etc....',
+    biografia:
+      '"Não me prendo a estilos; faço música. Tenho uma curiosidade particular pela música que existe entre os estilos.\"\n\n Embora Ties Mellema seja indiscutivelmente um virtuoso do saxofone, vê-se antes de tudo como um músico. A sua arte expressa-se numa exploração contínua dos limites da música. Em 2015, Ties ficou gravemente doente durante vários anos e, para além de tocar saxofone, começou a compor com música electrónica. Após 20 anos como membro fundador do Amstel Quartet, Ties decidiu que era altura de seguir o seu próprio caminho. Lançou o seu grupo crossover PEAX em 2019, com o qual trabalhou até 2025. Atualmente, prossegue uma carreura como artista a solo, colaborando com músicos que partilham a sua visão de fusão de estilos. Ties recebeu inúmeros prémios, incluindo o prestigiado Prémio de Música dos Países Baixos. Vários álbuns, tanto como artista a solo como em conjunto, foram editados pelas suas próprias editoras, Amstel Records e PEAX Records. Ties Mellema utiliza um saxofone baixo Eppelsheim, cedido pela colecção da Fundação Holandesa de Instrumentos Musicais.',
+    informacoes: 'em breve',
     eventos: [
       'Dia de Abertura - 7 de Julho',
       'Concertos - 8 de Julho',
@@ -81,13 +81,12 @@ const artistasInfo = {
       'Ties Mellemma Talk - "Find your own voice" - 9 de Julho',
       'Encerramento - 10 de Julho',
     ],
-    images: [tiesMellemmaImage],
+    imagens: [tiesMellemmaImage],
   },
   'Nuno Silva': {
-    biography:
+    biografia:
       'Nuno Silva é um saxofonista português com formação no Breda Conservatory. Reconhecido pela sua técnica refinada e interpretação expressiva.',
-    informacoes:
-      'As atividades vão decorrer no Piso 2 do Teatro Jordão. A entrada é feita pela portaria na rua de Vila Flor. etc....',
+    informacoes: 'em breve',
     eventos: [
       'Dia de Abertura - 7 de Julho',
       'Concerto de Nuno Silva - 7 de Julho (main hall)',
@@ -95,197 +94,226 @@ const artistasInfo = {
       'Workshops & Masterclasses - 9 de Julho',
       'Encerramento - 10 de Julho',
     ],
-    images: [nunoSilvaImage],
+    imagens: [nunoSilvaImage],
+  },
+  'Luis Miguel': {
+    biografia:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
+    informacoes:
+      'lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
+    eventos: [
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. ',
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. ',
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. ',
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
+    ],
+    imagens: [luisMiguelImage],
+  },
+  'Bruno Santos': {
+    biografia:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
+    informacoes: 'em breve',
+    eventos: [
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. ',
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. ',
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. ',
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. ',
+    ],
+    imagens: [brunoSantosImage],
   },
   'Miguel Pais Clemente': {
-    biography:
+    biografia:
       'Miguel Pais Clemente é um destacado músico e educador português, conhecido pelo seu trabalho em pedagogia musical e performance.',
-    informacoes:
-      'As atividades vão decorrer no Piso 2 do Teatro Jordão. A entrada é feita pela portaria na rua de Vila Flor. etc....',
+    informacoes: 'em breve',
     eventos: [
       'Dia de Abertura - 7 de Julho',
       'Conferência - 7 de Julho (com Henk van Twillert e Joaquim Gabriel)',
     ],
-    images: [miguelPaisClementeImage],
+    imagens: [miguelPaisClementeImage],
   },
 }
 
 const days = [
   {
-    name: 'Sobre',
-    date: 'Artistas',
-    dateTime: '2026-07-07',
+    nome: 'Sobre',
+    data: 'Artistas',
+    dataHora: '2026-07-07',
     artistas: [
       {
-        name: 'Henk Van Twillert',
-        role: 'HOLANDA',
-        image: henkVanTwillertImage,
-        ...artistasInfo['Henk Van Twillert'],
-      },
-      {
-        name: 'Nicolas Arsinejevic',
-        role: 'França',
-        image: nicolasArsinejevicImage,
-        ...artistasInfo['Nicolas Arsinejevic'],
-      },
-      {
-        name: 'Ties Mellemma',
-        role: 'HOLANDA',
-        image: tiesMellemmaImage,
+        nome: 'Ties Mellemma',
+        papel: 'HOLANDA',
+        imagem: tiesMellemmaImage,
         ...artistasInfo['Ties Mellemma'],
       },
       {
-        name: 'Nuno Silva',
-        role: 'PORTUGAL',
-        image: nunoSilvaImage,
+        nome: 'Nicolas Arsinejevic',
+        papel: 'França',
+        imagem: nicolasArsinejevicImage,
+        ...artistasInfo['Nicolas Arsinejevic'],
+      },
+      {
+        nome: 'Henk Van Twillert',
+        papel: 'HOLANDA',
+        imagem: henkVanTwillertImage,
+        ...artistasInfo['Henk Van Twillert'],
+      },
+      {
+        nome: 'Bruno Santos',
+        papel: 'PORTUGAL',
+        imagem: brunoSantosImage,
+        ...artistasInfo['Bruno Santos'],
+      },
+      {
+        nome: 'Nuno Silva',
+        papel: 'PORTUGAL',
+        imagem: nunoSilvaImage,
         ...artistasInfo['Nuno Silva'],
       },
       {
-        name: 'Miguel Pais Clemente',
-        role: 'PORTUGAL',
-        image: miguelPaisClementeImage,
-        ...artistasInfo['Miguel Pais Clemente'],
+        nome: 'Luis Miguel',
+        papel: 'PORTUGAL',
+        imagem: luisMiguelImage,
+        ...artistasInfo['Luis Miguel'],
       },
     ],
     atividades: [],
   },
   {
-    name: 'Programação',
-    date: '7 de Julho',
-    dateTime: '2026-07-07',
+    nome: 'Programação',
+    data: '7 de Julho',
+    dataHora: '2026-07-07',
     artistas: [],
     atividades: [
       {
-        name: 'Receção aos participantes',
-        description: null,
+        nome: 'Receção aos participantes',
+        descricao: null, // em breve
       },
       {
-        name: 'Warm up work',
-        description: 'Sax, Body & Mind',
+        nome: 'Warm up work',
+        descricao: 'Sax, Body & Mind',
       },
       {
-        name: 'Masterclass',
-        description: 'Prof. Ties Mellema / Nicolas A. / Nuno S.',
+        nome: 'Masterclasses',
+        descricao: 'Prof. Ties Mellema / Nicolas A. / Nuno S.',
       },
       {
-        name: 'Stars of the Future',
-        description: 'Henk van Twillert (first session)',
+        nome: 'Stars of the Future',
+        descricao: 'Henk van Twillert (first session)',
       },
       {
-        name: 'Lunch concert',
-        description:
+        nome: 'Lunch concert',
+        descricao:
           'Stars of the Future (Grupo 1) · Pátio TJGA (Piso 1 – salas individuais)',
       },
       {
-        name: 'Masterclass',
-        description: 'Prof. Ties Mellema / Nicholas A.',
+        nome: 'Masterclass',
+        descricao: 'Prof. Ties Mellema / Nicholas A.',
       },
       {
-        name: 'Conferência',
-        description:
-          'Miguel Pais Clemente, Henk van Twillert e Joaquim Gabriel',
+        nome: 'Conferência',
+        descricao: 'Miguel Pais Clemente, Henk van Twillert e Joaquim Gabriel',
       },
       {
-        name: 'All Sax Orchestra rehearsal',
-        description: null,
+        nome: 'All Sax Orchestra rehearsal',
+        descricao: null,
       },
       {
-        name: 'Concerto de Nuno Silva',
-        description: 'Main hall of the school',
+        nome: 'Concerto de Nuno Silva',
+        descricao: 'Main hall of the school',
       },
     ],
   },
   {
-    name: 'Programação',
-    date: '8 de Julho',
-    dateTime: '2026-07-08',
+    nome: 'Programação',
+    data: '8 de Julho',
+    dataHora: '2026-07-08',
     artistas: [],
     atividades: [
       {
-        name: 'Masterclass',
-        description: 'Prof. Ties Mellema / Prof. Nicolas A. / Nuno S.',
+        nome: 'Masterclasses',
+        descricao: 'Prof. Ties Mellema / Prof. Nicolas A. / Nuno S.',
       },
       {
-        name: 'Stars of the Future',
-        description: 'Henk van Twillert (second session)',
+        nome: 'Stars of the Future',
+        descricao: 'Henk van Twillert (second session)',
       },
       {
-        name: 'Lunch concert',
-        description:
+        nome: 'Lunch concert',
+        descricao:
           'Stars of the Future (Grupo 2) · Pátio TJGA / Bandas de Garagem',
       },
       {
-        name: 'Masterclass',
-        description: 'Prof. Ties Mellema / Prof. Nicholas Arsenevich',
+        nome: 'Masterclass',
+        descricao: 'Prof. Ties Mellema / Prof. Nicholas Arsenevich',
       },
       {
-        name: "Sponsors' time",
-        description:
+        nome: "Sponsors' time",
+        descricao:
           'Sponsors Happy Hour · Cada sponsor apresenta a sua marca e produtos (15–25 minutos)',
       },
       {
-        name: 'Coro Cordão',
-        description: 'Bandas de Garagem',
+        nome: 'Coro Cordão',
+        descricao: 'Bandas de Garagem',
       },
       {
-        name: 'All Sax Orchestra rehearsal',
-        description: null,
+        nome: 'All Sax Orchestra rehearsal',
+        descricao: null,
       },
       {
-        name: 'Concerto no Conservatório',
-        description: 'Nicolas A.',
-      },
-    ],
-  },
-  {
-    name: 'Programação',
-    date: '9 de Julho',
-    dateTime: '2026-07-09',
-    artistas: [],
-    atividades: [
-      {
-        name: 'Masterclass',
-        description: 'Prof. Ties Mellema / Nuno S.',
-      },
-      {
-        name: 'Jazz Workshop',
-        description: 'Eastman artist',
-      },
-      {
-        name: 'Jazz concert',
-        description: null,
-      },
-      {
-        name: 'Ties Mellema Talk',
-        description: 'Find your own voice',
-      },
-      {
-        name: 'Ama Sax Orchestra rehearsal',
-        description: null,
+        nome: 'Concerto no Conservatório',
+        descricao: 'Nicolas A.',
       },
     ],
   },
   {
-    name: 'Programação',
-    date: '10 de Julho',
-    dateTime: '2026-07-10',
+    nome: 'Programação',
+    data: '9 de Julho',
+    dataHora: '2026-07-09',
     artistas: [],
     atividades: [
       {
-        name: 'Preparation time for final concerts',
-        description: null,
+        nome: 'Masterclass',
+        descricao: 'Prof. Ties Mellema / Nuno S.',
       },
       {
-        name: 'All Sax Orchestra / Be Sax Orchestra rehearsal',
-        description: null,
+        nome: 'Jazz Workshop',
+        descricao: 'Eastman artist',
       },
       {
-        name: 'Ensaio Coro Cordão',
-        description: null,
+        nome: 'Jazz concert',
+        descricao: null,
       },
       {
-        name: 'CAA Concert T2Sax',
-        description: 'Final concert, with soloists · Teatro Jordão',
+        nome: 'Ties Mellema Talk',
+        descricao: 'Find your own voice',
+      },
+      {
+        nome: 'Ama Sax Orchestra rehearsal',
+        descricao: null,
+      },
+    ],
+  },
+  {
+    nome: 'Programação',
+    data: '10 de Julho',
+    dataHora: '2026-07-10',
+    artistas: [],
+    atividades: [
+      {
+        nome: 'Preparation time for final concerts',
+        descricao: null,
+      },
+      {
+        nome: 'All Sax Orchestra / Be Sax Orchestra rehearsal',
+        descricao: null,
+      },
+      {
+        nome: 'Ensaio Coro Cordão',
+        descricao: null,
+      },
+      {
+        nome: 'CAA Concert T2Sax',
+        descricao: 'Final concert, with soloists · Teatro Jordão',
       },
     ],
   },
@@ -317,133 +345,133 @@ const EventIcon = Calendar
 // Mapeamento de informações detalhadas das atividades
 const atividadesInfo = {
   'Receção aos participantes': {
-    description:
+    descricao:
       'Momento de boas-vindas e receção a todos os participantes do festival. Será fornecida informação importante sobre o programa e as instalações.',
     localizacao: 'Piso 2 do Teatro Jordão',
     horario: '09:00 - 09:30',
     icon: Users,
   },
   'Warm up work': {
-    description:
+    descricao:
       'Sessão de aquecimento físico e mental para músicos. Uma abordagem holística que combina técnica do saxofone com exercícios de corpo e mente para preparar os participantes para o dia.',
     localizacao: 'Piso 2 do Teatro Jordão',
     horario: '09:45 - 10:15',
     icon: Sparkles,
   },
   Masterclass: {
-    description:
+    descricao:
       'Sessões de masterclass com professores renomados internacionalmente. Oportunidade única para aprender técnicas avançadas, interpretação e receber feedback personalizado dos melhores profissionais do saxofone.',
     localizacao: 'Piso 2 do Teatro Jordão',
     horario: 'Vários horários ao longo do festival',
     icon: GraduationCap,
   },
   'Stars of the Future': {
-    description:
+    descricao:
       'Programa dedicado aos jovens talentos do saxofone. Sessões especiais com Henk van Twillert para desenvolver e destacar os futuros astros do saxofone.',
     localizacao: 'Piso 2 do Teatro Jordão',
     horario: '11:30 - 12:30',
     icon: Sparkles,
   },
   'Lunch concert': {
-    description:
+    descricao:
       'Concertos durante o almoço apresentados pelos participantes do programa "Stars of the Future". Uma oportunidade para desfrutar de música enquanto se alimenta.',
     localizacao: 'Pátio TJGA (Piso 1 – salas individuais) / Bandas de Garagem',
     horario: '13:10 - 13:30',
     icon: Music,
   },
   Conferência: {
-    description:
+    descricao:
       'Conferência com especialistas sobre temas relevantes para o mundo do saxofone. Uma oportunidade para discussão e partilha de conhecimento.',
     localizacao: 'Piso 2 do Teatro Jordão',
     horario: '16:15 - 17:30',
     icon: Presentation,
   },
   'All Sax Orchestra rehearsal': {
-    description:
+    descricao:
       'Ensaios da All Sax Orchestra, preparando-se para as apresentações finais. Uma experiência única de tocar em orquestra dedicada exclusivamente ao saxofone.',
     localizacao: 'Piso 2 do Teatro Jordão',
     horario: 'Vários horários',
     icon: Music2,
   },
   'Concerto de Nuno Silva': {
-    description:
+    descricao:
       'Concerto solo do renomado saxofonista português Nuno Silva. Uma apresentação especial no hall principal da escola.',
     localizacao: 'Main hall of the school',
     horario: '21:00 - 22:30',
     icon: Music2,
   },
   'Concerto no Conservatório': {
-    description:
+    descricao:
       'Concerto especial no Conservatório com Nicolas Arsinejevic. Uma apresentação única num espaço histórico e acústico excecional.',
     localizacao: 'Conservatório',
     horario: '21:00 - 22:30',
     icon: Music2,
   },
   "Sponsors' time": {
-    description:
+    descricao:
       'Momento dedicado aos patrocinadores do festival. Cada patrocinador terá a oportunidade de apresentar a sua marca e produtos durante 15-25 minutos.',
     localizacao: 'Piso 2 do Teatro Jordão',
     horario: '14:30 - 16:30',
     icon: Briefcase,
   },
   'Coro Cordão': {
-    description:
+    descricao:
       'Apresentação do Coro Cordão, uma das bandas de garagem participantes no festival.',
     localizacao: 'Bandas de Garagem',
     horario: '15:30 - 16:30',
     icon: Music,
   },
   'Jazz Workshop': {
-    description:
+    descricao:
       'Workshop de jazz com um artista Eastman. Aprenda técnicas de improvisação, swing e interpretação jazzística no saxofone.',
     localizacao: 'Piso 2 do Teatro Jordão',
     horario: '11:15 - 12:45',
     icon: Mic,
   },
   'Jazz concert': {
-    description:
+    descricao:
       'Concerto de jazz apresentado pelos participantes do workshop. Uma oportunidade para ouvir e desfrutar de música jazz ao vivo.',
     localizacao: 'Piso 2 do Teatro Jordão',
     horario: '13:00 - 13:20',
     icon: Music,
   },
   'Ties Mellema Talk': {
-    description:
+    descricao:
       'Talk inspiracional com Ties Mellema sobre "Find your own voice" (Encontra a tua própria voz). Uma sessão sobre desenvolvimento artístico pessoal e expressão única.',
     localizacao: 'Piso 2 do Teatro Jordão',
     horario: '17:30 - 18:35',
     icon: Presentation,
   },
   'Ama Sax Orchestra rehearsal': {
-    description:
+    descricao:
       'Ensaios da Ama Sax Orchestra, preparando-se para a apresentação final. Uma experiência única de tocar em orquestra dedicada exclusivamente ao saxofone.',
     localizacao: 'Piso 2 do Teatro Jordão',
     horario: '18:35 - 19:45',
     icon: Music2,
   },
   'Preparation time for final concerts': {
-    description:
+    descricao:
       'Tempo dedicado à preparação final para os concertos de encerramento. Momento para ensaios individuais e em grupo.',
     localizacao: 'Piso 2 do Teatro Jordão',
     horario: '09:30 - 13:00',
     icon: Clock,
   },
   'All Sax Orchestra / Be Sax Orchestra rehearsal': {
-    description:
+    descricao:
       'Ensaios finais das orquestras All Sax Orchestra e Be Sax Orchestra, preparando-se para o concerto final.',
     localizacao: 'Piso 2 do Teatro Jordão',
     horario: '09:30 - 13:00',
     icon: Music2,
   },
   'Ensaio Coro Cordão': {
-    description:
+    descricao:
       'Ensaio final do Coro Cordão, preparando-se para a apresentação no concerto final.',
     localizacao: 'Piso 2 do Teatro Jordão',
     horario: '09:30 - 13:00',
     icon: Music,
   },
   'CAA Concert T2Sax': {
-    description:
+    descricao:
       'Concerto final do festival com a participação de solistas. Uma apresentação grandiosa no Teatro Jordão que marca o encerramento do festival.',
     localizacao: 'Teatro Jordão',
     horario: '21:00 - 23:00',
@@ -452,33 +480,34 @@ const atividadesInfo = {
 }
 
 // Componentes para os botões do modal
-const CancelButton = () => {
+const FecharButton = () => {
   const { setOpen } = useModal()
   return (
     <button
       onClick={() => setOpen(false)}
       className="w-28 cursor-pointer rounded-md border border-[#1a0f1a]/50 bg-gradient-to-b from-[#1a0f1a]/80 to-[#1a0f1a]/60 px-2 py-1 text-sm text-neutral-200 hover:from-[#1a0f1a] hover:to-[#1a0f1a]/80"
     >
-      Cancel
+      Fechar
     </button>
   )
 }
 
-const CloseButton = () => {
+const ParticiparButton = () => {
   const { setOpen } = useModal()
+  const router = useRouter()
   return (
     <button
-      onClick={() => setOpen(false)}
-      className="w-28 rounded-md border border-neutral-300 bg-white px-2 py-1 text-sm text-neutral-900 hover:bg-neutral-100"
+      onClick={() => router.push('/masterclass/')}
+      className="w-28 cursor-pointer rounded-md border border-neutral-300 bg-white px-2 py-1 text-sm text-neutral-900 hover:bg-neutral-100"
     >
-      Fechar
+      Participar
     </button>
   )
 }
 
 // Componente para cada card de artista com modal
 const ArtistaCard = ({ artista, artistaIndex, clipPathId }) => {
-  const artistaInfo = artistasInfo[artista.name]
+  const artistaInfo = artistasInfo[artista.nome]
 
   if (!artistaInfo) {
     return null
@@ -504,8 +533,8 @@ const ArtistaCard = ({ artista, artistaIndex, clipPathId }) => {
           >
             <Image
               className="absolute inset-0 h-full w-full object-cover grayscale transition duration-300 group-hover:scale-110"
-              src={artista.image}
-              alt={artista.name}
+              src={artista.imagem}
+              alt={artista.nome}
               priority
               sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
             />
@@ -521,7 +550,7 @@ const ArtistaCard = ({ artista, artistaIndex, clipPathId }) => {
               {/* Nome */}
               <div>
                 <h2 className="mb-4 text-center font-mono text-3xl font-bold tracking-tight text-[#A87B3F]">
-                  {artista.name}
+                  {artista.nome}
                 </h2>
                 <div className="mb-8 flex justify-center">
                   <Image
@@ -536,9 +565,9 @@ const ArtistaCard = ({ artista, artistaIndex, clipPathId }) => {
               </div>
 
               {/* Imagens */}
-              {artistaInfo.images && artistaInfo.images.length > 0 && (
+              {artistaInfo.imagens && artistaInfo.imagens.length > 0 && (
                 <div className="flex items-center justify-center">
-                  {artistaInfo.images.map((img, idx) => {
+                  {artistaInfo.imagens.map((img, idx) => {
                     // Rotação determinística baseada no índice
                     const rotation = ((idx * 7) % 20) - 10
                     return (
@@ -561,7 +590,7 @@ const ArtistaCard = ({ artista, artistaIndex, clipPathId }) => {
                       >
                         <Image
                           src={img}
-                          alt={`${artista.name} - Imagem ${idx + 1}`}
+                          alt={`${artista.nome} - Imagem ${idx + 1}`}
                           width={500}
                           height={500}
                           className="h-20 w-20 shrink-0 rounded-lg object-cover md:h-40 md:w-40"
@@ -617,13 +646,13 @@ const ArtistaCard = ({ artista, artistaIndex, clipPathId }) => {
                 </div>
               )}
               {/* Biografia */}
-              {artistaInfo.biography && (
+              {artistaInfo.biografia && (
                 <div>
                   <h3 className="mb-3 font-mono text-xl font-semibold text-neutral-200">
                     Biografia
                   </h3>
                   <p className="leading-relaxed text-neutral-300">
-                    {artistaInfo.biography}
+                    {artistaInfo.biografia}
                   </p>
                 </div>
               )}
@@ -632,7 +661,7 @@ const ArtistaCard = ({ artista, artistaIndex, clipPathId }) => {
               {artistaInfo.informacoes && (
                 <div>
                   <h3 className="mb-3 font-mono text-xl font-semibold text-neutral-200">
-                    Outras informações
+                    + informações
                   </h3>
                   <p className="leading-relaxed text-neutral-300">
                     {artistaInfo.informacoes}
@@ -642,46 +671,52 @@ const ArtistaCard = ({ artista, artistaIndex, clipPathId }) => {
             </div>
           </ModalContent>
           <ModalFooter className="relative z-10 gap-4 border-t border-neutral-800 bg-neutral-950">
-            <CancelButton />
-            <CloseButton />
+            <FecharButton />
+            <ParticiparButton />
           </ModalFooter>
         </ModalBody>
       </Modal>
       <h3 className="mt-8 font-mono text-xl font-bold tracking-tight text-[#A87B3F]">
-        {artista.name}
+        {artista.nome}
       </h3>
       <p className="mt-1 text-base tracking-tight text-neutral-400">
-        {artista.role}
+        {artista.papel}
       </p>
     </div>
   )
 }
 
 // Função para determinar o ícone baseado no nome da atividade
-const getActivityIcon = (activityName) => {
-  const name = activityName.toLowerCase()
-  if (name.includes('masterclass') || name.includes('workshop')) {
+const getActivityIcon = (nomeAtividade) => {
+  const nomeMinusculo = nomeAtividade.toLowerCase()
+  if (
+    nomeMinusculo.includes('masterclass') ||
+    nomeMinusculo.includes('workshop')
+  ) {
     return MasterclassIcon
   }
-  if (name.includes('concerto') || name.includes('concert')) {
+  if (nomeMinusculo.includes('concerto') || nomeMinusculo.includes('concert')) {
     return ConcertIcon
   }
-  if (name.includes('conferência') || name.includes('talk')) {
+  if (nomeMinusculo.includes('conferência') || nomeMinusculo.includes('talk')) {
     return ConferenceIcon
   }
-  if (name.includes('rehearsal') || name.includes('ensaio')) {
+  if (nomeMinusculo.includes('rehearsal') || nomeMinusculo.includes('ensaio')) {
     return Music2
   }
-  if (name.includes('lunch')) {
+  if (nomeMinusculo.includes('lunch')) {
     return Coffee
   }
-  if (name.includes('sponsor')) {
+  if (nomeMinusculo.includes('sponsor')) {
     return Briefcase
   }
-  if (name.includes('warm up') || name.includes('preparation')) {
+  if (
+    nomeMinusculo.includes('warm up') ||
+    nomeMinusculo.includes('preparation')
+  ) {
     return Clock
   }
-  if (name.includes('stars')) {
+  if (nomeMinusculo.includes('stars')) {
     return Sparkles
   }
   return EventIcon
@@ -689,8 +724,8 @@ const getActivityIcon = (activityName) => {
 
 // Componente para cada card de atividade com modal
 const AtividadeCard = ({ atividade, atividadeIndex, clipPathId }) => {
-  const atividadeInfo = atividadesInfo[atividade.name]
-  const IconComponent = atividadeInfo?.icon || getActivityIcon(atividade.name)
+  const atividadeInfo = atividadesInfo[atividade.nome]
+  const IconComponent = atividadeInfo?.icon || getActivityIcon(atividade.nome)
 
   return (
     <div>
@@ -726,7 +761,7 @@ const AtividadeCard = ({ atividade, atividadeIndex, clipPathId }) => {
               {/* Nome */}
               <div>
                 <h2 className="mb-4 text-center font-mono text-3xl font-bold tracking-tight text-[#A87B3F]">
-                  {atividade.name}
+                  {atividade.nome}
                 </h2>
                 <div className="mb-8 flex justify-center">
                   <IconComponent
@@ -737,13 +772,13 @@ const AtividadeCard = ({ atividade, atividadeIndex, clipPathId }) => {
               </div>
 
               {/* Descrição */}
-              {atividadeInfo?.description && (
+              {atividadeInfo?.descricao && (
                 <div>
                   <h3 className="mb-3 font-mono text-xl font-semibold text-neutral-200">
                     Descrição
                   </h3>
                   <p className="leading-relaxed text-neutral-300">
-                    {atividadeInfo.description}
+                    {atividadeInfo.descricao}
                   </p>
                 </div>
               )}
@@ -773,30 +808,30 @@ const AtividadeCard = ({ atividade, atividadeIndex, clipPathId }) => {
               )}
 
               {/* Informação adicional da atividade */}
-              {atividade.description && (
+              {atividade.descricao && (
                 <div>
                   <h3 className="mb-3 font-mono text-xl font-semibold text-neutral-200">
                     Informações adicionais
                   </h3>
                   <p className="leading-relaxed text-neutral-300">
-                    {atividade.description}
+                    {atividade.descricao}
                   </p>
                 </div>
               )}
             </div>
           </ModalContent>
           <ModalFooter className="relative z-10 gap-4 border-t border-neutral-800 bg-neutral-950">
-            <CancelButton />
-            <CloseButton />
+            <FecharButton />
+            <ParticiparButton />
           </ModalFooter>
         </ModalBody>
       </Modal>
       <h3 className="mt-8 font-mono text-xl font-bold tracking-tight text-[#A87B3F]">
-        {atividade.name}
+        {atividade.nome}
       </h3>
-      {atividade.description && (
+      {atividade.descricao && (
         <p className="mt-1 text-base tracking-tight text-neutral-400">
-          {atividade.description}
+          {atividade.descricao}
         </p>
       )}
     </div>
@@ -849,97 +884,79 @@ export function Artistas() {
           <div className="relative -mx-4 flex overflow-x-auto pb-4 sm:mx-0 sm:block sm:overflow-x-auto sm:pb-0 lg:overflow-visible">
             <div className="absolute top-2 bottom-0 left-0.5 hidden w-px bg-[#5C3A5C]/30 lg:block" />
             <TabList className="grid min-w-max auto-cols-auto grid-flow-col justify-start gap-x-8 gap-y-10 px-4 whitespace-nowrap sm:mx-auto sm:max-w-none sm:min-w-max sm:grid-cols-4 sm:px-0 sm:text-center lg:max-w-2xl lg:min-w-0 lg:grid-flow-row lg:grid-cols-1 lg:text-left">
-              {({ selectedIndex }) => {
-                // Remover duplicatas baseado em name + dateTime
-                const uniqueDays = days.filter(
-                  (day, index, self) =>
-                    index ===
-                    self.findIndex(
-                      (d) => d.name === day.name && d.dateTime === day.dateTime,
-                    ),
-                )
-                return (
-                  <>
-                    {uniqueDays.map((day, dayIndex) => (
-                      <div
-                        key={`${day.name}-${day.dateTime}-${dayIndex}`}
-                        className="relative lg:pl-8"
-                      >
-                        <DiamondIcon
+              {({ selectedIndex }) => (
+                <>
+                  {days.map((day, dayIndex) => (
+                    <div
+                      key={`${day.nome}-${day.dataHora}-${dayIndex}`}
+                      className="relative lg:pl-8"
+                    >
+                      <DiamondIcon
+                        className={clsx(
+                          'absolute top-2.25 left-[-0.5px] hidden h-1.5 w-1.5 overflow-visible lg:block',
+                          dayIndex === selectedIndex
+                            ? 'fill-[#A87B3F] stroke-[#A87B3F]'
+                            : 'fill-transparent stroke-[#5C3A5C]/40',
+                        )}
+                      />
+                      <div className="relative">
+                        <div
                           className={clsx(
-                            'absolute top-2.25 left-[-0.5px] hidden h-1.5 w-1.5 overflow-visible lg:block',
+                            'font-mono text-sm',
                             dayIndex === selectedIndex
-                              ? 'fill-[#A87B3F] stroke-[#A87B3F]'
-                              : 'fill-transparent stroke-[#5C3A5C]/40',
+                              ? 'text-[#A87B3F]'
+                              : 'text-neutral-400',
                           )}
-                        />
-                        <div className="relative">
-                          <div
-                            className={clsx(
-                              'font-mono text-sm',
-                              dayIndex === selectedIndex
-                                ? 'text-[#A87B3F]'
-                                : 'text-neutral-400',
-                            )}
-                          >
-                            <Tab className="data-selected:not-data-focus:outline-hidden">
-                              <span className="absolute inset-0" />
-                              {day.name}
-                            </Tab>
-                          </div>
-                          <time
-                            dateTime={day.dateTime}
-                            className="mt-1.5 block text-2xl font-semibold tracking-tight text-neutral-200"
-                          >
-                            {day.date}
-                          </time>
+                        >
+                          <Tab className="data-selected:not-data-focus:outline-hidden">
+                            <span className="absolute inset-0" />
+                            {day.nome}
+                          </Tab>
                         </div>
+                        <time
+                          dateTime={day.dataHora}
+                          className="mt-1.5 block text-2xl font-semibold tracking-tight text-neutral-200"
+                        >
+                          {day.data}
+                        </time>
                       </div>
-                    ))}
-                  </>
-                )
-              }}
+                    </div>
+                  ))}
+                </>
+              )}
             </TabList>
           </div>
           <TabPanels className="lg:col-span-3">
-            {days
-              .filter(
-                (day, index, self) =>
-                  index ===
-                  self.findIndex(
-                    (d) => d.name === day.name && d.dateTime === day.dateTime,
-                  ),
-              )
-              .map((day, dayIndex) => (
-                <TabPanel
-                  key={`${day.name}-${day.dateTime}-${dayIndex}`}
-                  className="grid grid-cols-1 gap-x-8 gap-y-10 data-selected:not-data-focus:outline-hidden sm:grid-cols-2 sm:gap-y-16 md:grid-cols-3"
-                  unmount={false}
-                >
-                  {day.artistas &&
-                    day.artistas.length > 0 &&
-                    day.artistas.map((artista, artistaIndex) => (
-                      <ArtistaCard
-                        key={artistaIndex}
-                        artista={artista}
-                        artistaIndex={artistaIndex}
-                        clipPathId={id}
-                      />
-                    ))}
-                  {day.atividades &&
-                    day.atividades.length > 0 &&
-                    day.atividades.map((atividade, atividadeIndex) => (
-                      <AtividadeCard
-                        key={atividadeIndex}
-                        atividade={atividade}
-                        atividadeIndex={
-                          (day.artistas?.length || 0) + atividadeIndex
-                        }
-                        clipPathId={id}
-                      />
-                    ))}
-                </TabPanel>
-              ))}
+            {days.map((day, dayIndex) => (
+              <TabPanel
+                key={`${day.nome}-${day.dataHora}-${dayIndex}`}
+                className="grid grid-cols-1 gap-x-8 gap-y-10 data-selected:not-data-focus:outline-hidden sm:grid-cols-2 sm:gap-y-16 md:grid-cols-3"
+                unmount={false}
+              >
+                {day.artistas &&
+                  day.artistas.length > 0 &&
+                  day.artistas.map((artista, artistaIndex) => (
+                    <ArtistaCard
+                      key={artistaIndex}
+                      artista={artista}
+                      artistaIndex={artistaIndex}
+                      clipPathId={id}
+                    />
+                  ))}
+                {day.atividades &&
+                  day.atividades.length > 0 &&
+                  day.atividades.map((atividade, atividadeIndex) => (
+                    <AtividadeCard
+                      key={atividadeIndex}
+                      atividade={atividade}
+                      atividadeIndex={
+                        (day.artistas?.length || 0) + atividadeIndex
+                      }
+                      clipPathId={id}
+                    />
+                  ))}
+              </TabPanel>
+            ))}
           </TabPanels>
         </TabGroup>
       </Container>
