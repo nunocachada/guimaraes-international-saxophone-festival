@@ -32,7 +32,7 @@ export const days = [
         papel: 'FRANÇA',
         imagem: nicolasArsinejevicImage,
         biografia:
-          'Nicolas Arsinejevic é professor no CNSMP (Conservatoire National Supérieur de Musique et de Danse de Paris), França. Reconhecido internacionalmente pela sua excelência técnica e artística.',
+          'Solista e pedagogo, Nicolas Arsenijevic é um saxofonista francês nascido em 1988. Formado pelo Conservatoire National Supérieur de Musique et de Danse de Paris e laureado em diversos concursos internacionais (Concurso Adolphe Sax de Dinant, Andorra Sax Fest, Concurso Josip Nochta de Zagreb, entre outros), é convidado em todo o mundo para ministrar masterclasses e apresentar recitais. Atua regularmente em prestigiadas formações, como a Orquestra Filarmónica da Radio France e o Ensemble Intercontemporain. A sua discografia — que abrange repertório de criação contemporânea, música romântica com piano ou quarteto de cordas e música tradicional dos Balcãs com o grupo Kosmopolitevitch — reflete uma abordagem artística firmemente orientada para a exploração e inovação. Em consonância com a evolução e o dinamismo do seu instrumento, Nicolas Arsenijevic colabora com numerosos compositores, entre os quais Riccardo Nillni, Florent Caron Darras, Christian Lauba, Maël Bailly e Benjamin Attahir, tanto em contexto solístico como integrado em destacados ensembles de música contemporânea, como Court-Circuit, Alternance ou TM+. Dedicado à música de câmara, integrou durante muitos anos o ensemble de sopros Saxback, uma formação singular criada em torno da figura de Adolphe Sax e do instrumentário a ela associado. No mesmo domínio, o seu duo com a pianista Françoise Buffet-Arsenijevic tem-no levado a importantes salas francesas, como a Salle Gaveau e a Salle Cortot.\n\nEm 2024, Nicolas Arsenijevic foi nomeado para o prestigiado cargo de professor de saxofone no Conservatoire National Supérieur de Musique et de Danse de Paris.',
         informacoes: 'em breve',
         eventos: [
           'Dia de Abertura - 7 de Julho',
@@ -40,12 +40,7 @@ export const days = [
           'Workshops & Masterclasses - 9 de Julho',
           'Encerramento - 10 de Julho',
         ],
-        imagens: [
-          nicolasArsinejevicImage,
-          nicolasArsinejevicImage,
-          nicolasArsinejevicImage,
-          nicolasArsinejevicImage,
-        ],
+        imagens: [nicolasArsinejevicImage],
       },
       {
         nome: 'Henk Van Twillert',
@@ -66,7 +61,7 @@ export const days = [
         papel: 'PORTUGAL',
         imagem: brunoSantosImage,
         biografia:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
+          'Bruno Santos nasceu em janeiro de 1991 e iniciou os seus estudos musicais aos 12 anos na Orquestra Ligeira de Cambra. Frequentou a Sociedade Artística Banda de Vale de Cambra, o Conservatório de Música da JOBRA e a Universidade de Aveiro, onde concluiu, em 2017, o Mestrado em Ensino da Música (Saxofone). Ao longo do seu percurso trabalhou com vários saxofonistas de renome e foi selecionado para a Université Européenne de Saxophone Gap 2013, em França.\n\nFoi distinguido com o 1.º prémio no Concurso Internacional de Instrumentos de Sopro “Terras de La Salette” (2015) e participou na rubrica Novos Talentos do FISP 2021. Colaborou com diversas orquestras e ensembles sinfónicos nacionais. Atualmente leciona no Conservatório de Música de Aveiro Calouste Gulbenkian, orienta masterclasses e mantém uma atividade performativa regular em Portugal e no estrangeiro.\n\nDa sua discografia destacam-se os álbuns ROAD e STAGE, ambos distinguidos com prémios internacionais e com várias edições esgotadas, tendo sido apresentados em diversas salas e no World Saxophone Congress 2023.',
         informacoes: 'em breve',
         eventos: [
           'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. ',

@@ -75,10 +75,25 @@ const ParticiparButton = () => {
   )
 }
 
+const BIO_MAX_LENGTH = 280
+
 // Componente para cada card de artista com modal
 const ArtistaCard = ({ artista, artistaIndex, clipPathId }) => {
+  const [biografiaExpanded, setBiografiaExpanded] = useState(false)
+
   if (!artista.biografia && !artista.eventos?.length) {
     return null
+  }
+
+  const biografia = artista.biografia ?? ''
+  const shouldTruncate = biografia.length > BIO_MAX_LENGTH
+  const biografiaText =
+    !shouldTruncate || biografiaExpanded
+      ? biografia
+      : `${biografia.slice(0, BIO_MAX_LENGTH).trim()}...`
+
+  const handleToggleBiografia = () => {
+    setBiografiaExpanded((prev) => !prev)
   }
 
   return (
@@ -220,7 +235,32 @@ const ArtistaCard = ({ artista, artistaIndex, clipPathId }) => {
                     Biografia
                   </h3>
                   <p className="leading-relaxed text-neutral-300">
-                    {artista.biografia}
+                    {biografiaText}
+                    {shouldTruncate && (
+                      <>
+                        {' '}
+                        <button
+                          type="button"
+                          onClick={handleToggleBiografia}
+                          onKeyDown={(e) => {
+                            if (e.key === 'Enter' || e.key === ' ') {
+                              e.preventDefault()
+                              handleToggleBiografia()
+                            }
+                          }}
+                          className="inline text-sm font-medium text-sax-gold underline decoration-sax-gold/60 underline-offset-2 hover:decoration-sax-gold focus:outline-none focus:ring-2 focus:ring-sax-gold focus:ring-offset-2 focus:ring-offset-[#2a1f2a]"
+                          aria-expanded={biografiaExpanded}
+                          aria-label={
+                            biografiaExpanded
+                              ? 'Ver menos'
+                              : 'Ver mais biografia'
+                          }
+                          tabIndex={0}
+                        >
+                          {biografiaExpanded ? 'Ver menos' : 'Ver mais'}
+                        </button>
+                      </>
+                    )}
                   </p>
                 </div>
               )}
