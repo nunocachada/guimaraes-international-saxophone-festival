@@ -248,7 +248,7 @@ const ArtistaCard = ({ artista, artistaIndex, clipPathId }) => {
                               handleToggleBiografia()
                             }
                           }}
-                          className="inline text-sm font-medium text-sax-gold underline decoration-sax-gold/60 underline-offset-2 hover:decoration-sax-gold focus:outline-none focus:ring-2 focus:ring-sax-gold focus:ring-offset-2 focus:ring-offset-[#2a1f2a]"
+                          className="inline text-sm font-medium text-sax-gold underline decoration-sax-gold/60 underline-offset-2 hover:decoration-sax-gold focus:ring-2 focus:ring-sax-gold focus:ring-offset-2 focus:ring-offset-[#2a1f2a] focus:outline-none"
                           aria-expanded={biografiaExpanded}
                           aria-label={
                             biografiaExpanded
@@ -445,11 +445,11 @@ export function Artistas() {
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2
             id="artistas-title"
-            className="font-mono text-4xl font-medium tracking-tighter text-neutral-200 sm:text-5xl"
+            className="font-fonty text-5xl font-medium tracking-tighter text-neutral-200 sm:text-6xl"
           >
             Programa completo
           </h2>
-          <p className="mt-4 font-mono text-2xl tracking-tight text-neutral-300">
+          <p className="mt-4 font-fonty text-2xl tracking-tight text-neutral-300">
             Quatro dias repletos de música, aprendizagem e celebração do
             saxofone.
           </p>
