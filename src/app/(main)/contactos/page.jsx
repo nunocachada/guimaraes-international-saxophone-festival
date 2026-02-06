@@ -80,7 +80,7 @@ export default function Contactos() {
       <Container className="relative">
         <div className="mx-auto max-w-2xl lg:max-w-4xl">
           <div className="text-center">
-            <h1 className="font-syne text-4xl font-bold tracking-tight text-neutral-200 uppercase sm:text-5xl lg:text-6xl">
+            <h1 className="font-mono text-4xl font-bold tracking-tight text-neutral-200 uppercase sm:text-5xl lg:text-6xl">
               Contactos
             </h1>
             <p className="mt-6 font-mono text-xl leading-8 text-neutral-300 sm:text-2xl">
@@ -122,7 +122,7 @@ export default function Contactos() {
           </div>
 
           <div className="mt-20 rounded-lg bg-[#2a1f2a]/80 p-10 shadow-xl shadow-[#5C3A5C]/20 backdrop-blur-sm sm:p-12">
-            <h2 className="font-syne text-2xl font-semibold tracking-tight text-neutral-200 sm:text-3xl">
+            <h2 className="font-mono text-2xl font-semibold tracking-tight text-neutral-200 sm:text-3xl">
               Morada
             </h2>
             <dl className="mt-6 space-y-4">

@@ -4,7 +4,7 @@ import { Logo } from '@/components/Logo'
 export function Footer() {
   return (
     <footer className="mt-20 flex-none py-10">
-      <Container className="flex flex-col items-center justify-center font-syne">
+      <Container className="flex flex-col items-center justify-center font-mono">
         <div className="mb-10 flex items-center justify-center">
           <Logo className="mb-10 h-12 w-auto text-sax-gold" />
         </div>

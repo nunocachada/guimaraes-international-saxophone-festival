@@ -1,0 +1,412 @@
+================================================================================
+  CONTEÚDO DO FESTIVAL — FICHEIRO PARA EDIÇÃO
+  (Mantenha esta estrutura. Cada campo está identificado para depois voltar ao código.)
+================================================================================
+
+INSTRUÇÕES:
+- Edite apenas o texto após os dois pontos (:) de cada linha.
+- Para campos que não existem, use (vazio) ou deixe em branco.
+- Em "Imagem" e "Imagens", use apenas o nome do ficheiro da foto (ex: nuno_silva.jpg).
+- Em listas (Eventos, etc.), escreva um item por linha, começando por • (bullet).
+- Não apague as etiquetas em MAIÚSCULAS nem os separadores === ou ---.
+
+================================================================================
+FIM DAS INSTRUÇÕES
+================================================================================
+
+
+################################################################################
+# DIA 1 — SOBRE / ARTISTAS
+################################################################################
+
+NOME DO DIA: Sobre
+DATA (texto para mostrar): Artistas
+DATA (formato ano-mês-dia, ex: 2026-07-07): 2026-07-07
+
+--------------------------------------------------------------------------------
+ARTISTA 1
+--------------------------------------------------------------------------------
+Nome: Ties Mellemma
+Papel: HOLANDA
+Imagem (nome do ficheiro): Ties_Mellema.webp
+Biografia: "Não me prendo a estilos; faço música. Tenho uma curiosidade particular pela música que existe entre os estilos."
+
+ Embora Ties Mellema seja indiscutivelmente um virtuoso do saxofone, vê-se antes de tudo como um músico. A sua arte expressa-se numa exploração contínua dos limites da música. Em 2015, Ties ficou gravemente doente durante vários anos e, para além de tocar saxofone, começou a compor com música electrónica. Após 20 anos como membro fundador do Amstel Quartet, Ties decidiu que era altura de seguir o seu próprio caminho. Lançou o seu grupo crossover PEAX em 2019, com o qual trabalhou até 2025. Atualmente, prossegue uma carreura como artista a solo, colaborando com músicos que partilham a sua visão de fusão de estilos. Ties recebeu inúmeros prémios, incluindo o prestigiado Prémio de Música dos Países Baixos. Vários álbuns, tanto como artista a solo como em conjunto, foram editados pelas suas próprias editoras, Amstel Records e PEAX Records. Ties Mellema utiliza um saxofone baixo Eppelsheim, cedido pela colecção da Fundação Holandesa de Instrumentos Musicais.
+Informações: em breve
+Eventos:
+• Dia de Abertura - 7 de Julho
+• Concertos - 8 de Julho
+• Workshops & Masterclasses - 9 de Julho
+• Ties Mellemma Talk - "Find your own voice" - 9 de Julho
+• Encerramento - 10 de Julho
+Imagens (nomes dos ficheiros, um por linha):
+• Ties_Mellema.webp
+
+--------------------------------------------------------------------------------
+ARTISTA 2
+--------------------------------------------------------------------------------
+Nome: Nicolas Arsinejevic
+Papel: FRANÇA
+Imagem (nome do ficheiro): Nicolas_Arsenijevic.webp
+Biografia: Nicolas Arsinejevic é professor no CNSMP (Conservatoire National Supérieur de Musique et de Danse de Paris), França. Reconhecido internacionalmente pela sua excelência técnica e artística.
+Informações: em breve
+Eventos:
+• Dia de Abertura - 7 de Julho
+• Concertos - 8 de Julho (Conservatório)
+• Workshops & Masterclasses - 9 de Julho
+• Encerramento - 10 de Julho
+Imagens (nomes dos ficheiros, um por linha):
+• Nicolas_Arsenijevic.webp
+• Nicolas_Arsenijevic.webp
+• Nicolas_Arsenijevic.webp
+• Nicolas_Arsenijevic.webp
+
+--------------------------------------------------------------------------------
+ARTISTA 3
+--------------------------------------------------------------------------------
+Nome: Henk Van Twillert
+Papel: HOLANDA
+Imagem (nome do ficheiro): henk-van-twillert.jpg
+Biografia: Henk Van Twillert é um renomado saxofonista holandês com uma carreira internacional destacada. Especialista em pedagogia do saxofone e performance contemporânea.
+Informações: em breve
+Eventos:
+• Dia de Abertura - Stars of the Future (primeira sessão)
+• Workshops & Masterclasses - 9 de Julho
+• Conferência - 7 de Julho
+Imagens (nomes dos ficheiros, um por linha):
+• henk-van-twillert.jpg
+
+--------------------------------------------------------------------------------
+ARTISTA 4
+--------------------------------------------------------------------------------
+Nome: Bruno Santos
+Papel: PORTUGAL
+Imagem (nome do ficheiro): bruno-santos.jpg
+Biografia: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
+Informações: em breve
+Eventos:
+• Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
+• Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
+• Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
+• Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
+Imagens (nomes dos ficheiros, um por linha):
+• bruno-santos.jpg
+
+--------------------------------------------------------------------------------
+ARTISTA 5
+--------------------------------------------------------------------------------
+Nome: Nuno Silva
+Papel: PORTUGAL
+Imagem (nome do ficheiro): nuno_silva.jpg
+Biografia: Nuno Silva é um saxofonista português com formação no Breda Conservatory. Reconhecido pela sua técnica refinada e interpretação expressiva.
+Informações: em breve
+Eventos:
+• Dia de Abertura - 7 de Julho
+• Concerto de Nuno Silva - 7 de Julho (main hall)
+• Concertos - 8 de Julho
+• Workshops & Masterclasses - 9 de Julho
+• Encerramento - 10 de Julho
+Imagens (nomes dos ficheiros, um por linha):
+• nuno_silva.jpg
+
+--------------------------------------------------------------------------------
+ARTISTA 6
+--------------------------------------------------------------------------------
+Nome: Luis Miguel
+Papel: PORTUGAL
+Imagem (nome do ficheiro): luis-miguel.jpg
+Biografia: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
+Informações: lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
+Eventos:
+• Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
+• Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
+• Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
+• Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
+Imagens (nomes dos ficheiros, um por linha):
+• luis-miguel.jpg
+
+################################################################################
+# DIA 2 — PROGRAMAÇÃO 7 DE JULHO
+################################################################################
+
+NOME DO DIA: Programação
+DATA (texto para mostrar): 7 de Julho
+DATA (formato ano-mês-dia): 2026-07-07
+
+--------------------------------------------------------------------------------
+ATIVIDADE 1
+--------------------------------------------------------------------------------
+Nome: Receção aos participantes
+Subtítulo: (vazio)
+Descrição: Momento de boas-vindas e receção a todos os participantes do festival. Será fornecida informação importante sobre o programa e as instalações.
+Localização: Piso 2 do Teatro Jordão, Conservatório de Guimarães
+Horário: 09:00 - 09:30
+Informações: (vazio)
+
+--------------------------------------------------------------------------------
+ATIVIDADE 2
+--------------------------------------------------------------------------------
+Nome: Warm up work
+Subtítulo: Henk van Twillert
+Descrição: Sax, Body & Mind - Sessão de aquecimento físico e mental para músicos. Uma abordagem holística que combina técnica do saxofone com exercícios de corpo e mente para preparar os participantes para o dia.
+Localização: Piso 2 do Teatro Jordão, Conservatório de Guimarães
+Horário: 09:45 - 10:15
+Informações: Esta sessão será orientada por Henk van Twillert.
+
+--------------------------------------------------------------------------------
+ATIVIDADE 3
+--------------------------------------------------------------------------------
+Nome: Masterclasses
+Subtítulo: Ties Mellema, Nicolas Arsenevich, Nuno Silva
+Descrição: Explicar o que é uma masterclass e descrever o caso específico destas aulas: duração etc
+Localização: Piso 2 do Teatro Jordão
+Horário: Vários horários ao longo do festival
+Informações: Colocar info sobre as salas por exemplo, "Sala SI12 - Ties Mellema, Sala SI13 - Nicolas Arsenevich, Sala SI14 - Nuno Silva".
+
+--------------------------------------------------------------------------------
+ATIVIDADE 4
+--------------------------------------------------------------------------------
+Nome: Stars of the Future
+Subtítulo: Henk van Twillert (first session)
+Descrição: Programa dedicado aos jovens talentos do saxofone. Sessões especiais com Henk van Twillert para desenvolver e destacar os futuros astros do saxofone.
+Localização: Piso 2 do Teatro Jordão
+Horário: 11:30 - 12:30
+Informações: (vazio)
+
+--------------------------------------------------------------------------------
+ATIVIDADE 5
+--------------------------------------------------------------------------------
+Nome: Lunch concert
+Subtítulo: Stars of the Future (Grupo 1) · Pátio TJGA (Piso 1 – salas individuais)
+Descrição: Concertos durante o almoço apresentados pelos participantes do programa "Stars of the Future". Uma oportunidade para desfrutar de música enquanto se alimenta.
+Localização: Pátio TJGA (Piso 1 – salas individuais) / Bandas de Garagem
+Horário: 13:10 - 13:30
+Informações: (vazio)
+
+--------------------------------------------------------------------------------
+ATIVIDADE 6
+--------------------------------------------------------------------------------
+Nome: Masterclasses
+Subtítulo: Prof. Ties Mellema / Nicholas A.
+Descrição: Sessões de masterclass com professores renomados internacionalmente. Oportunidade única para aprender técnicas avançadas, interpretação e receber feedback personalizado dos melhores profissionais do saxofone.
+Localização: Piso 2 do Teatro Jordão
+Horário: Vários horários ao longo do festival
+Informações: (vazio)
+
+--------------------------------------------------------------------------------
+ATIVIDADE 7
+--------------------------------------------------------------------------------
+Nome: Conferência
+Subtítulo: Miguel Pais Clemente, Henk van Twillert e Joaquim Gabriel
+Descrição: Conferência com especialistas sobre temas relevantes para o mundo do saxofone. Uma oportunidade para discussão e partilha de conhecimento.
+Localização: Piso 2 do Teatro Jordão
+Horário: 16:15 - 17:30
+Informações: (vazio)
+
+--------------------------------------------------------------------------------
+ATIVIDADE 8
+--------------------------------------------------------------------------------
+Nome: All Sax Orchestra
+Subtítulo: Ensaios
+Descrição: Ensaios da All Sax Orchestra: grupo de música de câmara destinado a alunos de nível académico avançado. Os alunos serão colocados mediante o seu nível académico.
+Localização: Piso 2 do Teatro Jordão, Conservatório de Guimarães
+Horário: (vazio)
+Informações: (vazio)
+
+--------------------------------------------------------------------------------
+ATIVIDADE 9
+--------------------------------------------------------------------------------
+Nome: Concerto de Nuno Silva
+Subtítulo: Main hall of the school
+Descrição: Concerto solo do renomado saxofonista português Nuno Silva. Uma apresentação especial no hall principal da escola.
+Localização: Foyer, Piso 2 do Teatro Jordão, Conservatório de Guimarães
+Horário: 21:00 - 22:30
+Informações: (vazio)
+
+################################################################################
+# DIA 3 — PROGRAMAÇÃO 8 DE JULHO
+################################################################################
+
+NOME DO DIA: Programação
+DATA (texto para mostrar): 8 de Julho
+DATA (formato ano-mês-dia): 2026-07-08
+
+--------------------------------------------------------------------------------
+ATIVIDADE 1
+--------------------------------------------------------------------------------
+Nome: Masterclasses
+Subtítulo: Ties Mellema, Nicolas Arsenevich, Nuno Silva
+Descrição: Sessões de masterclass com professores renomados internacionalmente. Oportunidade única para aprender técnicas avançadas, interpretação e receber feedback personalizado dos melhores profissionais do saxofone.
+Localização: Piso 2 do Teatro Jordão
+Horário: Vários horários ao longo do festival
+Informações: (vazio)
+
+--------------------------------------------------------------------------------
+ATIVIDADE 2
+--------------------------------------------------------------------------------
+Nome: Stars of the Future
+Subtítulo: Henk van Twillert (second session)
+Descrição: Programa dedicado aos jovens talentos do saxofone. Sessões especiais com Henk van Twillert para desenvolver e destacar os futuros astros do saxofone.
+Localização: Piso 2 do Teatro Jordão
+Horário: 11:30 - 12:30
+Informações: (vazio)
+
+--------------------------------------------------------------------------------
+ATIVIDADE 3
+--------------------------------------------------------------------------------
+Nome: Lunch concert
+Subtítulo: Stars of the Future (Grupo 2) · Pátio TJGA / Bandas de Garagem
+Descrição: Concertos durante o almoço apresentados pelos participantes do programa "Stars of the Future". Uma oportunidade para desfrutar de música enquanto se alimenta.
+Localização: Pátio TJGA (Piso 1 – salas individuais) / Bandas de Garagem
+Horário: 13:10 - 13:30
+Informações: (vazio)
+
+--------------------------------------------------------------------------------
+ATIVIDADE 4
+--------------------------------------------------------------------------------
+Nome: Masterclasses
+Subtítulo: Prof. Ties Mellema / Prof. Nicholas Arsenevich
+Descrição: Explicar o que é uma masterclass e descrever o caso específico destas aulas: duração etc
+Localização: Piso 2 do Teatro Jordão
+Horário: Vários horários ao longo do festival
+Informações: Colocar info sobre as salas por exemplo, "Sala SI12 - Ties Mellema, Sala SI13 - Nicolas Arsenevich, Sala SI14 - Nuno Silva".
+
+--------------------------------------------------------------------------------
+ATIVIDADE 5
+--------------------------------------------------------------------------------
+Nome: Sponsors' time
+Subtítulo: Sponsors Happy Hour · Cada sponsor apresenta a sua marca e produtos (15–25 minutos)
+Descrição: Momento dedicado aos patrocinadores do festival. Cada patrocinador terá a oportunidade de apresentar a sua marca e produtos durante 15-25 minutos.
+Localização: Piso 2 do Teatro Jordão
+Horário: 14:30 - 16:30
+Informações: (vazio)
+
+--------------------------------------------------------------------------------
+ATIVIDADE 6
+--------------------------------------------------------------------------------
+Nome: Coro Cordão
+Subtítulo: Bandas de Garagem
+Descrição: Apresentação do Coro Cordão, uma das bandas de garagem participantes no festival.
+Localização: Bandas de Garagem
+Horário: 15:30 - 16:30
+Informações: (vazio)
+
+--------------------------------------------------------------------------------
+ATIVIDADE 7
+--------------------------------------------------------------------------------
+Nome: All Sax Orchestra
+Subtítulo: Ensaio
+Descrição: Ensaios da All Sax Orchestra: grupo de música de câmara destinado a alunos de nível académico avançado. Os alunos serão colocados mediante o seu nível académico.
+Localização: Piso 2 do Teatro Jordão, Conservatório de Guimarães
+Horário: (vazio)
+Informações: (vazio)
+
+--------------------------------------------------------------------------------
+ATIVIDADE 8
+--------------------------------------------------------------------------------
+Nome: Concerto no Conservatório
+Subtítulo: Nicolas A.
+Descrição: Concerto especial no Conservatório com Nicolas Arsinejevic. Uma apresentação única num espaço histórico e acústico excecional.
+Localização: Conservatório
+Horário: 21:00 - 22:30
+Informações: (vazio)
+
+################################################################################
+# DIA 4 — PROGRAMAÇÃO 9 DE JULHO
+################################################################################
+
+NOME DO DIA: Programação
+DATA (texto para mostrar): 9 de Julho
+DATA (formato ano-mês-dia): 2026-07-09
+
+--------------------------------------------------------------------------------
+ATIVIDADE 1
+--------------------------------------------------------------------------------
+Nome: Masterclass
+Subtítulo: Prof. Ties Mellema / Nuno S.
+Descrição: Sessões de masterclass com professores renomados internacionalmente. Oportunidade única para aprender técnicas avançadas, interpretação e receber feedback personalizado dos melhores profissionais do saxofone.
+Localização: Piso 2 do Teatro Jordão
+Horário: Vários horários ao longo do festival
+Informações: (vazio)
+
+--------------------------------------------------------------------------------
+ATIVIDADE 2
+--------------------------------------------------------------------------------
+Nome: Jazz Workshop
+Subtítulo: Eastman artist
+Descrição: Workshop de jazz com um artista Eastman. Aprenda técnicas de improvisação, swing e interpretação jazzística no saxofone.
+Localização: Piso 2 do Teatro Jordão
+Horário: 11:15 - 12:45
+Informações: (vazio)
+
+--------------------------------------------------------------------------------
+ATIVIDADE 3
+--------------------------------------------------------------------------------
+Nome: Jazz concert
+Subtítulo: (vazio)
+Descrição: Concerto de jazz apresentado pelos participantes do workshop. Uma oportunidade para ouvir e desfrutar de música jazz ao vivo.
+Localização: Piso 2 do Teatro Jordão
+Horário: 13:00 - 13:20
+Informações: (vazio)
+
+--------------------------------------------------------------------------------
+ATIVIDADE 4
+--------------------------------------------------------------------------------
+Nome: Ties Mellema Talk
+Subtítulo: Find your own voice
+Descrição: Talk inspiracional com Ties Mellema sobre "Find your own voice" (Encontra a tua própria voz). Uma sessão sobre desenvolvimento artístico pessoal e expressão única.
+Localização: Piso 2 do Teatro Jordão
+Horário: 17:30 - 18:35
+Informações: (vazio)
+
+################################################################################
+# DIA 5 — PROGRAMAÇÃO 10 DE JULHO
+################################################################################
+
+NOME DO DIA: Programação
+DATA (texto para mostrar): 10 de Julho
+DATA (formato ano-mês-dia): 2026-07-10
+
+--------------------------------------------------------------------------------
+ATIVIDADE 1
+--------------------------------------------------------------------------------
+Nome: Preparation time for final concerts
+Subtítulo: (vazio)
+Descrição: Tempo dedicado à preparação final para os concertos de encerramento. Momento para ensaios individuais e em grupo.
+Localização: Piso 2 do Teatro Jordão
+Horário: 09:30 - 13:00
+Informações: (vazio)
+
+--------------------------------------------------------------------------------
+ATIVIDADE 2
+--------------------------------------------------------------------------------
+Nome: All Sax / Be Sax
+Subtítulo: Ensaios finais
+Descrição: (vazio)
+Localização: (vazio)
+Horário: (vazio)
+Informações: (vazio)
+
+--------------------------------------------------------------------------------
+ATIVIDADE 3
+--------------------------------------------------------------------------------
+Nome: Ensaio Coro Cordão
+Subtítulo: (vazio)
+Descrição: Ensaio final do Coro Cordão, preparando-se para a apresentação no concerto final.
+Localização: Piso 2 do Teatro Jordão
+Horário: 09:30 - 13:00
+Informações: (vazio)
+
+--------------------------------------------------------------------------------
+ATIVIDADE 4
+--------------------------------------------------------------------------------
+Nome: CAA Concert T2Sax
+Subtítulo: Final concert, with soloists · Teatro Jordão
+Descrição: Concerto final do festival com a participação de solistas. Uma apresentação grandiosa no Teatro Jordão que marca o encerramento do festival.
+Localização: Teatro Jordão
+Horário: 21:00 - 23:00
+Informações: (vazio)
+
+================================================================================
+FIM DO DOCUMENTO
+================================================================================

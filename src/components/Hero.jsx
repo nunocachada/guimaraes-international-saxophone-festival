@@ -22,7 +22,7 @@ export function Hero() {
             <div className="flex flex-col">
               <span className="text-5xl tracking-tight text-neutral-200 uppercase sm:text-7xl">
                 GUIMARÃES International
-                {/* <span className="my-2 block font-syne text-5xl font-semibold text-sax-gold sm:text-7xl">
+                {/* <span className="my-2 block font-mono text-5xl font-semibold text-sax-gold sm:text-7xl">
                   SAXOPHONE{' '}
                 </span> */}
                 {/* <TextRipple
@@ -33,7 +33,7 @@ export function Hero() {
                   Saxophone
                 </TextRipple> */}
                 <TextRipple2
-                  className="my-2 block font-fonty text-6xl font-semibold text-sax-gold-dark hover:text-sax-gold sm:text-9xl"
+                  className="my-2 block font-fonty text-6xl font-semibold text-sax-gold sm:text-9xl"
                   falloff={0.15}
                   maxScale={1.2}
                 >

@@ -25,7 +25,7 @@ function PageLink({ page }) {
         position="left"
         className="relative flex flex-col items-start pl-8"
       >
-        <h3 className="mt-6 font-syne text-base font-semibold text-sax-gold">
+        <h3 className="mt-6 font-mono text-base font-semibold text-sax-gold">
           {page.titulo}
         </h3>
         <time
@@ -56,7 +56,7 @@ export function PageLinks({ title, pages, intro, className }) {
     <div className={clsx('relative pt-16 sm:pt-24 lg:pt-32', className)}>
       <Container className={intro ? 'mt-16' : 'mt-12'}>
         <div className="mb-12 text-center">
-          <h2 className="font-syne text-3xl font-semibold text-sax-gold sm:text-4xl">
+          <h2 className="font-mono text-3xl font-semibold text-sax-gold sm:text-4xl">
             {title}
           </h2>
           {intro && <p className="mt-4 font-mono text-neutral-500">{intro}</p>}

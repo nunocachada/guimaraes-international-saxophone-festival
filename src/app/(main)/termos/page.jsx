@@ -14,7 +14,7 @@ export default function Termos() {
       <Container className="relative">
         <div className="mx-auto max-w-4xl">
           <div className="text-center">
-            <h1 className="font-syne text-4xl font-bold tracking-tight text-neutral-200 uppercase sm:text-5xl lg:text-6xl">
+            <h1 className="font-mono text-4xl font-bold tracking-tight text-neutral-200 uppercase sm:text-5xl lg:text-6xl">
               Termos e Condições
             </h1>
             <p className="mt-6 font-mono text-sm text-neutral-400">
@@ -25,7 +25,7 @@ export default function Termos() {
           <div className="mt-16 space-y-12">
             {/* Secção 1 */}
             <section className="rounded-lg bg-[#000000]/80 px-4 py-6 shadow-xl shadow-[#5C3A5C]/20 backdrop-blur-sm sm:px-8 sm:py-10">
-              <h2 className="font-syne text-2xl font-semibold tracking-tight text-sax-gold sm:text-3xl">
+              <h2 className="font-mono text-2xl font-semibold tracking-tight text-sax-gold sm:text-3xl">
                 1. Identificação da Entidade
               </h2>
               <div className="mt-6 space-y-4 font-mono text-base leading-7 text-neutral-300">
@@ -84,7 +84,7 @@ export default function Termos() {
 
             {/* Secção 2 */}
             <section className="rounded-lg bg-[#000000]/80 px-4 py-6 shadow-xl shadow-[#5C3A5C]/20 backdrop-blur-sm sm:px-8 sm:py-10">
-              <h2 className="font-syne text-2xl font-semibold tracking-tight text-sax-gold sm:text-3xl">
+              <h2 className="font-mono text-2xl font-semibold tracking-tight text-sax-gold sm:text-3xl">
                 2. Objeto
               </h2>
               <div className="mt-6 space-y-4 font-mono text-base leading-7 text-neutral-300">
@@ -109,7 +109,7 @@ export default function Termos() {
 
             {/* Secção 3 */}
             <section className="rounded-lg bg-[#000000]/80 px-4 py-6 shadow-xl shadow-[#5C3A5C]/20 backdrop-blur-sm sm:px-8 sm:py-10">
-              <h2 className="font-syne text-2xl font-semibold tracking-tight text-sax-gold sm:text-3xl">
+              <h2 className="font-mono text-2xl font-semibold tracking-tight text-sax-gold sm:text-3xl">
                 3. Inscrição
               </h2>
               <div className="mt-6 space-y-4 font-mono text-base leading-7 text-neutral-300">
@@ -132,7 +132,7 @@ export default function Termos() {
 
             {/* Secção 4 */}
             <section className="rounded-lg bg-[#000000]/80 px-4 py-6 shadow-xl shadow-[#5C3A5C]/20 backdrop-blur-sm sm:px-8 sm:py-10">
-              <h2 className="font-syne text-2xl font-semibold tracking-tight text-sax-gold sm:text-3xl">
+              <h2 className="font-mono text-2xl font-semibold tracking-tight text-sax-gold sm:text-3xl">
                 4. Preços e Pagamento
               </h2>
               <div className="mt-6 space-y-4 font-mono text-base leading-7 text-neutral-300">
@@ -238,7 +238,7 @@ export default function Termos() {
 
             {/* Secção 5 */}
             <section className="rounded-lg bg-[#000000]/80 px-4 py-6 shadow-xl shadow-[#5C3A5C]/20 backdrop-blur-sm sm:px-8 sm:py-10">
-              <h2 className="font-syne text-2xl font-semibold tracking-tight text-sax-gold sm:text-3xl">
+              <h2 className="font-mono text-2xl font-semibold tracking-tight text-sax-gold sm:text-3xl">
                 5. Cancelamento e Reembolso
               </h2>
               <div className="mt-6 space-y-4 font-mono text-base leading-7 text-neutral-300">
@@ -276,7 +276,7 @@ export default function Termos() {
 
             {/* Secção 6 */}
             <section className="rounded-lg bg-[#000000]/80 px-4 py-6 shadow-xl shadow-[#5C3A5C]/20 backdrop-blur-sm sm:px-8 sm:py-10">
-              <h2 className="font-syne text-2xl font-semibold tracking-tight text-sax-gold sm:text-3xl">
+              <h2 className="font-mono text-2xl font-semibold tracking-tight text-sax-gold sm:text-3xl">
                 6. Responsabilidades
               </h2>
               <div className="mt-6 space-y-4 font-mono text-base leading-7 text-neutral-300">
@@ -302,7 +302,7 @@ export default function Termos() {
 
             {/* Secção 7 */}
             <section className="rounded-lg bg-[#000000]/80 px-4 py-6 shadow-xl shadow-[#5C3A5C]/20 backdrop-blur-sm sm:px-8 sm:py-10">
-              <h2 className="font-syne text-2xl font-semibold tracking-tight text-sax-gold sm:text-3xl">
+              <h2 className="font-mono text-2xl font-semibold tracking-tight text-sax-gold sm:text-3xl">
                 7. Direitos de Imagem
               </h2>
               <div className="mt-6 space-y-4 font-mono text-base leading-7 text-neutral-300">
@@ -324,7 +324,7 @@ export default function Termos() {
 
             {/* Secção 8 */}
             <section className="rounded-lg bg-[#000000]/80 px-4 py-6 shadow-xl shadow-[#5C3A5C]/20 backdrop-blur-sm sm:px-8 sm:py-10">
-              <h2 className="font-syne text-2xl font-semibold tracking-tight text-sax-gold sm:text-3xl">
+              <h2 className="font-mono text-2xl font-semibold tracking-tight text-sax-gold sm:text-3xl">
                 8. Proteção de Dados
               </h2>
               <div className="mt-6 space-y-4 font-mono text-base leading-7 text-neutral-300">
@@ -352,7 +352,7 @@ export default function Termos() {
 
             {/* Secção 9 */}
             <section className="rounded-lg bg-[#000000]/80 px-4 py-6 shadow-xl shadow-[#5C3A5C]/20 backdrop-blur-sm sm:px-8 sm:py-10">
-              <h2 className="font-syne text-2xl font-semibold tracking-tight text-sax-gold sm:text-3xl">
+              <h2 className="font-mono text-2xl font-semibold tracking-tight text-sax-gold sm:text-3xl">
                 9. Alterações ao Programa
               </h2>
               <div className="mt-6 space-y-4 font-mono text-base leading-7 text-neutral-300">
@@ -371,7 +371,7 @@ export default function Termos() {
 
             {/* Secção 10 */}
             <section className="rounded-lg bg-[#000000]/80 px-4 py-6 shadow-xl shadow-[#5C3A5C]/20 backdrop-blur-sm sm:px-8 sm:py-10">
-              <h2 className="font-syne text-2xl font-semibold tracking-tight text-sax-gold sm:text-3xl">
+              <h2 className="font-mono text-2xl font-semibold tracking-tight text-sax-gold sm:text-3xl">
                 10. Lei Aplicável e Foro
               </h2>
               <div className="mt-6 space-y-4 font-mono text-base leading-7 text-neutral-300">

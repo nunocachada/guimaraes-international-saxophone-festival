@@ -337,7 +337,7 @@ export function Programa() {
     <section id="programa" aria-label="Programa" className="py-20 sm:py-32">
       <Container className="relative z-10">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-4xl lg:pr-24">
-          <h2 className="font-syne text-4xl font-medium tracking-tighter text-neutral-200 sm:text-5xl">
+          <h2 className="font-mono text-4xl font-medium tracking-tighter text-neutral-200 sm:text-5xl">
             Quatro dias repletos de música, aprendizagem e celebração do
             saxofone.
           </h2>
