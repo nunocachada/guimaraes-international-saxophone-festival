@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { CalendarIcon, HomeIcon, MailIcon, PencilIcon } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { buttonVariants } from '@/components/ui/button'
+import { Logo } from '@/components/Logo'
 
 import {
   Tooltip,
@@ -55,10 +56,20 @@ export default function Rodape() {
       {/* <footer className="bg-[#1a0f1a]"> */}
       <footer className="bg-[#000000]">
         <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
+          <div className="mb-12 flex justify-center">
+            <Logo
+              size="sm"
+              text="Guimarães International Saxophone Festival * 2026 * "
+              className=""
+              linkHref="/"
+              linkAriaLabel="Guimarães International Saxophone Festival - Página inicial"
+            />
+          </div>
           <nav
             aria-label="Rodapé"
             className="-mb-6 flex flex-wrap justify-center gap-x-12 gap-y-3 font-mono text-sm/6"
           >
+            {' '}
             {navegacao.principal.map((item) => (
               <a
                 key={item.nome}
