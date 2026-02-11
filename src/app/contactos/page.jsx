@@ -75,12 +75,15 @@ const contactos = [
 
 export default function Contactos() {
   return (
-    <div className="relative bg-[#1a0f1a] py-20 sm:py-32">
-      <BackgroundImage className="-top-36 -bottom-14" />
+    <div className="relative bg-[#000000] py-20 sm:py-32">
+      <BackgroundImage
+        backgroundColor="bg-[#000000]"
+        className="-top-36 -bottom-14"
+      />
       <Container className="relative">
         <div className="mx-auto max-w-2xl lg:max-w-4xl">
           <div className="text-center">
-            <h1 className="font-mono text-4xl font-bold tracking-tight text-neutral-200 uppercase sm:text-5xl lg:text-6xl">
+            <h1 className="font-fonty text-4xl font-bold tracking-tight text-neutral-200 uppercase sm:text-5xl lg:text-6xl">
               Contactos
             </h1>
             <p className="mt-6 font-mono text-xl leading-8 text-neutral-300 sm:text-2xl">
@@ -93,7 +96,7 @@ export default function Contactos() {
               const Conteudo = contacto.href ? (
                 <a
                   href={contacto.href}
-                  className="group flex flex-col items-center rounded-lg bg-[#2a1f2a]/80 p-8 text-center shadow-xl shadow-[#5C3A5C]/20 backdrop-blur-sm transition-all hover:bg-[#2a1f2a] hover:shadow-[#5C3A5C]/40"
+                  className="group flex h-full w-full flex-col items-center rounded-lg bg-[#2a1f2a]/80 p-8 text-center shadow-xl shadow-[#5C3A5C]/20 backdrop-blur-sm transition-all hover:bg-[#2a1f2a] hover:shadow-[#5C3A5C]/40"
                 >
                   <div className="text-sax-gold transition-colors group-hover:text-[#B8860B]">
                     {contacto.icone}
@@ -104,9 +107,19 @@ export default function Contactos() {
                   <dd className="mt-2 text-base font-medium text-neutral-200">
                     {contacto.valor}
                   </dd>
+                  {contacto.tipo === 'Telefone Fixo' && (
+                    <span className="mt-1 font-mono text-xs text-neutral-400">
+                      (chamada para rede fixa nacional)
+                    </span>
+                  )}
+                  {contacto.tipo === 'Telefone Móvel' && (
+                    <span className="mt-1 font-mono text-xs text-neutral-400">
+                      (chamada para rede móvel nacional)
+                    </span>
+                  )}
                 </a>
               ) : (
-                <div className="flex flex-col items-center rounded-lg bg-[#2a1f2a]/80 p-8 text-center shadow-xl shadow-[#5C3A5C]/20 backdrop-blur-sm">
+                <div className="flex h-full w-full flex-col items-center rounded-lg bg-[#2a1f2a]/80 p-8 text-center shadow-xl shadow-[#5C3A5C]/20 backdrop-blur-sm">
                   <div className="text-sax-gold">{contacto.icone}</div>
                   <dt className="mt-4 font-mono text-sm font-semibold tracking-tight text-sax-gold uppercase">
                     {contacto.tipo}
@@ -114,10 +127,24 @@ export default function Contactos() {
                   <dd className="mt-2 text-base font-medium text-neutral-200">
                     {contacto.valor}
                   </dd>
+                  {contacto.tipo === 'Telefone Fixo' && (
+                    <span className="mt-1 font-mono text-xs text-neutral-400">
+                      (chamada para rede fixa nacional)
+                    </span>
+                  )}
+                  {contacto.tipo === 'Telefone Móvel' && (
+                    <span className="mt-1 font-mono text-xs text-neutral-400">
+                      (chamada para rede móvel nacional)
+                    </span>
+                  )}
                 </div>
               )
 
-              return <dl key={contacto.tipo}>{Conteudo}</dl>
+              return (
+                <dl key={contacto.tipo} className="flex h-full">
+                  {Conteudo}
+                </dl>
+              )
             })}
           </div>
 

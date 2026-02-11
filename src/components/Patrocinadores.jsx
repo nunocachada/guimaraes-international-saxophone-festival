@@ -16,9 +16,14 @@ import logoCardosoConceicao from '@/images/logos/cardoso-conceicao.png'
 import logoBuffetCrampon from '@/images/logos/buffet-crampon.png'
 import logoEsmae from '@/images/logos/esmae.png'
 import logoMunicipio from '@/images/logos/municipio.svg'
+import logoAmNogueira from '@/images/logos/americo-nogueira.svg'
+import bg from '@/images/logos/bg.svg'
+import vandoren from '@/images/logos/vandoren.svg'
+import eastman from '@/images/logos/eastman2.svg'
 
 const parceiros = [
   { name: 'Sociedade Musical de Guimarães', logo: logoSmg },
+  { name: 'Municipio de Guimarães', logo: logoMunicipio },
   { name: 'Fundação Manuel António da Mota', logo: logoFundacao },
   // { name: 'Mota Engil Mecenas', logo: logoMotaEngil },
   { name: 'MaferMúsica', logo: logoMaferMusica },
@@ -30,7 +35,10 @@ const parceiros = [
   { name: 'Cardoso & Conceição', logo: logoCardosoConceicao },
   { name: 'Buffet Crampon', logo: logoBuffetCrampon },
   { name: 'Esmae', logo: logoEsmae },
-  { name: 'Municipio de Guimarães', logo: logoMunicipio },
+  { name: 'Américo Nogueira', logo: logoAmNogueira },
+  { name: 'BG', logo: bg },
+  { name: 'Vandoren', logo: vandoren },
+  { name: 'Eastman', logo: eastman },
 ]
 
 function Patrocinadores() {
@@ -41,6 +49,7 @@ function Patrocinadores() {
           <div className="group relative m-auto max-w-2xl lg:max-w-4xl lg:px-12">
             <div className="flex flex-col items-center md:flex-row">
               <div className="mb-4 hidden sm:block md:mb-0 md:max-w-44 md:border-r md:border-gray-600 md:pr-6">
+                <p className="text-end text-sm text-gray-400">Apoios</p>
                 <p className="text-end text-sm text-gray-400">Patrocinadores</p>
               </div>
               <div className="relative py-6 md:w-[calc(100%-11rem)]">

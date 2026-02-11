@@ -14,7 +14,11 @@ import logoCardosoConceicao from '@/images/logos/cardoso-conceicao.png'
 import logoBuffetCrampon from '@/images/logos/buffet-crampon.png'
 import logoEsmae from '@/images/logos/esmae.png'
 import logoMunicipio from '@/images/logos/municipio.svg'
-import Marquee from '@/components/ui/marquee'
+// import Marquee from '@/components/ui/marquee'
+import logoAmNogueira from '@/images/logos/americo-nogueira.svg'
+import bg from '@/images/logos/bg.svg'
+import vandoren from '@/images/logos/vandoren.svg'
+import eastman from '@/images/logos/eastman2.svg'
 
 const parceiros = [
   { name: 'Sociedade Musical de Guimarães', logo: logoSmg },
@@ -30,6 +34,10 @@ const parceiros = [
   { name: 'Cardoso & Conceição', logo: logoCardosoConceicao },
   { name: 'Buffet Crampon', logo: logoBuffetCrampon },
   { name: 'Esmae', logo: logoEsmae },
+  { name: 'Américo Nogueira', logo: logoAmNogueira },
+  { name: 'BG', logo: bg },
+  { name: 'Vandoren', logo: vandoren },
+  { name: 'Eastman', logo: eastman },
 ]
 
 export function Parceiros() {

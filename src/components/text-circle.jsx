@@ -104,6 +104,8 @@ export const TextCircle = ({
           style={{ width: centerImageWidth, height: centerImageWidth }}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
+          onTouchStart={animateOnHover ? handleMouseEnter : undefined}
+          onTouchEnd={animateOnHover ? handleMouseLeave : undefined}
           onFocus={animateOnHover ? handleMouseEnter : undefined}
           onBlur={animateOnHover ? handleMouseLeave : undefined}
         >
