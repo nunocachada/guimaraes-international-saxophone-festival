@@ -22,7 +22,7 @@ export function Header() {
           <div className="mx-auto flex items-center gap-4 px-4">
             <p>
               <time dateTime="2028-07-01">7 - 10 Julho</time>{' '}
-              <time dateTime="2028-07-31">2025</time>
+              <time dateTime="2028-07-31">2026</time>
             </p>
 
             <Image
