@@ -42,7 +42,11 @@ const parceiros = [
 
 export function Parceiros() {
   return (
-    <section id="parceiros" aria-label="Parceiros" className="py-20 sm:py-32">
+    <section
+      id="parceiros"
+      aria-label="Parceiros"
+      className="bg-[#000000] py-20 sm:py-32"
+    >
       <Container>
         <h2 className="mx-auto max-w-2xl text-center font-fonty text-4xl font-medium tracking-tighter text-neutral-200 uppercase underline sm:text-6xl">
           Apoios

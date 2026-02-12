@@ -2,6 +2,7 @@ import { Container } from '@/components/Container'
 import { Logo } from '@/components/Logo'
 import Image from 'next/image'
 import saxImage from '@/images/sax.svg'
+import { Button } from './Button'
 
 import { Formulario } from './Formulario'
 export function Header() {
@@ -37,7 +38,7 @@ export function Header() {
         </div>
         <div className="hidden sm:mt-10 sm:flex lg:mt-0 lg:grow lg:basis-0 lg:justify-end">
           {/* <Button
-            className="bg-sax-gold font-mono text-white hover:bg-sax-gold-dark"
+            className="bg-sax-gold font-fonty text-white transition-colors duration-200 ease-in-out hover:bg-sax-gold-dark"
             href="#"
           >
             Participar

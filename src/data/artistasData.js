@@ -308,14 +308,14 @@ export const days = [
           'Bandas de Garagem, Teatro Jordão, Conservatório de Guimarães',
         horario: '15:30',
       },
-      // {
-      //   nome: 'CAA Concert T2Sax',
-      //   subtitulo: 'Final concert, with soloists · Teatro Jordão',
-      //   descricao:
-      //     'Concerto final do festival com a participação de solistas. Uma apresentação grandiosa no Teatro Jordão que marca o encerramento do festival.',
-      //   localizacao: 'Teatro Jordão',
-      //   horario: '17h30',
-      // },
+      {
+        nome: 'Concert T2Sax',
+        subtitulo: 'Final concert, with soloists · Teatro Jordão',
+        descricao:
+          'Concerto final do festival com a participação de solistas que marca o encerramento do festival.',
+        localizacao: 'Teatro Jordão  -  confirmar',
+        horario: '17h30',
+      },
     ],
   },
 ]

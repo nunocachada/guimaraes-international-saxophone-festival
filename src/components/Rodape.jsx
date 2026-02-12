@@ -55,16 +55,16 @@ export default function Rodape() {
       </div>
       {/* <footer className="bg-[#1a0f1a]"> */}
       <footer className="bg-[#000000]">
+        <div className="flex justify-center">
+          <Logo
+            size="sm"
+            text="Guimarães International Saxophone Festival * 2026 * "
+            className=""
+            linkHref="/"
+            linkAriaLabel="Guimarães International Saxophone Festival - Página inicial"
+          />
+        </div>
         <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
-          <div className="mb-12 flex justify-center">
-            <Logo
-              size="sm"
-              text="Guimarães International Saxophone Festival * 2026 * "
-              className=""
-              linkHref="/"
-              linkAriaLabel="Guimarães International Saxophone Festival - Página inicial"
-            />
-          </div>
           <nav
             aria-label="Rodapé"
             className="-mb-6 flex flex-wrap justify-center gap-x-12 gap-y-3 font-mono text-sm/6"
@@ -123,13 +123,13 @@ const DATA = {
     social: {
       Instagram: {
         name: 'Instagram',
-        url: '#',
+        url: 'https://www.instagram.com/guimaraessaxfest/',
         icon: Icons.instagram,
       },
 
       Facebook: {
         name: 'Facebook',
-        url: '#',
+        url: 'https://www.facebook.com/guimaraessaxfest',
         icon: Icons.facebook,
       },
     },

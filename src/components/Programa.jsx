@@ -27,10 +27,10 @@ const programa = [
         end: '10:15',
       },
       {
-        name: 'Masterclass',
-        description: 'Prof. Ties Mellema / Nicolas A. / Nuno S.',
+        name: 'Masterclasses',
+        description: 'Ties Mellema / Nicolas Arsenevich / Nuno Silva',
         start: '10:30',
-        end: '11:30',
+        end: '17:30',
       },
       {
         name: 'Stars of the Future',
@@ -45,12 +45,7 @@ const programa = [
         start: '13:10',
         end: '13:30',
       },
-      {
-        name: 'Masterclass',
-        description: 'Prof. Ties Mellema / Nicholas A.',
-        start: '14:30',
-        end: '16:00',
-      },
+
       {
         name: 'Conferência',
         description:
@@ -66,7 +61,7 @@ const programa = [
       },
       {
         name: 'Concerto de Nuno Silva',
-        description: 'Main hall of the school',
+        description: null,
         start: '21:00',
         end: '22:30',
       },
@@ -79,10 +74,10 @@ const programa = [
       'Segundo dia com masterclasses, Stars of the Future, conferências e concerto no Conservatório.',
     timeSlots: [
       {
-        name: 'Masterclass',
-        description: 'Prof. Ties Mellema / Prof. Nicolas A. / Nuno S.',
+        name: 'Masterclasses',
+        description: 'Ties Mellema / Nicolas Arsenevich / Nuno Silva',
         start: '09:00',
-        end: '13:00',
+        end: '16:00',
       },
       {
         name: 'Stars of the Future',
@@ -92,27 +87,20 @@ const programa = [
       },
       {
         name: 'Lunch concert',
-        description:
-          'Stars of the Future (Grupo 2) · Pátio TJGA / Bandas de Garagem',
+        description: 'Stars of the Future (Grupo 2) ',
         start: '13:10',
         end: '13:30',
       },
-      {
-        name: 'Masterclass',
-        description: 'Prof. Ties Mellema / Prof. Nicholas Arsenevich',
-        start: '14:30',
-        end: '16:00',
-      },
+
       {
         name: "Sponsors' time",
-        description:
-          'Sponsors Happy Hour · Cada sponsor apresenta a sua marca e produtos (15–25 minutos)',
+        description: 'Sponsors Happy Hour',
         start: '14:30',
         end: '16:30',
       },
       {
         name: 'Coro Cordão',
-        description: 'Bandas de Garagem',
+        description: 'Apresentação do Coro Cordão',
         start: '15:30',
         end: '16:30',
       },
@@ -123,8 +111,8 @@ const programa = [
         end: '19:00',
       },
       {
-        name: 'Concerto no Conservatório',
-        description: 'Nicolas A.',
+        name: 'Concerto de Nicolas Arsenevich',
+        description: null,
         start: '21:00',
         end: '22:30',
       },
@@ -137,8 +125,8 @@ const programa = [
       'Terceiro dia com masterclasses, jazz workshop, talk de Ties Mellema e ensaio da Ama Sax Orchestra.',
     timeSlots: [
       {
-        name: 'Masterclass',
-        description: 'Prof. Ties Mellema / Nuno S.',
+        name: 'Masterclasses',
+        description: 'Ties Mellema / Nuno Silva',
         start: '09:00',
         end: '11:00',
       },
@@ -187,16 +175,16 @@ const programa = [
         end: '13:00',
       },
       {
-        name: 'Ensaio Coro Cordão',
+        name: 'Concerto Coro Cordão',
         description: null,
-        start: '09:30',
-        end: '13:00',
+        start: '15:30',
+        end: '17:00',
       },
       {
-        name: 'CAA Concert T2Sax',
-        description: 'Final concert, with soloists · Teatro Jordão',
-        start: '21:00',
-        end: '23:00',
+        name: 'Concert T2Sax',
+        description: 'Concerto final com solistas · Teatro Jordão',
+        start: '17:30',
+        end: '19:00',
       },
     ],
   },
