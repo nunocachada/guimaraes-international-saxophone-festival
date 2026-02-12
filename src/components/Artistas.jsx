@@ -445,11 +445,11 @@ export function Artistas() {
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2
             id="artistas-title"
-            className="font-fonty text-5xl font-medium tracking-tighter text-neutral-200 sm:text-6xl"
+            className="font-fonty text-5xl font-medium tracking-tighter text-neutral-200 uppercase sm:text-6xl"
           >
-            Programa completo
+            Programa
           </h2>
-          <p className="mt-4 font-fonty text-2xl tracking-tight text-neutral-300">
+          <p className="mt-4 font-mono text-2xl tracking-tight text-neutral-300">
             Quatro dias repletos de música, aprendizagem e celebração do
             saxofone.
           </p>

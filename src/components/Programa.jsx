@@ -269,10 +269,10 @@ function ProgramaTabbed() {
 function DaySummary({ day }) {
   return (
     <>
-      <h3 className="text-2xl font-semibold tracking-tight text-neutral-200">
+      <h3 className="font-fonty text-3xl font-semibold text-neutral-200">
         <time dateTime={day.dateTime}>{day.date}</time>
       </h3>
-      <p className="mt-1.5 text-base tracking-tight text-neutral-300">
+      <p className="mt-1.5 font-mono text-sm tracking-tight text-neutral-300">
         {day.summary}
       </p>
     </>
@@ -296,11 +296,11 @@ function TimeSlots({ day, className }) {
           {timeSlotIndex > 0 && (
             <div className="mx-auto mb-8 h-px w-48 bg-[#5C3A5C]/10" />
           )}
-          <h4 className="text-lg font-semibold tracking-tight text-neutral-200">
+          <h4 className="font-fonty text-2xl font-semibold text-neutral-200">
             {timeSlot.name}
           </h4>
           {timeSlot.description && (
-            <p className="mt-1 tracking-tight text-neutral-300">
+            <p className="mt-1 font-mono text-sm tracking-tight text-neutral-300">
               {timeSlot.description}
             </p>
           )}
