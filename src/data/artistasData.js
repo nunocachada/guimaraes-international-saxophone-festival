@@ -71,8 +71,9 @@ export const days = [
         nome: 'Nuno Silva',
         papel: 'PORTUGAL',
         imagem: nunoSilvaImage,
-        biografia: null,
-        informacoes: 'em breve',
+        biografia:
+          'Nuno Silva é saxofonista, pedagogo e sound designer de raízes portuguesas, dedicando-se sobretudo à criação de novas obras interdisciplinares e ao design sonoro. \n\nConcluiu o Mestrado em Performance – Saxofone na Fontys Hogeschool voor de Kunsten, em Tilburg, e o Mestrado em Ensino da Música na Universidade de Aveiro, em Portugal.\n\nDesde o início da sua atividade musical, colabora regularmente com compositores, bailarinos e atores, com o objetivo de criar novo repertório para o instrumento e explorar novas vias de expressão, apresentando o seu trabalho por toda a Europa.\n\nÉ cofundador do ION Collective, ensemble interdisciplinar; do [UΛN] duo, duo de saxofones juntamente com Hannah Koob; e do Vector Reed Quintet. Colabora também com diversos ensembles, como o Radio Filharmonisch Orkest, Ensemble Klang, Oniros Ensemble, 9x13, bem como com instituições como De Link, KOP, Het Park e Classic Young Masters, entre outras.\n\nLeciona de forma privada no Nuno Silva – Saxophone Studio, desenvolvendo atividade artística e pedagógica entre Portugal e os Países Baixos, onde atualmente reside.\n\nNuno Silva é artista patrocinado pela Henri-Selmer Paris.',
+        informacoes: null,
         eventos: [
           'Dia de Abertura - 7 de Julho',
           'Concerto - 7 de Julho',

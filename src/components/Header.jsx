@@ -4,7 +4,7 @@ import Image from 'next/image'
 import saxImage from '@/images/sax.svg'
 import { Button } from './Button'
 
-import { Formulario } from './Formulario'
+// import { Formulario } from './Formulario'
 export function Header() {
   return (
     <header className="relative z-50 flex-none lg:pt-11">

@@ -10,6 +10,7 @@ import {
 } from 'motion/react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { cn } from '@/lib/utils'
 import saxCastelo from '@/images/sax-castelo.svg'
 
@@ -68,6 +69,17 @@ export const TextCircle = ({
     })
   }
 
+  const pathname = usePathname()
+  const normalizedHref = linkHref === '' ? '/' : linkHref
+  const isCurrentPage = pathname === normalizedHref
+
+  const handleLinkClick = (e) => {
+    if (isCurrentPage) {
+      e.preventDefault()
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
+  }
+
   return (
     <div
       role="img"
@@ -112,6 +124,7 @@ export const TextCircle = ({
           {linkHref ? (
             <Link
               href={linkHref}
+              onClick={handleLinkClick}
               className="inline-block rounded-sm transition-opacity hover:opacity-90 focus:outline-none focus-visible:ring-2 focus-visible:ring-sax-gold focus-visible:ring-offset-2"
               aria-label={linkAriaLabel ?? 'Página inicial'}
             >
