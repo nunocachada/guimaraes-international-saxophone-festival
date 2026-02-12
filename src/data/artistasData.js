@@ -71,8 +71,7 @@ export const days = [
         nome: 'Nuno Silva',
         papel: 'PORTUGAL',
         imagem: nunoSilvaImage,
-        biografia:
-          'Nuno Silva é um saxofonista português com formação no Breda Conservatory. Reconhecido pela sua técnica refinada e interpretação expressiva.',
+        biografia: null,
         informacoes: 'em breve',
         eventos: [
           'Dia de Abertura - 7 de Julho',
@@ -87,9 +86,8 @@ export const days = [
         papel: 'PORTUGAL',
         imagem: luisMiguelImage,
         biografia:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
-        informacoes:
-          'lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
+          'É saxofonista, professor e compositor. Iniciou o seu percurso musical em 2002, começando a estudar com músicos e compositores de referência na área do jazz, através de oficinas e aulas particulares.\n\nEm 2005 mudou-se para o Porto para aprofundar os estudos de saxofone e, em 2007, ingressou na Escola Superior de Música e Artes do Espectáculo do Porto (ESMAE), onde frequentou o curso de saxofone jazz.\n\nEm 2013 foi distinguido com o prémio de Melhor Formação Jazz, no âmbito da participação no 11.º Festival Festa do Jazz, em Lisboa.\n\nAo longo do seu percurso, apresentou-se em salas e festivais de relevo, como a Casa da Música (Porto), o Festival de Jazz de Guimarães, o Festival de Jazz de Loulé, a Fundação de Serralves, o Festival de Jazz de Saragoça e o Festival F, além de diversos clubes em Portugal e Espanha. Mantém actuações regulares nos principais auditórios do Algarve com a Orquestra de Jazz do Algarve.\n\nPartilhou o palco com músicos como Bennie Golson, George Colligan, Orrin Evans, Marcus Strickland, Jon Hendricks, Zé Eduardo, Michael Lauren, Rick Margitza, Jane Monheit, Ana Alcaide, Maria Anadon, Vânia Fernandes, Áurea, Carolina Deslandes e Mariza Liz, entre outros.\n\nParalelamente à actividade artística, exerceu funções docentes na Academia de Música de Lagos, na Escola Profissional de Música de Lagoa e no Curso Profissional de Jazz da Escola Secundária da Bemposta, em Portimão.',
+        informacoes: null,
         eventos: ['Workshop de Jazz - 9 de Julho', 'Concerto - 9 de Julho'],
         imagens: [luisMiguelImage],
       },
