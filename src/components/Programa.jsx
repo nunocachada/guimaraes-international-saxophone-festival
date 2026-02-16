@@ -21,8 +21,8 @@ const programa = [
         end: '09:30',
       },
       {
-        name: 'Warm up work',
-        description: 'Sax, Body & Mind',
+        name: 'Warm up work ',
+        description: 'Sax, Body & Mind - Henk van Twillert',
         start: '09:45',
         end: '10:15',
       },
@@ -30,20 +30,25 @@ const programa = [
         name: 'Masterclasses',
         description: 'Ties Mellema / Nicolas Arsenevich / Nuno Silva',
         start: '10:30',
-        end: '17:30',
+        end: '13:00',
       },
       {
         name: 'Stars of the Future',
-        description: 'Henk van Twillert (first session)',
+        description: 'Henk van Twillert (primeira sessão)',
         start: '11:30',
         end: '12:30',
       },
       {
         name: 'Lunch concert',
-        description:
-          'Stars of the Future (Grupo 1) · Pátio TJGA (Piso 1 – salas individuais)',
+        description: 'Stars of the Future (Grupo 1)',
         start: '13:10',
         end: '13:30',
+      },
+      {
+        name: 'Masterclasses',
+        description: 'Ties Mellema / Nicolas Arsenevich',
+        start: '14:30',
+        end: '16:00',
       },
 
       {
@@ -54,14 +59,20 @@ const programa = [
         end: '17:30',
       },
       {
-        name: 'All Sax Orchestra rehearsal',
+        name: 'Be Sax Orchestra - Ensaio',
         description: null,
         start: '17:30',
-        end: '18:30',
+        end: '18:45',
+      },
+      {
+        name: 'All Sax Orchestra - Ensaio',
+        description: null,
+        start: '18:00',
+        end: '20:05',
       },
       {
         name: 'Concerto de Nuno Silva',
-        description: null,
+        description: 'Conservatório de Guimarães (Salão nobre)',
         start: '21:00',
         end: '22:30',
       },
@@ -77,11 +88,11 @@ const programa = [
         name: 'Masterclasses',
         description: 'Ties Mellema / Nicolas Arsenevich / Nuno Silva',
         start: '09:00',
-        end: '16:00',
+        end: '13:00',
       },
       {
         name: 'Stars of the Future',
-        description: 'Henk van Twillert (second session)',
+        description: 'Henk van Twillert (segunda sessão)',
         start: '11:30',
         end: '12:30',
       },
@@ -93,27 +104,22 @@ const programa = [
       },
 
       {
-        name: "Sponsors' time",
-        description: 'Sponsors Happy Hour',
+        name: 'Masterclasses',
+        description: 'Ties Mellema / Nicolas Arsenevich',
         start: '14:30',
-        end: '16:30',
+        end: '16:00',
       },
+
       {
-        name: 'Coro Cordão',
-        description: 'Apresentação do Coro Cordão',
-        start: '15:30',
-        end: '16:30',
-      },
-      {
-        name: 'All Sax Orchestra rehearsal',
+        name: 'All Sax Orchestra - Ensaio',
         description: null,
-        start: '17:30',
-        end: '19:00',
+        start: '16:15',
+        end: '17:20',
       },
       {
         name: 'Concerto de Nicolas Arsenevich',
-        description: null,
-        start: '21:00',
+        description: 'Conservatório de Guimarães (Salão nobre)',
+        start: '21:30',
         end: '22:30',
       },
     ],
@@ -122,7 +128,7 @@ const programa = [
     date: '9 de Julho',
     dateTime: '2026-07-09',
     summary:
-      'Terceiro dia com masterclasses, jazz workshop, talk de Ties Mellema e ensaio da Ama Sax Orchestra.',
+      'Terceiro dia com masterclasses, jazz workshop, talk de Ties Mellema e ensaio da All Sax Orchestra.',
     timeSlots: [
       {
         name: 'Masterclasses',
@@ -131,16 +137,22 @@ const programa = [
         end: '11:00',
       },
       {
-        name: 'Jazz Workshop',
-        description: 'Eastman artist',
+        name: 'Workshop de jazz',
+        description: 'Luis Miguel (artista Eastman)',
         start: '11:15',
         end: '12:45',
       },
       {
-        name: 'Jazz concert',
+        name: 'Concerto de jazz',
         description: null,
         start: '13:00',
         end: '13:20',
+      },
+      {
+        name: "Sponsors' time",
+        description: 'Sponsors Happy Hour',
+        start: '14:30',
+        end: '17:15',
       },
       {
         name: 'Ties Mellema Talk',
@@ -149,10 +161,16 @@ const programa = [
         end: '18:35',
       },
       {
-        name: 'Ama Sax Orchestra rehearsal',
+        name: 'All Sax Orchestra - Ensaio',
         description: null,
         start: '18:35',
-        end: '19:45',
+        end: '20:00',
+      },
+      {
+        name: 'Concerto Ties Mellema',
+        description: 'CAAA Guimarães',
+        start: '21:30',
+        end: '22:30',
       },
     ],
   },
@@ -163,17 +181,13 @@ const programa = [
       'Dia final com preparação para os concertos finais, ensaios e concerto final no Teatro Jordão.',
     timeSlots: [
       {
-        name: 'Preparation time for final concerts',
-        description: null,
+        name: 'Preparação para os concertos finais',
+        description:
+          'All Sax Orchestra, Be Sax Orchestra, Coro Cordão, solistas',
         start: '09:30',
         end: '13:00',
       },
-      {
-        name: 'All Sax Orchestra / Be Sax Orchestra rehearsal',
-        description: null,
-        start: '09:30',
-        end: '13:00',
-      },
+
       {
         name: 'Concerto Coro Cordão',
         description: null,
@@ -181,8 +195,8 @@ const programa = [
         end: '17:00',
       },
       {
-        name: 'Concert T2Sax',
-        description: 'Concerto final com solistas · Teatro Jordão',
+        name: 'Concerto final ',
+        description: 'All Sax Orchestra + solistas',
         start: '17:30',
         end: '19:00',
       },

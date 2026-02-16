@@ -63,7 +63,7 @@ export const days = [
         imagem: brunoSantosImage,
         biografia:
           'Bruno Santos nasceu em janeiro de 1991 e iniciou os seus estudos musicais aos 12 anos na Orquestra Ligeira de Cambra. Frequentou a Sociedade Artística Banda de Vale de Cambra, o Conservatório de Música da JOBRA e a Universidade de Aveiro, onde concluiu, em 2017, o Mestrado em Ensino da Música (Saxofone). Ao longo do seu percurso trabalhou com vários saxofonistas de renome e foi selecionado para a Université Européenne de Saxophone Gap 2013, em França.\n\nFoi distinguido com o 1.º prémio no Concurso Internacional de Instrumentos de Sopro “Terras de La Salette” (2015) e participou na rubrica Novos Talentos do FISP 2021. Colaborou com diversas orquestras e ensembles sinfónicos nacionais. Atualmente leciona no Conservatório de Música de Aveiro Calouste Gulbenkian, orienta masterclasses e mantém uma atividade performativa regular em Portugal e no estrangeiro.\n\nDa sua discografia destacam-se os álbuns ROAD e STAGE, ambos distinguidos com prémios internacionais e com várias edições esgotadas, tendo sido apresentados em diversas salas e no World Saxophone Congress 2023.',
-        informacoes: 'em breve',
+        informacoes: null,
         eventos: ['Masterclass - 9 de Julho'],
         imagens: [brunoSantosImage],
       },
