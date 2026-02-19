@@ -20,6 +20,7 @@ import logoAmNogueira from '@/images/logos/americo-nogueira.svg'
 import bg from '@/images/logos/bg.svg'
 import vandoren from '@/images/logos/vandoren.svg'
 import eastman from '@/images/logos/eastman2.svg'
+import mcostas from '@/images/logos/m-costas.svg'
 
 const parceiros = [
   { name: 'Sociedade Musical de Guimarães', logo: logoSmg },
@@ -39,6 +40,7 @@ const parceiros = [
   { name: 'BG', logo: bg },
   { name: 'Vandoren', logo: vandoren },
   { name: 'Eastman', logo: eastman },
+  { name: 'MCostas', logo: mcostas },
 ]
 
 function Patrocinadores() {
