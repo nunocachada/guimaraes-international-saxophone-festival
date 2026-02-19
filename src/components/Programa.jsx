@@ -139,7 +139,7 @@ const programa = [
     timeSlots: [
       {
         name: 'Masterclasses',
-        description: 'Ties Mellema / Nuno Silva /',
+        description: 'Ties Mellema / Nuno Silva / Bruno Santos',
         start: '09:00',
         end: '11:00',
       },

@@ -129,7 +129,7 @@ export const days = [
       },
       {
         nome: 'Stars of the Future',
-        subtitulo: 'Henk van Twillert (first session)',
+        subtitulo: 'Henk van Twillert (a confirmar)',
         descricao:
           'Programa dedicado aos jovens talentos do saxofone. Sessões especiais com Henk van Twillert para desenvolver e destacar os futuros astros do saxofone.',
         localizacao: 'a definir',
@@ -137,8 +137,7 @@ export const days = [
       },
       {
         nome: 'Lunch concert',
-        subtitulo:
-          'Stars of the Future (Grupo 1) · Pátio TJGA (Piso 1 – salas individuais)',
+        subtitulo: 'Stars of the Future (Grupo 1)',
         descricao:
           'Concertos durante o almoço apresentados pelos participantes do programa "Stars of the Future".',
         localizacao:
@@ -146,19 +145,34 @@ export const days = [
         horario: '13:10 - 13:30',
       },
       {
+        nome: 'Masterclasses',
+        subtitulo: 'Ties Mellema / Nicolas Arsenijevic',
+        descricao: null,
+        localizacao: ' Conservatório de Guimarães, Teatro Jordão',
+        horario: '14:30 - 16:00',
+        informacoes: null,
+      },
+      {
         nome: 'Conferência',
         subtitulo: 'Miguel Pais Clemente, Henk van Twillert e Joaquim Gabriel',
         descricao:
-          'Conferência com especialistas sobre temas relevantes para o mundo do saxofone. Uma oportunidade para discussão e partilha de conhecimento.',
+          'A música é uma experiência integral. Música, corpo e a mente formam um conjunto artístico único. A conferência abordará os dados biomédicos do corpo em conjugação com o instrumento. Esta simbiose é fundamental para uma experiência e performance musical completa.',
         localizacao: 'Salão nobre do Conservatório de Guimarães)',
         horario: '16:15 - 17:30',
       },
       {
+        nome: 'Orquestra Be Sax ',
+        subtitulo: 'Ensaios',
+        descricao: null,
+        localizacao: 'Conservatório de Guimarães, Teatro Jordão',
+        horario: '17:30 - 18:45',
+      },
+      {
         nome: 'All Sax Orchestra',
         subtitulo: 'Ensaios',
-        descricao:
-          'Ensaios da All Sax Orchestra: grupo de música de câmara destinado a alunos de nível académico avançado. Os alunos serão colocados mediante o seu nível académico.',
-        localizacao: 'Piso 1 do Teatro Jordão, Conservatório de Guimarães',
+        descricao: null,
+        localizacao: 'Conservatório de Guimarães, Teatro Jordão',
+        horario: '18:00 - 20:05',
       },
       {
         nome: 'Concerto de Nuno Silva',
@@ -180,57 +194,55 @@ export const days = [
         nome: 'Masterclasses',
         subtitulo: 'Ties Mellema, Nicolas Arsenijevic, Nuno Silva',
         descricao: null,
-        localizacao: 'Piso 2 do Teatro Jordão, Conservatório de Guimarães',
-        horario: 'Vários horários ao longo do festival',
+        localizacao: 'Conservatório de Guimarães, Teatro Jordão',
+        horario: ' 09:00 - 13:00',
       },
       {
         nome: 'Stars of the Future',
-        subtitulo: 'Henk van Twillert ( a confirmar)',
+        subtitulo: 'Henk van Twillert (a confirmar)',
         descricao:
           'Programa dedicado aos jovens talentos do saxofone. Sessões especiais com Henk van Twillert para desenvolver e destacar os futuros astros do saxofone.',
-        localizacao: ' Conservatório de Guimarães',
+        localizacao: 'Conservatório de Guimarães, Teatro Jordão',
         horario: '11:30 - 12:30',
         informacoes: 'Piso 1,sala de percussão',
       },
       {
         nome: 'Lunch concert',
-        subtitulo:
-          'Stars of the Future (Grupo 2) · Pátio TJGA / Bandas de Garagem',
+        subtitulo: 'Stars of the Future (Grupo 2)',
         descricao:
           'Concertos durante o almoço apresentados pelos participantes do programa "Stars of the Future".',
-        localizacao: null,
+        localizacao: 'Conservatório de Guimarães, Teatro Jordão',
         horario: '13:10 - 13:30',
+      },
+      {
+        nome: 'Masterclasses',
+        subtitulo: 'Ties Mellema, Nicolas Arsenijevic',
+        descricao: null,
+        localizacao: 'Conservatório de Guimarães, Teatro Jordão',
+        horario: '14:30 - 16:00',
       },
 
       {
-        nome: "Sponsors' time",
-        subtitulo: 'Sponsors Happy Hour',
-        descricao:
-          'Momento dedicado aos patrocinadores do festival. Cada patrocinador terá a oportunidade de apresentar a sua marca e produtos durante 15-25 minutos.',
-        localizacao: 'Piso 2 do Teatro Jordão, Conservatório de Guimarães',
-        horario: '14:30 - 16:30',
-      },
-      {
-        nome: 'Coro Cordão',
-        subtitulo: 'Coro de Doentes e Amigos Oncológicos',
-        descricao:
-          '"O CORDÃO é um coro comunitário, composto por doentes oncológicos, em tratamento ou remissão, e amigos. Amigos, aqui, são todos os que estão por perto: o companheiro, a irmã, o filho, a mãe, a amiga. Os que ajudam a carregar o peso da palavra “oncológico” e tudo o que ela traz consigo." - Texto extraído do site da Fundação Calouste Gulbenkian.',
-        localizacao: 'Bandas de Garagem',
-        horario: '15:30 - 16:30',
-      },
-      {
-        nome: 'All Sax Orchestra',
+        nome: 'Orquestra Be Sax',
         subtitulo: 'Ensaio',
-        descricao:
-          'Ensaios da All Sax Orchestra: grupo de música de câmara destinado a alunos de nível académico avançado. Os alunos serão colocados mediante o seu nível académico.',
-        localizacao: 'Conservatório de Guimarães',
+        descricao: null,
+        localizacao: 'Conservatório de Guimarães, Teatro Jordão ',
         informacoes: 'Piso -1, sala de orquestra',
+        horario: '16:15 - 17:20',
+      },
+      {
+        nome: 'Orquestra All Sax',
+        subtitulo: 'Ensaio',
+        descricao: null,
+        localizacao: 'Conservatório de Guimarães, Teatro Jordão ',
+        informacoes: 'Piso -1, sala de orquestra',
+        horario: '17:30 - 18:20',
       },
       {
         nome: 'Concerto de Nicolas Arsenijevic',
         subtitulo: 'Salão nobre',
         descricao: null,
-        localizacao: 'Conservatório de Guimarães',
+        localizacao: 'Conservatório de Guimarães, Teatro Jordão',
         horario: '21:00 - 22:30',
       },
     ],
@@ -242,30 +254,36 @@ export const days = [
     artistas: [],
     atividades: [
       {
-        nome: 'Masterclass',
+        nome: 'Masterclasses',
         subtitulo: 'Ties Mellema / Nuno Silva / Bruno Santos',
         descricao: null,
         localizacao: 'Conservatório de Guimarães',
-        horario: 'Vários horários ao longo do festival',
+        horario: '09:00 - 11:00',
         informacoes: null,
       },
       {
-        nome: 'Jazz Workshop',
+        nome: 'Workshop de Jazz',
         subtitulo: 'Luis Miguel (artista Eastman)',
         descricao: null,
-        localizacao:
-          'Bandas de Garagem, Teatro Jordão, Conservatório de Guimarães',
+        localizacao: 'Bandas de Garagem, Conservatório de Guimarães',
         horario: '11:15 - 12:45',
         informacoes: null,
       },
       {
-        nome: 'Jazz concert',
+        nome: 'Concerto de Jazz',
         subtitulo: 'Alunos do workshop',
         descricao:
           'Concerto de jazz apresentado pelos participantes do workshop.',
-        localizacao:
-          'Bandas de Garagem, Teatro Jordão, Conservatório de Guimarães',
+        localizacao: 'Bandas de Garagem, Conservatório de Guimarães',
         horario: '13:00 - 13:20',
+      },
+      {
+        nome: "Sponsors' time",
+        subtitulo: 'Sponsors Happy Hour',
+        descricao:
+          'Momento dedicado aos patrocinadores do festival. Cada patrocinador terá a oportunidade de apresentar a sua marca e produtos durante 15-25 minutos.',
+        localizacao: 'Piso 2 do Teatro Jordão, Conservatório de Guimarães',
+        horario: '14:30 - 17:15',
       },
       {
         nome: 'Ties Mellema Talk',
@@ -276,6 +294,21 @@ export const days = [
         horario: '17:30 - 18:20',
         informacoes: null,
       },
+      {
+        nome: 'Orquestra All Sax',
+        subtitulo: 'Ensaios',
+        descricao: null,
+        localizacao: 'Conservatório de Guimarães, Teatro Jordão',
+        horario: '18:35 - 20:00',
+        informacoes: null,
+      },
+      {
+        nome: 'Concerto de Ties Mellema',
+        subtitulo: 'CAAA Guimarães',
+        descricao: null,
+        localizacao: 'CAAA Guimarães',
+        horario: '21:30 - 22:30',
+      },
     ],
   },
   {
@@ -285,7 +318,7 @@ export const days = [
     artistas: [],
     atividades: [
       {
-        nome: 'Preparation time for final concerts',
+        nome: 'Preparação para os concertos finais',
         subtitulo: null,
         descricao:
           'Tempo dedicado à preparação final para os concertos de encerramento. Momento para ensaios individuais e em grupo.',
@@ -293,27 +326,21 @@ export const days = [
         informacoes: 'Piso 1, sala de percussão e Piso -1, sala de orquestra',
         horario: '09:30 - 13:00',
       },
-      {
-        nome: 'All Sax / Be Sax',
-        subtitulo: 'Ensaios finais',
-        localizacao: 'Conservatório de Guimarães',
-        informacoes: 'Piso 1, sala de percussão e Piso -1, sala de orquestra',
-      },
+
       {
         nome: 'Concerto do Coro Cordão',
-        subtitulo: null,
-        descricao: null,
-        localizacao:
-          'Bandas de Garagem, Teatro Jordão, Conservatório de Guimarães',
-        horario: '15:30',
+        subtitulo: 'Coro de Doentes e Amigos Oncológicos',
+        descricao:
+          '"O CORDÃO é um coro comunitário, composto por doentes oncológicos, em tratamento ou remissão, e amigos. Amigos, aqui, são todos os que estão por perto: o companheiro, a irmã, o filho, a mãe, a amiga. Os que ajudam a carregar o peso da palavra “oncológico” e tudo o que ela traz consigo." - Texto extraído do site da Fundação Calouste Gulbenkian.',
+        localizacao: 'Bandas de Garagem',
+        horario: '15:30 - 16:30',
       },
       {
-        nome: 'Concert T2Sax',
-        subtitulo: 'Final concert, with soloists · Teatro Jordão',
-        descricao:
-          'Concerto final do festival com a participação de solistas que marca o encerramento do festival.',
-        localizacao: 'Teatro Jordão  -  confirmar',
-        horario: '17h30',
+        nome: 'Concerto final',
+        subtitulo: 'Orquestra All Sax + solistas',
+        descricao: null,
+        localizacao: 'Conservatório de Guimarães, Teatro Jordão',
+        horario: '17:30 - 19:00',
       },
     ],
   },
