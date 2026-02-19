@@ -1,7 +1,7 @@
 import henkVanTwillertImage from '@/images/avatars/henk-van-twillert.jpg'
 import tiesMellemmaImage from '@/images/Ties_Mellema.webp'
 import nunoSilvaImage from '@/images/nuno_silva.jpg'
-import nicolasArsinejevicImage from '@/images/Nicolas_Arsenijevic.webp'
+import nicolasArsenijevicImage from '@/images/Nicolas_Arsenijevic.webp'
 import luisMiguelImage from '@/images/luis-miguel.jpg'
 import brunoSantosImage from '@/images/bruno-santos.jpg'
 
@@ -28,9 +28,9 @@ export const days = [
         imagens: [tiesMellemmaImage],
       },
       {
-        nome: 'Nicolas Arsinejevic',
+        nome: 'Nicolas Arsenijevic',
         papel: 'FRANÇA',
-        imagem: nicolasArsinejevicImage,
+        imagem: nicolasArsenijevicImage,
         biografia:
           'Solista e pedagogo, Nicolas Arsenijevic é um saxofonista francês nascido em 1988. Formado pelo Conservatoire National Supérieur de Musique et de Danse de Paris e laureado em diversos concursos internacionais (Concurso Adolphe Sax de Dinant, Andorra Sax Fest, Concurso Josip Nochta de Zagreb, entre outros), é convidado em todo o mundo para ministrar masterclasses e apresentar recitais. Atua regularmente em prestigiadas formações, como a Orquestra Filarmónica da Radio France e o Ensemble Intercontemporain. A sua discografia — que abrange repertório de criação contemporânea, música romântica com piano ou quarteto de cordas e música tradicional dos Balcãs com o grupo Kosmopolitevitch — reflete uma abordagem artística firmemente orientada para a exploração e inovação. Em consonância com a evolução e o dinamismo do seu instrumento, Nicolas Arsenijevic colabora com numerosos compositores, entre os quais Riccardo Nillni, Florent Caron Darras, Christian Lauba, Maël Bailly e Benjamin Attahir, tanto em contexto solístico como integrado em destacados ensembles de música contemporânea, como Court-Circuit, Alternance ou TM+. Dedicado à música de câmara, integrou durante muitos anos o ensemble de sopros Saxback, uma formação singular criada em torno da figura de Adolphe Sax e do instrumentário a ela associado. No mesmo domínio, o seu duo com a pianista Françoise Buffet-Arsenijevic tem-no levado a importantes salas francesas, como a Salle Gaveau e a Salle Cortot.\n\nEm 2024, Nicolas Arsenijevic foi nomeado para o prestigiado cargo de professor de saxofone no Conservatoire National Supérieur de Musique et de Danse de Paris.',
         informacoes: 'em breve',
@@ -40,7 +40,7 @@ export const days = [
           'Masterclasses - 7 e 8 de Julho',
           'Encerramento - 10 de Julho',
         ],
-        imagens: [nicolasArsinejevicImage],
+        imagens: [nicolasArsenijevicImage],
       },
       {
         nome: 'Henk Van Twillert',
@@ -121,7 +121,7 @@ export const days = [
       },
       {
         nome: 'Masterclasses',
-        subtitulo: 'Ties Mellema, Nicolas Arsenevich, Nuno Silva',
+        subtitulo: 'Ties Mellema, Nicolas Arsenijevic, Nuno Silva',
         descricao: null,
         localizacao: 'Piso 2 do Teatro Jordão, Conservatório de Guimarães',
         horario: 'Vários horários ao longo do festival',
@@ -178,14 +178,14 @@ export const days = [
     atividades: [
       {
         nome: 'Masterclasses',
-        subtitulo: 'Ties Mellema, Nicolas Arsenevich, Nuno Silva',
+        subtitulo: 'Ties Mellema, Nicolas Arsenijevic, Nuno Silva',
         descricao: null,
         localizacao: 'Piso 2 do Teatro Jordão, Conservatório de Guimarães',
         horario: 'Vários horários ao longo do festival',
       },
       {
         nome: 'Stars of the Future',
-        subtitulo: 'Henk van Twillert (segunda sessão)',
+        subtitulo: 'Henk van Twillert ( a confirmar)',
         descricao:
           'Programa dedicado aos jovens talentos do saxofone. Sessões especiais com Henk van Twillert para desenvolver e destacar os futuros astros do saxofone.',
         localizacao: ' Conservatório de Guimarães',
@@ -227,7 +227,7 @@ export const days = [
         informacoes: 'Piso -1, sala de orquestra',
       },
       {
-        nome: 'Concerto de Nicolas Arsenevich',
+        nome: 'Concerto de Nicolas Arsenijevic',
         subtitulo: 'Salão nobre',
         descricao: null,
         localizacao: 'Conservatório de Guimarães',
@@ -273,7 +273,7 @@ export const days = [
         descricao:
           'Talk inspiracional com Ties Mellema sobre "Find your own voice" (Encontra a tua própria voz).',
         localizacao: 'Salão nobre do Conservatório de Guimarães',
-        horario: '17:30 - 18:35',
+        horario: '17:30 - 18:20',
         informacoes: null,
       },
     ],

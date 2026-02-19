@@ -28,13 +28,13 @@ const programa = [
       },
       {
         name: 'Masterclasses',
-        description: 'Ties Mellema / Nicolas Arsenevich / Nuno Silva',
+        description: 'Ties Mellema / Nicolas Arsenijevic / Nuno Silva',
         start: '10:30',
         end: '13:00',
       },
       {
         name: 'Stars of the Future',
-        description: 'Henk van Twillert (primeira sessão)',
+        description: 'Henk van Twillert (a confirmar)',
         start: '11:30',
         end: '12:30',
       },
@@ -46,7 +46,7 @@ const programa = [
       },
       {
         name: 'Masterclasses',
-        description: 'Ties Mellema / Nicolas Arsenevich',
+        description: 'Ties Mellema / Nicolas Arsenijevic',
         start: '14:30',
         end: '16:00',
       },
@@ -86,13 +86,13 @@ const programa = [
     timeSlots: [
       {
         name: 'Masterclasses',
-        description: 'Ties Mellema / Nicolas Arsenevich / Nuno Silva',
+        description: 'Ties Mellema / Nicolas Arsenijevic / Nuno Silva',
         start: '09:00',
         end: '13:00',
       },
       {
         name: 'Stars of the Future',
-        description: 'Henk van Twillert (segunda sessão)',
+        description: 'Henk van Twillert ( a confirmar)',
         start: '11:30',
         end: '12:30',
       },
@@ -105,19 +105,26 @@ const programa = [
 
       {
         name: 'Masterclasses',
-        description: 'Ties Mellema / Nicolas Arsenevich',
+        description: 'Ties Mellema / Nicolas Arsenijevic',
         start: '14:30',
         end: '16:00',
       },
 
       {
-        name: 'All Sax Orchestra - Ensaio',
+        name: 'Be Sax Orchestra - Ensaio',
         description: null,
         start: '16:15',
         end: '17:20',
       },
       {
-        name: 'Concerto de Nicolas Arsenevich',
+        name: 'All Sax Orchestra - Ensaio',
+        description: null,
+        start: '17:30',
+        end: '18:20',
+      },
+
+      {
+        name: 'Concerto de Nicolas Arsenijevic',
         description: 'Conservatório de Guimarães (Salão nobre)',
         start: '21:30',
         end: '22:30',
@@ -132,7 +139,7 @@ const programa = [
     timeSlots: [
       {
         name: 'Masterclasses',
-        description: 'Ties Mellema / Nuno Silva',
+        description: 'Ties Mellema / Nuno Silva /',
         start: '09:00',
         end: '11:00',
       },
@@ -158,7 +165,7 @@ const programa = [
         name: 'Ties Mellema Talk',
         description: 'Find your own voice',
         start: '17:30',
-        end: '18:35',
+        end: '18:20',
       },
       {
         name: 'All Sax Orchestra - Ensaio',
@@ -192,7 +199,7 @@ const programa = [
         name: 'Concerto Coro Cordão',
         description: null,
         start: '15:30',
-        end: '17:00',
+        end: '16:30',
       },
       {
         name: 'Concerto final ',

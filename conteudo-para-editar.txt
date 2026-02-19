@@ -45,10 +45,10 @@ Imagens (nomes dos ficheiros, um por linha):
 --------------------------------------------------------------------------------
 ARTISTA 2
 --------------------------------------------------------------------------------
-Nome: Nicolas Arsinejevic
+Nome: Nicolas Arsenijevic
 Papel: FRANÇA
 Imagem (nome do ficheiro): Nicolas_Arsenijevic.webp
-Biografia: Nicolas Arsinejevic é professor no CNSMP (Conservatoire National Supérieur de Musique et de Danse de Paris), França. Reconhecido internacionalmente pela sua excelência técnica e artística.
+Biografia: Nicolas Arsenijevic é professor no CNSMP (Conservatoire National Supérieur de Musique et de Danse de Paris), França. Reconhecido internacionalmente pela sua excelência técnica e artística.
 Informações: em breve
 Eventos:
 • Dia de Abertura - 7 de Julho
@@ -306,7 +306,7 @@ ATIVIDADE 8
 --------------------------------------------------------------------------------
 Nome: Concerto no Conservatório
 Subtítulo: Nicolas A.
-Descrição: Concerto especial no Conservatório com Nicolas Arsinejevic. Uma apresentação única num espaço histórico e acústico excecional.
+Descrição: Concerto especial no Conservatório com Nicolas Arsenijevic. Uma apresentação única num espaço histórico e acústico excecional.
 Localização: Conservatório
 Horário: 21:00 - 22:30
 Informações: (vazio)

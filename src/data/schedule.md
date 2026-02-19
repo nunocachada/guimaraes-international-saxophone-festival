@@ -35,7 +35,7 @@
 
 ### Tarde
 
-- 14h30–16h00 · Masterclass – Prof. Ties Mellema / Prof. Nicholas Arsenevich
+- 14h30–16h00 · Masterclass – Prof. Ties Mellema / Prof. Nicholas Arsenijevic
 - 14h30–16h30 · Sponsors’ time · Sponsors Happy Hour  
   · Cada sponsor apresenta a sua marca e produtos (15–25 minutos)
 - 15h30 · Coro Cordão – Bandas de Garagem
