@@ -48,11 +48,11 @@ export default async function Noticias() {
                         </dd>
                         <dt className="sr-only">Author</dt>
                         <dd className="mt-6 flex gap-x-4">
-                          <div className="flex-none overflow-hidden rounded-xl bg-neutral-100">
+                          <div className="flex-none overflow-hidden rounded-xl">
                             <Image
                               alt=""
                               {...noticia.autor.imagem}
-                              className="h-12 w-12 object-cover grayscale"
+                              className="h-12 w-12 object-cover object-top"
                             />
                           </div>
                           <div className="font-mono text-sm text-neutral-500">
@@ -69,7 +69,7 @@ export default async function Noticias() {
                       <Button
                         href={noticia.href}
                         aria-label={`Read more: ${noticia.titulo}`}
-                        className="mt-8"
+                        className="mt-8 !text-neutral-800"
                       >
                         Ler mais
                       </Button>
