@@ -17,6 +17,10 @@ import { Dock, DockIcon } from '@/components/ui/dock'
 const navegacao = {
   principal: [
     {
+      nome: 'Home',
+      href: '/',
+    },
+    {
       nome: 'Notícias',
       href: '/noticias',
     },
