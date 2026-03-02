@@ -16,8 +16,8 @@ import {
   ModalTrigger,
   useModal,
 } from '@/components/ui/animated-modal'
-import { Music2, GraduationCap, Presentation, Calendar } from 'lucide-react'
 import saxImage from '@/images/sax.svg'
+import conferenciaImage from '@/images/conferencia.jpg'
 import { days } from '@/data/artistasData'
 
 function ImageClipPaths({ id, ...props }) {
@@ -37,12 +37,6 @@ function ImageClipPaths({ id, ...props }) {
     </svg>
   )
 }
-// Ícones para os eventos (usando lucide-react)
-const ConcertIcon = Music2
-const MasterclassIcon = GraduationCap
-const ConferenceIcon = Presentation
-const EventIcon = Calendar
-
 // Componentes para os botões do modal
 const FecharButton = () => {
   const { setOpen } = useModal()
@@ -187,44 +181,15 @@ const ArtistaCard = ({ artista, artistaIndex, clipPathId }) => {
               {/* Atividades */}
               {artista.eventos && artista.eventos.length > 0 && (
                 <div>
-                  {/* <h3 className="mb-3 font-mono text-xl font-semibold text-neutral-200">
-                    Atividades em que Participa
-                  </h3> */}
                   <div className="flex flex-col items-start gap-y-4 py-4 pl-4">
-                    {artista.eventos.map((evento, idx) => {
-                      // Determinar o tipo de evento e ícone correspondente
-                      let IconComponent = ConcertIcon
-                      if (
-                        evento.toLowerCase().includes('masterclass') ||
-                        evento.toLowerCase().includes('workshop')
-                      ) {
-                        IconComponent = MasterclassIcon
-                      } else if (
-                        evento.toLowerCase().includes('conferência') ||
-                        evento.toLowerCase().includes('talk')
-                      ) {
-                        IconComponent = ConferenceIcon
-                      } else if (
-                        evento.toLowerCase().includes('abertura') ||
-                        evento.toLowerCase().includes('encerramento')
-                      ) {
-                        IconComponent = EventIcon
-                      } else if (evento.toLowerCase().includes('concerto')) {
-                        IconComponent = ConcertIcon
-                      }
-
-                      return (
-                        <div
-                          key={idx}
-                          className="flex items-center justify-start"
-                        >
-                          <IconComponent className="mr-1 h-4 w-4 text-neutral-300" />
-                          <span className="text-sm text-neutral-300">
-                            {evento}
-                          </span>
-                        </div>
-                      )
-                    })}
+                    {artista.eventos.map((evento, idx) => (
+                      <span
+                        key={'evento-' + idx}
+                        className="text-sm text-neutral-300"
+                      >
+                        {evento}
+                      </span>
+                    ))}
                   </div>
                 </div>
               )}
@@ -294,9 +259,15 @@ const ArtistaCard = ({ artista, artistaIndex, clipPathId }) => {
   )
 }
 
-// Função para determinar o ícone baseado no nome da atividade
 // Componente para cada card de atividade com modal
 const AtividadeCard = ({ atividade, atividadeIndex, clipPathId }) => {
+  const atividadeImagens =
+    atividade.imagens && atividade.imagens.length > 0
+      ? atividade.imagens
+      : [conferenciaImage]
+  const atividadeImagem =
+    atividade.imagem ?? atividadeImagens[0] ?? conferenciaImage
+
   return (
     <div>
       <Modal>
@@ -312,16 +283,14 @@ const AtividadeCard = ({ atividade, atividadeIndex, clipPathId }) => {
             )}
           />
           <div
-            className="absolute inset-0 flex items-center justify-center bg-[#2a1f2a]"
+            className="absolute inset-0 bg-[#2a1f2a]"
             style={{ clipPath: `url(#${clipPathId}-${atividadeIndex % 3})` }}
           >
             <Image
-              src={saxImage}
-              alt=""
-              width={64}
-              height={64}
-              className="h-16 w-16 object-contain transition duration-300 group-hover:scale-110"
-              unoptimized
+              className="absolute inset-0 h-full w-full object-cover grayscale transition duration-300 group-hover:scale-110"
+              src={atividadeImagem}
+              alt={atividade.nome}
+              sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
             />
           </div>
         </ModalTrigger>
@@ -337,16 +306,38 @@ const AtividadeCard = ({ atividade, atividadeIndex, clipPathId }) => {
                 <h2 className="mb-4 text-center font-mono text-3xl font-bold tracking-tight text-sax-gold">
                   {atividade.nome}
                 </h2>
-                <div className="mb-8 flex justify-center">
-                  <Image
-                    src={saxImage}
-                    alt=""
-                    width={64}
-                    height={64}
-                    className="h-16 w-16 object-contain"
-                    unoptimized
-                  />
-                </div>
+              </div>
+
+              {/* Imagens */}
+              <div className="flex items-center justify-center">
+                {atividadeImagens.map((img, idx) => {
+                  const rotation = ((idx * 7) % 20) - 10
+                  return (
+                    <motion.div
+                      key={'atividade-img-' + idx}
+                      style={{ rotate: rotation }}
+                      whileHover={{
+                        scale: 1.1,
+                        rotate: 0,
+                        zIndex: 100,
+                      }}
+                      whileTap={{
+                        scale: 1.1,
+                        rotate: 0,
+                        zIndex: 100,
+                      }}
+                      className="mt-4 -mr-4 shrink-0 overflow-hidden rounded-xl border border-neutral-100 bg-white p-1 dark:border-neutral-700 dark:bg-neutral-800"
+                    >
+                      <Image
+                        src={img}
+                        alt={`${atividade.nome} - Imagem ${idx + 1}`}
+                        width={500}
+                        height={500}
+                        className="h-20 w-20 shrink-0 rounded-lg object-cover md:h-40 md:w-40"
+                      />
+                    </motion.div>
+                  )
+                })}
               </div>
 
               {/* Horário */}

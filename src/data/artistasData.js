@@ -4,6 +4,20 @@ import nunoSilvaImage from '@/images/nuno_silva.jpg'
 import nicolasArsenijevicImage from '@/images/Nicolas_Arsenijevic.webp'
 import luisMiguelImage from '@/images/luis-miguel.jpg'
 import brunoSantosImage from '@/images/bruno-santos.jpg'
+// Imagens das atividades (src/images/atividades)
+import conferenciaImage from '@/images/atividades/conferencia.jpg'
+import concertoNunoSilvaImage from '@/images/atividades/concerto-nuno-silva.jpg'
+import orquestraImage from '@/images/atividades/orquestra.jpg'
+import rececaoParticipantesImage from '@/images/atividades/rececao-participantes.jpg'
+import masterclassesTiesNicolasImage from '@/images/atividades/Masterclasses_Ties Mellema_Nicolas Arsenijevic.jpg'
+import masterclassesTiesNicolasNunoImage from '@/images/atividades/Masterclasses_Ties Mellema_Nicolas Arsenijevic_Nuno Silva.jpg'
+import masterclassesTiesNunoBrunoImage from '@/images/atividades/Masterclasses_Ties Mellema_Nuno Silva_Bruno Santos.jpg'
+import starsOfTheFutureImage from '@/images/atividades/stars-of-the-future.jpg'
+import lunchConcertImage from '@/images/atividades/lunch-concert.jpg'
+import concertoNicolasImage from '@/images/atividades/Nicolas-Arsenijevic.jpg'
+import workshopJazzImage from '@/images/atividades/luis-miguel.jpg'
+import sponsorsTimeImage from '@/images/atividades/sponsors-time.jpg'
+import tiesTalkImage from '@/images/atividades/ties-talk.jpg'
 
 export const days = [
   {
@@ -104,6 +118,8 @@ export const days = [
       {
         nome: 'Receção aos participantes',
         subtitulo: null,
+        imagem: rececaoParticipantesImage,
+        imagens: [rececaoParticipantesImage],
         descricao:
           'Momento de boas-vindas e receção a todos os participantes do festival. Será fornecida informação importante sobre o programa e as instalações.',
         localizacao: 'Piso 2 do Teatro Jordão, Conservatório de Guimarães',
@@ -113,6 +129,8 @@ export const days = [
       {
         nome: 'Warm up work',
         subtitulo: 'Henk van Twillert  ',
+        imagem: conferenciaImage,
+        imagens: [conferenciaImage],
         descricao:
           'Sax, Body & Mind - Sessão de aquecimento físico e mental para músicos. Uma abordagem holística que combina técnica do saxofone com exercícios de corpo e mente para preparar os participantes para o dia.',
         localizacao: 'Bandas de Garagem, Conservatório de Guimarães',
@@ -122,6 +140,8 @@ export const days = [
       {
         nome: 'Masterclasses',
         subtitulo: 'Ties Mellema, Nicolas Arsenijevic, Nuno Silva',
+        imagem: masterclassesTiesNicolasNunoImage,
+        imagens: [masterclassesTiesNicolasNunoImage],
         descricao: null,
         localizacao: 'Piso 2 do Teatro Jordão, Conservatório de Guimarães',
         horario: 'Vários horários ao longo do festival',
@@ -130,6 +150,8 @@ export const days = [
       {
         nome: 'Stars of the Future',
         subtitulo: 'Henk van Twillert (a confirmar)',
+        imagem: starsOfTheFutureImage,
+        imagens: [starsOfTheFutureImage],
         descricao:
           'Programa dedicado aos jovens talentos do saxofone. Sessões especiais com Henk van Twillert para desenvolver e destacar os futuros astros do saxofone.',
         localizacao: 'a definir',
@@ -138,6 +160,8 @@ export const days = [
       {
         nome: 'Lunch concert',
         subtitulo: 'Stars of the Future (Grupo 1)',
+        imagem: lunchConcertImage,
+        imagens: [lunchConcertImage],
         descricao:
           'Concertos durante o almoço apresentados pelos participantes do programa "Stars of the Future".',
         localizacao:
@@ -147,6 +171,8 @@ export const days = [
       {
         nome: 'Masterclasses',
         subtitulo: 'Ties Mellema / Nicolas Arsenijevic',
+        imagem: masterclassesTiesNicolasImage,
+        imagens: [masterclassesTiesNicolasImage],
         descricao: null,
         localizacao: ' Conservatório de Guimarães, Teatro Jordão',
         horario: '14:30 - 16:00',
@@ -155,6 +181,8 @@ export const days = [
       {
         nome: 'Conferência',
         subtitulo: 'Miguel Pais Clemente, Henk van Twillert e Joaquim Gabriel',
+        imagem: conferenciaImage,
+        imagens: [conferenciaImage],
         descricao:
           'A música é uma experiência integral. Música, corpo e a mente formam um conjunto artístico único. A conferência abordará os dados biomédicos do corpo em conjugação com o instrumento. Esta simbiose é fundamental para uma experiência e performance musical completa.',
         localizacao: 'Salão nobre do Conservatório de Guimarães)',
@@ -163,6 +191,8 @@ export const days = [
       {
         nome: 'Orquestra Be Sax ',
         subtitulo: 'Ensaios',
+        imagem: orquestraImage,
+        imagens: [orquestraImage],
         descricao: null,
         localizacao: 'Conservatório de Guimarães, Teatro Jordão',
         horario: '17:30 - 18:45',
@@ -170,6 +200,8 @@ export const days = [
       {
         nome: 'All Sax Orchestra',
         subtitulo: 'Ensaios',
+        imagem: orquestraImage,
+        imagens: [orquestraImage],
         descricao: null,
         localizacao: 'Conservatório de Guimarães, Teatro Jordão',
         horario: '18:00 - 20:05',
@@ -177,6 +209,8 @@ export const days = [
       {
         nome: 'Concerto de Nuno Silva',
         subtitulo: 'Salão nobre',
+        imagem: concertoNunoSilvaImage,
+        imagens: [concertoNunoSilvaImage],
         descricao:
           'Concerto solo do renomado saxofonista português Nuno Silva. Uma apresentação especial no hall principal da escola.',
         localizacao: 'Salão nobre do Conservatório de Guimarães',
@@ -193,6 +227,8 @@ export const days = [
       {
         nome: 'Masterclasses',
         subtitulo: 'Ties Mellema, Nicolas Arsenijevic, Nuno Silva',
+        imagem: masterclassesTiesNicolasNunoImage,
+        imagens: [masterclassesTiesNicolasNunoImage],
         descricao: null,
         localizacao: 'Conservatório de Guimarães, Teatro Jordão',
         horario: ' 09:00 - 13:00',
@@ -200,6 +236,8 @@ export const days = [
       {
         nome: 'Stars of the Future',
         subtitulo: 'Henk van Twillert (a confirmar)',
+        imagem: starsOfTheFutureImage,
+        imagens: [starsOfTheFutureImage],
         descricao:
           'Programa dedicado aos jovens talentos do saxofone. Sessões especiais com Henk van Twillert para desenvolver e destacar os futuros astros do saxofone.',
         localizacao: 'Conservatório de Guimarães, Teatro Jordão',
@@ -209,6 +247,8 @@ export const days = [
       {
         nome: 'Lunch concert',
         subtitulo: 'Stars of the Future (Grupo 2)',
+        imagem: lunchConcertImage,
+        imagens: [lunchConcertImage],
         descricao:
           'Concertos durante o almoço apresentados pelos participantes do programa "Stars of the Future".',
         localizacao: 'Conservatório de Guimarães, Teatro Jordão',
@@ -217,6 +257,8 @@ export const days = [
       {
         nome: 'Masterclasses',
         subtitulo: 'Ties Mellema, Nicolas Arsenijevic',
+        imagem: masterclassesTiesNicolasImage,
+        imagens: [masterclassesTiesNicolasImage],
         descricao: null,
         localizacao: 'Conservatório de Guimarães, Teatro Jordão',
         horario: '14:30 - 16:00',
@@ -225,6 +267,8 @@ export const days = [
       {
         nome: 'Orquestra Be Sax',
         subtitulo: 'Ensaio',
+        imagem: orquestraImage,
+        imagens: [orquestraImage],
         descricao: null,
         localizacao: 'Conservatório de Guimarães, Teatro Jordão ',
         informacoes: 'Piso -1, sala de orquestra',
@@ -233,6 +277,8 @@ export const days = [
       {
         nome: 'Orquestra All Sax',
         subtitulo: 'Ensaio',
+        imagem: orquestraImage,
+        imagens: [orquestraImage],
         descricao: null,
         localizacao: 'Conservatório de Guimarães, Teatro Jordão ',
         informacoes: 'Piso -1, sala de orquestra',
@@ -241,6 +287,8 @@ export const days = [
       {
         nome: 'Concerto de Nicolas Arsenijevic',
         subtitulo: 'Salão nobre',
+        imagem: concertoNicolasImage,
+        imagens: [concertoNicolasImage],
         descricao: null,
         localizacao: 'Conservatório de Guimarães, Teatro Jordão',
         horario: '21:00 - 22:30',
@@ -256,6 +304,8 @@ export const days = [
       {
         nome: 'Masterclasses',
         subtitulo: 'Ties Mellema / Nuno Silva / Bruno Santos',
+        imagem: masterclassesTiesNunoBrunoImage,
+        imagens: [masterclassesTiesNunoBrunoImage],
         descricao: null,
         localizacao: 'Conservatório de Guimarães',
         horario: '09:00 - 11:00',
@@ -264,6 +314,8 @@ export const days = [
       {
         nome: 'Workshop de Jazz',
         subtitulo: 'Luis Miguel (artista Eastman)',
+        imagem: workshopJazzImage,
+        imagens: [workshopJazzImage],
         descricao: null,
         localizacao: 'Bandas de Garagem, Conservatório de Guimarães',
         horario: '11:15 - 12:45',
@@ -272,6 +324,8 @@ export const days = [
       {
         nome: 'Concerto de Jazz',
         subtitulo: 'Alunos do workshop',
+        imagem: lunchConcertImage,
+        imagens: [lunchConcertImage],
         descricao:
           'Concerto de jazz apresentado pelos participantes do workshop.',
         localizacao: 'Bandas de Garagem, Conservatório de Guimarães',
@@ -280,6 +334,8 @@ export const days = [
       {
         nome: "Sponsors' time",
         subtitulo: 'Sponsors Happy Hour',
+        imagem: sponsorsTimeImage,
+        imagens: [sponsorsTimeImage],
         descricao:
           'Momento dedicado aos patrocinadores do festival. Cada patrocinador terá a oportunidade de apresentar a sua marca e produtos durante 15-25 minutos.',
         localizacao: 'Piso 2 do Teatro Jordão, Conservatório de Guimarães',
@@ -288,6 +344,8 @@ export const days = [
       {
         nome: 'Ties Mellema Talk',
         subtitulo: 'Find your own voice',
+        imagem: tiesTalkImage,
+        imagens: [tiesTalkImage],
         descricao:
           'Talk inspiracional com Ties Mellema sobre "Find your own voice" (Encontra a tua própria voz).',
         localizacao: 'Salão nobre do Conservatório de Guimarães',
@@ -297,6 +355,8 @@ export const days = [
       {
         nome: 'Orquestra All Sax',
         subtitulo: 'Ensaios',
+        imagem: orquestraImage,
+        imagens: [orquestraImage],
         descricao: null,
         localizacao: 'Conservatório de Guimarães, Teatro Jordão',
         horario: '18:35 - 20:00',
@@ -305,6 +365,8 @@ export const days = [
       {
         nome: 'Concerto de Ties Mellema',
         subtitulo: 'CAAA Guimarães',
+        imagem: tiesTalkImage,
+        imagens: [tiesTalkImage],
         descricao: null,
         localizacao: 'CAAA Guimarães',
         horario: '21:30 - 22:30',
@@ -320,6 +382,8 @@ export const days = [
       {
         nome: 'Preparação para os concertos finais',
         subtitulo: null,
+        imagem: conferenciaImage,
+        imagens: [conferenciaImage],
         descricao:
           'Tempo dedicado à preparação final para os concertos de encerramento. Momento para ensaios individuais e em grupo.',
         localizacao: 'Conservatório de Guimarães',
@@ -330,6 +394,8 @@ export const days = [
       {
         nome: 'Concerto do Coro Cordão',
         subtitulo: 'Coro de Doentes e Amigos Oncológicos',
+        imagem: conferenciaImage,
+        imagens: [conferenciaImage],
         descricao:
           '"O CORDÃO é um coro comunitário, composto por doentes oncológicos, em tratamento ou remissão, e amigos. Amigos, aqui, são todos os que estão por perto: o companheiro, a irmã, o filho, a mãe, a amiga. Os que ajudam a carregar o peso da palavra “oncológico” e tudo o que ela traz consigo." - Texto extraído do site da Fundação Calouste Gulbenkian.',
         localizacao: 'Bandas de Garagem',
@@ -338,6 +404,8 @@ export const days = [
       {
         nome: 'Concerto final',
         subtitulo: 'Orquestra All Sax + solistas',
+        imagem: orquestraImage,
+        imagens: [orquestraImage],
         descricao: null,
         localizacao: 'Conservatório de Guimarães, Teatro Jordão',
         horario: '17:30 - 19:00',
