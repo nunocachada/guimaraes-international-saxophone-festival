@@ -129,8 +129,8 @@ export const days = [
       {
         nome: 'Warm up work',
         subtitulo: 'Henk van Twillert  ',
-        imagem: conferenciaImage,
-        imagens: [conferenciaImage],
+        imagem: henkVanTwillertImage,
+        imagens: [henkVanTwillertImage],
         descricao:
           'Sax, Body & Mind - Sessão de aquecimento físico e mental para músicos. Uma abordagem holística que combina técnica do saxofone com exercícios de corpo e mente para preparar os participantes para o dia.',
         localizacao: 'Bandas de Garagem, Conservatório de Guimarães',
