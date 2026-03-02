@@ -261,12 +261,25 @@ const ArtistaCard = ({ artista, artistaIndex, clipPathId }) => {
 
 // Componente para cada card de atividade com modal
 const AtividadeCard = ({ atividade, atividadeIndex, clipPathId }) => {
+  const [descricaoExpanded, setDescricaoExpanded] = useState(false)
+
   const atividadeImagens =
     atividade.imagens && atividade.imagens.length > 0
       ? atividade.imagens
       : [conferenciaImage]
   const atividadeImagem =
     atividade.imagem ?? atividadeImagens[0] ?? conferenciaImage
+
+  const descricao = atividade.descricao ?? ''
+  const shouldTruncateDescricao = descricao.length > BIO_MAX_LENGTH
+  const descricaoText =
+    !shouldTruncateDescricao || descricaoExpanded
+      ? descricao
+      : `${descricao.slice(0, BIO_MAX_LENGTH).trim()}...`
+
+  const handleToggleDescricao = () => {
+    setDescricaoExpanded((prev) => !prev)
+  }
 
   return (
     <div>
@@ -358,7 +371,32 @@ const AtividadeCard = ({ atividade, atividadeIndex, clipPathId }) => {
                     Descrição
                   </h3>
                   <p className="leading-relaxed text-neutral-300">
-                    {atividade.descricao}
+                    {descricaoText}
+                    {shouldTruncateDescricao && (
+                      <>
+                        {' '}
+                        <button
+                          type="button"
+                          onClick={handleToggleDescricao}
+                          onKeyDown={(e) => {
+                            if (e.key === 'Enter' || e.key === ' ') {
+                              e.preventDefault()
+                              handleToggleDescricao()
+                            }
+                          }}
+                          className="inline text-sm font-medium text-sax-gold underline decoration-sax-gold/60 underline-offset-2 hover:decoration-sax-gold focus:ring-2 focus:ring-sax-gold focus:ring-offset-2 focus:ring-offset-[#2a1f2a] focus:outline-none"
+                          aria-expanded={descricaoExpanded}
+                          aria-label={
+                            descricaoExpanded
+                              ? 'Ver menos'
+                              : 'Ver mais descrição'
+                          }
+                          tabIndex={0}
+                        >
+                          {descricaoExpanded ? 'Ver menos' : 'Ver mais'}
+                        </button>
+                      </>
+                    )}
                   </p>
                 </div>
               )}

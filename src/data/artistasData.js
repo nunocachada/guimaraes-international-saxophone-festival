@@ -18,6 +18,9 @@ import concertoNicolasImage from '@/images/atividades/Nicolas-Arsenijevic.jpg'
 import workshopJazzImage from '@/images/atividades/luis-miguel.jpg'
 import sponsorsTimeImage from '@/images/atividades/sponsors-time.jpg'
 import tiesTalkImage from '@/images/atividades/ties-talk.jpg'
+import coroCordaoImage from '@/images/atividades/coro-cordao.jpg'
+import coroCordaoImage2 from '@/images/atividades/coro-cordao-2.jpg'
+import coroCordaoImage3 from '@/images/atividades/coro-cordao-3.jpg'
 
 export const days = [
   {
@@ -394,10 +397,10 @@ export const days = [
       {
         nome: 'Concerto do Coro Cordão',
         subtitulo: 'Coro de Doentes e Amigos Oncológicos',
-        imagem: conferenciaImage,
-        imagens: [conferenciaImage],
+        imagem: coroCordaoImage,
+        imagens: [coroCordaoImage, coroCordaoImage2, coroCordaoImage3],
         descricao:
-          '"O CORDÃO é um coro comunitário, composto por doentes oncológicos, em tratamento ou remissão, e amigos. Amigos, aqui, são todos os que estão por perto: o companheiro, a irmã, o filho, a mãe, a amiga. Os que ajudam a carregar o peso da palavra “oncológico” e tudo o que ela traz consigo." - Texto extraído do site da Fundação Calouste Gulbenkian.',
+          'O CORDÃO é um coro comunitário composto por pessoas diagnosticadas com cancro, em tratamento ou remissão, pelos seus cuidadores (formais ou informais) e profissionais de saúde. Com o objetivo principal de combater o isolamento social dos doentes oncológicos e dos seus cuidadores, este CORDÃO liga pessoas, costurando, em conjunto, novas formas de viver e olhar o cancro.\n\nDesde o início de 2025, o CORDÃO mantém as portas abertas à participação com o objetivo principal de combater o isolamento social dos doentes oncológicos e dos seus cuidadores. Ao longo do ano passado, foram realizados encontros semanais com exercícios de criação colaborativa, através da escolha ou do desenvolvimento de repertório, a partir de processos de escrita criativa ou por meio de exercícios de composição musical. Estas dinâmicas visaram transformar a experiência do cancro, frequentemente marcada pela solidão, em momentos de partilha, conexão e expressão artística.\n\nAo longo do primeiro ano do projeto, o grupo teve a oportunidade de se apresentar ao vivo em alguns momentos: através da instalação audiovisual “Casulo”, no Theatro Circo; ou em performances ao vivo – no âmbito das Festas de São João de Braga, com António Sérginho e Grupo de Cantares das Mulheres do Minho, na Verbena Solidária no Palácio, uma iniciativa da Liga Portuguesa Contra o Cancro, ou no gnration com a ODE – Orquestra de Dispositivos Eletrónicos.\n\nO CORDÃO faz parte da 3.ª edição do programa PARTIS & Art For Change, uma iniciativa da Fundação Calouste Gulbenkian e da Fundação la Caixa. É promovido pela Faz Cultura – Empresa Municipal de Cultura de Braga, tendo como parceiros a Unidade Local de Saúde (ULS) de Braga, a Liga Portuguesa Contra o Cancro – Delegação de Braga e a APLL - Associação Portuguesa de Leucemias e Linfomas.',
         localizacao: 'Bandas de Garagem',
         horario: '15:30 - 16:30',
       },
