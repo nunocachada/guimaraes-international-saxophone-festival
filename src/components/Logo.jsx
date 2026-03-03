@@ -1,3 +1,6 @@
+'use client'
+
+import { useState, useEffect } from 'react'
 import { TextCircle } from '@/components/text-circle'
 
 const SIZE_CONFIG = {
@@ -15,6 +18,21 @@ const SIZE_CONFIG = {
   },
 }
 
+const useIsMobile = () => {
+  const [isMobile, setIsMobile] = useState(true)
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(max-width: 639px)')
+    setIsMobile(mediaQuery.matches)
+
+    const handleChange = (e) => setIsMobile(e.matches)
+    mediaQuery.addEventListener('change', handleChange)
+    return () => mediaQuery.removeEventListener('change', handleChange)
+  }, [])
+
+  return isMobile
+}
+
 export function Logo({
   size = 'md',
   text = 'Guimarães International Saxophone Festival * 2026 * ',
@@ -23,7 +41,9 @@ export function Logo({
   linkAriaLabel,
   ...props
 }) {
-  const config = SIZE_CONFIG[size] ?? SIZE_CONFIG.md
+  const isMobile = useIsMobile()
+  const effectiveSize = size === 'sm-md' ? (isMobile ? 'sm' : 'md') : size
+  const config = SIZE_CONFIG[effectiveSize] ?? SIZE_CONFIG.md
   const combinedClassName = [config.classes, className]
     .filter(Boolean)
     .join(' ')

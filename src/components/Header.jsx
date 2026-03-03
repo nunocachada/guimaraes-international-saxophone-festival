@@ -4,14 +4,13 @@ import Image from 'next/image'
 import saxImage from '@/images/sax.svg'
 import { Button } from './Button'
 
-// import { Formulario } from './Formulario'
 export function Header() {
   return (
     <header className="relative z-50 flex-none lg:pt-11">
       <Container className="flex flex-wrap items-center justify-center sm:justify-between lg:flex-nowrap">
         <div className="mt-10 lg:mt-0 lg:grow lg:basis-0">
           <Logo
-            size="md"
+            size="sm-md"
             text="Guimarães International Saxophone Festival * 2026 * "
             className=""
             linkHref="/"
@@ -37,13 +36,12 @@ export function Header() {
           </div>
         </div>
         <div className="hidden sm:mt-10 sm:flex lg:mt-0 lg:grow lg:basis-0 lg:justify-end">
-          {/* <Button
-            className="bg-sax-gold font-fonty text-white transition-colors duration-200 ease-in-out hover:bg-sax-gold-dark"
-            href="#"
+          <Button
+            className="bg-sax-gold font-fonty text-xl !text-white uppercase transition-all transition-colors duration-300 ease-in-out hover:bg-sax-gold-dark"
+            href="https://www.guimaraessaxfest.com/masterclass/"
           >
             Participar
-          </Button> */}
-          {/* <Formulario className="mt-10 font-mono" /> */}
+          </Button>
         </div>
       </Container>
     </header>
