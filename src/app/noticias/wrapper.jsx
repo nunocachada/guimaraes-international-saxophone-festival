@@ -21,11 +21,11 @@ export default async function NoticiaWrapper({ noticia, children }) {
             </h1>
             <time
               dateTime={noticia.data}
-              className="order-first font-mono text-sm text-neutral-500"
+              className="order-first font-mono text-sm text-neutral-400"
             >
               {formatDate(noticia.data)}
             </time>
-            <p className="mt-6 font-mono text-sm font-semibold text-neutral-500">
+            <p className="mt-6 font-mono text-sm font-semibold text-neutral-400">
               por {noticia.autor.nome}, {noticia.autor.cargo}
             </p>
           </header>

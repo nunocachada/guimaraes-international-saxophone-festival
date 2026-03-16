@@ -24,7 +24,7 @@ export default async function Noticias() {
           <h1 className="font-fonty text-4xl font-semibold text-sax-gold uppercase sm:text-5xl lg:text-6xl">
             Notícias
           </h1>
-          <p className="mx-auto mt-6 max-w-2xl font-mono text-lg text-neutral-500">
+          <p className="mx-auto mt-6 max-w-2xl font-mono text-lg text-neutral-400">
             Mantenha-se atualizado com as últimas notícias sobre o festival.
           </p>
         </div>
@@ -41,7 +41,7 @@ export default async function Noticias() {
                       </h2>
                       <dl className="lg:absolute lg:top-0 lg:left-0 lg:w-1/3 lg:px-4">
                         <dt className="sr-only">Published</dt>
-                        <dd className="absolute top-0 left-0 font-mono text-sm text-neutral-500 lg:static">
+                        <dd className="absolute top-0 left-0 font-mono text-sm text-neutral-400 lg:static">
                           <time dateTime={noticia.data}>
                             {formatDate(noticia.data)}
                           </time>
@@ -55,15 +55,15 @@ export default async function Noticias() {
                               className="h-12 w-12 object-cover object-top"
                             />
                           </div>
-                          <div className="font-mono text-sm text-neutral-500">
-                            <div className="font-semibold text-neutral-400">
+                          <div className="font-mono text-sm text-neutral-400">
+                            <div className="font-semibold text-neutral-300">
                               {noticia.autor.nome}
                             </div>
                             <div>{noticia.autor.cargo}</div>
                           </div>
                         </dd>
                       </dl>
-                      <p className="mt-6 max-w-2xl font-mono text-base text-neutral-500">
+                      <p className="mt-6 max-w-2xl font-mono text-base text-neutral-300">
                         {noticia.descricao}
                       </p>
                       <Button

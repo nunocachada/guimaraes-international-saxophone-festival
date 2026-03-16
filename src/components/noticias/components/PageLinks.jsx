@@ -30,11 +30,11 @@ function PageLink({ page }) {
         </h3>
         <time
           dateTime={page.data}
-          className="order-first font-mono text-sm text-neutral-500"
+          className="order-first font-mono text-sm text-neutral-400"
         >
           {formatDate(page.data)}
         </time>
-        <p className="mt-2.5 font-mono text-base text-neutral-500">
+        <p className="mt-2.5 font-mono text-base text-neutral-300">
           {page.descricao}
         </p>
         <Link
@@ -59,7 +59,7 @@ export function PageLinks({ title, pages, intro, className }) {
           <h2 className="font-mono text-3xl font-semibold text-sax-gold sm:text-4xl">
             {title}
           </h2>
-          {intro && <p className="mt-4 font-mono text-neutral-500">{intro}</p>}
+          {intro && <p className="mt-4 font-mono text-neutral-400">{intro}</p>}
         </div>
         <FadeInStagger className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-2">
           {pages.map((page) => (
