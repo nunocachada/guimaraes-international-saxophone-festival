@@ -1,0 +1,20 @@
+{
+  "metadataTitle": "Contactos",
+  "metadataDescription": "Entre em contacto com a organização do Guimarães International Saxophone Festival.",
+  "heading": "Contactos",
+  "intro": "Entre em contacto connosco.",
+  "types": {
+    "email": "Email",
+    "landline": "Telefone Fixo",
+    "mobile": "Telefone Móvel"
+  },
+  "callLandlineHint": "(chamada para rede fixa nacional)",
+  "callMobileHint": "(chamada para rede móvel nacional)",
+  "addressTitle": "Morada",
+  "venueName": "Conservatório de Guimarães",
+  "venueDetail": "Teatro Jordão (Portaria)",
+  "streetLabel": "Rua",
+  "streetValue": "Rua de Vila Flor",
+  "postalLabel": "Código Postal",
+  "postalValue": "4810-225 Guimarães"
+}

@@ -18,9 +18,9 @@ function ArrowIcon(props) {
   )
 }
 
-function PageLink({ page }) {
+function PageLink({ page, locale, readMoreLabel, readMoreAriaPrefix }) {
   return (
-    <article key={page.href}>
+    <article>
       <Border
         position="left"
         className="relative flex flex-col items-start pl-8"
@@ -32,7 +32,7 @@ function PageLink({ page }) {
           dateTime={page.data}
           className="order-first font-mono text-sm text-neutral-400"
         >
-          {formatDate(page.data)}
+          {formatDate(page.data, locale)}
         </time>
         <p className="mt-2.5 font-mono text-base text-neutral-300">
           {page.descricao}
@@ -40,9 +40,9 @@ function PageLink({ page }) {
         <Link
           href={page.href}
           className="mt-6 flex gap-x-3 font-mono text-base font-semibold text-sax-gold transition hover:text-sax-gold-dark"
-          aria-label={`Ler mais: ${page.titulo}`}
+          aria-label={`${readMoreAriaPrefix}: ${page.titulo}`}
         >
-          Ler mais
+          {readMoreLabel}
           <ArrowIcon className="w-6 flex-none fill-current" />
           <span className="absolute inset-0" />
         </Link>
@@ -51,7 +51,15 @@ function PageLink({ page }) {
   )
 }
 
-export function PageLinks({ title, pages, intro, className }) {
+export function PageLinks({
+  title,
+  pages,
+  intro,
+  className,
+  locale = 'pt',
+  readMoreLabel = 'Ler mais',
+  readMoreAriaPrefix = 'Ler mais',
+}) {
   return (
     <div className={clsx('relative pt-16 sm:pt-24 lg:pt-32', className)}>
       <Container className={intro ? 'mt-16' : 'mt-12'}>
@@ -64,7 +72,12 @@ export function PageLinks({ title, pages, intro, className }) {
         <FadeInStagger className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-2">
           {pages.map((page) => (
             <FadeIn key={page.href}>
-              <PageLink page={page} />
+              <PageLink
+                page={page}
+                locale={locale}
+                readMoreLabel={readMoreLabel}
+                readMoreAriaPrefix={readMoreAriaPrefix}
+              />
             </FadeIn>
           ))}
         </FadeInStagger>

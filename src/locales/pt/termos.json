@@ -1,0 +1,284 @@
+{
+  "metadataTitle": "Termos e Condições",
+  "metadataDescription": "Termos e Condições de participação no Guimarães International Saxophone Festival 2026.",
+  "title": "Termos e Condições",
+  "updated": "Última atualização: 14 de janeiro de 2026",
+  "sections": [
+    {
+      "title": "1. Identificação da Entidade",
+      "blocks": [
+        {
+          "pHighlight": {
+            "pre": "O ",
+            "bold": "Guimarães International Saxophone Festival",
+            "post": " é organizado pela:"
+          }
+        },
+        {
+          "dl": [
+            {
+              "dt": "Entidade",
+              "dd": "Sociedade Musical de Guimarães"
+            },
+            {
+              "dt": "NIF",
+              "dd": "501 631 542"
+            },
+            {
+              "dt": "Morada",
+              "dd": "Rua de Vila Flor – Portaria Teatro Jordão, 4810-255 Guimarães",
+              "ddClassName": "break-words sm:break-normal"
+            },
+            {
+              "dt": "Telefone",
+              "dd": "",
+              "ddLink": {
+                "href": "tel:+351253517049",
+                "text": "+351 253 517 049"
+              }
+            },
+            {
+              "dt": "Email",
+              "dd": "",
+              "ddLink": {
+                "href": "mailto:geral@smguimaraes.pt",
+                "text": "geral@smguimaraes.pt"
+              },
+              "ddClassName": "break-all sm:break-normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "2. Objeto",
+      "blocks": [
+        {
+          "p": "Os presentes Termos e Condições regulam a participação no Guimarães International Saxophone Festival 2026 (7 a 10 de julho), incluindo:"
+        },
+        {
+          "ul": [
+            "Masterclasses de saxofone com professores internacionais",
+            "Participação nas orquestras (All Sax, Be_Sax, Stars of the Future)",
+            "Concertos e apresentações públicas",
+            "Atividades complementares do evento"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3. Inscrição",
+      "blocks": [
+        {
+          "p": "A inscrição é efetuada exclusivamente através do formulário online disponível neste website."
+        },
+        {
+          "p": "A inscrição considera-se válida após:"
+        },
+        {
+          "ul": [
+            "Preenchimento completo e correto do formulário de inscrição",
+            "Aceitação expressa dos presentes Termos e Condições",
+            "Aceitação da Política de Privacidade",
+            "Pagamento integral do valor da inscrição",
+            "Confirmação por email da organização"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "4. Preços e Pagamento",
+      "blocks": [
+        {
+          "p": "Os preços em vigor para a edição 2026 são:"
+        },
+        {
+          "table": {
+            "headers": [
+              "Modalidade",
+              "Preço"
+            ],
+            "rows": [
+              [
+                "Aula Individual (50 min)",
+                "50€"
+              ],
+              [
+                "Pack 2 Aulas",
+                "75€"
+              ],
+              [
+                "Pack 3 Aulas",
+                "135€"
+              ],
+              [
+                "Orquestra ALL SAX",
+                "40€"
+              ],
+              [
+                "Orquestra BE_SAX",
+                "35€"
+              ],
+              [
+                "Stars of the Future",
+                "35€"
+              ]
+            ]
+          }
+        },
+        {
+          "box": {
+            "title": "O pagamento deve ser efetuado por transferência bancária:",
+            "blocks": [
+              {
+                "dl": [
+                  {
+                    "dt": "IBAN",
+                    "dd": "PT50 0035 0271 0000 8409 6307 2",
+                    "ddClassName": "font-mono font-semibold break-all sm:break-normal sm:text-right"
+                  },
+                  {
+                    "dt": "Email para comprovativo",
+                    "dd": "",
+                    "ddLink": {
+                      "href": "mailto:tesouraria@smguimaraes.pt",
+                      "text": "tesouraria@smguimaraes.pt"
+                    },
+                    "ddClassName": "break-all sm:break-normal sm:text-right"
+                  }
+                ]
+              },
+              {
+                "p": "O comprovativo de pagamento deve ser enviado juntamente com a referência indicada no email de confirmação da inscrição."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "5. Cancelamento e Reembolso",
+      "blocks": [
+        {
+          "pStrongLead": {
+            "lead": "Política de cancelamento por parte do participante:",
+            "rest": ""
+          }
+        },
+        {
+          "ulRich": [
+            {
+              "strong": "Até 30 dias antes do evento:",
+              "rest": "Reembolso de 80% do valor pago"
+            },
+            {
+              "strong": "Entre 30 e 15 dias antes:",
+              "rest": "Reembolso de 50% do valor pago"
+            },
+            {
+              "strong": "Menos de 15 dias antes:",
+              "rest": "Sem direito a reembolso"
+            }
+          ]
+        },
+        {
+          "p": "Em caso de cancelamento do evento por parte da organização, será efetuado reembolso integral de todos os valores pagos."
+        }
+      ]
+    },
+    {
+      "title": "6. Responsabilidades",
+      "blocks": [
+        {
+          "p": "Os participantes são responsáveis por:"
+        },
+        {
+          "ul": [
+            "O seu próprio instrumento musical e acessórios",
+            "Material escolar e partituras necessárias",
+            "Bens pessoais durante todo o evento"
+          ]
+        },
+        {
+          "p": "A organização não se responsabiliza por perdas, danos, furtos ou extravios de bens pessoais."
+        },
+        {
+          "pHighlight": {
+            "pre": "",
+            "bold": "Participantes menores de 18 anos ",
+            "post": "devem estar acompanhados por um responsável legal durante todo o evento."
+          }
+        }
+      ]
+    },
+    {
+      "title": "7. Direitos de Imagem",
+      "blocks": [
+        {
+          "p": "Ao aceitar os presentes termos, o participante autoriza:"
+        },
+        {
+          "ul": [
+            "A captação de fotografias e vídeos durante o evento",
+            "A utilização destas imagens para fins promocionais e divulgação do festival",
+            "A publicação nas redes sociais e website do evento"
+          ]
+        },
+        {
+          "p": "Caso não pretenda autorizar a utilização da sua imagem, deve comunicar por escrito antes do evento."
+        }
+      ]
+    },
+    {
+      "title": "8. Proteção de Dados",
+      "blocks": [
+        {
+          "p": "Os dados pessoais recolhidos através da inscrição serão tratados de acordo com:"
+        },
+        {
+          "ul": [
+            "O Regulamento Geral de Proteção de Dados (RGPD)",
+            "A Lei n.º 58/2019 (Lei de Proteção de Dados Pessoais)"
+          ]
+        },
+        {
+          "pLinkLine": {
+            "pre": "A nossa ",
+            "href": "https://www.guimaraessaxfest.com/masterclass/privacidade.php",
+            "label": "Política de Privacidade",
+            "post": "."
+          }
+        }
+      ]
+    },
+    {
+      "title": "9. Alterações ao Programa",
+      "blocks": [
+        {
+          "p": "A organização reserva-se o direito de alterar:"
+        },
+        {
+          "ul": [
+            "O programa e horários do evento",
+            "Os professores convidados",
+            "Os locais das atividades"
+          ]
+        },
+        {
+          "p": "Estas alterações podem ocorrer por motivos de força maior, procurando sempre manter ou melhorar a qualidade do evento."
+        }
+      ]
+    },
+    {
+      "title": "10. Lei Aplicável e Foro",
+      "blocks": [
+        {
+          "p": "Os presentes Termos e Condições são regidos pela lei portuguesa."
+        },
+        {
+          "p": "Para resolução de qualquer litígio emergente destes termos será competente o foro da comarca de Guimarães, com expressa renúncia a qualquer outro."
+        }
+      ]
+    }
+  ]
+}

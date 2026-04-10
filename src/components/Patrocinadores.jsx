@@ -1,12 +1,12 @@
+'use client'
+
 import React from 'react'
 import Image from 'next/image'
 import { ProgressiveBlur } from './ui/progressive-blur'
 import { InfiniteSlider } from './ui/infinite-slider'
-import { Logo } from './Logo-YGM'
 import logoSmg from '@/images/logos/smg2.png'
 import logoMaferMusica from '@/images/logos/mafer-musica.svg'
 import logoFundacao from '@/images/logos/fundacao.svg'
-// import logoMotaEngil from '@/images/logos/mota-engil.svg'
 import logoSonsDoClassico from '@/images/logos/sons-do-classico.png'
 import logoFersanGroup from '@/images/logos/fersan-group.png'
 import logoYamaha from '@/images/logos/yamaha.png'
@@ -21,12 +21,12 @@ import bg from '@/images/logos/bg.svg'
 import vandoren from '@/images/logos/vandoren.svg'
 import eastman from '@/images/logos/eastman2.svg'
 import mcostas from '@/images/logos/m-costas.svg'
+import { useDictionary } from '@/lib/i18n/DictionaryContext'
 
 const parceiros = [
   { name: 'Sociedade Musical de Guimarães', logo: logoSmg },
   { name: 'Municipio de Guimarães', logo: logoMunicipio },
   { name: 'Fundação Manuel António da Mota', logo: logoFundacao },
-  // { name: 'Mota Engil Mecenas', logo: logoMotaEngil },
   { name: 'MaferMúsica', logo: logoMaferMusica },
   { name: 'Fersan Group', logo: logoFersanGroup },
   { name: 'Sons do Clássico', logo: logoSonsDoClassico },
@@ -44,6 +44,8 @@ const parceiros = [
 ]
 
 function Patrocinadores() {
+  const { t } = useDictionary('patrocinadores')
+
   return (
     <>
       <section className="overflow-hidden">
@@ -51,8 +53,8 @@ function Patrocinadores() {
           <div className="group relative m-auto max-w-2xl lg:max-w-4xl lg:px-12">
             <div className="flex flex-col items-center md:flex-row">
               <div className="mb-4 hidden sm:block md:mb-0 md:max-w-44 md:border-r md:border-gray-600 md:pr-6">
-                <p className="text-end text-sm text-gray-400">Apoios</p>
-                <p className="text-end text-sm text-gray-400">Patrocinadores</p>
+                <p className="text-end text-sm text-gray-400">{t('supports')}</p>
+                <p className="text-end text-sm text-gray-400">{t('sponsors')}</p>
               </div>
               <div className="relative py-6 md:w-[calc(100%-11rem)]">
                 <InfiniteSlider durationOnHover={20} duration={40} gap={112}>

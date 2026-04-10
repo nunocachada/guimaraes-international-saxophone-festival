@@ -1,7 +1,6 @@
 'use client'
 
 import Link from 'next/link'
-import { CalendarIcon, HomeIcon, MailIcon, PencilIcon } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { buttonVariants } from '@/components/ui/button'
 import { Logo } from '@/components/Logo'
@@ -13,38 +12,33 @@ import {
   TooltipTrigger,
 } from '@/components/ui/shadcn/tooltip'
 import { Dock, DockIcon } from '@/components/ui/dock'
+import { useDictionary } from '@/lib/i18n/DictionaryContext'
 
-const navegacao = {
-  principal: [
-    {
-      nome: 'Home',
-      href: '/',
-    },
-    {
-      nome: 'Notícias',
-      href: '/noticias',
-    },
-    {
-      nome: 'Termos',
-      href: 'https://www.guimaraessaxfest.com/masterclass/termos.php',
-    },
-    {
-      nome: 'Privacidade',
-      href: 'https://www.guimaraessaxfest.com/masterclass/privacidade.php',
-    },
-    {
-      nome: 'Cookies',
-      href: 'https://www.guimaraessaxfest.com/masterclass/cookies.php',
-    },
-    { nome: 'Livro de Reclamações', href: 'https://www.livroreclamacoes.pt/' },
-    { nome: 'Contactos', href: '/contactos' },
-  ],
-}
+const principalKeys = [
+  { key: 'home', href: '/' },
+  { key: 'news', href: '/noticias' },
+  {
+    key: 'terms',
+    href: '/termos',
+  },
+  {
+    key: 'privacy',
+    href: 'https://www.guimaraessaxfest.com/masterclass/privacidade.php',
+  },
+  {
+    key: 'cookies',
+    href: 'https://www.guimaraessaxfest.com/masterclass/cookies.php',
+  },
+  { key: 'complaints', href: 'https://www.livroreclamacoes.pt/' },
+  { key: 'contact', href: '/contactos' },
+]
 
 export default function Rodape() {
+  const { t } = useDictionary('rodape')
+  const { t: tCommon } = useDictionary('common')
+
   return (
     <>
-      {/* Divider */}
       <div className="relative bg-[#000000] py-8">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="relative">
@@ -57,30 +51,28 @@ export default function Rodape() {
           </div>
         </div>
       </div>
-      {/* <footer className="bg-[#1a0f1a]"> */}
       <footer className="bg-[#000000]">
         <div className="flex justify-center">
           <Logo
             size="sm"
-            text="Guimarães International Saxophone Festival * 2026 * "
+            text={tCommon('logoCircleText')}
             className=""
             linkHref="/"
-            linkAriaLabel="Guimarães International Saxophone Festival - Página inicial"
+            linkAriaLabel={tCommon('logoAriaHome')}
           />
         </div>
         <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
           <nav
-            aria-label="Rodapé"
+            aria-label={t('navAria')}
             className="-mb-6 flex flex-wrap justify-center gap-x-12 gap-y-3 font-mono text-sm/6"
           >
-            {' '}
-            {navegacao.principal.map((item) => (
+            {principalKeys.map((item) => (
               <a
-                key={item.nome}
+                key={item.key}
                 href={item.href}
                 className="text-neutral-300 transition-colors hover:text-sax-gold"
               >
-                {item.nome}
+                {t(`links.${item.key}`)}
               </a>
             ))}
           </nav>
@@ -88,8 +80,7 @@ export default function Rodape() {
             <RedesSociais />
           </div>
           <p className="mt-10 text-center font-mono text-sm/6 text-neutral-400">
-            {new Date().getFullYear()} &copy; Guimarães International Saxophone
-            Festival. Todos os direitos reservados.
+            {new Date().getFullYear()} &copy; {t('copyright')}
           </p>
         </div>
       </footer>
@@ -98,9 +89,6 @@ export default function Rodape() {
 }
 
 const Icons = {
-  calendar: (props) => <CalendarIcon {...props} />,
-  email: (props) => <MailIcon {...props} />,
-
   facebook: (props) => (
     <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
       <path
@@ -122,7 +110,6 @@ const Icons = {
   ),
 }
 const DATA = {
-  navbar: [{ href: '#', icon: HomeIcon, label: 'Home' }],
   contact: {
     social: {
       Instagram: {
@@ -144,28 +131,6 @@ function RedesSociais() {
     <div className="flex flex-col items-center justify-center">
       <TooltipProvider>
         <Dock direction="middle">
-          {/* {DATA.navbar.map((item) => (
-            <DockIcon key={item.label}>
-              <Tooltip>
-                <TooltipTrigger asChild>
-                  <Link
-                    href={item.href}
-                    aria-label={item.label}
-                    className={cn(
-                      buttonVariants({ variant: 'ghost', size: 'icon' }),
-                      'size-12 rounded-full',
-                    )}
-                  >
-                    <item.icon className="size-4" />
-                  </Link>
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>{item.label}</p>
-                </TooltipContent>
-              </Tooltip>
-            </DockIcon>
-          ))} */}
-
           {Object.entries(DATA.contact.social).map(([name, social]) => (
             <DockIcon key={name} className="">
               <Tooltip>

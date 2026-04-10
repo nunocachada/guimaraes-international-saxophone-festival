@@ -4,8 +4,13 @@ import { MDXComponents } from '@/components/noticias/components/MDXComponents'
 import { PageLinks } from '@/components/noticias/components/PageLinks'
 import { formatDate } from '@/lib/formatDate'
 import { carregarNoticias } from '@/lib/mdx'
+import { getDictionary } from '@/lib/get-dictionary'
+import { resolveLocale } from '@/lib/i18n/resolveLocale'
 
 export default async function NoticiaWrapper({ noticia, children }) {
+  const locale = await resolveLocale()
+  const dict = await getDictionary(locale)
+  const n = dict.noticias
   let todasNoticias = await carregarNoticias()
   let maisNoticias = todasNoticias
     .filter(({ metadata }) => metadata !== noticia)
@@ -23,10 +28,10 @@ export default async function NoticiaWrapper({ noticia, children }) {
               dateTime={noticia.data}
               className="order-first font-mono text-sm text-neutral-400"
             >
-              {formatDate(noticia.data)}
+              {formatDate(noticia.data, locale)}
             </time>
             <p className="mt-6 font-mono text-sm font-semibold text-neutral-400">
-              por {noticia.autor.nome}, {noticia.autor.cargo}
+              {n.byAuthor} {noticia.autor.nome}, {noticia.autor.cargo}
             </p>
           </header>
         </FadeIn>
@@ -41,8 +46,11 @@ export default async function NoticiaWrapper({ noticia, children }) {
       {maisNoticias.length > 0 && (
         <PageLinks
           className="mt-16 sm:mt-24 lg:mt-32"
-          title="Mais notícias"
+          title={n.moreNews}
           pages={maisNoticias}
+          locale={locale}
+          readMoreLabel={n.readMore}
+          readMoreAriaPrefix={n.readMoreAria}
         />
       )}
     </>

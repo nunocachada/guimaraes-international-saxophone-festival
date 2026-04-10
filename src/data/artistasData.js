@@ -24,11 +24,11 @@ import coroCordaoImage3 from '@/images/atividades/coro-cordao-3.jpg'
 
 export const days = [
   {
-    nome: 'Sobre',
-    data: 'Artistas',
+    dayType: 'artists',
     dataHora: '2026-07-07',
     artistas: [
       {
+        bioI18nKey: 'ties_mellema',
         nome: 'Ties Mellemma',
         papel: 'HOLANDA',
         imagem: tiesMellemmaImage,
@@ -45,6 +45,7 @@ export const days = [
         imagens: [tiesMellemmaImage],
       },
       {
+        bioI18nKey: 'nicolas_arsenijevic',
         nome: 'Nicolas Arsenijevic',
         papel: 'FRANÇA',
         imagem: nicolasArsenijevicImage,
@@ -60,6 +61,7 @@ export const days = [
         imagens: [nicolasArsenijevicImage],
       },
       {
+        bioI18nKey: 'henk_van_twillert',
         nome: 'Henk Van Twillert',
         papel: 'HOLANDA',
         imagem: henkVanTwillertImage,
@@ -75,6 +77,7 @@ export const days = [
         imagens: [henkVanTwillertImage],
       },
       {
+        bioI18nKey: 'bruno_santos',
         nome: 'Bruno Santos',
         papel: 'PORTUGAL',
         imagem: brunoSantosImage,
@@ -85,6 +88,7 @@ export const days = [
         imagens: [brunoSantosImage],
       },
       {
+        bioI18nKey: 'nuno_silva',
         nome: 'Nuno Silva',
         papel: 'PORTUGAL',
         imagem: nunoSilvaImage,
@@ -100,6 +104,7 @@ export const days = [
         imagens: [nunoSilvaImage],
       },
       {
+        bioI18nKey: 'luis_miguel',
         nome: 'Luis Miguel',
         papel: 'PORTUGAL',
         imagem: luisMiguelImage,
@@ -113,12 +118,12 @@ export const days = [
     atividades: [],
   },
   {
-    nome: 'Programação',
-    data: '7 de Julho',
+    dayType: 'program',
     dataHora: '2026-07-07',
     artistas: [],
     atividades: [
       {
+        i18nKey: 'fest_0707_rececao',
         nome: 'Receção aos participantes',
         subtitulo: null,
         imagem: rececaoParticipantesImage,
@@ -130,6 +135,7 @@ export const days = [
         informacoes: null,
       },
       {
+        i18nKey: 'fest_0707_warmup',
         nome: 'Warm up work',
         subtitulo: 'Henk van Twillert  ',
         imagem: henkVanTwillertImage,
@@ -141,6 +147,7 @@ export const days = [
         informacoes: 'Esta sessão será orientada por Henk van Twillert.',
       },
       {
+        i18nKey: 'fest_0707_mc_tnn',
         nome: 'Masterclasses',
         subtitulo: 'Ties Mellema, Nicolas Arsenijevic, Nuno Silva',
         imagem: masterclassesTiesNicolasNunoImage,
@@ -151,6 +158,7 @@ export const days = [
         informacoes: null,
       },
       {
+        i18nKey: 'fest_0707_stars',
         nome: 'Stars of the Future',
         subtitulo: 'Henk van Twillert (a confirmar)',
         imagem: starsOfTheFutureImage,
@@ -161,6 +169,7 @@ export const days = [
         horario: '11:30 - 12:30',
       },
       {
+        i18nKey: 'fest_0707_lunch_g1',
         nome: 'Lunch concert',
         subtitulo: 'Stars of the Future (Grupo 1)',
         imagem: lunchConcertImage,
@@ -172,6 +181,7 @@ export const days = [
         horario: '13:10 - 13:30',
       },
       {
+        i18nKey: 'fest_0707_mc_tn',
         nome: 'Masterclasses',
         subtitulo: 'Ties Mellema / Nicolas Arsenijevic',
         imagem: masterclassesTiesNicolasImage,
@@ -182,6 +192,7 @@ export const days = [
         informacoes: null,
       },
       {
+        i18nKey: 'fest_0707_conferencia',
         nome: 'Conferência',
         subtitulo: 'Miguel Pais Clemente, Henk van Twillert e Joaquim Gabriel',
         imagem: conferenciaImage,
@@ -192,6 +203,7 @@ export const days = [
         horario: '16:15 - 17:30',
       },
       {
+        i18nKey: 'fest_0707_be_sax',
         nome: 'Orquestra Be Sax ',
         subtitulo: 'Ensaios',
         imagem: orquestraImage,
@@ -201,6 +213,7 @@ export const days = [
         horario: '17:30 - 18:45',
       },
       {
+        i18nKey: 'fest_0707_all_sax',
         nome: 'All Sax Orchestra',
         subtitulo: 'Ensaios',
         imagem: orquestraImage,
@@ -210,6 +223,7 @@ export const days = [
         horario: '18:00 - 20:05',
       },
       {
+        i18nKey: 'fest_0707_concerto_nuno',
         nome: 'Concerto de Nuno Silva',
         subtitulo: 'Salão nobre',
         imagem: concertoNunoSilvaImage,
@@ -222,12 +236,12 @@ export const days = [
     ],
   },
   {
-    nome: 'Programação',
-    data: '8 de Julho',
+    dayType: 'program',
     dataHora: '2026-07-08',
     artistas: [],
     atividades: [
       {
+        i18nKey: 'fest_0708_mc_tnn',
         nome: 'Masterclasses',
         subtitulo: 'Ties Mellema, Nicolas Arsenijevic, Nuno Silva',
         imagem: masterclassesTiesNicolasNunoImage,
@@ -237,6 +251,7 @@ export const days = [
         horario: ' 09:00 - 13:00',
       },
       {
+        i18nKey: 'fest_0708_stars',
         nome: 'Stars of the Future',
         subtitulo: 'Henk van Twillert (a confirmar)',
         imagem: starsOfTheFutureImage,
@@ -248,6 +263,7 @@ export const days = [
         informacoes: 'Piso 1,sala de percussão',
       },
       {
+        i18nKey: 'fest_0708_lunch_g2',
         nome: 'Lunch concert',
         subtitulo: 'Stars of the Future (Grupo 2)',
         imagem: lunchConcertImage,
@@ -258,6 +274,7 @@ export const days = [
         horario: '13:10 - 13:30',
       },
       {
+        i18nKey: 'fest_0708_mc_tn',
         nome: 'Masterclasses',
         subtitulo: 'Ties Mellema, Nicolas Arsenijevic',
         imagem: masterclassesTiesNicolasImage,
@@ -268,6 +285,7 @@ export const days = [
       },
 
       {
+        i18nKey: 'fest_0708_be_sax',
         nome: 'Orquestra Be Sax',
         subtitulo: 'Ensaio',
         imagem: orquestraImage,
@@ -278,6 +296,7 @@ export const days = [
         horario: '16:15 - 17:20',
       },
       {
+        i18nKey: 'fest_0708_all_sax',
         nome: 'Orquestra All Sax',
         subtitulo: 'Ensaio',
         imagem: orquestraImage,
@@ -288,6 +307,7 @@ export const days = [
         horario: '17:30 - 18:20',
       },
       {
+        i18nKey: 'fest_0708_concerto_nicolas',
         nome: 'Concerto de Nicolas Arsenijevic',
         subtitulo: 'Salão nobre',
         imagem: concertoNicolasImage,
@@ -299,12 +319,12 @@ export const days = [
     ],
   },
   {
-    nome: 'Programação',
-    data: '9 de Julho',
+    dayType: 'program',
     dataHora: '2026-07-09',
     artistas: [],
     atividades: [
       {
+        i18nKey: 'fest_0709_mc_tnbs',
         nome: 'Masterclasses',
         subtitulo: 'Ties Mellema / Nuno Silva / Bruno Santos',
         imagem: masterclassesTiesNunoBrunoImage,
@@ -315,6 +335,7 @@ export const days = [
         informacoes: null,
       },
       {
+        i18nKey: 'fest_0709_jazz_ws',
         nome: 'Workshop de Jazz',
         subtitulo: 'Luis Miguel (artista Eastman)',
         imagem: workshopJazzImage,
@@ -325,6 +346,7 @@ export const days = [
         informacoes: null,
       },
       {
+        i18nKey: 'fest_0709_jazz_concert',
         nome: 'Concerto de Jazz',
         subtitulo: 'Alunos do workshop',
         imagem: lunchConcertImage,
@@ -335,6 +357,7 @@ export const days = [
         horario: '13:00 - 13:20',
       },
       {
+        i18nKey: 'fest_0709_sponsors',
         nome: "Sponsors' time",
         subtitulo: 'Sponsors Happy Hour',
         imagem: sponsorsTimeImage,
@@ -345,6 +368,7 @@ export const days = [
         horario: '14:30 - 17:15',
       },
       {
+        i18nKey: 'fest_0709_ties_talk',
         nome: 'Ties Mellema Talk',
         subtitulo: 'Find your own voice',
         imagem: tiesTalkImage,
@@ -356,6 +380,7 @@ export const days = [
         informacoes: null,
       },
       {
+        i18nKey: 'fest_0709_all_sax',
         nome: 'Orquestra All Sax',
         subtitulo: 'Ensaios',
         imagem: orquestraImage,
@@ -366,6 +391,7 @@ export const days = [
         informacoes: null,
       },
       {
+        i18nKey: 'fest_0709_concerto_ties',
         nome: 'Concerto de Ties Mellema',
         subtitulo: 'CAAA Guimarães',
         imagem: tiesTalkImage,
@@ -377,12 +403,12 @@ export const days = [
     ],
   },
   {
-    nome: 'Programação',
-    data: '10 de Julho',
+    dayType: 'program',
     dataHora: '2026-07-10',
     artistas: [],
     atividades: [
       {
+        i18nKey: 'fest_0710_prep',
         nome: 'Preparação para os concertos finais',
         subtitulo: null,
         imagem: conferenciaImage,
@@ -395,6 +421,7 @@ export const days = [
       },
 
       {
+        i18nKey: 'fest_0710_coro',
         nome: 'Concerto do Coro Cordão',
         subtitulo: 'Coro de Doentes e Amigos Oncológicos',
         imagem: coroCordaoImage,
@@ -405,6 +432,7 @@ export const days = [
         horario: '15:30 - 16:30',
       },
       {
+        i18nKey: 'fest_0710_final',
         nome: 'Concerto final',
         subtitulo: 'Orquestra All Sax + solistas',
         imagem: orquestraImage,

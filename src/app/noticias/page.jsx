@@ -7,14 +7,23 @@ import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/noticias/components/FadeIn'
 import { formatDate } from '@/lib/formatDate'
 import { carregarNoticias } from '@/lib/mdx'
+import { getDictionary } from '@/lib/get-dictionary'
+import { resolveLocale } from '@/lib/i18n/resolveLocale'
 
-export const metadata = {
-  title: 'Notícias',
-  description:
-    'Mantenha-se atualizado com as últimas notícias sobre o festival, concertos, masterclasses e workshops com os melhores saxofonistas do mundo.',
+export async function generateMetadata() {
+  const locale = await resolveLocale()
+  const dict = await getDictionary(locale)
+  const n = dict.noticias
+  return {
+    title: n.metadataTitle,
+    description: n.metadataDescription,
+  }
 }
 
 export default async function Noticias() {
+  const locale = await resolveLocale()
+  const dict = await getDictionary(locale)
+  const n = dict.noticias
   let noticias = await carregarNoticias()
 
   return (
@@ -22,10 +31,10 @@ export default async function Noticias() {
       <Container className="mt-16 mb-16 sm:mt-24 lg:mt-32">
         <div className="mb-16 text-center">
           <h1 className="font-fonty text-4xl font-semibold text-sax-gold uppercase sm:text-5xl lg:text-6xl">
-            Notícias
+            {n.heading}
           </h1>
           <p className="mx-auto mt-6 max-w-2xl font-mono text-lg text-neutral-400">
-            Mantenha-se atualizado com as últimas notícias sobre o festival.
+            {n.intro}
           </p>
         </div>
 
@@ -40,13 +49,13 @@ export default async function Noticias() {
                         <Link href={noticia.href}>{noticia.titulo}</Link>
                       </h2>
                       <dl className="lg:absolute lg:top-0 lg:left-0 lg:w-1/3 lg:px-4">
-                        <dt className="sr-only">Published</dt>
+                        <dt className="sr-only">{n.published}</dt>
                         <dd className="absolute top-0 left-0 font-mono text-sm text-neutral-400 lg:static">
                           <time dateTime={noticia.data}>
-                            {formatDate(noticia.data)}
+                            {formatDate(noticia.data, locale)}
                           </time>
                         </dd>
-                        <dt className="sr-only">Author</dt>
+                        <dt className="sr-only">{n.author}</dt>
                         <dd className="mt-6 flex gap-x-4">
                           <div className="flex-none overflow-hidden rounded-xl">
                             <Image
@@ -68,10 +77,10 @@ export default async function Noticias() {
                       </p>
                       <Button
                         href={noticia.href}
-                        aria-label={`Read more: ${noticia.titulo}`}
+                        aria-label={`${n.readMoreAria}: ${noticia.titulo}`}
                         className="mt-8 !text-neutral-800"
                       >
-                        Ler mais
+                        {n.readMore}
                       </Button>
                     </div>
                   </div>

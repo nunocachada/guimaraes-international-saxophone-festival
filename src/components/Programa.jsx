@@ -6,6 +6,8 @@ import clsx from 'clsx'
 
 import { BackgroundImage } from '@/components/BackgroundImage'
 import { Container } from '@/components/Container'
+import { useDictionary } from '@/lib/i18n/DictionaryContext'
+import { resolveActivityI18n } from '@/lib/resolveActivityI18n'
 
 const programa = [
   {
@@ -15,36 +17,42 @@ const programa = [
       'O primeiro dia do festival começa com receção aos participantes, warm up work, masterclasses e concertos.',
     timeSlots: [
       {
+        i18nKey: 'fest_0707_rececao',
         name: 'Receção aos participantes',
         description: null,
         start: '09:00',
         end: '09:30',
       },
       {
+        i18nKey: 'fest_0707_warmup',
         name: 'Warm up work ',
         description: 'Sax, Body & Mind - Henk van Twillert',
         start: '09:45',
         end: '10:15',
       },
       {
+        i18nKey: 'fest_0707_mc_tnn',
         name: 'Masterclasses',
         description: 'Ties Mellema / Nicolas Arsenijevic / Nuno Silva',
         start: '10:30',
         end: '13:00',
       },
       {
+        i18nKey: 'fest_0707_stars',
         name: 'Stars of the Future',
         description: 'Henk van Twillert (a confirmar)',
         start: '11:30',
         end: '12:30',
       },
       {
+        i18nKey: 'fest_0707_lunch_g1',
         name: 'Lunch concert',
         description: 'Stars of the Future (Grupo 1)',
         start: '13:10',
         end: '13:30',
       },
       {
+        i18nKey: 'fest_0707_mc_tn',
         name: 'Masterclasses',
         description: 'Ties Mellema / Nicolas Arsenijevic',
         start: '14:30',
@@ -52,6 +60,7 @@ const programa = [
       },
 
       {
+        i18nKey: 'fest_0707_conferencia',
         name: 'Conferência',
         description:
           'Miguel Pais Clemente, Henk van Twillert e Joaquim Gabriel',
@@ -59,18 +68,21 @@ const programa = [
         end: '17:30',
       },
       {
+        i18nKey: 'fest_0707_be_sax',
         name: 'Be Sax Orchestra - Ensaio',
         description: null,
         start: '17:30',
         end: '18:45',
       },
       {
+        i18nKey: 'fest_0707_all_sax',
         name: 'All Sax Orchestra - Ensaio',
         description: null,
         start: '18:00',
         end: '20:05',
       },
       {
+        i18nKey: 'fest_0707_concerto_nuno',
         name: 'Concerto de Nuno Silva',
         description: 'Conservatório de Guimarães (Salão nobre)',
         start: '21:00',
@@ -85,18 +97,21 @@ const programa = [
       'Segundo dia com masterclasses, Stars of the Future, conferências e concerto no Conservatório.',
     timeSlots: [
       {
+        i18nKey: 'fest_0708_mc_tnn',
         name: 'Masterclasses',
         description: 'Ties Mellema / Nicolas Arsenijevic / Nuno Silva',
         start: '09:00',
         end: '13:00',
       },
       {
+        i18nKey: 'fest_0708_stars',
         name: 'Stars of the Future',
         description: 'Henk van Twillert ( a confirmar)',
         start: '11:30',
         end: '12:30',
       },
       {
+        i18nKey: 'fest_0708_lunch_g2',
         name: 'Lunch concert',
         description: 'Stars of the Future (Grupo 2) ',
         start: '13:10',
@@ -104,6 +119,7 @@ const programa = [
       },
 
       {
+        i18nKey: 'fest_0708_mc_tn',
         name: 'Masterclasses',
         description: 'Ties Mellema / Nicolas Arsenijevic',
         start: '14:30',
@@ -111,12 +127,14 @@ const programa = [
       },
 
       {
+        i18nKey: 'fest_0708_be_sax',
         name: 'Be Sax Orchestra - Ensaio',
         description: null,
         start: '16:15',
         end: '17:20',
       },
       {
+        i18nKey: 'fest_0708_all_sax',
         name: 'All Sax Orchestra - Ensaio',
         description: null,
         start: '17:30',
@@ -124,6 +142,7 @@ const programa = [
       },
 
       {
+        i18nKey: 'fest_0708_concerto_nicolas',
         name: 'Concerto de Nicolas Arsenijevic',
         description: 'Conservatório de Guimarães (Salão nobre)',
         start: '21:30',
@@ -138,42 +157,49 @@ const programa = [
       'Terceiro dia com masterclasses, jazz workshop, talk de Ties Mellema e ensaio da All Sax Orchestra.',
     timeSlots: [
       {
+        i18nKey: 'fest_0709_mc_tnbs',
         name: 'Masterclasses',
         description: 'Ties Mellema / Nuno Silva / Bruno Santos',
         start: '09:00',
         end: '11:00',
       },
       {
+        i18nKey: 'fest_0709_jazz_ws',
         name: 'Workshop de jazz',
         description: 'Luis Miguel (artista Eastman)',
         start: '11:15',
         end: '12:45',
       },
       {
+        i18nKey: 'fest_0709_jazz_concert',
         name: 'Concerto de jazz',
         description: null,
         start: '13:00',
         end: '13:20',
       },
       {
+        i18nKey: 'fest_0709_sponsors',
         name: "Sponsors' time",
         description: 'Sponsors Happy Hour',
         start: '14:30',
         end: '17:15',
       },
       {
+        i18nKey: 'fest_0709_ties_talk',
         name: 'Ties Mellema Talk',
         description: 'Find your own voice',
         start: '17:30',
         end: '18:20',
       },
       {
+        i18nKey: 'fest_0709_all_sax',
         name: 'All Sax Orchestra - Ensaio',
         description: null,
         start: '18:35',
         end: '20:00',
       },
       {
+        i18nKey: 'fest_0709_concerto_ties',
         name: 'Concerto Ties Mellema',
         description: 'CAAA Guimarães',
         start: '21:30',
@@ -188,6 +214,7 @@ const programa = [
       'Dia final com preparação para os concertos finais, ensaios e concerto final no Teatro Jordão.',
     timeSlots: [
       {
+        i18nKey: 'fest_0710_prep',
         name: 'Preparação para os concertos finais',
         description:
           'All Sax Orchestra, Be Sax Orchestra, Coro Cordão, solistas',
@@ -196,12 +223,14 @@ const programa = [
       },
 
       {
+        i18nKey: 'fest_0710_coro',
         name: 'Concerto Coro Cordão',
         description: null,
         start: '15:30',
         end: '16:30',
       },
       {
+        i18nKey: 'fest_0710_final',
         name: 'Concerto final ',
         description: 'All Sax Orchestra + solistas',
         start: '17:30',
@@ -211,7 +240,7 @@ const programa = [
   },
 ]
 
-function ProgramaTabbed() {
+function ProgramaTabbed({ slotAriaAbout, slotAriaAt }) {
   let [tabOrientation, setTabOrientation] = useState('horizontal')
 
   useEffect(() => {
@@ -267,7 +296,11 @@ function ProgramaTabbed() {
             key={day.dateTime}
             className="data-selected:not-data-focus:outline-hidden"
           >
-            <TimeSlots day={day} />
+            <TimeSlots
+              day={day}
+              slotAriaAbout={slotAriaAbout}
+              slotAriaAt={slotAriaAt}
+            />
           </TabPanel>
         ))}
       </TabPanels>
@@ -288,7 +321,25 @@ function DaySummary({ day }) {
   )
 }
 
-function TimeSlots({ day, className }) {
+function TimeSlots({ day, className, slotAriaAbout, slotAriaAt }) {
+  const { t } = useDictionary('artistas')
+
+  const getSlotName = (slot) =>
+    resolveActivityI18n(
+      t,
+      slot.i18nKey,
+      'programSlotName',
+      resolveActivityI18n(t, slot.i18nKey, 'title', slot.name),
+    )
+
+  const getSlotDescription = (slot) =>
+    resolveActivityI18n(
+      t,
+      slot.i18nKey,
+      'programDescription',
+      resolveActivityI18n(t, slot.i18nKey, 'subtitle', slot.description),
+    )
+
   return (
     <ol
       role="list"
@@ -297,20 +348,23 @@ function TimeSlots({ day, className }) {
         'space-y-8 bg-[#2a1f2a]/80 px-10 py-14 text-center shadow-xl shadow-[#5C3A5C]/20 backdrop-blur-sm',
       )}
     >
-      {day.timeSlots.map((timeSlot, timeSlotIndex) => (
+      {day.timeSlots.map((timeSlot, timeSlotIndex) => {
+        const slotName = getSlotName(timeSlot)
+        const slotDescription = getSlotDescription(timeSlot)
+        return (
         <li
           key={`${timeSlot.start}-${timeSlot.name}`}
-          aria-label={`${timeSlot.name} ${timeSlot.description ? `sobre ${timeSlot.description}` : ''} às ${timeSlot.start} - ${timeSlot.end}`}
+          aria-label={`${slotName} ${slotDescription ? `${slotAriaAbout} ${slotDescription}` : ''} ${slotAriaAt} ${timeSlot.start} - ${timeSlot.end}`}
         >
           {timeSlotIndex > 0 && (
             <div className="mx-auto mb-8 h-px w-48 bg-[#5C3A5C]/10" />
           )}
           <h4 className="font-fonty text-2xl font-semibold text-neutral-200">
-            {timeSlot.name}
+            {slotName}
           </h4>
-          {timeSlot.description && (
+          {slotDescription && (
             <p className="mt-1 font-mono text-sm tracking-tight text-neutral-300">
-              {timeSlot.description}
+              {slotDescription}
             </p>
           )}
           <p className="mt-1 font-mono text-sm text-sax-gold">
@@ -323,18 +377,24 @@ function TimeSlots({ day, className }) {
             </time>
           </p>
         </li>
-      ))}
+        )
+      })}
     </ol>
   )
 }
 
-function ProgramaStatic() {
+function ProgramaStatic({ slotAriaAbout, slotAriaAt }) {
   return (
     <div className="hidden lg:grid lg:grid-cols-4 lg:gap-x-8">
       {programa.map((day) => (
         <section key={day.dateTime}>
           <DaySummary day={day} />
-          <TimeSlots day={day} className="mt-10" />
+          <TimeSlots
+            day={day}
+            className="mt-10"
+            slotAriaAbout={slotAriaAbout}
+            slotAriaAt={slotAriaAt}
+          />
         </section>
       ))}
     </div>
@@ -342,17 +402,17 @@ function ProgramaStatic() {
 }
 
 export function Programa() {
+  const { t } = useDictionary('programa')
+
   return (
-    <section id="programa" aria-label="Programa" className="py-20 sm:py-32">
+    <section id="programa" aria-label={t('aria')} className="py-20 sm:py-32">
       <Container className="relative z-10">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-4xl lg:pr-24">
           <h2 className="font-mono text-4xl font-medium tracking-tighter text-neutral-200 sm:text-5xl">
-            Quatro dias repletos de música, aprendizagem e celebração do
-            saxofone.
+            {t('heading')}
           </h2>
           <p className="mt-4 font-mono text-2xl tracking-tight text-neutral-300">
-            Um programa completo com concertos, masterclasses e workshops. Uma
-            experiência única para músicos e amantes da música.
+            {t('subheading')}
           </p>
         </div>
       </Container>
@@ -362,8 +422,14 @@ export function Programa() {
           className="-top-10 -bottom-32 sm:-top-20"
         />
         <Container className="relative">
-          <ProgramaTabbed />
-          <ProgramaStatic />
+          <ProgramaTabbed
+            slotAriaAbout={t('slotAriaAbout')}
+            slotAriaAt={t('slotAriaAt')}
+          />
+          <ProgramaStatic
+            slotAriaAbout={t('slotAriaAbout')}
+            slotAriaAt={t('slotAriaAt')}
+          />
         </Container>
       </div>
     </section>

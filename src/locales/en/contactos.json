@@ -1,0 +1,20 @@
+{
+  "metadataTitle": "Contact",
+  "metadataDescription": "Get in touch with the Guimarães International Saxophone Festival team.",
+  "heading": "Contact",
+  "intro": "We’d love to hear from you.",
+  "types": {
+    "email": "Email",
+    "landline": "Landline",
+    "mobile": "Mobile"
+  },
+  "callLandlineHint": "(national landline call)",
+  "callMobileHint": "(national mobile call)",
+  "addressTitle": "Address",
+  "venueName": "Guimarães Conservatory",
+  "venueDetail": "Teatro Jordão (main entrance)",
+  "streetLabel": "Street",
+  "streetValue": "Rua de Vila Flor",
+  "postalLabel": "Postal code",
+  "postalValue": "4810-225 Guimarães"
+}

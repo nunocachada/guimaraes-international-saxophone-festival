@@ -19,6 +19,12 @@ import {
 import saxImage from '@/images/sax.svg'
 import conferenciaImage from '@/images/conferencia.jpg'
 import { days } from '@/data/artistasData'
+import { formatDate } from '@/lib/formatDate'
+import {
+  resolveActivityI18n,
+  resolveByScope,
+} from '@/lib/resolveActivityI18n'
+import { useDictionary } from '@/lib/i18n/DictionaryContext'
 
 function ImageClipPaths({ id, ...props }) {
   return (
@@ -40,18 +46,21 @@ function ImageClipPaths({ id, ...props }) {
 // Componentes para os botões do modal
 const FecharButton = () => {
   const { setOpen } = useModal()
+  const { t } = useDictionary('artistas')
   return (
     <button
+      type="button"
       onClick={() => setOpen(false)}
       className="w-28 cursor-pointer rounded-md border border-[#1a0f1a]/50 bg-gradient-to-b from-[#1a0f1a]/80 to-[#1a0f1a]/60 px-2 py-1 text-sm text-neutral-200 hover:from-[#1a0f1a] hover:to-[#1a0f1a]/80"
     >
-      Fechar
+      {t('close')}
     </button>
   )
 }
 
 const ParticiparButton = () => {
   const { setOpen } = useModal()
+  const { t } = useDictionary('common')
   const handleClick = () => {
     window.open(
       'https://www.guimaraessaxfest.com/masterclass/',
@@ -61,10 +70,11 @@ const ParticiparButton = () => {
   }
   return (
     <button
+      type="button"
       onClick={handleClick}
       className="w-28 cursor-pointer rounded-md border border-neutral-300 bg-white px-2 py-1 text-sm text-neutral-900 hover:bg-neutral-100"
     >
-      Participar
+      {t('participar')}
     </button>
   )
 }
@@ -73,13 +83,30 @@ const BIO_MAX_LENGTH = 280
 
 // Componente para cada card de artista com modal
 const ArtistaCard = ({ artista, artistaIndex, clipPathId }) => {
+  const { t } = useDictionary('artistas')
   const [biografiaExpanded, setBiografiaExpanded] = useState(false)
+  const bioKey = artista.bioI18nKey
 
   if (!artista.biografia && !artista.eventos?.length) {
     return null
   }
 
-  const biografia = artista.biografia ?? ''
+  const biografia =
+    resolveByScope(t, 'artists', bioKey, 'biography', artista.biografia) ?? ''
+  const displayPapel = resolveByScope(
+    t,
+    'artists',
+    bioKey,
+    'country',
+    artista.papel,
+  )
+  const displayInformacoesArtista = resolveByScope(
+    t,
+    'artists',
+    bioKey,
+    'moreInfo',
+    artista.informacoes,
+  )
   const shouldTruncate = biografia.length > BIO_MAX_LENGTH
   const biografiaText =
     !shouldTruncate || biografiaExpanded
@@ -167,7 +194,7 @@ const ArtistaCard = ({ artista, artistaIndex, clipPathId }) => {
                       >
                         <Image
                           src={img}
-                          alt={`${artista.nome} - Imagem ${idx + 1}`}
+                          alt={`${artista.nome} — ${t('imageAltSuffix')} ${idx + 1}`}
                           width={500}
                           height={500}
                           className="h-20 w-20 shrink-0 rounded-lg object-cover md:h-40 md:w-40"
@@ -197,7 +224,7 @@ const ArtistaCard = ({ artista, artistaIndex, clipPathId }) => {
               {artista.biografia && (
                 <div>
                   <h3 className="mb-3 font-mono text-xl font-semibold text-neutral-200">
-                    Biografia
+                    {t('biography')}
                   </h3>
                   <p className="leading-relaxed text-neutral-300">
                     {biografiaText}
@@ -217,12 +244,12 @@ const ArtistaCard = ({ artista, artistaIndex, clipPathId }) => {
                           aria-expanded={biografiaExpanded}
                           aria-label={
                             biografiaExpanded
-                              ? 'Ver menos'
-                              : 'Ver mais biografia'
+                              ? t('readLessBioAria')
+                              : t('readMoreBioAria')
                           }
                           tabIndex={0}
                         >
-                          {biografiaExpanded ? 'Ver menos' : 'Ver mais'}
+                          {biografiaExpanded ? t('readLess') : t('readMore')}
                         </button>
                       </>
                     )}
@@ -231,13 +258,13 @@ const ArtistaCard = ({ artista, artistaIndex, clipPathId }) => {
               )}
 
               {/* Atuação */}
-              {artista.informacoes && (
+              {displayInformacoesArtista && (
                 <div>
                   <h3 className="mb-3 font-mono text-xl font-semibold text-neutral-200">
-                    + informações
+                    {t('moreInfo')}
                   </h3>
                   <p className="leading-relaxed text-neutral-300">
-                    {artista.informacoes}
+                    {displayInformacoesArtista}
                   </p>
                 </div>
               )}
@@ -253,7 +280,7 @@ const ArtistaCard = ({ artista, artistaIndex, clipPathId }) => {
         {artista.nome}
       </h3>
       <p className="mt-1 text-base tracking-tight text-neutral-400">
-        {artista.papel}
+        {displayPapel}
       </p>
     </div>
   )
@@ -261,7 +288,37 @@ const ArtistaCard = ({ artista, artistaIndex, clipPathId }) => {
 
 // Componente para cada card de atividade com modal
 const AtividadeCard = ({ atividade, atividadeIndex, clipPathId }) => {
+  const { t } = useDictionary('artistas')
   const [descricaoExpanded, setDescricaoExpanded] = useState(false)
+  const i18nKey = atividade.i18nKey
+
+  const displayNome = resolveActivityI18n(t, i18nKey, 'title', atividade.nome)
+  const displaySubtitulo = resolveActivityI18n(
+    t,
+    i18nKey,
+    'subtitle',
+    atividade.subtitulo,
+  )
+  const displayLocalizacao = resolveActivityI18n(
+    t,
+    i18nKey,
+    'location',
+    atividade.localizacao,
+  )
+  const displayHorario = resolveActivityI18n(
+    t,
+    i18nKey,
+    'schedule',
+    atividade.horario,
+  )
+  const displayInformacoes = resolveActivityI18n(
+    t,
+    i18nKey,
+    'moreInfo',
+    atividade.informacoes,
+  )
+  const descricao =
+    resolveActivityI18n(t, i18nKey, 'description', atividade.descricao) ?? ''
 
   const atividadeImagens =
     atividade.imagens && atividade.imagens.length > 0
@@ -270,7 +327,6 @@ const AtividadeCard = ({ atividade, atividadeIndex, clipPathId }) => {
   const atividadeImagem =
     atividade.imagem ?? atividadeImagens[0] ?? conferenciaImage
 
-  const descricao = atividade.descricao ?? ''
   const shouldTruncateDescricao = descricao.length > BIO_MAX_LENGTH
   const descricaoText =
     !shouldTruncateDescricao || descricaoExpanded
@@ -302,7 +358,7 @@ const AtividadeCard = ({ atividade, atividadeIndex, clipPathId }) => {
             <Image
               className="absolute inset-0 h-full w-full object-cover grayscale transition duration-300 group-hover:scale-110"
               src={atividadeImagem}
-              alt={atividade.nome}
+              alt={displayNome}
               sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
             />
           </div>
@@ -317,7 +373,7 @@ const AtividadeCard = ({ atividade, atividadeIndex, clipPathId }) => {
               {/* Nome */}
               <div>
                 <h2 className="mb-4 text-center font-mono text-3xl font-bold tracking-tight text-sax-gold">
-                  {atividade.nome}
+                  {displayNome}
                 </h2>
               </div>
 
@@ -343,7 +399,7 @@ const AtividadeCard = ({ atividade, atividadeIndex, clipPathId }) => {
                     >
                       <Image
                         src={img}
-                        alt={`${atividade.nome} - Imagem ${idx + 1}`}
+                        alt={`${displayNome} — ${t('imageAltSuffix')} ${idx + 1}`}
                         width={500}
                         height={500}
                         className="h-20 w-20 shrink-0 rounded-lg object-cover md:h-40 md:w-40"
@@ -354,21 +410,21 @@ const AtividadeCard = ({ atividade, atividadeIndex, clipPathId }) => {
               </div>
 
               {/* Horário */}
-              {atividade.horario && (
+              {displayHorario && (
                 <div>
                   <h3 className="mb-3 font-mono text-xl font-semibold text-neutral-200">
-                    Horário
+                    {t('schedule')}
                   </h3>
                   <p className="leading-relaxed text-neutral-300">
-                    {atividade.horario}
+                    {displayHorario}
                   </p>
                 </div>
               )}
               {/* Descrição */}
-              {atividade.descricao && (
+              {descricao && (
                 <div>
                   <h3 className="mb-3 font-mono text-xl font-semibold text-neutral-200">
-                    Descrição
+                    {t('description')}
                   </h3>
                   <p className="leading-relaxed text-neutral-300">
                     {descricaoText}
@@ -388,12 +444,12 @@ const AtividadeCard = ({ atividade, atividadeIndex, clipPathId }) => {
                           aria-expanded={descricaoExpanded}
                           aria-label={
                             descricaoExpanded
-                              ? 'Ver menos'
-                              : 'Ver mais descrição'
+                              ? t('readLessDescAria')
+                              : t('readMoreDescAria')
                           }
                           tabIndex={0}
                         >
-                          {descricaoExpanded ? 'Ver menos' : 'Ver mais'}
+                          {descricaoExpanded ? t('readLess') : t('readMore')}
                         </button>
                       </>
                     )}
@@ -402,25 +458,25 @@ const AtividadeCard = ({ atividade, atividadeIndex, clipPathId }) => {
               )}
 
               {/* Localização */}
-              {atividade.localizacao && (
+              {displayLocalizacao && (
                 <div>
                   <h3 className="mb-3 font-mono text-xl font-semibold text-neutral-200">
-                    Localização
+                    {t('location')}
                   </h3>
                   <p className="leading-relaxed text-neutral-300">
-                    {atividade.localizacao}
+                    {displayLocalizacao}
                   </p>
                 </div>
               )}
 
               {/* Informação adicional da atividade */}
-              {atividade.informacoes && (
+              {displayInformacoes && (
                 <div>
                   <h3 className="mb-3 font-mono text-xl font-semibold text-neutral-200">
-                    + informações
+                    {t('moreInfo')}
                   </h3>
                   <p className="leading-relaxed text-neutral-300">
-                    {atividade.informacoes}
+                    {displayInformacoes}
                   </p>
                 </div>
               )}
@@ -433,11 +489,11 @@ const AtividadeCard = ({ atividade, atividadeIndex, clipPathId }) => {
         </ModalBody>
       </Modal>
       <h3 className="mt-8 font-mono text-xl font-bold tracking-tight text-sax-gold">
-        {atividade.nome}
+        {displayNome}
       </h3>
-      {atividade.subtitulo && (
+      {displaySubtitulo && (
         <p className="mt-1 text-base tracking-tight text-neutral-400">
-          {atividade.subtitulo}
+          {displaySubtitulo}
         </p>
       )}
     </div>
@@ -445,6 +501,7 @@ const AtividadeCard = ({ atividade, atividadeIndex, clipPathId }) => {
 }
 
 export function Artistas() {
+  const { t, locale } = useDictionary('artistas')
   let id = useId()
   let [tabOrientation, setTabOrientation] = useState('horizontal')
 
@@ -476,11 +533,10 @@ export function Artistas() {
             id="artistas-title"
             className="font-fonty text-5xl font-medium tracking-tighter text-neutral-200 uppercase sm:text-6xl"
           >
-            Programa
+            {t('sectionTitle')}
           </h2>
           <p className="mt-4 font-mono text-2xl tracking-tight text-neutral-300">
-            Quatro dias repletos de música, aprendizagem e celebração do
-            saxofone.
+            {t('sectionIntro')}
           </p>
         </div>
         <TabGroup
@@ -494,7 +550,7 @@ export function Artistas() {
                 <>
                   {days.map((day, dayIndex) => (
                     <div
-                      key={`${day.nome}-${day.dataHora}-${dayIndex}`}
+                      key={`${day.dayType}-${day.dataHora}-${dayIndex}`}
                       className="relative lg:pl-8"
                     >
                       <DiamondIcon
@@ -516,14 +572,20 @@ export function Artistas() {
                         >
                           <Tab className="data-selected:not-data-focus:outline-hidden">
                             <span className="absolute inset-0" />
-                            {day.nome}
+                            {day.dayType === 'artists'
+                              ? t('tabArtistsTitle')
+                              : t('tabProgramLabel')}
                           </Tab>
                         </div>
                         <time
                           dateTime={day.dataHora}
                           className="mt-1.5 block text-2xl font-semibold tracking-tight text-neutral-200"
                         >
-                          {day.data}
+                          {day.dayType === 'artists'
+                            ? t('tabArtistsSubtitle')
+                            : formatDate(day.dataHora, locale, {
+                                includeYear: false,
+                              })}
                         </time>
                       </div>
                     </div>
@@ -535,7 +597,7 @@ export function Artistas() {
           <TabPanels className="lg:col-span-3">
             {days.map((day, dayIndex) => (
               <TabPanel
-                key={`${day.nome}-${day.dataHora}-${dayIndex}`}
+                key={`${day.dayType}-${day.dataHora}-${dayIndex}`}
                 className="grid grid-cols-1 gap-x-8 gap-y-10 data-selected:not-data-focus:outline-hidden sm:grid-cols-2 sm:gap-y-16 md:grid-cols-3"
                 unmount={false}
               >

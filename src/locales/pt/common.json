@@ -1,0 +1,22 @@
+{
+  "language": {
+    "choose": "Escolher idioma",
+    "pt": "Português",
+    "en": "English"
+  },
+  "participar": "Participar",
+  "logoAriaHome": "Guimarães International Saxophone Festival - Página inicial",
+  "logoCircleText": "Guimarães International Saxophone Festival * 2026 * ",
+  "conservatorio": "Conservatório de Guimarães",
+  "headerDateRange": "7 - 10 Julho",
+  "metadata": {
+    "titleDefault": "Guimarães International Saxophone Festival - GISF",
+    "titleTemplate": "%s - Guimarães Sax Fest",
+    "description": "Um evento único que celebra a excelência musical e reúne alguns dos melhores saxofonistas do mundo na histórica cidade de Guimarães. Durante quatro dias, desfrute de concertos, masterclasses e workshops com artistas de renome.",
+    "ogDescription": "Um evento único que celebra a excelência musical e reúne os melhores saxofonistas do mundo na histórica cidade de Guimarães.",
+    "openGraphLocale": "pt_PT",
+    "twitterLocale": "pt_PT",
+    "appleWebAppTitle": "Guimarães Sax Fest",
+    "keywords": "Guimarães, Saxophone Festival, Festival de Saxofone, Música, Concertos, Masterclasses, Workshops, Saxofonistas, Portugal, Conservatório de Guimarães"
+  }
+}

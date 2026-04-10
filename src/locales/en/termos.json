@@ -1,0 +1,284 @@
+{
+  "metadataTitle": "Terms and Conditions",
+  "metadataDescription": "Terms and conditions for participation in the Guimarães International Saxophone Festival 2026.",
+  "title": "Terms and Conditions",
+  "updated": "Last updated: 14 January 2026",
+  "sections": [
+    {
+      "title": "1. Identification of the organiser",
+      "blocks": [
+        {
+          "pHighlight": {
+            "pre": "The ",
+            "bold": "Guimarães International Saxophone Festival",
+            "post": " is organised by:"
+          }
+        },
+        {
+          "dl": [
+            {
+              "dt": "Organisation",
+              "dd": "Sociedade Musical de Guimarães"
+            },
+            {
+              "dt": "Tax ID (NIF)",
+              "dd": "501 631 542"
+            },
+            {
+              "dt": "Address",
+              "dd": "Rua de Vila Flor – Teatro Jordão entrance, 4810-255 Guimarães, Portugal",
+              "ddClassName": "break-words sm:break-normal"
+            },
+            {
+              "dt": "Phone",
+              "dd": "",
+              "ddLink": {
+                "href": "tel:+351253517049",
+                "text": "+351 253 517 049"
+              }
+            },
+            {
+              "dt": "Email",
+              "dd": "",
+              "ddLink": {
+                "href": "mailto:geral@smguimaraes.pt",
+                "text": "geral@smguimaraes.pt"
+              },
+              "ddClassName": "break-all sm:break-normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "2. Purpose",
+      "blocks": [
+        {
+          "p": "These Terms and Conditions govern participation in the Guimarães International Saxophone Festival 2026 (7–10 July), including:"
+        },
+        {
+          "ul": [
+            "Saxophone masterclasses with international teachers",
+            "Participation in the orchestras (All Sax, Be_Sax, Stars of the Future)",
+            "Concerts and public performances",
+            "Additional festival activities"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3. Registration",
+      "blocks": [
+        {
+          "p": "Registration is completed exclusively through the online form available on this website."
+        },
+        {
+          "p": "Registration is considered valid after:"
+        },
+        {
+          "ul": [
+            "Complete and correct submission of the registration form",
+            "Express acceptance of these Terms and Conditions",
+            "Acceptance of the Privacy Policy",
+            "Full payment of the registration fee",
+            "Confirmation email from the organisation"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "4. Prices and payment",
+      "blocks": [
+        {
+          "p": "Prices in force for the 2026 edition are:"
+        },
+        {
+          "table": {
+            "headers": [
+              "Option",
+              "Price"
+            ],
+            "rows": [
+              [
+                "Individual lesson (50 min)",
+                "€50"
+              ],
+              [
+                "2-lesson pack",
+                "€75"
+              ],
+              [
+                "3-lesson pack",
+                "€135"
+              ],
+              [
+                "ALL SAX orchestra",
+                "€40"
+              ],
+              [
+                "BE_SAX orchestra",
+                "€35"
+              ],
+              [
+                "Stars of the Future",
+                "€35"
+              ]
+            ]
+          }
+        },
+        {
+          "box": {
+            "title": "Payment must be made by bank transfer:",
+            "blocks": [
+              {
+                "dl": [
+                  {
+                    "dt": "IBAN",
+                    "dd": "PT50 0035 0271 0000 8409 6307 2",
+                    "ddClassName": "font-mono font-semibold break-all sm:break-normal sm:text-right"
+                  },
+                  {
+                    "dt": "Email for proof of payment",
+                    "dd": "",
+                    "ddLink": {
+                      "href": "mailto:tesouraria@smguimaraes.pt",
+                      "text": "tesouraria@smguimaraes.pt"
+                    },
+                    "ddClassName": "break-all sm:break-normal sm:text-right"
+                  }
+                ]
+              },
+              {
+                "p": "Proof of payment must be sent together with the reference indicated in your registration confirmation email."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "5. Cancellation and refunds",
+      "blocks": [
+        {
+          "pStrongLead": {
+            "lead": "Cancellation policy (participant):",
+            "rest": ""
+          }
+        },
+        {
+          "ulRich": [
+            {
+              "strong": "Up to 30 days before the event:",
+              "rest": "80% refund of the amount paid"
+            },
+            {
+              "strong": "Between 30 and 15 days before:",
+              "rest": "50% refund of the amount paid"
+            },
+            {
+              "strong": "Less than 15 days before:",
+              "rest": "No refund"
+            }
+          ]
+        },
+        {
+          "p": "If the organisation cancels the event, a full refund of all amounts paid will be issued."
+        }
+      ]
+    },
+    {
+      "title": "6. Responsibilities",
+      "blocks": [
+        {
+          "p": "Participants are responsible for:"
+        },
+        {
+          "ul": [
+            "Their own musical instrument and accessories",
+            "Study materials and scores as required",
+            "Personal belongings throughout the event"
+          ]
+        },
+        {
+          "p": "The organisation is not liable for loss, damage, theft, or loss of personal property."
+        },
+        {
+          "pHighlight": {
+            "pre": "",
+            "bold": "Participants under 18 ",
+            "post": "must be accompanied by a legal guardian for the entire event."
+          }
+        }
+      ]
+    },
+    {
+      "title": "7. Image rights",
+      "blocks": [
+        {
+          "p": "By accepting these terms, the participant authorises:"
+        },
+        {
+          "ul": [
+            "Photography and video recording during the event",
+            "Use of such material for promotional purposes and festival publicity",
+            "Publication on the event’s social media and website"
+          ]
+        },
+        {
+          "p": "If you do not wish to authorise use of your image, you must notify us in writing before the event."
+        }
+      ]
+    },
+    {
+      "title": "8. Data protection",
+      "blocks": [
+        {
+          "p": "Personal data collected through registration will be processed in accordance with:"
+        },
+        {
+          "ul": [
+            "The General Data Protection Regulation (GDPR)",
+            "Portuguese Law No. 58/2019 (Personal Data Protection)"
+          ]
+        },
+        {
+          "pLinkLine": {
+            "pre": "Our ",
+            "href": "https://www.guimaraessaxfest.com/masterclass/privacidade.php",
+            "label": "Privacy Policy",
+            "post": "."
+          }
+        }
+      ]
+    },
+    {
+      "title": "9. Programme changes",
+      "blocks": [
+        {
+          "p": "The organisation reserves the right to change:"
+        },
+        {
+          "ul": [
+            "The event programme and schedule",
+            "Invited teachers",
+            "Activity venues"
+          ]
+        },
+        {
+          "p": "Such changes may occur for reasons of force majeure, always aiming to maintain or improve the quality of the event."
+        }
+      ]
+    },
+    {
+      "title": "10. Applicable law and jurisdiction",
+      "blocks": [
+        {
+          "p": "These Terms and Conditions are governed by Portuguese law."
+        },
+        {
+          "p": "Any dispute arising from these terms shall fall under the jurisdiction of the courts of Guimarães, with express waiver of any other forum."
+        }
+      ]
+    }
+  ]
+}

@@ -1,15 +1,21 @@
 import { Container } from '@/components/Container'
 import { BackgroundImage } from '@/components/BackgroundImage'
+import { getDictionary } from '@/lib/get-dictionary'
+import { resolveLocale } from '@/lib/i18n/resolveLocale'
 
-export const metadata = {
-  title: 'Contactos',
-  description:
-    'Entre em contacto com a organização do Guimarães International Saxophone Festival.',
+export async function generateMetadata() {
+  const locale = await resolveLocale()
+  const dict = await getDictionary(locale)
+  const c = dict.contactos
+  return {
+    title: c.metadataTitle,
+    description: c.metadataDescription,
+  }
 }
 
 const contactos = [
   {
-    tipo: 'Email',
+    kind: 'email',
     valor: 'info@guimaraessaxfest.com',
     href: 'mailto:info@guimaraessaxfest.com',
     icone: (
@@ -30,7 +36,7 @@ const contactos = [
     ),
   },
   {
-    tipo: 'Telefone Fixo',
+    kind: 'landline',
     valor: '+351 253 517 049',
     href: 'tel:+351253517049',
     icone: (
@@ -51,7 +57,7 @@ const contactos = [
     ),
   },
   {
-    tipo: 'Telefone Móvel',
+    kind: 'mobile',
     valor: '+351 969 508 075',
     href: 'tel:+351969508075',
     icone: (
@@ -73,7 +79,30 @@ const contactos = [
   },
 ]
 
-export default function Contactos() {
+const labelForKind = (c, kind) => {
+  if (kind === 'email') {
+    return c.types.email
+  }
+  if (kind === 'landline') {
+    return c.types.landline
+  }
+  return c.types.mobile
+}
+
+const hintForKind = (c, kind) => {
+  if (kind === 'landline') {
+    return c.callLandlineHint
+  }
+  if (kind === 'mobile') {
+    return c.callMobileHint
+  }
+  return null
+}
+
+export default async function Contactos() {
+  const dict = await getDictionary(await resolveLocale())
+  const c = dict.contactos
+
   return (
     <div className="relative bg-[#000000] py-20 sm:py-32">
       <BackgroundImage
@@ -84,15 +113,17 @@ export default function Contactos() {
         <div className="mx-auto max-w-2xl lg:max-w-4xl">
           <div className="text-center">
             <h1 className="font-fonty text-4xl font-bold tracking-tight text-neutral-200 uppercase sm:text-5xl lg:text-6xl">
-              Contactos
+              {c.heading}
             </h1>
             <p className="mt-6 font-mono text-xl leading-8 text-neutral-300 sm:text-2xl">
-              Entre em contacto connosco.
+              {c.intro}
             </p>
           </div>
 
           <div className="mt-20 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {contactos.map((contacto) => {
+              const tipoLabel = labelForKind(c, contacto.kind)
+              const hint = hintForKind(c, contacto.kind)
               const Conteudo = contacto.href ? (
                 <a
                   href={contacto.href}
@@ -101,47 +132,34 @@ export default function Contactos() {
                   <div className="text-sax-gold transition-colors group-hover:text-[#B8860B]">
                     {contacto.icone}
                   </div>
-                  {/* <dt className="mt-4 font-mono text-sm font-semibold tracking-tight text-sax-gold uppercase">
-                    {contacto.tipo}
-                  </dt> */}
                   <dd className="mt-2 text-base font-medium text-neutral-200">
                     {contacto.valor}
                   </dd>
-                  {contacto.tipo === 'Telefone Fixo' && (
+                  {hint ? (
                     <span className="mt-1 font-mono text-xs text-neutral-400">
-                      (chamada para rede fixa nacional)
+                      {hint}
                     </span>
-                  )}
-                  {contacto.tipo === 'Telefone Móvel' && (
-                    <span className="mt-1 font-mono text-xs text-neutral-400">
-                      (chamada para rede móvel nacional)
-                    </span>
-                  )}
+                  ) : null}
                 </a>
               ) : (
                 <div className="flex h-full w-full flex-col items-center rounded-lg bg-[#2a1f2a]/80 p-8 text-center shadow-xl shadow-[#5C3A5C]/20 backdrop-blur-sm">
                   <div className="text-sax-gold">{contacto.icone}</div>
                   <dt className="mt-4 font-mono text-sm font-semibold tracking-tight text-sax-gold uppercase">
-                    {contacto.tipo}
+                    {tipoLabel}
                   </dt>
                   <dd className="mt-2 text-base font-medium text-neutral-200">
                     {contacto.valor}
                   </dd>
-                  {contacto.tipo === 'Telefone Fixo' && (
+                  {hint ? (
                     <span className="mt-1 font-mono text-xs text-neutral-400">
-                      (chamada para rede fixa nacional)
+                      {hint}
                     </span>
-                  )}
-                  {contacto.tipo === 'Telefone Móvel' && (
-                    <span className="mt-1 font-mono text-xs text-neutral-400">
-                      (chamada para rede móvel nacional)
-                    </span>
-                  )}
+                  ) : null}
                 </div>
               )
 
               return (
-                <dl key={contacto.tipo} className="flex h-full">
+                <dl key={contacto.kind} className="flex h-full">
                   {Conteudo}
                 </dl>
               )
@@ -150,61 +168,27 @@ export default function Contactos() {
 
           <div className="mt-20 rounded-lg bg-[#2a1f2a]/80 p-10 shadow-xl shadow-[#5C3A5C]/20 backdrop-blur-sm sm:p-12">
             <h2 className="font-mono text-2xl font-semibold tracking-tight text-neutral-200 sm:text-3xl">
-              Morada
+              {c.addressTitle}
             </h2>
             <dl className="mt-6 space-y-4">
               <div className="flex justify-between border-b border-[#5C3A5C]/20 pb-4">
                 <dt className="font-mono text-sm text-sax-gold">
-                  Conservatório de Guimarães
+                  {c.venueName}
                 </dt>
-                <dd className="text-base text-neutral-200">
-                  Teatro Jordão (Portaria)
-                </dd>
-              </div>
-              <div className="flex justify-between border-b border-[#5C3A5C]/20 pb-4">
-                <dt className="font-mono text-sm text-sax-gold">Rua</dt>
-                <dd className="text-base text-neutral-200">Rua de Vila Flor</dd>
+                <dd className="text-base text-neutral-200">{c.venueDetail}</dd>
               </div>
               <div className="flex justify-between border-b border-[#5C3A5C]/20 pb-4">
                 <dt className="font-mono text-sm text-sax-gold">
-                  Código Postal
+                  {c.streetLabel}
                 </dt>
-                <dd className="text-base text-neutral-200">
-                  4810-225 Guimarães
-                </dd>
+                <dd className="text-base text-neutral-200">{c.streetValue}</dd>
               </div>
-              {/* <div className="flex justify-between border-b border-[#5C3A5C]/20 pb-4">
+              <div className="flex justify-between border-b border-[#5C3A5C]/20 pb-4">
                 <dt className="font-mono text-sm text-sax-gold">
-                  Telefone Fixo
+                  {c.postalLabel}
                 </dt>
-                <dd className="text-base text-neutral-200">
-                  <a
-                    href="tel:+351253517049"
-                    className="transition-colors hover:text-sax-gold"
-                  >
-                    +351 253 517 049
-                  </a>
-                  <span className="ml-2 font-mono text-xs text-neutral-400">
-                    (chamada para rede fixa nacional)
-                  </span>
-                </dd>
-              </div> */}
-              {/* <div className="flex justify-between">
-                <dt className="font-mono text-sm text-sax-gold">
-                  Telefone Móvel
-                </dt>
-                <dd className="text-base text-neutral-200">
-                  <a
-                    href="tel:+351969508075"
-                    className="transition-colors hover:text-sax-gold"
-                  >
-                    +351 969 508 075
-                  </a>
-                  <span className="ml-2 font-mono text-xs text-neutral-400">
-                    (chamada para rede móvel nacional)
-                  </span>
-                </dd>
-              </div> */}
+                <dd className="text-base text-neutral-200">{c.postalValue}</dd>
+              </div>
             </dl>
           </div>
         </div>

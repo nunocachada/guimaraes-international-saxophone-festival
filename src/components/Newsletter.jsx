@@ -1,8 +1,11 @@
+'use client'
+
 import Image from 'next/image'
 
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import backgroundImageCastelo from '@/images/sax.svg'
+import { useDictionary } from '@/lib/i18n/DictionaryContext'
 
 function ArrowRightIcon(props) {
   return (
@@ -20,8 +23,10 @@ function ArrowRightIcon(props) {
 }
 
 export function Newsletter() {
+  const { t } = useDictionary('newsletter')
+
   return (
-    <section id="newsletter" aria-label="Newsletter">
+    <section id="newsletter" aria-label={t('aria')}>
       <Container>
         <div className="relative -mx-4 overflow-hidden bg-[#2a1f2a]/60 px-4 py-20 sm:-mx-6 sm:px-6 md:mx-0 md:rounded-5xl md:px-16 xl:px-24 xl:py-36">
           <Image
@@ -35,29 +40,27 @@ export function Newsletter() {
           <div className="relative mx-auto grid max-w-2xl grid-cols-1 gap-x-32 gap-y-14 xl:max-w-none xl:grid-cols-2">
             <div>
               <p className="font-mono text-4xl font-medium tracking-tighter text-neutral-200 sm:text-5xl">
-                Mantenha-se atualizado sobre o festival
+                {t('title')}
               </p>
               <p className="mt-4 text-lg tracking-tight text-neutral-300">
-                Receba atualizações sobre todos os nossos eventos e seja o
-                primeiro a ser notificado quando as inscrições estiverem
-                disponíveis.
+                {t('subtitle')}
               </p>
             </div>
             <form>
               <h3 className="text-lg font-semibold tracking-tight text-neutral-200">
-                Subscreva a nossa newsletter{' '}
+                {t('formTitle')}{' '}
                 <span aria-hidden="true">&darr;</span>
               </h3>
               <div className="mt-5 flex rounded-3xl bg-[#1a0f1a] py-2.5 pr-2.5 shadow-xl shadow-[#5C3A5C]/20 focus-within:ring-2 focus-within:ring-sax-gold">
                 <input
                   type="email"
                   required
-                  placeholder="Endereço de email"
-                  aria-label="Endereço de email"
+                  placeholder={t('emailPlaceholder')}
+                  aria-label={t('emailAria')}
                   className="-my-2.5 flex-auto bg-transparent pr-2.5 pl-6 text-base text-neutral-200 placeholder:text-neutral-500 focus:outline-hidden"
                 />
                 <Button type="submit">
-                  <span className="sr-only sm:not-sr-only">Subscrever</span>
+                  <span className="sr-only sm:not-sr-only">{t('submit')}</span>
                   <span className="sm:hidden">
                     <ArrowRightIcon className="h-6 w-6" />
                   </span>

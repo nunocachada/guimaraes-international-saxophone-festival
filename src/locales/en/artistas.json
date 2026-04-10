@@ -1,0 +1,215 @@
+{
+  "sectionTitle": "Programme",
+  "sectionIntro": "Four days full of music, learning, and celebration of the saxophone.",
+  "tabProgramLabel": "Schedule",
+  "tabArtistsTitle": "About",
+  "tabArtistsSubtitle": "Artists",
+  "close": "Close",
+  "biography": "Biography",
+  "moreInfo": "More information",
+  "schedule": "Schedule",
+  "description": "Description",
+  "location": "Location",
+  "readMore": "Read more",
+  "readLess": "Read less",
+  "readMoreBioAria": "Read more biography",
+  "readLessBioAria": "Read less",
+  "readMoreDescAria": "Read more description",
+  "readLessDescAria": "Read less",
+  "imageAltSuffix": "Image",
+  "activities": {
+    "fest_0707_rececao": {
+      "title": "Reception for participants",
+      "description": "A welcome for everyone taking part in the festival. Important information about the programme and venues will be shared.",
+      "location": "2nd floor, Teatro Jordão, Guimarães Conservatory"
+    },
+    "fest_0707_warmup": {
+      "title": "Warm up work",
+      "subtitle": "Henk van Twillert",
+      "programDescription": "Sax, Body & Mind – Henk van Twillert",
+      "description": "Sax, Body & Mind – a physical and mental warm-up for musicians. A holistic session combining saxophone technique with body and mind exercises to prepare you for the day.",
+      "location": "Garage Bands room, Guimarães Conservatory",
+      "moreInfo": "This session is led by Henk van Twillert."
+    },
+    "fest_0707_mc_tnn": {
+      "title": "Masterclasses",
+      "subtitle": "Ties Mellema, Nicolas Arsenijevic, Nuno Silva",
+      "location": "2nd floor, Teatro Jordão, Guimarães Conservatory",
+      "schedule": "Various times throughout the festival"
+    },
+    "fest_0707_stars": {
+      "title": "Stars of the Future",
+      "subtitle": "Henk van Twillert (to be confirmed)",
+      "description": "A programme for young saxophone talent. Special sessions with Henk van Twillert to nurture and spotlight the saxophone stars of tomorrow.",
+      "location": "To be confirmed"
+    },
+    "fest_0707_lunch_g1": {
+      "title": "Lunch concert",
+      "subtitle": "Stars of the Future (Group 1)",
+      "description": "Lunchtime concerts by participants in the “Stars of the Future” programme.",
+      "location": "TJGA courtyard (1st floor – individual rooms) / Garage Bands (to be confirmed)"
+    },
+    "fest_0707_mc_tn": {
+      "title": "Masterclasses",
+      "subtitle": "Ties Mellema / Nicolas Arsenijevic",
+      "location": "Guimarães Conservatory, Teatro Jordão"
+    },
+    "fest_0707_conferencia": {
+      "title": "Conference",
+      "subtitle": "Miguel Pais Clemente, Henk van Twillert and Joaquim Gabriel",
+      "description": "Music is a whole experience: music, body and mind form one artistic whole. The conference looks at biomedical aspects of the body in relation to the instrument. That symbiosis is central to a full musical experience and performance.",
+      "location": "Grand hall, Guimarães Conservatory"
+    },
+    "fest_0707_be_sax": {
+      "title": "Be Sax Orchestra",
+      "subtitle": "Rehearsals",
+      "programSlotName": "Be Sax Orchestra – rehearsal",
+      "location": "Guimarães Conservatory, Teatro Jordão"
+    },
+    "fest_0707_all_sax": {
+      "title": "All Sax Orchestra",
+      "subtitle": "Rehearsals",
+      "programSlotName": "All Sax Orchestra – rehearsal",
+      "location": "Guimarães Conservatory, Teatro Jordão"
+    },
+    "fest_0707_concerto_nuno": {
+      "title": "Nuno Silva concert",
+      "subtitle": "Grand hall",
+      "programDescription": "Guimarães Conservatory (grand hall)",
+      "description": "Solo concert by the renowned Portuguese saxophonist Nuno Silva. A special performance in the school’s main hall.",
+      "location": "Grand hall, Guimarães Conservatory"
+    },
+    "fest_0708_mc_tnn": {
+      "title": "Masterclasses",
+      "subtitle": "Ties Mellema, Nicolas Arsenijevic, Nuno Silva",
+      "location": "Guimarães Conservatory, Teatro Jordão"
+    },
+    "fest_0708_stars": {
+      "title": "Stars of the Future",
+      "subtitle": "Henk van Twillert (to be confirmed)",
+      "description": "A programme for young saxophone talent. Special sessions with Henk van Twillert to nurture and spotlight the saxophone stars of tomorrow.",
+      "location": "Guimarães Conservatory, Teatro Jordão",
+      "moreInfo": "1st floor, percussion room"
+    },
+    "fest_0708_lunch_g2": {
+      "title": "Lunch concert",
+      "subtitle": "Stars of the Future (Group 2)",
+      "description": "Lunchtime concerts by participants in the “Stars of the Future” programme.",
+      "location": "Guimarães Conservatory, Teatro Jordão"
+    },
+    "fest_0708_mc_tn": {
+      "title": "Masterclasses",
+      "subtitle": "Ties Mellema / Nicolas Arsenijevic",
+      "location": "Guimarães Conservatory, Teatro Jordão"
+    },
+    "fest_0708_be_sax": {
+      "title": "Be Sax Orchestra",
+      "subtitle": "Rehearsal",
+      "programSlotName": "Be Sax Orchestra – rehearsal",
+      "location": "Guimarães Conservatory, Teatro Jordão",
+      "moreInfo": "Floor −1, orchestra room"
+    },
+    "fest_0708_all_sax": {
+      "title": "All Sax Orchestra",
+      "subtitle": "Rehearsal",
+      "programSlotName": "All Sax Orchestra – rehearsal",
+      "location": "Guimarães Conservatory, Teatro Jordão",
+      "moreInfo": "Floor −1, orchestra room"
+    },
+    "fest_0708_concerto_nicolas": {
+      "title": "Nicolas Arsenijevic concert",
+      "subtitle": "Grand hall",
+      "programDescription": "Guimarães Conservatory (grand hall)",
+      "location": "Guimarães Conservatory, Teatro Jordão"
+    },
+    "fest_0709_mc_tnbs": {
+      "title": "Masterclasses",
+      "subtitle": "Ties Mellema / Nuno Silva / Bruno Santos",
+      "location": "Guimarães Conservatory"
+    },
+    "fest_0709_jazz_ws": {
+      "title": "Jazz workshop",
+      "subtitle": "Luis Miguel (Eastman artist)",
+      "location": "Garage Bands room, Guimarães Conservatory"
+    },
+    "fest_0709_jazz_concert": {
+      "title": "Jazz concert",
+      "subtitle": "Workshop participants",
+      "description": "Jazz concert by participants in the workshop.",
+      "location": "Garage Bands room, Guimarães Conservatory"
+    },
+    "fest_0709_sponsors": {
+      "title": "Sponsors’ time",
+      "subtitle": "Sponsors happy hour",
+      "description": "Time dedicated to the festival sponsors. Each sponsor can present their brand and products for about 15–25 minutes.",
+      "location": "2nd floor, Teatro Jordão, Guimarães Conservatory"
+    },
+    "fest_0709_ties_talk": {
+      "title": "Ties Mellema talk",
+      "subtitle": "Find your own voice",
+      "description": "An inspiring talk with Ties Mellema on “Find your own voice”.",
+      "location": "Grand hall, Guimarães Conservatory"
+    },
+    "fest_0709_all_sax": {
+      "title": "All Sax Orchestra",
+      "subtitle": "Rehearsals",
+      "programSlotName": "All Sax Orchestra – rehearsal",
+      "location": "Guimarães Conservatory, Teatro Jordão"
+    },
+    "fest_0709_concerto_ties": {
+      "title": "Ties Mellema concert",
+      "subtitle": "CAAA Guimarães",
+      "programSlotName": "Ties Mellema concert",
+      "location": "CAAA Guimarães"
+    },
+    "fest_0710_prep": {
+      "title": "Preparation for the closing concerts",
+      "description": "Time for final preparation before the closing concerts—individual and group rehearsals.",
+      "location": "Guimarães Conservatory",
+      "moreInfo": "1st floor, percussion room, and floor −1, orchestra room",
+      "programDescription": "All Sax Orchestra, Be Sax Orchestra, Cordão choir, soloists"
+    },
+    "fest_0710_coro": {
+      "title": "Cordão choir concert",
+      "subtitle": "Choir of oncology patients and friends",
+      "programSlotName": "Cordão choir concert",
+      "description": "CORDÃO is a community choir of people diagnosed with cancer—whether in treatment or remission—their carers (formal or informal), and health professionals. Its main aim is to reduce the social isolation of people with cancer and their carers; CORDÃO brings people together and weaves new ways of living with and seeing cancer.\n\nSince early 2025, CORDÃO has welcomed new participants with the same goal. Over the past year, weekly meetings combined collaborative creation—choosing or developing repertoire, creative writing, and composition exercises—turning an experience often marked by solitude into sharing, connection, and artistic expression.\n\nIn its first year, the group performed live several times: the audiovisual installation “Casulo” at Theatro Circo; São João festivities in Braga with António Sérginho and Grupo de Cantares das Mulheres do Minho; the Verbena Solidária at the Palace (Portuguese League Against Cancer); and at gnration with ODE – Orchestra of Electronic Devices.\n\nCORDÃO is part of the 3rd PARTIS & Art For Change programme (Calouste Gulbenkian Foundation and ”la Caixa” Foundation). It is run by Faz Cultura – Braga Municipal Culture Company, with partners including ULS Braga, the Portuguese League Against Cancer – Braga branch, and APLL – Portuguese Association of Leukaemia and Lymphoma.",
+      "location": "Garage Bands room"
+    },
+    "fest_0710_final": {
+      "title": "Closing concert",
+      "subtitle": "All Sax Orchestra + soloists",
+      "programDescription": "All Sax Orchestra + soloists",
+      "location": "Guimarães Conservatory, Teatro Jordão"
+    }
+  },
+  "artists": {
+    "ties_mellema": {
+      "country": "Netherlands",
+      "moreInfo": "Details to follow",
+      "biography": "\"I don’t tie myself to styles; I make music. I’m especially curious about the music that exists between styles.\"\n\nAlthough Ties Mellema is unquestionably a saxophone virtuoso, he sees himself first and foremost as a musician. His art is an ongoing exploration of the limits of music. In 2015, Ties became seriously ill for several years and, alongside playing saxophone, began composing with electronic music. After 20 years as a founding member of the Amstel Quartet, Ties decided it was time to follow his own path. He launched his crossover group PEAX in 2019 and worked with it until 2025. He now continues as a solo artist, collaborating with musicians who share his vision of blending styles. Ties has received numerous awards, including the prestigious Dutch Music Prize. Several albums, both solo and with ensembles, have been released on his own labels, Amstel Records and PEAX Records. Ties Mellema plays an Eppelsheim bass saxophone on loan from the collection of the Dutch Musical Instruments Foundation."
+    },
+    "nicolas_arsenijevic": {
+      "country": "France",
+      "moreInfo": "Details to follow",
+      "biography": "Soloist and pedagogue Nicolas Arsenijevic is a French saxophonist born in 1988. Trained at the Conservatoire National Supérieur de Musique et de Danse de Paris and a laureate of several international competitions (Adolphe Sax Competition in Dinant, Andorra Sax Fest, Josip Nochta Competition in Zagreb, among others), he is invited worldwide to teach masterclasses and give recitals. He performs regularly with leading ensembles such as the Orchestre Philharmonique de Radio France and the Ensemble Intercontemporain. His discography—spanning contemporary creation, romantic repertoire with piano or string quartet, and Balkan traditional music with Kosmopolitevitch—reflects an artistic approach firmly oriented toward exploration and innovation. In line with the evolution of his instrument, Nicolas Arsenijevic collaborates with many composers, including Riccardo Nillni, Florent Caron Darras, Christian Lauba, Maël Bailly and Benjamin Attahir, in solo settings and with leading contemporary ensembles such as Court-Circuit, Alternance and TM+. Dedicated to chamber music, he was for many years a member of the Saxback wind ensemble, a singular formation built around Adolphe Sax and his instrumental family. In the same field, his duo with pianist Françoise Buffet-Arsenijevic has taken him to major French halls such as the Salle Gaveau and the Salle Cortot.\n\nIn 2024, Nicolas Arsenijevic was appointed to the prestigious saxophone professorship at the Conservatoire National Supérieur de Musique et de Danse de Paris."
+    },
+    "henk_van_twillert": {
+      "country": "Netherlands",
+      "moreInfo": "Details to follow",
+      "biography": "Saxophonist Henk van Twillert (b. 1959) studied at the Sweelinck Conservatory in Amsterdam with Ed Bogaard, graduating as a soloist with distinction. In 1979 he founded the renowned “ASQ – Amsterdam Saxophone Quartet”. The quartet recorded extensively and toured successfully with many celebrated musicians, including Jaap van Zweden, Wayenberg Daniel and Han Bennink. Notable performances included the closing concert of EXPO 98 in Lisbon and the opening of the Ajax Arena in Amsterdam.\n\nIn 1993, Henk van Twillert began a solo career, founding the “Amsterdam Soloist Quintet”, with which he recorded several highly successful albums, notably the CD “Tango, a tribute to Astor Piazzolla” with violinist Sonja van Beek.\n\nThe year 2001 marked a milestone when he recorded Bach’s famous “Cello Suites”. In 2002 he recorded a Portuguese fado CD, “Saudades”, with special guest Carlos do Carmo.\n\nIn 2006 and 2007, Henk van Twillert was invited to the prestigious Newport Music Festival (USA) with soprano Inessa Galante. In 2005 he formed the group Vento do Norte with young saxophonists who were his students, performing with them on many national and international stages.\n\nBetween 2009 and 2011 Henk van Twillert lived in New York, working on his doctorate “Bach’s Cello Suites on the Saxophone – Interpretation and transcription”, and was awarded his PhD in June 2013.\n\nIn 2012 he launched the “Meet the artists” concert series, performing regularly in Amsterdam and Rotterdam, sharing the stage monthly with fellow musicians in evenings spanning many musical styles.\n\nHenk van Twillert is professor of saxophone at ESMAE, Porto’s higher school of music and performing arts, where he founded the Portuguese Saxophone Orchestra and the international saxophone group Vento do Norte. After 25 years as permanent saxophone faculty in Amsterdam, he became a guest teacher to devote more time to his projects. He balances his love of music and teaching, combining concerts with workshops and masterclasses worldwide. He always carries his special children’s programme “Stars of the Future”."
+    },
+    "bruno_santos": {
+      "country": "Portugal",
+      "biography": "Bruno Santos was born in January 1991 and began studying music at age 12 with the Orquestra Ligeira de Cambra. He went on to the Sociedade Artística Banda de Vale de Cambra, the JOBRA Conservatory and the University of Aveiro, where he completed a master’s in music teaching (saxophone) in 2017. Along the way he worked with leading saxophonists and was selected for the Université Européenne de Saxophone Gap 2013 in France.\n\nHe won first prize at the Terras de La Salette International Wind Competition (2015) and appeared in the Novos Talentos feature at FISP 2021. He has collaborated with several national symphony orchestras and ensembles. He currently teaches at the Calouste Gulbenkian Conservatory of Music in Aveiro, directs masterclasses and maintains an active performance career in Portugal and abroad.\n\nHis albums ROAD and STAGE stand out in his discography—both won international awards and sold out several pressings—and have been presented in major venues and at the World Saxophone Congress 2023."
+    },
+    "nuno_silva": {
+      "country": "Portugal",
+      "biography": "Nuno Silva is a Portuguese saxophonist, pedagogue and sound designer, focusing on new interdisciplinary works and sound design.\n\nHe holds a master’s in performance (saxophone) from Fontys Hogeschool voor de Kunsten in Tilburg and a master’s in music teaching from the University of Aveiro, Portugal.\n\nSince the start of his career he has worked regularly with composers, dancers and actors to create new repertoire for the instrument and explore fresh means of expression, presenting his work across Europe.\n\nHe co-founded the interdisciplinary ION Collective; the [UΛN] saxophone duo with Hannah Koob; and the Vector Reed Quintet. He also collaborates with ensembles such as the Radio Filharmonisch Orkest, Ensemble Klang, Oniros Ensemble and 9x13, and with institutions including De Link, KOP, Het Park and Classic Young Masters, among others.\n\nHe teaches privately at Nuno Silva – Saxophone Studio, combining artistic and pedagogical work between Portugal and the Netherlands, where he currently lives.\n\nNuno Silva is a sponsored artist of Henri Selmer Paris."
+    },
+    "luis_miguel": {
+      "country": "Portugal",
+      "biography": "He is a saxophonist, teacher and composer. He began his musical path in 2002, studying with leading jazz musicians and composers through workshops and private lessons.\n\nIn 2005 he moved to Porto to deepen his saxophone studies and, in 2007, entered ESMAE (Porto), where he studied jazz saxophone.\n\nIn 2013 he won the Best Jazz Ensemble award at the 11th Festa do Jazz festival in Lisbon.\n\nHe has performed at major venues and festivals such as Casa da Música (Porto), Guimarães Jazz Festival, Loulé Jazz Festival, Serralves Foundation, Zaragoza Jazz Festival and Festival F, as well as clubs in Portugal and Spain. He performs regularly in leading auditoriums in the Algarve with the Orquestra de Jazz do Algarve.\n\nHe has shared the stage with musicians including Bennie Golson, George Colligan, Orrin Evans, Marcus Strickland, Jon Hendricks, Zé Eduardo, Michael Lauren, Rick Margitza, Jane Monheit, Ana Alcaide, Maria Anadon, Vânia Fernandes, Áurea, Carolina Deslandes and Mariza Liz, among others.\n\nAlongside performing, he has taught at the Academia de Música de Lagos, the Escola Profissional de Música de Lagoa and the professional jazz course at Escola Secundária da Bemposta in Portimão."
+    }
+  }
+}
