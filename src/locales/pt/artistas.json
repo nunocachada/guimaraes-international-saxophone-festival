@@ -16,5 +16,11 @@
   "readLessBioAria": "Ver menos",
   "readMoreDescAria": "Ver mais descrição",
   "readLessDescAria": "Ver menos",
-  "imageAltSuffix": "Imagem"
+  "imageAltSuffix": "Imagem",
+  "programDayLabels": {
+    "jul07": "7 de Julho",
+    "jul08": "8 de Julho",
+    "jul09": "9 de Julho",
+    "jul10": "10 de Julho"
+  }
 }

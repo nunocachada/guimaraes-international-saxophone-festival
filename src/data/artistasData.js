@@ -120,6 +120,8 @@ export const days = [
   {
     dayType: 'program',
     dataHora: '2026-07-07',
+    programDayLabelKey: 'jul07',
+    programDayLabel: '7 de Julho',
     artistas: [],
     atividades: [
       {
@@ -238,6 +240,8 @@ export const days = [
   {
     dayType: 'program',
     dataHora: '2026-07-08',
+    programDayLabelKey: 'jul08',
+    programDayLabel: '8 de Julho',
     artistas: [],
     atividades: [
       {
@@ -321,6 +325,8 @@ export const days = [
   {
     dayType: 'program',
     dataHora: '2026-07-09',
+    programDayLabelKey: 'jul09',
+    programDayLabel: '9 de Julho',
     artistas: [],
     atividades: [
       {
@@ -405,6 +411,8 @@ export const days = [
   {
     dayType: 'program',
     dataHora: '2026-07-10',
+    programDayLabelKey: 'jul10',
+    programDayLabel: '10 de Julho',
     artistas: [],
     atividades: [
       {

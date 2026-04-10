@@ -3,5 +3,11 @@
   "heading": "Four days full of music, learning, and celebration of the saxophone.",
   "subheading": "A full programme of concerts, masterclasses, and workshops—a unique experience for musicians and music lovers.",
   "slotAriaAbout": "about",
-  "slotAriaAt": "at"
+  "slotAriaAt": "at",
+  "dates": {
+    "jul07": "7 July",
+    "jul08": "8 July",
+    "jul09": "9 July",
+    "jul10": "10 July"
+  }
 }

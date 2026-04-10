@@ -3,5 +3,11 @@
   "heading": "Quatro dias repletos de música, aprendizagem e celebração do saxofone.",
   "subheading": "Um programa completo com concertos, masterclasses e workshops. Uma experiência única para músicos e amantes da música.",
   "slotAriaAbout": "sobre",
-  "slotAriaAt": "às"
+  "slotAriaAt": "às",
+  "dates": {
+    "jul07": "7 de Julho",
+    "jul08": "8 de Julho",
+    "jul09": "9 de Julho",
+    "jul10": "10 de Julho"
+  }
 }

@@ -17,6 +17,12 @@
   "readMoreDescAria": "Read more description",
   "readLessDescAria": "Read less",
   "imageAltSuffix": "Image",
+  "programDayLabels": {
+    "jul07": "7 July",
+    "jul08": "8 July",
+    "jul09": "9 July",
+    "jul10": "10 July"
+  },
   "activities": {
     "fest_0707_rececao": {
       "title": "Reception for participants",

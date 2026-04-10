@@ -19,7 +19,6 @@ import {
 import saxImage from '@/images/sax.svg'
 import conferenciaImage from '@/images/conferencia.jpg'
 import { days } from '@/data/artistasData'
-import { formatDate } from '@/lib/formatDate'
 import {
   resolveActivityI18n,
   resolveByScope,
@@ -501,9 +500,15 @@ const AtividadeCard = ({ atividade, atividadeIndex, clipPathId }) => {
 }
 
 export function Artistas() {
-  const { t, locale } = useDictionary('artistas')
+  const { t } = useDictionary('artistas')
   let id = useId()
   let [tabOrientation, setTabOrientation] = useState('horizontal')
+
+  const getProgramTabDateLabel = (day) => {
+    const k = `programDayLabels.${day.programDayLabelKey}`
+    const v = t(k)
+    return v !== k ? v : day.programDayLabel
+  }
 
   useEffect(() => {
     let lgMediaQuery = window.matchMedia('(min-width: 1024px)')
@@ -583,9 +588,7 @@ export function Artistas() {
                         >
                           {day.dayType === 'artists'
                             ? t('tabArtistsSubtitle')
-                            : formatDate(day.dataHora, locale, {
-                                includeYear: false,
-                              })}
+                            : getProgramTabDateLabel(day)}
                         </time>
                       </div>
                     </div>

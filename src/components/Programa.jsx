@@ -12,6 +12,7 @@ import { resolveActivityI18n } from '@/lib/resolveActivityI18n'
 const programa = [
   {
     date: '7 de Julho',
+    dateLabelKey: 'jul07',
     dateTime: '2026-07-07',
     summary:
       'O primeiro dia do festival começa com receção aos participantes, warm up work, masterclasses e concertos.',
@@ -92,6 +93,7 @@ const programa = [
   },
   {
     date: '8 de Julho',
+    dateLabelKey: 'jul08',
     dateTime: '2026-07-08',
     summary:
       'Segundo dia com masterclasses, Stars of the Future, conferências e concerto no Conservatório.',
@@ -152,6 +154,7 @@ const programa = [
   },
   {
     date: '9 de Julho',
+    dateLabelKey: 'jul09',
     dateTime: '2026-07-09',
     summary:
       'Terceiro dia com masterclasses, jazz workshop, talk de Ties Mellema e ensaio da All Sax Orchestra.',
@@ -209,6 +212,7 @@ const programa = [
   },
   {
     date: '10 de Julho',
+    dateLabelKey: 'jul10',
     dateTime: '2026-07-10',
     summary:
       'Dia final com preparação para os concertos finais, ensaios e concerto final no Teatro Jordão.',
@@ -274,17 +278,7 @@ function ProgramaTabbed({ slotAriaAbout, slotAriaAt }) {
                   dayIndex !== selectedIndex && 'opacity-70',
                 )}
               >
-                <DaySummary
-                  day={{
-                    ...day,
-                    date: (
-                      <Tab className="data-selected:not-data-focus:outline-hidden">
-                        <span className="absolute inset-0" />
-                        {day.date}
-                      </Tab>
-                    ),
-                  }}
-                />
+                <DaySummary day={day} tabbed />
               </div>
             ))}
           </>
@@ -308,11 +302,25 @@ function ProgramaTabbed({ slotAriaAbout, slotAriaAt }) {
   )
 }
 
-function DaySummary({ day }) {
+function DaySummary({ day, tabbed = false }) {
+  const { t } = useDictionary('programa')
+  const dateKey = `dates.${day.dateLabelKey}`
+  const translatedDate = t(dateKey)
+  const dateText = translatedDate !== dateKey ? translatedDate : day.date
+
+  const timeHeading = <time dateTime={day.dateTime}>{dateText}</time>
+
   return (
     <>
       <h3 className="font-fonty text-3xl font-semibold text-neutral-200">
-        <time dateTime={day.dateTime}>{day.date}</time>
+        {tabbed ? (
+          <Tab className="data-selected:not-data-focus:outline-hidden">
+            <span className="absolute inset-0" />
+            {timeHeading}
+          </Tab>
+        ) : (
+          timeHeading
+        )}
       </h3>
       <p className="mt-1.5 font-mono text-sm tracking-tight text-neutral-300">
         {day.summary}
@@ -368,13 +376,9 @@ function TimeSlots({ day, className, slotAriaAbout, slotAriaAt }) {
             </p>
           )}
           <p className="mt-1 font-mono text-sm text-sax-gold">
-            <time dateTime={`${day.dateTime}T${timeSlot.start}:00+01:00`}>
-              {timeSlot.start}
-            </time>{' '}
-            -{' '}
-            <time dateTime={`${day.dateTime}T${timeSlot.end}:00+01:00`}>
-              {timeSlot.end}
-            </time>
+            <span className="tabular-nums">{timeSlot.start.trim()}</span>
+            {' - '}
+            <span className="tabular-nums">{timeSlot.end.trim()}</span>
           </p>
         </li>
         )
