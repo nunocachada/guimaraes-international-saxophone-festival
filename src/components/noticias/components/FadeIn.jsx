@@ -6,6 +6,7 @@ import { motion, useReducedMotion } from 'framer-motion'
 const FadeInStaggerContext = createContext(false)
 
 const viewport = { once: true, margin: '0px 0px -200px' }
+const FADE_IN_BUILD_TAG = 'fadein-2026-05-07-1544'
 
 export function FadeIn(props) {
   let shouldReduceMotion = useReducedMotion()
@@ -13,6 +14,7 @@ export function FadeIn(props) {
 
   return (
     <motion.div
+      data-fadein-build={FADE_IN_BUILD_TAG}
       variants={{
         hidden: { opacity: 0, y: shouldReduceMotion ? 0 : 24 },
         visible: { opacity: 1, y: 0 },

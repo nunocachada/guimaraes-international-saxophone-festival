@@ -4,11 +4,12 @@ import Link from 'next/link'
 import { Border } from '@/components/noticias/components/Border'
 import { Button } from '@/components/noticias/components/Button'
 import { Container } from '@/components/Container'
-import { FadeIn } from '@/components/noticias/components/FadeIn'
 import { formatDate } from '@/lib/formatDate'
 import { carregarNoticias } from '@/lib/mdx'
 import { getDictionary } from '@/lib/get-dictionary'
 import { resolveLocale } from '@/lib/i18n/resolveLocale'
+
+const NEWS_BUILD_TAG = 'noticias-build-check-ok-2026-05-07'
 
 export async function generateMetadata() {
   const locale = await resolveLocale()
@@ -28,7 +29,10 @@ export default async function Noticias() {
 
   return (
     <>
-      <Container className="mt-16 mb-16 sm:mt-24 lg:mt-32">
+      <Container
+        className="mt-16 mb-16 sm:mt-24 lg:mt-32"
+        data-news-build={NEWS_BUILD_TAG}
+      >
         <div className="mb-16 text-center">
           <h1 className="font-fonty text-4xl font-semibold text-sax-gold uppercase sm:text-5xl lg:text-6xl">
             {n.heading}
@@ -40,53 +44,51 @@ export default async function Noticias() {
 
         <div className="space-y-16 lg:space-y-24">
           {noticias.map((noticia) => (
-            <FadeIn key={noticia.href}>
-              <article>
-                <Border className="pt-12">
-                  <div className="relative lg:-mx-4 lg:flex lg:justify-end">
-                    <div className="pt-10 lg:w-2/3 lg:flex-none lg:px-4 lg:pt-0">
-                      <h2 className="font-mono text-2xl font-semibold text-sax-gold transition-colors hover:text-sax-gold-dark">
-                        <Link href={noticia.href}>{noticia.titulo}</Link>
-                      </h2>
-                      <dl className="lg:absolute lg:top-0 lg:left-0 lg:w-1/3 lg:px-4">
-                        <dt className="sr-only">{n.published}</dt>
-                        <dd className="absolute top-0 left-0 font-mono text-sm text-neutral-400 lg:static">
-                          <time dateTime={noticia.data}>
-                            {formatDate(noticia.data, locale)}
-                          </time>
-                        </dd>
-                        <dt className="sr-only">{n.author}</dt>
-                        <dd className="mt-6 flex gap-x-4">
-                          <div className="flex-none overflow-hidden rounded-xl">
-                            <Image
-                              alt=""
-                              {...noticia.autor.imagem}
-                              className="h-12 w-12 object-cover object-top"
-                            />
+            <article key={noticia.href}>
+              <Border className="pt-12">
+                <div className="relative lg:-mx-4 lg:flex lg:justify-end">
+                  <div className="pt-10 lg:w-2/3 lg:flex-none lg:px-4 lg:pt-0">
+                    <h2 className="font-mono text-2xl font-semibold text-sax-gold transition-colors hover:text-sax-gold-dark">
+                      <Link href={noticia.href}>{noticia.titulo}</Link>
+                    </h2>
+                    <dl className="lg:absolute lg:top-0 lg:left-0 lg:w-1/3 lg:px-4">
+                      <dt className="sr-only">{n.published}</dt>
+                      <dd className="absolute top-0 left-0 font-mono text-sm text-neutral-400 lg:static">
+                        <time dateTime={noticia.data}>
+                          {formatDate(noticia.data, locale)}
+                        </time>
+                      </dd>
+                      <dt className="sr-only">{n.author}</dt>
+                      <dd className="mt-6 flex gap-x-4">
+                        <div className="flex-none overflow-hidden rounded-xl">
+                          <Image
+                            alt=""
+                            {...noticia.autor.imagem}
+                            className="h-12 w-12 object-cover object-top"
+                          />
+                        </div>
+                        <div className="font-mono text-sm text-neutral-400">
+                          <div className="font-semibold text-neutral-300">
+                            {noticia.autor.nome}
                           </div>
-                          <div className="font-mono text-sm text-neutral-400">
-                            <div className="font-semibold text-neutral-300">
-                              {noticia.autor.nome}
-                            </div>
-                            <div>{noticia.autor.cargo}</div>
-                          </div>
-                        </dd>
-                      </dl>
-                      <p className="mt-6 max-w-2xl font-mono text-base text-neutral-300">
-                        {noticia.descricao}
-                      </p>
-                      <Button
-                        href={noticia.href}
-                        aria-label={`${n.readMoreAria}: ${noticia.titulo}`}
-                        className="mt-8 !text-neutral-800"
-                      >
-                        {n.readMore}
-                      </Button>
-                    </div>
+                          <div>{noticia.autor.cargo}</div>
+                        </div>
+                      </dd>
+                    </dl>
+                    <p className="mt-6 max-w-2xl font-mono text-base text-neutral-300">
+                      {noticia.descricao}
+                    </p>
+                    <Button
+                      href={noticia.href}
+                      aria-label={`${n.readMoreAria}: ${noticia.titulo}`}
+                      className="mt-8 !text-neutral-800"
+                    >
+                      {n.readMore}
+                    </Button>
                   </div>
-                </Border>
-              </article>
-            </FadeIn>
+                </div>
+              </Border>
+            </article>
           ))}
         </div>
       </Container>
