@@ -1,3 +1,4 @@
 Deploy test marker
 Timestamp: 2026-05-07
 Purpose: verify FTP/cPanel deployment reflects new root files.
+sdfsdfsdfsdfsfds
