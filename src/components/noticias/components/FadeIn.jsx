@@ -21,8 +21,9 @@ export function FadeIn(props) {
       {...(isInStaggerGroup
         ? {}
         : {
-            initial: 'hidden',
-            whileInView: 'visible',
+            // Keep content visible in SSR/non-hydrated states.
+            initial: false,
+            whileInView: shouldReduceMotion ? undefined : 'visible',
             viewport,
           })}
       {...props}
