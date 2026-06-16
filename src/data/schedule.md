@@ -1,78 +1,81 @@
-# Guimarães International Saxophone Festival – Schedule
+# Festival de Saxofone de Guimarães — Programa Oficial
 
-## Dia 7 (terça-feira)
+## Cronograma Diário
 
-### Manhã
+### Dia 7 (Terça-feira, 7 de Julho)
 
-- 9h00–9h30 · Receção aos participantes
-- 9h45–10h15 · Warm up work (Sax, Body & Mind)
-- 10h30 · Masterclass – Prof. Ties Mellema / Nicolas A. / Nuno S.
-- 11h30–12h30 · Stars of the Future – Henk van Twillert (first session)
-- 13h10 · Lunch concert (máx. 20 minutos) – Stars of the Future (Grupo 1) · Pátio TJGA (Piso 1 – salas individuais)
-
-### Tarde
-
-- 14h30–16h00 · Masterclass – Prof. Ties Mellema / Nicholas A.
-- 16h15 · Conferência – Miguel Pais Clemente, Henk van Twillert e Joaquim Gabriel
-- 17h30–18h30 · All Sax Orchestra rehearsal
-
-### Noite
-
-- 21h00 · Concerto de Nuno Silva (main hall of the school)
+- **08h30** – Receção aos participantes e *Warm up work* (orientado pelo Professor Henk van Twillert)
+- **11h00 – 11h30** – Pausa para café (*Coffee break*)
+- **11h30 – 12h30** – *Stars of the Future* (Henk van Twillert)
+- **13h10** – *Pocket Show* – Ensemble de Saxofones da Universidade do Minho (Classe do Prof. Luís Ribeiro)
+- **14h30 – 16h00** – Masterclass — Prof. Nicolas Arsenijevic, Prof. Ties Mellema e Prof. Nuno Silva
+  - *Nota: Cada aula individual tem a duração de 30 minutos.*
+- **16h15** – Conferência: "A Música como Experiência Integral"
+  - **Oradores:** Prof. Henk van Twillert, Miguel Pais Clemente e Joaquim Gabriel
+  - **Descrição:** Abordagem aos dados biomédicos do corpo em conjugação com o instrumento, explorando a simbiose fundamental entre música, corpo e mente para uma performance musical completa.
+- **18h00 – 18h45** – Ensaio: Orquestra BE_SAX (músicos amadores e alunos do 3º ciclo)
+- **18h45 – 20h00** – Ensaio: All Sax Orchestra (orquestra de alunos de nível avançado)
+- **21h30** – Concerto: Nuno Silva e Bruno Santos
+  - **Local:** Salão Nobre do Conservatório de Guimarães
 
 ---
 
-## Dia 8 (quarta-feira)
+### Dia 8 (Quarta-feira, 8 de Julho)
 
-### Manhã
-
-- 9h00–13h00 · Masterclass – Prof. Ties Mellema / Prof. Nicolas A. / Nuno S.
-- 11h30–12h30 · Stars of the Future – Henk van Twillert (second session)
-
-### Almoço
-
-- 13h10 · Lunch concert (máx. 20 minutos) – Stars of the Future (Grupo 2) · Pátio TJGA / Bandas de Garagem
-
-### Tarde
-
-- 14h30–16h00 · Masterclass – Prof. Ties Mellema / Prof. Nicholas Arsenijevic
-- 14h30–16h30 · Sponsors’ time · Sponsors Happy Hour  
-  · Cada sponsor apresenta a sua marca e produtos (15–25 minutos)
-- 15h30 · Coro Cordão – Bandas de Garagem
-
-### Noite
-
-- 17h30–19h00 · All Sax Orchestra rehearsal
-- 21h00 · Concerto no Conservatório com Nicolas A.
+- **09h00 – 11h00** – Masterclass — Prof. Nicolas Arsenijevic, Prof. Ties Mellema e Prof. Nuno Silva
+  - *Nota: Cada aula individual tem a duração de 30 minutos.*
+- **11h00 – 11h30** – Pausa para café (*Coffee break*)
+- **11h30 – 12h30** – *Stars of the Future* (Henk van Twillert) — *A confirmar*
+- **13h10** – Apresentação: Associação Portuguesa do Saxofone
+- **14h30 – 16h00** – Masterclass — Prof. Nicolas Arsenijevic, Prof. Ties Mellema e Prof. Nuno Silva
+  - *Nota: Cada aula individual tem a duração de 30 minutos.*
+- **16h15 – 17h20** – Ensaio: Orquestra BE_SAX
+- **17h30 – 20h00** – Ensaio: All Sax Orchestra
+- **21h30** – Concerto: Henk van Twillert & Vento do Norte / Nicolas Arsenijevic
+  - **Local:** Igreja de São Francisco
 
 ---
 
-## Dia 9 (quinta-feira)
+### Dia 9 (Quinta-feira, 9 de Julho)
 
-### Manhã
-
-- 9h00–11h00 · Masterclass – Prof. Ties Mellema / Nuno S.
-- 11h15–12h45 · Jazz Workshop (Eastman artist)
-
-### Almoço
-
-- 13h00 · Jazz concert (20 minutos)
-
-### Noite
-
-- 17h30 · Ties Mellema Talk – “Find your own voice”
-- 18h35–19h45 · Ama Sax Orchestra rehearsal
+- **09h00 – 13h00** – Masterclass — Prof. Ties Mellema, Prof. Nuno Silva e Prof. Bruno Santos
+  - *Nota: Cada aula individual tem a duração de 30 minutos.*
+- **14h30 – 17h15** – *Sponsor's Happy Hour* (Espaço dos Patrocinadores)
+  - **Descrição:** Oportunidade para conhecer novos materiais, inovações técnicas e experimentar novos equipamentos que poderão contribuir para melhorar ainda mais a performance musical.
+- **17h30** – Palestra com Ties Mellema: *"Find your own voice"* (Encontra a tua própria voz)
+- **18h35 – 20h00** – Ensaio geral: All Sax Orchestra
+- **22h00** – Concerto CAA: Ties Mellema e Luís Miguel
 
 ---
 
-## Dia 10 (sexta-feira)
+### Dia 10 (Sexta-feira, 10 de Julho)
 
-### Manhã
+- **09h30 – 13h00** – Ensaios de preparação para o concerto final:
+  - Orquestra BE_SAX
+  - Orquestra ALL SAX
+  - Coro Cordão (Ensaio nas Bandas de Garagem do Teatro Jordão)
+- **11h15 – 12h50** – Workshop de Jazz (Luís Miguel, Artista Eastman)
+- **13h00** – Concerto de Jazz (Duração: 20 minutos)
+- **17h00** – Concerto: Coro Cordão
+  - **Local:** Bandas de Garagem do Teatro Jordão
+- **18h00** – Concerto Final
+  - **Solista:** Tiago Costa
+  - **Agrupamento:** Orquestra de Saxofones
+  - **Local:** Teatro Jordão
 
-- 9h30–13h00 · Preparation time for final concerts
-- 9h30–13h00 · All Sax Orchestra / Be Sax Orchestra rehearsal
-- Ensaio Coro Cordão
+---
 
-### Noite
+## Informações e Notas de Contexto
 
-- 21h00 · CAA Concert T2Sax (final concert, with soloists) · Teatro Jordão
+### Sobre as Masterclasses
+
+- Cada aula individual programada ao longo do festival terá a duração estrita de **30 minutos**.
+
+### Sobre o Coro Cordão
+
+- Tanto o ensaio de preparação como o concerto do Coro Cordão realizam-se no mesmo dia (10 de Julho), tendo como palco as **Bandas de Garagem do Teatro Jordão**.
+- **Sinopse do Projeto:** O Coro Cordão é um coro comunitário constituído por ex-pacientes, pacientes, amigos, familiares ou simplesmente pessoas próximas de quem passou ou está a lutar contra uma doença oncológica. Através da música, este projeto permite combater o isolamento social, unindo todos os participantes num "cordão musical" que ajuda a encarar a doença de uma forma mais leve e a olhar o mundo de uma outra forma.
+
+### Almoço / Concertos do Meio-Dia (*Lunch Concerts*)
+
+- As apresentações *Stars of the future* (orientadas por Henk van Twillert) nos dias 7 e 8 de Julho funcionam como concertos à hora de almoço, estando a do dia 8 ainda sujeita a confirmação.

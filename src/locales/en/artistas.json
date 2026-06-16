@@ -24,169 +24,184 @@
     "jul10": "10 July"
   },
   "activities": {
-    "fest_0707_rececao": {
-      "title": "Reception for participants",
-      "description": "A welcome for everyone taking part in the festival. Important information about the programme and venues will be shared.",
-      "location": "2nd floor, Teatro Jordão, Guimarães Conservatory"
-    },
-    "fest_0707_warmup": {
-      "title": "Warm up work",
+    "fest_0707_rececao_warmup": {
+      "title": "Reception and warm up work",
       "subtitle": "Henk van Twillert",
-      "programDescription": "Sax, Body & Mind – Henk van Twillert",
-      "description": "Sax, Body & Mind – a physical and mental warm-up for musicians. A holistic session combining saxophone technique with body and mind exercises to prepare you for the day.",
-      "location": "Garage Bands room, Guimarães Conservatory",
-      "moreInfo": "This session is led by Henk van Twillert."
+      "programDescription": "Henk van Twillert",
+      "description": "Welcome for all festival participants, followed by a physical and mental warm-up session led by Henk van Twillert (Sax, Body & Mind).",
+      "location": "Guimarães Conservatory, Teatro Jordão"
     },
-    "fest_0707_mc_tnn": {
-      "title": "Masterclasses",
-      "subtitle": "Ties Mellema, Nicolas Arsenijevic, Nuno Silva",
-      "location": "2nd floor, Teatro Jordão, Guimarães Conservatory",
-      "schedule": "Various times throughout the festival"
+    "fest_0707_coffee": {
+      "title": "Coffee break",
+      "subtitle": "Coffee break",
+      "location": "Guimarães Conservatory, Teatro Jordão"
     },
     "fest_0707_stars": {
       "title": "Stars of the Future",
-      "subtitle": "Henk van Twillert (to be confirmed)",
+      "subtitle": "Henk van Twillert",
+      "programDescription": "Henk van Twillert",
       "description": "A programme for young saxophone talent. Special sessions with Henk van Twillert to nurture and spotlight the saxophone stars of tomorrow.",
-      "location": "To be confirmed"
+      "location": "Guimarães Conservatory, Teatro Jordão"
     },
-    "fest_0707_lunch_g1": {
-      "title": "Lunch concert",
-      "subtitle": "Stars of the Future (Group 1)",
-      "description": "Lunchtime concerts by participants in the “Stars of the Future” programme.",
-      "location": "TJGA courtyard (1st floor – individual rooms) / Garage Bands (to be confirmed)"
+    "fest_0707_pocket_show": {
+      "title": "Pocket Show",
+      "subtitle": "University of Minho Saxophone Ensemble",
+      "programDescription": "University of Minho Saxophone Ensemble",
+      "description": "Performance by the University of Minho Saxophone Ensemble.",
+      "location": "Guimarães Conservatory, Teatro Jordão",
+      "moreInfo": "Prof. Luís Ribeiro’s class"
     },
-    "fest_0707_mc_tn": {
+    "fest_0707_mc_tnn": {
       "title": "Masterclasses",
-      "subtitle": "Ties Mellema / Nicolas Arsenijevic",
+      "subtitle": "Nicolas Arsenijevic, Ties Mellema, Nuno Silva",
+      "programDescription": "Nicolas Arsenijevic, Ties Mellema, Nuno Silva",
+      "description": "Each individual lesson lasts 30 minutes.",
       "location": "Guimarães Conservatory, Teatro Jordão"
     },
     "fest_0707_conferencia": {
       "title": "Conference",
-      "subtitle": "Miguel Pais Clemente, Henk van Twillert and Joaquim Gabriel",
-      "description": "Music is a whole experience: music, body and mind form one artistic whole. The conference looks at biomedical aspects of the body in relation to the instrument. That symbiosis is central to a full musical experience and performance.",
-      "location": "Grand hall, Guimarães Conservatory"
+      "subtitle": "Music as a Whole Experience",
+      "programDescription": "Miguel Pais Clemente, Henk van Twillert and Joaquim Gabriel",
+      "description": "An exploration of biomedical data of the body in relation to the instrument, and the fundamental symbiosis between music, body and mind for a complete musical performance.",
+      "location": "Grand hall, Guimarães Conservatory",
+      "moreInfo": "Speakers: Miguel Pais Clemente, Henk van Twillert and Joaquim Gabriel"
     },
     "fest_0707_be_sax": {
-      "title": "Be Sax Orchestra",
-      "subtitle": "Rehearsals",
-      "programSlotName": "Be Sax Orchestra – rehearsal",
-      "location": "Guimarães Conservatory, Teatro Jordão"
+      "title": "BE_SAX Orchestra",
+      "subtitle": "Rehearsal",
+      "programSlotName": "BE_SAX Orchestra – rehearsal",
+      "location": "Guimarães Conservatory, Teatro Jordão",
+      "moreInfo": "Amateur musicians and 3rd-cycle students"
     },
     "fest_0707_all_sax": {
       "title": "All Sax Orchestra",
-      "subtitle": "Rehearsals",
+      "subtitle": "Rehearsal",
       "programSlotName": "All Sax Orchestra – rehearsal",
-      "location": "Guimarães Conservatory, Teatro Jordão"
+      "location": "Guimarães Conservatory, Teatro Jordão",
+      "moreInfo": "Advanced-level student orchestra"
     },
     "fest_0707_concerto_nuno": {
-      "title": "Nuno Silva concert",
-      "subtitle": "Grand hall",
-      "programDescription": "Guimarães Conservatory (grand hall)",
-      "description": "Solo concert by the renowned Portuguese saxophonist Nuno Silva. A special performance in the school’s main hall.",
+      "title": "Concert",
+      "subtitle": "Nuno Silva and Bruno Santos",
+      "programDescription": "Nuno Silva and Bruno Santos",
+      "description": "Concert with saxophonists Nuno Silva and Bruno Santos.",
       "location": "Grand hall, Guimarães Conservatory"
     },
     "fest_0708_mc_tnn": {
       "title": "Masterclasses",
-      "subtitle": "Ties Mellema, Nicolas Arsenijevic, Nuno Silva",
+      "subtitle": "Nicolas Arsenijevic, Ties Mellema, Nuno Silva",
+      "programDescription": "Nicolas Arsenijevic, Ties Mellema, Nuno Silva",
+      "description": "Each individual lesson lasts 30 minutes.",
+      "location": "Guimarães Conservatory, Teatro Jordão"
+    },
+    "fest_0708_coffee": {
+      "title": "Coffee break",
+      "subtitle": "Coffee break",
       "location": "Guimarães Conservatory, Teatro Jordão"
     },
     "fest_0708_stars": {
       "title": "Stars of the Future",
-      "subtitle": "Henk van Twillert (to be confirmed)",
+      "subtitle": "Henk van Twillert",
+      "programDescription": "Henk van Twillert",
       "description": "A programme for young saxophone talent. Special sessions with Henk van Twillert to nurture and spotlight the saxophone stars of tomorrow.",
       "location": "Guimarães Conservatory, Teatro Jordão",
-      "moreInfo": "1st floor, percussion room"
+      "moreInfo": "To be confirmed"
     },
-    "fest_0708_lunch_g2": {
-      "title": "Lunch concert",
-      "subtitle": "Stars of the Future (Group 2)",
-      "description": "Lunchtime concerts by participants in the “Stars of the Future” programme.",
+    "fest_0708_aps": {
+      "title": "Presentation",
+      "subtitle": "Portuguese Saxophone Association",
+      "programDescription": "Portuguese Saxophone Association",
+      "description": "Presentation by the Portuguese Saxophone Association.",
       "location": "Guimarães Conservatory, Teatro Jordão"
     },
     "fest_0708_mc_tn": {
       "title": "Masterclasses",
-      "subtitle": "Ties Mellema / Nicolas Arsenijevic",
+      "subtitle": "Nicolas Arsenijevic, Ties Mellema, Nuno Silva",
+      "programDescription": "Nicolas Arsenijevic, Ties Mellema, Nuno Silva",
+      "description": "Each individual lesson lasts 30 minutes.",
       "location": "Guimarães Conservatory, Teatro Jordão"
     },
     "fest_0708_be_sax": {
-      "title": "Be Sax Orchestra",
+      "title": "BE_SAX Orchestra",
       "subtitle": "Rehearsal",
-      "programSlotName": "Be Sax Orchestra – rehearsal",
-      "location": "Guimarães Conservatory, Teatro Jordão",
-      "moreInfo": "Floor −1, orchestra room"
+      "programSlotName": "BE_SAX Orchestra – rehearsal",
+      "location": "Guimarães Conservatory, Teatro Jordão"
     },
     "fest_0708_all_sax": {
       "title": "All Sax Orchestra",
       "subtitle": "Rehearsal",
       "programSlotName": "All Sax Orchestra – rehearsal",
-      "location": "Guimarães Conservatory, Teatro Jordão",
-      "moreInfo": "Floor −1, orchestra room"
+      "location": "Guimarães Conservatory, Teatro Jordão"
     },
     "fest_0708_concerto_nicolas": {
-      "title": "Nicolas Arsenijevic concert",
-      "subtitle": "Grand hall",
-      "programDescription": "Guimarães Conservatory (grand hall)",
-      "location": "Guimarães Conservatory, Teatro Jordão"
+      "title": "Concert",
+      "subtitle": "Henk van Twillert & Vento do Norte / Nicolas Arsenijevic",
+      "programDescription": "Henk van Twillert & Vento do Norte, Nicolas Arsenijevic",
+      "location": "Church of São Francisco, Guimarães"
     },
     "fest_0709_mc_tnbs": {
       "title": "Masterclasses",
-      "subtitle": "Ties Mellema / Nuno Silva / Bruno Santos",
-      "location": "Guimarães Conservatory"
-    },
-    "fest_0709_jazz_ws": {
-      "title": "Jazz workshop",
-      "subtitle": "Luis Miguel (Eastman artist)",
-      "location": "Garage Bands room, Guimarães Conservatory"
-    },
-    "fest_0709_jazz_concert": {
-      "title": "Jazz concert",
-      "subtitle": "Workshop participants",
-      "description": "Jazz concert by participants in the workshop.",
-      "location": "Garage Bands room, Guimarães Conservatory"
+      "subtitle": "Ties Mellema, Nuno Silva, Bruno Santos",
+      "programDescription": "Ties Mellema, Nuno Silva, Bruno Santos",
+      "description": "Each individual lesson lasts 30 minutes.",
+      "location": "Guimarães Conservatory, Teatro Jordão"
     },
     "fest_0709_sponsors": {
-      "title": "Sponsors’ time",
-      "subtitle": "Sponsors happy hour",
-      "description": "Time dedicated to the festival sponsors. Each sponsor can present their brand and products for about 15–25 minutes.",
-      "location": "2nd floor, Teatro Jordão, Guimarães Conservatory"
+      "title": "Sponsor's Happy Hour",
+      "subtitle": "Sponsors' area",
+      "description": "An opportunity to discover new materials, technical innovations and try equipment that can help improve musical performance.",
+      "location": "Sponsors' area, Guimarães Conservatory"
     },
     "fest_0709_ties_talk": {
-      "title": "Ties Mellema talk",
+      "title": "Talk with Ties Mellema",
       "subtitle": "Find your own voice",
       "description": "An inspiring talk with Ties Mellema on “Find your own voice”.",
       "location": "Grand hall, Guimarães Conservatory"
     },
     "fest_0709_all_sax": {
       "title": "All Sax Orchestra",
-      "subtitle": "Rehearsals",
-      "programSlotName": "All Sax Orchestra – rehearsal",
+      "subtitle": "General rehearsal",
+      "programSlotName": "All Sax Orchestra – general rehearsal",
       "location": "Guimarães Conservatory, Teatro Jordão"
     },
     "fest_0709_concerto_ties": {
-      "title": "Ties Mellema concert",
-      "subtitle": "CAAA Guimarães",
-      "programSlotName": "Ties Mellema concert",
+      "title": "CAA concert",
+      "subtitle": "Ties Mellema and Luís Miguel",
+      "programDescription": "Ties Mellema and Luís Miguel",
       "location": "CAAA Guimarães"
     },
     "fest_0710_prep": {
-      "title": "Preparation for the closing concerts",
-      "description": "Time for final preparation before the closing concerts—individual and group rehearsals.",
-      "location": "Guimarães Conservatory",
-      "moreInfo": "1st floor, percussion room, and floor −1, orchestra room",
-      "programDescription": "All Sax Orchestra, Be Sax Orchestra, Cordão choir, soloists"
+      "title": "Rehearsals for the closing concert",
+      "subtitle": "BE_SAX Orchestra, ALL SAX Orchestra, Cordão choir",
+      "description": "Final preparation rehearsals. The Cordão choir rehearsal takes place in the Garage Bands room at Teatro Jordão.",
+      "location": "Guimarães Conservatory, Teatro Jordão"
+    },
+    "fest_0710_jazz_ws": {
+      "title": "Jazz workshop",
+      "subtitle": "Luís Miguel",
+      "programDescription": "Luís Miguel",
+      "location": "Garage Bands room, Guimarães Conservatory",
+      "moreInfo": "Eastman artist"
+    },
+    "fest_0710_jazz_concert": {
+      "title": "Jazz concert",
+      "description": "Jazz concert by participants in the workshop.",
+      "location": "Garage Bands room, Guimarães Conservatory",
+      "moreInfo": "Duration: 20 minutes"
     },
     "fest_0710_coro": {
       "title": "Cordão choir concert",
-      "subtitle": "Choir of oncology patients and friends",
+      "subtitle": "Community choir",
       "programSlotName": "Cordão choir concert",
-      "description": "CORDÃO is a community choir of people diagnosed with cancer—whether in treatment or remission—their carers (formal or informal), and health professionals. Its main aim is to reduce the social isolation of people with cancer and their carers; CORDÃO brings people together and weaves new ways of living with and seeing cancer.\n\nSince early 2025, CORDÃO has welcomed new participants with the same goal. Over the past year, weekly meetings combined collaborative creation—choosing or developing repertoire, creative writing, and composition exercises—turning an experience often marked by solitude into sharing, connection, and artistic expression.\n\nIn its first year, the group performed live several times: the audiovisual installation “Casulo” at Theatro Circo; São João festivities in Braga with António Sérginho and Grupo de Cantares das Mulheres do Minho; the Verbena Solidária at the Palace (Portuguese League Against Cancer); and at gnration with ODE – Orchestra of Electronic Devices.\n\nCORDÃO is part of the 3rd PARTIS & Art For Change programme (Calouste Gulbenkian Foundation and ”la Caixa” Foundation). It is run by Faz Cultura – Braga Municipal Culture Company, with partners including ULS Braga, the Portuguese League Against Cancer – Braga branch, and APLL – Portuguese Association of Leukaemia and Lymphoma.",
-      "location": "Garage Bands room"
+      "description": "Cordão is a community choir made up of former patients, patients, friends, family or anyone close to someone who has faced or is facing cancer. Through music, the project fights social isolation and brings participants together in a musical “cord” that helps them face illness more lightly and see the world differently.",
+      "location": "Garage Bands room, Teatro Jordão"
     },
     "fest_0710_final": {
       "title": "Closing concert",
-      "subtitle": "All Sax Orchestra + soloists",
-      "programDescription": "All Sax Orchestra + soloists",
-      "location": "Guimarães Conservatory, Teatro Jordão"
+      "subtitle": "Tiago Costa — Saxophone Orchestra",
+      "programDescription": "Tiago Costa",
+      "location": "Teatro Jordão, Guimarães",
+      "moreInfo": "Soloist: Tiago Costa"
     }
   },
   "artists": {

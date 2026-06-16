@@ -374,6 +374,11 @@ const AtividadeCard = ({ atividade, atividadeIndex, clipPathId }) => {
                 <h2 className="mb-4 text-center font-mono text-3xl font-bold tracking-tight text-sax-gold">
                   {displayNome}
                 </h2>
+                {displaySubtitulo && (
+                  <p className="text-center font-mono text-lg tracking-tight text-neutral-300">
+                    {displaySubtitulo}
+                  </p>
+                )}
               </div>
 
               {/* Imagens */}
