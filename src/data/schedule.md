@@ -1,15 +1,15 @@
-# Festival de Saxofone de Guimarães — Programa Oficial
+# Festival Internacional de Saxofone de Guimarães — Programa Oficial
 
 ## Cronograma Diário
 
 ### Dia 7 (Terça-feira, 7 de Julho)
 
-- **08h30** – Receção aos participantes e *Warm up work* (orientado pelo Professor Henk van Twillert)
-- **11h00 – 11h30** – Pausa para café (*Coffee break*)
-- **11h30 – 12h30** – *Stars of the Future* (Henk van Twillert)
-- **13h10** – *Pocket Show* – Ensemble de Saxofones da Universidade do Minho (Classe do Prof. Luís Ribeiro)
+- **08h30** – Receção aos participantes e _Warm up work_ (orientado pelo Professor Henk van Twillert)
+- **11h00 – 11h30** – Pausa para café (_Coffee break_)
+- **11h30 – 12h30** – _Stars of the Future_ (Henk van Twillert)
+- **13h10** – _Pocket Show_ – Ensemble de Saxofones da Universidade do Minho (Classe do Prof. Luís Ribeiro)
 - **14h30 – 16h00** – Masterclass — Prof. Nicolas Arsenijevic, Prof. Ties Mellema e Prof. Nuno Silva
-  - *Nota: Cada aula individual tem a duração de 30 minutos.*
+  - _Nota: Cada aula individual tem a duração de 30 minutos._
 - **16h15** – Conferência: "A Música como Experiência Integral"
   - **Oradores:** Prof. Henk van Twillert, Miguel Pais Clemente e Joaquim Gabriel
   - **Descrição:** Abordagem aos dados biomédicos do corpo em conjugação com o instrumento, explorando a simbiose fundamental entre música, corpo e mente para uma performance musical completa.
@@ -23,12 +23,12 @@
 ### Dia 8 (Quarta-feira, 8 de Julho)
 
 - **09h00 – 11h00** – Masterclass — Prof. Nicolas Arsenijevic, Prof. Ties Mellema e Prof. Nuno Silva
-  - *Nota: Cada aula individual tem a duração de 30 minutos.*
-- **11h00 – 11h30** – Pausa para café (*Coffee break*)
-- **11h30 – 12h30** – *Stars of the Future* (Henk van Twillert) — *A confirmar*
+  - _Nota: Cada aula individual tem a duração de 30 minutos._
+- **11h00 – 11h30** – Pausa para café (_Coffee break_)
+- **11h30 – 12h30** – _Stars of the Future_ (Henk van Twillert) — _A confirmar_
 - **13h10** – Apresentação: Associação Portuguesa do Saxofone
 - **14h30 – 16h00** – Masterclass — Prof. Nicolas Arsenijevic, Prof. Ties Mellema e Prof. Nuno Silva
-  - *Nota: Cada aula individual tem a duração de 30 minutos.*
+  - _Nota: Cada aula individual tem a duração de 30 minutos._
 - **16h15 – 17h20** – Ensaio: Orquestra BE_SAX
 - **17h30 – 20h00** – Ensaio: All Sax Orchestra
 - **21h30** – Concerto: Henk van Twillert & Vento do Norte / Nicolas Arsenijevic
@@ -39,10 +39,10 @@
 ### Dia 9 (Quinta-feira, 9 de Julho)
 
 - **09h00 – 13h00** – Masterclass — Prof. Ties Mellema, Prof. Nuno Silva e Prof. Bruno Santos
-  - *Nota: Cada aula individual tem a duração de 30 minutos.*
-- **14h30 – 17h15** – *Sponsor's Happy Hour* (Espaço dos Patrocinadores)
+  - _Nota: Cada aula individual tem a duração de 30 minutos._
+- **14h30 – 17h15** – _Sponsor's Happy Hour_ (Espaço dos Patrocinadores)
   - **Descrição:** Oportunidade para conhecer novos materiais, inovações técnicas e experimentar novos equipamentos que poderão contribuir para melhorar ainda mais a performance musical.
-- **17h30** – Palestra com Ties Mellema: *"Find your own voice"* (Encontra a tua própria voz)
+- **17h30** – Palestra com Ties Mellema: _"Find your own voice"_ (Encontra a tua própria voz)
 - **18h35 – 20h00** – Ensaio geral: All Sax Orchestra
 - **22h00** – Concerto CAA: Ties Mellema e Luís Miguel
 
@@ -76,6 +76,6 @@
 - Tanto o ensaio de preparação como o concerto do Coro Cordão realizam-se no mesmo dia (10 de Julho), tendo como palco as **Bandas de Garagem do Teatro Jordão**.
 - **Sinopse do Projeto:** O Coro Cordão é um coro comunitário constituído por ex-pacientes, pacientes, amigos, familiares ou simplesmente pessoas próximas de quem passou ou está a lutar contra uma doença oncológica. Através da música, este projeto permite combater o isolamento social, unindo todos os participantes num "cordão musical" que ajuda a encarar a doença de uma forma mais leve e a olhar o mundo de uma outra forma.
 
-### Almoço / Concertos do Meio-Dia (*Lunch Concerts*)
+### Almoço / Concertos do Meio-Dia (_Lunch Concerts_)
 
-- As apresentações *Stars of the future* (orientadas por Henk van Twillert) nos dias 7 e 8 de Julho funcionam como concertos à hora de almoço, estando a do dia 8 ainda sujeita a confirmação.
+- As apresentações _Stars of the future_ (orientadas por Henk van Twillert) nos dias 7 e 8 de Julho funcionam como concertos à hora de almoço, estando a do dia 8 ainda sujeita a confirmação.
