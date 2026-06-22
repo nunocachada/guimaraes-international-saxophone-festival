@@ -1,8 +1,10 @@
-name: Deploy Next.js to FTP Server (Portfolio Folder)
+name: Deploy site to FTP (source only)
+
 on:
   push:
     branches:
-      - main # Trigger deployment on push to the main branch
+      - main
+
 jobs:
   deploy:
     name: Deploy to FTP
@@ -10,60 +12,29 @@ jobs:
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
-      # Checkout the code from your repository
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # Set up Node.js environment
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '22.18.0'
           cache: 'npm'
 
-      # Install dependencies and build the project
-      # if you have env variables in the project add them like below so that
-      # the build process wont fail
       - name: Install dependencies
         run: npm install
 
       - name: Build project
         run: npm run build
 
-      # Verify that build was successful
-      - name: Verify build output
+      - name: Prepare deployment directory
         run: |
-          echo "=== Checking if .next directory exists ==="
-          if [ -d ".next" ]; then
-            echo "✅ .next directory found!"
-            echo "=== Contents of .next ==="
-            ls -la .next/
-            echo "=== Checking .next/static ==="
-            if [ -d ".next/static" ]; then
-              echo "✅ .next/static found!"
-              ls -la .next/static/ | head -10
-            else
-              echo "❌ ERROR: .next/static not found!"
-              exit 1
-            fi
-          else
-            echo "❌ ERROR: .next directory not found! Build may have failed."
-            exit 1
-          fi
-
-      # Prepare the deployment directory
-      - name: Prepare Deployment Directory
-        run: |
-          echo "=== Preparing deployment ==="
           rm -rf node_modules
           rm -rf .git
-          echo "✅ Removed node_modules and .git"
-          echo "=== Verifying .next still exists ==="
-          ls -la .next/ || echo "❌ WARNING: .next was removed!"
+          rm -rf .next
+          echo "Removed node_modules, .git and .next before FTP upload."
 
-      # Deploy files to FTP server
       - name: Deploy via FTP
-        id: ftp-deploy
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}
@@ -72,22 +43,11 @@ jobs:
           server-dir: ./
           exclude: |
             **/.git*
-            **/node_modules
+            **/.git/**
+            **/node_modules/**
+            **/.next/**
+            **/.next
+            **/out/**
             **/.DS_Store
           dangerous-clean-slate: false
           log-level: verbose
-
-      # Check deployment status - files may have uploaded successfully even if cleanup failed
-      - name: Verify deployment status
-        if: always()
-        run: |
-          if [ "${{ steps.ftp-deploy.outcome }}" == "failure" ]; then
-            echo "⚠️ FTP deployment step encountered errors during cleanup phase."
-            echo "This often happens when trying to remove non-existent directories."
-            echo "If files were uploaded successfully (visible in logs above), deployment is likely valid."
-            echo "Please verify your site is working correctly."
-            echo ""
-            echo "To fix this permanently, ensure the FTP server directory structure matches expectations."
-          else
-            echo "✅ Deployment completed successfully!"
-          fi
