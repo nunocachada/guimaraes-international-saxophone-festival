@@ -53,6 +53,7 @@ const programa = [
       {
         i18nKey: 'fest_0707_conferencia',
         name: 'Conferência',
+        subtitle: 'A Música como Experiência Integral',
         description:
           'Miguel Pais Clemente, Henk van Twillert e Joaquim Gabriel',
         location: 'Salão nobre do Conservatório de Guimarães',
@@ -204,6 +205,7 @@ const programa = [
       {
         i18nKey: 'fest_0709_ties_talk',
         name: 'Palestra com Ties Mellema',
+        subtitle: 'Find your own voice (Encontra a tua própria voz)',
         description: null,
         location: 'Salão nobre do Conservatório de Guimarães',
         start: '17:30',
@@ -387,6 +389,9 @@ function TimeSlots({ day, className, slotAriaAbout, slotAriaAt }) {
   const getSlotDescription = (slot) =>
     resolveActivityI18n(t, slot.i18nKey, 'programDescription', slot.description)
 
+  const getSlotSubtitle = (slot) =>
+    resolveActivityI18n(t, slot.i18nKey, 'subtitle', slot.subtitle)
+
   const getSlotLocation = (slot) =>
     resolveActivityI18n(t, slot.i18nKey, 'location', slot.location)
 
@@ -400,12 +405,13 @@ function TimeSlots({ day, className, slotAriaAbout, slotAriaAt }) {
     >
       {day.timeSlots.map((timeSlot, timeSlotIndex) => {
         const slotName = getSlotName(timeSlot)
+        const slotSubtitle = getSlotSubtitle(timeSlot)
         const slotDescription = getSlotDescription(timeSlot)
         const slotLocation = getSlotLocation(timeSlot)
         return (
         <li
           key={`${timeSlot.start}-${timeSlot.name}`}
-          aria-label={`${slotName} ${slotDescription ? `${slotAriaAbout} ${slotDescription}` : ''} ${slotLocation ? `${t('location')} ${slotLocation}` : ''} ${slotAriaAt} ${timeSlot.start} - ${timeSlot.end}`}
+          aria-label={`${slotName}${slotSubtitle ? ` — ${slotSubtitle}` : ''} ${slotDescription ? `${slotAriaAbout} ${slotDescription}` : ''} ${slotLocation ? `${t('location')} ${slotLocation}` : ''} ${slotAriaAt} ${timeSlot.start} - ${timeSlot.end}`}
         >
           {timeSlotIndex > 0 && (
             <div className="mx-auto mb-8 h-px w-48 bg-[#5C3A5C]/10" />
@@ -413,6 +419,11 @@ function TimeSlots({ day, className, slotAriaAbout, slotAriaAt }) {
           <h4 className="font-fonty text-2xl font-semibold text-neutral-200">
             {slotName}
           </h4>
+          {slotSubtitle && (
+            <p className="mt-1 font-mono text-base tracking-tight text-neutral-200">
+              {slotSubtitle}
+            </p>
+          )}
           {slotDescription && (
             <p className="mt-1 font-mono text-sm tracking-tight text-neutral-300">
               {slotDescription}
