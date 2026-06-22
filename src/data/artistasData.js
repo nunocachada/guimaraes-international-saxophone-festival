@@ -467,7 +467,7 @@ export const days = [
         i18nKey: 'fest_0710_ensemble_minho',
         nome: 'Concerto',
         subtitulo:
-          'Ensemble de Saxofones da Universidade do Minho & Nuno Silva',
+          'Ensemble de Saxofones da Universidade do Minho & Nuno Silva (solista)',
         imagem: orquestraImage,
         imagens: [orquestraImage, nunoSilvaImage],
         descricao:
@@ -490,7 +490,7 @@ export const days = [
       {
         i18nKey: 'fest_0710_final',
         nome: 'Concerto Final',
-        subtitulo: 'Be_SAX & ALL_SAX, Vento do Norte & Tiago Costa',
+        subtitulo: 'Be_SAX & ALL_SAX, Vento do Norte & Tiago Costa (solista)',
         imagem: tiagoCostaImage,
         imagens: [tiagoCostaImage, henkVanTwillertImage],
         descricao: null,
