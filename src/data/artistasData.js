@@ -28,6 +28,18 @@ export const days = [
     dataHora: '2026-07-07',
     artistas: [
       {
+        bioI18nKey: 'tiago_costa',
+        nome: 'Tiago Costa',
+        papel: 'PORTUGAL',
+        imagem: tiagoCostaImage,
+        biografia:
+          'Tiago Costa é saxofonista e Diretor Artístico do Guimarães International Saxophone Festival. Enquanto responsável pela visão pedagógica, artística e formativa do festival, orienta um programa que integra masterclasses, workshops, conferências e concertos com intérpretes de referência internacional.\n\nNo encerramento do festival, actua como solista no Concerto Final, juntamente com Vento do Norte e as orquestras Be_SAX e ALL_SAX, no Teatro Jordão.',
+        informacoes: 'Diretor Artístico',
+        eventos: ['Concerto Final - 10 de Julho (solista)'],
+        imagens: [tiagoCostaImage],
+      },
+      ,
+      {
         bioI18nKey: 'ties_mellema',
         nome: 'Ties Mellemma',
         papel: 'HOLANDA',
@@ -122,17 +134,6 @@ export const days = [
         ],
         imagens: [luisMiguelImage],
       },
-      {
-        bioI18nKey: 'tiago_costa',
-        nome: 'Tiago Costa',
-        papel: 'PORTUGAL',
-        imagem: tiagoCostaImage,
-        biografia:
-          'Tiago Costa é saxofonista e Diretor Artístico do Guimarães International Saxophone Festival. Enquanto responsável pela visão pedagógica, artística e formativa do festival, orienta um programa que integra masterclasses, workshops, conferências e concertos com intérpretes de referência internacional.\n\nNo encerramento do festival, actua como solista no Concerto Final, juntamente com Vento do Norte e as orquestras Be_SAX e ALL_SAX, no Teatro Jordão.',
-        informacoes: 'Diretor Artístico',
-        eventos: ['Concerto Final - 10 de Julho (solista)'],
-        imagens: [tiagoCostaImage],
-      },
     ],
     atividades: [],
   },
@@ -181,7 +182,7 @@ export const days = [
         nome: 'Masterclasses',
         subtitulo: 'Nicolas Arsenijevic, Ties Mellema, Nuno Silva',
         imagem: masterclassesTiesNicolasNunoImage,
-        imagens: [masterclassesTiesNicolasNunoImage],
+        imagens: [nicolasArsenijevicImage, tiesMellemmaImage, nunoSilvaImage],
         descricao: 'Cada aula individual tem a duração de 30 minutos.',
         localizacao: 'Conservatório de Guimarães, Teatro Jordão',
         horario: '14:30 - 16:00',
@@ -247,7 +248,12 @@ export const days = [
         subtitulo:
           'Henk van Twillert, Nicolas Arsenijevic, Ties Mellema, Nuno Silva',
         imagem: masterclassesTiesNicolasNunoImage,
-        imagens: [masterclassesTiesNicolasNunoImage, henkVanTwillertImage],
+        imagens: [
+          henkVanTwillertImage,
+          nicolasArsenijevicImage,
+          tiesMellemmaImage,
+          nunoSilvaImage,
+        ],
         descricao: 'Cada aula individual tem a duração de 30 minutos.',
         localizacao: 'Conservatório de Guimarães, Teatro Jordão',
         horario: '09:00 - 11:00',
@@ -277,7 +283,7 @@ export const days = [
         nome: 'Masterclasses',
         subtitulo: 'Nicolas Arsenijevic, Ties Mellema, Nuno Silva',
         imagem: masterclassesTiesNicolasNunoImage,
-        imagens: [masterclassesTiesNicolasNunoImage],
+        imagens: [nicolasArsenijevicImage, tiesMellemmaImage, nunoSilvaImage],
         descricao: 'Cada aula individual tem a duração de 30 minutos.',
         localizacao: 'Conservatório de Guimarães, Teatro Jordão',
         horario: '14:30 - 16:00',
@@ -324,8 +330,7 @@ export const days = [
       {
         i18nKey: 'fest_0709_mc_htnbs',
         nome: 'Masterclasses',
-        subtitulo:
-          'Henk van Twillert, Ties Mellema, Nuno Silva, Bruno Santos',
+        subtitulo: 'Henk van Twillert, Ties Mellema, Nuno Silva, Bruno Santos',
         imagem: masterclassesTiesNunoBrunoImage,
         imagens: [masterclassesTiesNunoBrunoImage, henkVanTwillertImage],
         descricao: 'Cada aula individual tem a duração de 30 minutos.',
