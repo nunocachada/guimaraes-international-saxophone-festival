@@ -122,6 +122,17 @@ export const days = [
         ],
         imagens: [luisMiguelImage],
       },
+      {
+        bioI18nKey: 'tiago_costa',
+        nome: 'Tiago Costa',
+        papel: 'PORTUGAL',
+        imagem: tiagoCostaImage,
+        biografia:
+          'Tiago Costa é saxofonista e Diretor Artístico do Guimarães International Saxophone Festival. Enquanto responsável pela visão pedagógica, artística e formativa do festival, orienta um programa que integra masterclasses, workshops, conferências e concertos com intérpretes de referência internacional.\n\nNo encerramento do festival, actua como solista no Concerto Final, juntamente com Vento do Norte e as orquestras Be_SAX e ALL_SAX, no Teatro Jordão.',
+        informacoes: 'Diretor Artístico',
+        eventos: ['Concerto Final - 10 de Julho (solista)'],
+        imagens: [tiagoCostaImage],
+      },
     ],
     atividades: [],
   },
