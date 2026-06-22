@@ -466,7 +466,8 @@ export const days = [
       {
         i18nKey: 'fest_0710_ensemble_minho',
         nome: 'Concerto',
-        subtitulo: 'Ensemble de Saxofones da Universidade do Minho',
+        subtitulo:
+          'Ensemble de Saxofones da Universidade do Minho & Nuno Silva',
         imagem: orquestraImage,
         imagens: [orquestraImage, nunoSilvaImage],
         descricao:

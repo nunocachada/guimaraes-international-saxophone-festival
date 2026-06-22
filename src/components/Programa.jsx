@@ -152,8 +152,7 @@ const programa = [
       {
         i18nKey: 'fest_0708_concerto_nicolas',
         name: 'Concerto',
-        description:
-          'Henk van Twillert & Vento do Norte, Nicolas Arsenijevic',
+        description: 'Henk van Twillert & Vento do Norte, Nicolas Arsenijevic',
         location: 'Igreja de São Francisco, Guimarães',
         start: '21:30',
         end: null,
@@ -165,7 +164,7 @@ const programa = [
     dateLabelKey: 'jul09',
     dateTime: '2026-07-09',
     summary:
-      'Terceiro dia com masterclasses, workshop de jazz, Sponsor\'s Happy Hour, palestra de Ties Mellema e concerto CAAA.',
+      "Terceiro dia com masterclasses, workshop de jazz, Sponsor's Happy Hour, palestra de Ties Mellema e concerto CAAA.",
     timeSlots: [
       {
         i18nKey: 'fest_0709_mc_htnbs',
@@ -271,7 +270,7 @@ const programa = [
         i18nKey: 'fest_0710_ensemble_minho',
         name: 'Concerto',
         description:
-          'Ensemble de Saxofones da Universidade do Minho — Nuno Silva',
+          'Ensemble de Saxofones da Universidade do Minho & Nuno Silva (solista)',
         location: 'Conservatório de Guimarães, Teatro Jordão',
         start: '15:15',
         end: null,
@@ -287,7 +286,7 @@ const programa = [
       {
         i18nKey: 'fest_0710_final',
         name: 'Concerto Final',
-        description: 'Be_SAX & ALL_SAX, Vento do Norte & Tiago Costa',
+        description: 'Be_SAX & ALL_SAX, Vento do Norte & Tiago Costa (solista)',
         location: 'Teatro Jordão, Guimarães',
         start: '18:00',
         end: null,
@@ -432,37 +431,38 @@ function TimeSlots({ day, className, slotAriaAbout, slotAriaAt }) {
           normalizeDetail(slotSubtitle) !== normalizeDetail(slotDescription)
         const showDescription =
           slotDescription &&
-          (!slotSubtitle || normalizeDetail(slotSubtitle) !== normalizeDetail(slotDescription))
+          (!slotSubtitle ||
+            normalizeDetail(slotSubtitle) !== normalizeDetail(slotDescription))
         return (
-        <li
-          key={`${timeSlot.i18nKey}-${timeSlot.start}`}
-          aria-label={`${slotName}${showSubtitle ? ` — ${slotSubtitle}` : ''} ${showDescription ? `${slotAriaAbout} ${slotDescription}` : ''} ${slotLocation ? `${t('location')} ${slotLocation}` : ''} ${slotAriaAt} ${timeLabel}`}
-        >
-          {timeSlotIndex > 0 && (
-            <div className="mx-auto mb-8 h-px w-48 bg-[#5C3A5C]/10" />
-          )}
-          <h4 className="font-fonty text-2xl font-semibold text-neutral-200">
-            {slotName}
-          </h4>
-          {showSubtitle && (
-            <p className="mt-1 font-mono text-base tracking-tight text-neutral-200">
-              {slotSubtitle}
+          <li
+            key={`${timeSlot.i18nKey}-${timeSlot.start}`}
+            aria-label={`${slotName}${showSubtitle ? ` — ${slotSubtitle}` : ''} ${showDescription ? `${slotAriaAbout} ${slotDescription}` : ''} ${slotLocation ? `${t('location')} ${slotLocation}` : ''} ${slotAriaAt} ${timeLabel}`}
+          >
+            {timeSlotIndex > 0 && (
+              <div className="mx-auto mb-8 h-px w-48 bg-[#5C3A5C]/10" />
+            )}
+            <h4 className="font-fonty text-2xl font-semibold text-neutral-200">
+              {slotName}
+            </h4>
+            {showSubtitle && (
+              <p className="mt-1 font-mono text-base tracking-tight text-neutral-200">
+                {slotSubtitle}
+              </p>
+            )}
+            {showDescription && (
+              <p className="mt-1 font-mono text-sm tracking-tight text-neutral-300">
+                {slotDescription}
+              </p>
+            )}
+            <p className="mt-1 font-mono text-sm text-sax-gold">
+              <span className="tabular-nums">{timeLabel}</span>
             </p>
-          )}
-          {showDescription && (
-            <p className="mt-1 font-mono text-sm tracking-tight text-neutral-300">
-              {slotDescription}
-            </p>
-          )}
-          <p className="mt-1 font-mono text-sm text-sax-gold">
-            <span className="tabular-nums">{timeLabel}</span>
-          </p>
-          {slotLocation && (
-            <p className="mt-2 font-mono text-xs tracking-tight text-neutral-400">
-              {slotLocation}
-            </p>
-          )}
-        </li>
+            {slotLocation && (
+              <p className="mt-2 font-mono text-xs tracking-tight text-neutral-400">
+                {slotLocation}
+              </p>
+            )}
+          </li>
         )
       })}
     </ol>
