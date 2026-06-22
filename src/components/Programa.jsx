@@ -21,6 +21,7 @@ const programa = [
         i18nKey: 'fest_0707_rececao_warmup',
         name: 'Receção aos participantes e Warm up work',
         description: 'Henk van Twillert',
+        location: 'Conservatório de Guimarães, Teatro Jordão',
         start: '08:30',
         end: '11:00',
       },
@@ -28,6 +29,7 @@ const programa = [
         i18nKey: 'fest_0707_coffee',
         name: 'Pausa para café',
         description: null,
+        location: 'Conservatório de Guimarães, Teatro Jordão',
         start: '11:00',
         end: '11:30',
       },
@@ -35,6 +37,7 @@ const programa = [
         i18nKey: 'fest_0707_pocket_show',
         name: 'Pocket Show',
         description: 'Gonçalo Silva',
+        location: 'Conservatório de Guimarães, Teatro Jordão',
         start: '13:00',
         end: '13:30',
       },
@@ -43,6 +46,7 @@ const programa = [
         name: 'Masterclasses',
         description:
           'Nicolas Arsenijevic, Ties Mellema, Nuno Silva',
+        location: 'Conservatório de Guimarães, Teatro Jordão',
         start: '14:30',
         end: '16:00',
       },
@@ -51,6 +55,7 @@ const programa = [
         name: 'Conferência',
         description:
           'Miguel Pais Clemente, Henk van Twillert e Joaquim Gabriel',
+        location: 'Salão nobre do Conservatório de Guimarães',
         start: '16:15',
         end: '17:45',
       },
@@ -58,6 +63,7 @@ const programa = [
         i18nKey: 'fest_0707_be_sax',
         name: 'Orquestra BE_SAX — Ensaio',
         description: null,
+        location: 'Conservatório de Guimarães, Teatro Jordão',
         start: '18:00',
         end: '18:45',
       },
@@ -65,6 +71,7 @@ const programa = [
         i18nKey: 'fest_0707_all_sax',
         name: 'All Sax Orchestra — Ensaio',
         description: null,
+        location: 'Conservatório de Guimarães, Teatro Jordão',
         start: '18:45',
         end: '20:00',
       },
@@ -72,6 +79,7 @@ const programa = [
         i18nKey: 'fest_0707_concerto_nuno',
         name: 'Concerto',
         description: 'Nuno Silva e Bruno Santos',
+        location: 'Salão Nobre do Conservatório de Guimarães',
         start: '21:30',
         end: '22:30',
       },
@@ -89,6 +97,7 @@ const programa = [
         name: 'Masterclasses',
         description:
           'Henk van Twillert, Nicolas Arsenijevic, Ties Mellema, Nuno Silva',
+        location: 'Conservatório de Guimarães, Teatro Jordão',
         start: '09:00',
         end: '11:00',
       },
@@ -96,6 +105,7 @@ const programa = [
         i18nKey: 'fest_0708_coffee',
         name: 'Pausa para café',
         description: null,
+        location: 'Conservatório de Guimarães, Teatro Jordão',
         start: '11:00',
         end: '11:30',
       },
@@ -103,6 +113,7 @@ const programa = [
         i18nKey: 'fest_0708_pocket_show',
         name: 'Pocket Show',
         description: 'Nuno Ramos',
+        location: 'Conservatório de Guimarães, Teatro Jordão',
         start: '13:00',
         end: '13:30',
       },
@@ -111,6 +122,7 @@ const programa = [
         name: 'Masterclasses',
         description:
           'Nicolas Arsenijevic, Ties Mellema, Nuno Silva',
+        location: 'Conservatório de Guimarães, Teatro Jordão',
         start: '14:30',
         end: '16:00',
       },
@@ -118,6 +130,7 @@ const programa = [
         i18nKey: 'fest_0708_be_sax',
         name: 'Orquestra BE_SAX — Ensaio',
         description: null,
+        location: 'Conservatório de Guimarães, Teatro Jordão',
         start: '16:15',
         end: '17:20',
       },
@@ -125,6 +138,7 @@ const programa = [
         i18nKey: 'fest_0708_all_sax',
         name: 'All Sax Orchestra — Ensaio',
         description: null,
+        location: 'Conservatório de Guimarães, Teatro Jordão',
         start: '17:30',
         end: '20:00',
       },
@@ -133,6 +147,7 @@ const programa = [
         name: 'Concerto',
         description:
           'Henk van Twillert & Vento do Norte, Nicolas Arsenijevic',
+        location: 'Igreja de São Francisco, Guimarães',
         start: '21:30',
         end: '22:30',
       },
@@ -150,6 +165,7 @@ const programa = [
         name: 'Masterclasses',
         description:
           'Henk van Twillert, Ties Mellema, Nuno Silva, Bruno Santos',
+        location: 'Conservatório de Guimarães, Teatro Jordão',
         start: '09:00',
         end: '13:00',
       },
@@ -157,6 +173,7 @@ const programa = [
         i18nKey: 'fest_0709_coffee',
         name: 'Pausa para café',
         description: null,
+        location: 'Conservatório de Guimarães, Teatro Jordão',
         start: '11:00',
         end: '11:20',
       },
@@ -164,6 +181,7 @@ const programa = [
         i18nKey: 'fest_0709_jazz_ws',
         name: 'Workshop de Jazz',
         description: 'Luís Miguel',
+        location: 'Conservatório de Guimarães, Teatro Jordão',
         start: '11:30',
         end: '12:50',
       },
@@ -171,6 +189,7 @@ const programa = [
         i18nKey: 'fest_0709_jazz_pocket',
         name: 'Jazz Pocket Show',
         description: null,
+        location: 'Conservatório de Guimarães, Teatro Jordão',
         start: '13:00',
         end: '13:20',
       },
@@ -178,6 +197,7 @@ const programa = [
         i18nKey: 'fest_0709_sponsors',
         name: "Sponsor's Happy Hour",
         description: null,
+        location: 'Espaço dos Patrocinadores, Conservatório de Guimarães',
         start: '14:30',
         end: '17:15',
       },
@@ -185,6 +205,7 @@ const programa = [
         i18nKey: 'fest_0709_ties_talk',
         name: 'Palestra com Ties Mellema',
         description: null,
+        location: 'Salão nobre do Conservatório de Guimarães',
         start: '17:30',
         end: '18:30',
       },
@@ -192,6 +213,7 @@ const programa = [
         i18nKey: 'fest_0709_all_sax',
         name: 'All Sax Orchestra — Ensaio geral',
         description: null,
+        location: 'Conservatório de Guimarães, Teatro Jordão',
         start: '18:35',
         end: '20:00',
       },
@@ -199,6 +221,7 @@ const programa = [
         i18nKey: 'fest_0709_concerto_ties',
         name: 'Concerto CAAA',
         description: 'Ties Mellema e Luís Miguel Trio',
+        location: 'CAAA Guimarães',
         start: '21:30',
         end: '22:30',
       },
@@ -214,7 +237,9 @@ const programa = [
       {
         i18nKey: 'fest_0710_prep',
         name: 'Ensaios de preparação para o concerto final',
-        description: null,
+        description:
+          'Orquestra BE_SAX, Orquestra ALL SAX, Coro Cordão, Stars of the Future',
+        location: 'Conservatório de Guimarães, Teatro Jordão',
         start: '09:30',
         end: '13:00',
       },
@@ -222,6 +247,7 @@ const programa = [
         i18nKey: 'fest_0710_coffee',
         name: 'Pausa para café',
         description: null,
+        location: 'Conservatório de Guimarães, Teatro Jordão',
         start: '11:00',
         end: '11:20',
       },
@@ -229,6 +255,7 @@ const programa = [
         i18nKey: 'fest_0710_aps',
         name: 'Apresentação',
         description: 'Associação Portuguesa do Saxofone',
+        location: 'Conservatório de Guimarães, Teatro Jordão',
         start: '11:30',
         end: '11:50',
       },
@@ -237,6 +264,7 @@ const programa = [
         name: 'Concerto',
         description:
           'Ensemble de Saxofones da Universidade do Minho (Prof. Luís Ribeiro)',
+        location: 'Conservatório de Guimarães, Teatro Jordão',
         start: '15:15',
         end: '16:15',
       },
@@ -244,6 +272,7 @@ const programa = [
         i18nKey: 'fest_0710_coro',
         name: 'Concerto: Coro Cordão',
         description: null,
+        location: 'Bandas de Garagem do Teatro Jordão',
         start: '17:00',
         end: '18:00',
       },
@@ -251,6 +280,7 @@ const programa = [
         i18nKey: 'fest_0710_final',
         name: 'Concerto Final',
         description: 'Be_SAX & ALL_SAX, Vento do Norte & Tiago Costa',
+        location: 'Teatro Jordão, Guimarães',
         start: '18:00',
         end: '20:00',
       },
@@ -357,6 +387,9 @@ function TimeSlots({ day, className, slotAriaAbout, slotAriaAt }) {
   const getSlotDescription = (slot) =>
     resolveActivityI18n(t, slot.i18nKey, 'programDescription', slot.description)
 
+  const getSlotLocation = (slot) =>
+    resolveActivityI18n(t, slot.i18nKey, 'location', slot.location)
+
   return (
     <ol
       role="list"
@@ -368,10 +401,11 @@ function TimeSlots({ day, className, slotAriaAbout, slotAriaAt }) {
       {day.timeSlots.map((timeSlot, timeSlotIndex) => {
         const slotName = getSlotName(timeSlot)
         const slotDescription = getSlotDescription(timeSlot)
+        const slotLocation = getSlotLocation(timeSlot)
         return (
         <li
           key={`${timeSlot.start}-${timeSlot.name}`}
-          aria-label={`${slotName} ${slotDescription ? `${slotAriaAbout} ${slotDescription}` : ''} ${slotAriaAt} ${timeSlot.start} - ${timeSlot.end}`}
+          aria-label={`${slotName} ${slotDescription ? `${slotAriaAbout} ${slotDescription}` : ''} ${slotLocation ? `${t('location')} ${slotLocation}` : ''} ${slotAriaAt} ${timeSlot.start} - ${timeSlot.end}`}
         >
           {timeSlotIndex > 0 && (
             <div className="mx-auto mb-8 h-px w-48 bg-[#5C3A5C]/10" />
@@ -389,6 +423,11 @@ function TimeSlots({ day, className, slotAriaAbout, slotAriaAt }) {
             {' - '}
             <span className="tabular-nums">{timeSlot.end.trim()}</span>
           </p>
+          {slotLocation && (
+            <p className="mt-2 font-mono text-xs tracking-tight text-neutral-400">
+              {slotLocation}
+            </p>
+          )}
         </li>
         )
       })}
