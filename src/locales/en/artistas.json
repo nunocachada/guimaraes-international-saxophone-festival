@@ -32,8 +32,8 @@
       "location": "Guimarães Conservatory, Teatro Jordão"
     },
     "fest_0707_coffee": {
-      "title": "Coffee break",
-      "subtitle": "Coffee break",
+      "title": "Coffe break",
+      "subtitle": "Coffe break",
       "location": "Guimarães Conservatory, Teatro Jordão"
     },
     "fest_0707_pocket_show": {
@@ -87,8 +87,8 @@
       "location": "Guimarães Conservatory, Teatro Jordão"
     },
     "fest_0708_coffee": {
-      "title": "Coffee break",
-      "subtitle": "Coffee break",
+      "title": "Coffe break",
+      "subtitle": "Coffe break",
       "location": "Guimarães Conservatory, Teatro Jordão"
     },
     "fest_0708_pocket_show": {
@@ -131,8 +131,8 @@
       "location": "Guimarães Conservatory, Teatro Jordão"
     },
     "fest_0709_coffee": {
-      "title": "Coffee break",
-      "subtitle": "Coffee break",
+      "title": "Coffe break",
+      "subtitle": "Coffe break",
       "location": "Guimarães Conservatory, Teatro Jordão"
     },
     "fest_0709_jazz_ws": {
@@ -173,14 +173,14 @@
     },
     "fest_0710_prep": {
       "title": "Rehearsals for the closing concert",
-      "subtitle": "BE_SAX Orchestra, ALL SAX Orchestra, Cordão choir, Stars of the Future",
-      "programDescription": "BE_SAX Orchestra, ALL SAX Orchestra, Cordão choir, Stars of the Future",
+      "subtitle": "BE_SAX Orchestra, ALL SAX Orchestra, Cordão choir, Stars of the Future, University of Minho Saxophone Ensemble",
+      "programDescription": "BE_SAX Orchestra, ALL SAX Orchestra, Cordão choir, Stars of the Future, University of Minho Saxophone Ensemble",
       "description": "Final preparation rehearsals. The Cordão choir rehearsal takes place in the Garage Bands room at Teatro Jordão.",
       "location": "Guimarães Conservatory, Teatro Jordão"
     },
     "fest_0710_coffee": {
-      "title": "Coffee break",
-      "subtitle": "Coffee break",
+      "title": "Coffe break",
+      "subtitle": "Coffe break",
       "location": "Guimarães Conservatory, Teatro Jordão"
     },
     "fest_0710_aps": {
@@ -193,10 +193,10 @@
     "fest_0710_ensemble_minho": {
       "title": "Concert",
       "subtitle": "University of Minho Saxophone Ensemble",
-      "programDescription": "University of Minho Saxophone Ensemble (Prof. Luís Ribeiro)",
+      "programDescription": "University of Minho Saxophone Ensemble — Nuno Silva",
       "description": "Concert by the University of Minho Saxophone Ensemble.",
       "location": "Guimarães Conservatory, Teatro Jordão",
-      "moreInfo": "Prof. Luís Ribeiro’s class"
+      "moreInfo": "Soloist: Nuno Silva"
     },
     "fest_0710_coro": {
       "title": "Cordão choir concert",

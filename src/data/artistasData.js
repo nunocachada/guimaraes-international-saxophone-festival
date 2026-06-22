@@ -153,12 +153,23 @@ export const days = [
         descricao:
           'Momento de boas-vindas e receção a todos os participantes do festival, seguido de sessão de aquecimento físico e mental orientada por Henk van Twillert (Sax, Body & Mind).',
         localizacao: 'Conservatório de Guimarães, Teatro Jordão',
-        horario: '08:30 - 11:00',
+        horario: '08:30',
+        informacoes: null,
+      },
+      {
+        i18nKey: 'fest_0707_mc_tnn',
+        nome: 'Masterclasses',
+        subtitulo: 'Nicolas Arsenijevic, Ties Mellema, Nuno Silva',
+        imagem: masterclassesTiesNicolasNunoImage,
+        imagens: [nicolasArsenijevicImage, tiesMellemmaImage, nunoSilvaImage],
+        descricao: 'Cada aula individual tem a duração de 30 minutos.',
+        localizacao: 'Conservatório de Guimarães, Teatro Jordão',
+        horario: '09:00 - 13:00',
         informacoes: null,
       },
       {
         i18nKey: 'fest_0707_coffee',
-        nome: 'Pausa para café',
+        nome: 'Coffe break',
         subtitulo: null,
         imagem: rececaoParticipantesImage,
         imagens: [rececaoParticipantesImage],
@@ -175,7 +186,7 @@ export const days = [
         imagens: [lunchConcertImage],
         descricao: 'Pocket show com Gonçalo Silva.',
         localizacao: 'Conservatório de Guimarães, Teatro Jordão',
-        horario: '13:00 - 13:30',
+        horario: '13:00',
       },
       {
         i18nKey: 'fest_0707_mc_tnn',
@@ -185,7 +196,7 @@ export const days = [
         imagens: [nicolasArsenijevicImage, tiesMellemmaImage, nunoSilvaImage],
         descricao: 'Cada aula individual tem a duração de 30 minutos.',
         localizacao: 'Conservatório de Guimarães, Teatro Jordão',
-        horario: '14:30 - 16:00',
+        horario: '14:30',
         informacoes: null,
       },
       {
@@ -197,7 +208,7 @@ export const days = [
         descricao:
           'Abordagem aos dados biomédicos do corpo em conjugação com o instrumento, explorando a simbiose fundamental entre música, corpo e mente para uma performance musical completa.',
         localizacao: 'Salão nobre do Conservatório de Guimarães',
-        horario: '16:15 - 17:45',
+        horario: '16:15',
         informacoes:
           'Oradores: Miguel Pais Clemente, Henk van Twillert e Joaquim Gabriel',
       },
@@ -209,7 +220,7 @@ export const days = [
         imagens: [orquestraImage],
         descricao: null,
         localizacao: 'Conservatório de Guimarães, Teatro Jordão',
-        horario: '18:00 - 18:45',
+        horario: '18:00',
         informacoes: 'Músicos amadores e alunos do 3º ciclo',
       },
       {
@@ -220,7 +231,7 @@ export const days = [
         imagens: [orquestraImage],
         descricao: null,
         localizacao: 'Conservatório de Guimarães, Teatro Jordão',
-        horario: '18:45 - 20:00',
+        horario: '18:45',
         informacoes: 'Orquestra de alunos de nível avançado',
       },
       {
@@ -231,7 +242,7 @@ export const days = [
         imagens: [concertoNunoSilvaImage, brunoSantosImage],
         descricao: 'Concerto com os saxofonistas Nuno Silva e Bruno Santos.',
         localizacao: 'Salão Nobre do Conservatório de Guimarães',
-        horario: '21:30 - 22:30',
+        horario: '21:30',
       },
     ],
   },
@@ -256,11 +267,11 @@ export const days = [
         ],
         descricao: 'Cada aula individual tem a duração de 30 minutos.',
         localizacao: 'Conservatório de Guimarães, Teatro Jordão',
-        horario: '09:00 - 11:00',
+        horario: '09:00',
       },
       {
         i18nKey: 'fest_0708_coffee',
-        nome: 'Pausa para café',
+        nome: 'Coffe break',
         subtitulo: null,
         imagem: rececaoParticipantesImage,
         imagens: [rececaoParticipantesImage],
@@ -276,7 +287,7 @@ export const days = [
         imagens: [lunchConcertImage],
         descricao: 'Pocket show com Nuno Ramos.',
         localizacao: 'Conservatório de Guimarães, Teatro Jordão',
-        horario: '13:00 - 13:30',
+        horario: '13:00',
       },
       {
         i18nKey: 'fest_0708_mc_tn',
@@ -286,7 +297,7 @@ export const days = [
         imagens: [nicolasArsenijevicImage, tiesMellemmaImage, nunoSilvaImage],
         descricao: 'Cada aula individual tem a duração de 30 minutos.',
         localizacao: 'Conservatório de Guimarães, Teatro Jordão',
-        horario: '14:30 - 16:00',
+        horario: '14:30',
       },
       {
         i18nKey: 'fest_0708_be_sax',
@@ -296,7 +307,7 @@ export const days = [
         imagens: [orquestraImage],
         descricao: null,
         localizacao: 'Conservatório de Guimarães, Teatro Jordão',
-        horario: '16:15 - 17:20',
+        horario: '16:15',
       },
       {
         i18nKey: 'fest_0708_all_sax',
@@ -306,7 +317,7 @@ export const days = [
         imagens: [orquestraImage],
         descricao: null,
         localizacao: 'Conservatório de Guimarães, Teatro Jordão',
-        horario: '17:30 - 20:00',
+        horario: '17:30',
       },
       {
         i18nKey: 'fest_0708_concerto_nicolas',
@@ -316,7 +327,7 @@ export const days = [
         imagens: [concertoNicolasImage, henkVanTwillertImage],
         descricao: null,
         localizacao: 'Igreja de São Francisco, Guimarães',
-        horario: '21:30 - 22:30',
+        horario: '21:30',
       },
     ],
   },
@@ -339,7 +350,7 @@ export const days = [
       },
       {
         i18nKey: 'fest_0709_coffee',
-        nome: 'Pausa para café',
+        nome: 'Coffe break',
         subtitulo: null,
         imagem: rececaoParticipantesImage,
         imagens: [rececaoParticipantesImage],
@@ -355,7 +366,7 @@ export const days = [
         imagens: [workshopJazzImage],
         descricao: null,
         localizacao: 'Conservatório de Guimarães, Teatro Jordão',
-        horario: '11:30 - 12:50',
+        horario: '11:30',
         informacoes: 'Artista Eastman',
       },
       {
@@ -367,7 +378,7 @@ export const days = [
         descricao:
           'Pocket show de jazz apresentado pelos participantes do workshop.',
         localizacao: 'Conservatório de Guimarães, Teatro Jordão',
-        horario: '13:00 - 13:20',
+        horario: '13:00',
       },
       {
         i18nKey: 'fest_0709_sponsors',
@@ -378,7 +389,7 @@ export const days = [
         descricao:
           'Oportunidade para conhecer novos materiais, inovações técnicas e experimentar novos equipamentos que poderão contribuir para melhorar ainda mais a performance musical.',
         localizacao: 'Espaço dos Patrocinadores, Conservatório de Guimarães',
-        horario: '14:30 - 17:15',
+        horario: '14:30',
       },
       {
         i18nKey: 'fest_0709_ties_talk',
@@ -389,7 +400,7 @@ export const days = [
         descricao:
           'Palestra inspiracional com Ties Mellema sobre "Find your own voice".',
         localizacao: 'Salão nobre do Conservatório de Guimarães',
-        horario: '17:30 - 18:30',
+        horario: '17:30',
       },
       {
         i18nKey: 'fest_0709_all_sax',
@@ -399,7 +410,7 @@ export const days = [
         imagens: [orquestraImage],
         descricao: null,
         localizacao: 'Conservatório de Guimarães, Teatro Jordão',
-        horario: '18:35 - 20:00',
+        horario: '18:35',
       },
       {
         i18nKey: 'fest_0709_concerto_ties',
@@ -409,7 +420,7 @@ export const days = [
         imagens: [tiesMellemmaImage, luisMiguelImage],
         descricao: null,
         localizacao: 'CAAA Guimarães',
-        horario: '21:30 - 22:30',
+        horario: '21:30',
       },
     ],
   },
@@ -424,7 +435,7 @@ export const days = [
         i18nKey: 'fest_0710_prep',
         nome: 'Ensaios de preparação para o concerto final',
         subtitulo:
-          'Orquestra BE_SAX, Orquestra ALL SAX, Coro Cordão, Stars of the Future',
+          'Orquestra BE_SAX, Orquestra ALL SAX, Coro Cordão, Stars of the Future, Ensemble de Saxofones da Universidade do Minho',
         imagem: orquestraImage,
         imagens: [orquestraImage, coroCordaoImage, starsOfTheFutureImage],
         descricao:
@@ -434,13 +445,13 @@ export const days = [
       },
       {
         i18nKey: 'fest_0710_coffee',
-        nome: 'Pausa para café',
+        nome: 'Coffe break',
         subtitulo: null,
         imagem: rececaoParticipantesImage,
         imagens: [rececaoParticipantesImage],
         descricao: null,
         localizacao: 'Conservatório de Guimarães, Teatro Jordão',
-        horario: '11:00 - 11:20',
+        horario: '11:00',
       },
       {
         i18nKey: 'fest_0710_aps',
@@ -450,19 +461,19 @@ export const days = [
         imagens: [conferenciaImage],
         descricao: 'Apresentação da Associação Portuguesa do Saxofone.',
         localizacao: 'Conservatório de Guimarães, Teatro Jordão',
-        horario: '11:30 - 11:50',
+        horario: '11:30',
       },
       {
         i18nKey: 'fest_0710_ensemble_minho',
         nome: 'Concerto',
         subtitulo: 'Ensemble de Saxofones da Universidade do Minho',
         imagem: orquestraImage,
-        imagens: [orquestraImage],
+        imagens: [orquestraImage, nunoSilvaImage],
         descricao:
           'Concerto do Ensemble de Saxofones da Universidade do Minho.',
         localizacao: 'Conservatório de Guimarães, Teatro Jordão',
-        horario: '15:15 - 16:15',
-        informacoes: 'Classe do Prof. Luís Ribeiro',
+        horario: '15:15',
+        informacoes: 'Solista: Nuno Silva',
       },
       {
         i18nKey: 'fest_0710_coro',
@@ -473,7 +484,7 @@ export const days = [
         descricao:
           'O Coro Cordão é um coro comunitário constituído por ex-pacientes, pacientes, amigos, familiares ou simplesmente pessoas próximas de quem passou ou está a lutar contra uma doença oncológica. Através da música, este projeto permite combater o isolamento social, unindo todos os participantes num "cordão musical" que ajuda a encarar a doença de uma forma mais leve e a olhar o mundo de uma outra forma.',
         localizacao: 'Bandas de Garagem do Teatro Jordão',
-        horario: '17:00 - 18:00',
+        horario: '17:00',
       },
       {
         i18nKey: 'fest_0710_final',
@@ -483,7 +494,7 @@ export const days = [
         imagens: [tiagoCostaImage, henkVanTwillertImage],
         descricao: null,
         localizacao: 'Teatro Jordão, Guimarães',
-        horario: '18:00 - 20:00',
+        horario: '18:00',
         informacoes: 'Solista: Tiago Costa',
       },
     ],

@@ -4,16 +4,17 @@
 
 ### Dia 7 (Terça-feira, 7 de Julho)
 
-- **08h30** – Receção aos participantes e _Warm up work_ (orientado pelo Professor Henk van Twillert)
-- **11h00 – 11h30** – Pausa para café (_Coffee break_)
-- **13h00** – _Pocket Show_ – Gonçalo Silva
-- **14h30 – 16h00** – Masterclass — Prof. Nicolas Arsenijevic, Prof. Ties Mellema e Prof. Nuno Silva
+- **08h30** – Receção aos participantes e _Warm up work_ (Henk van Twillert)
+- **09h00 – 13h00** – Masterclass — Nicolas Arsenijevic, Ties Mellema e Nuno Silva
+  - _Nota: Cada aula individual tem a duração de 30 minutos._
+- **11h00 – 11h30** – Coffe break
+- **13h00** – _Pocket Show_ — Gonçalo Silva
+- **14h30** – Masterclass — Nicolas Arsenijevic, Ties Mellema e Nuno Silva
   - _Nota: Cada aula individual tem a duração de 30 minutos._
 - **16h15** – Conferência: "A Música como Experiência Integral"
-  - **Oradores:** Prof. Henk van Twillert, Miguel Pais Clemente e Joaquim Gabriel
-  - **Descrição:** Abordagem aos dados biomédicos do corpo em conjugação com o instrumento, explorando a simbiose fundamental entre música, corpo e mente para uma performance musical completa.
-- **18h00 – 18h45** – Ensaio: Orquestra BE_SAX (músicos amadores e alunos do 3º ciclo)
-- **18h45 – 20h00** – Ensaio: All Sax Orchestra (orquestra de alunos de nível avançado)
+  - **Oradores:** Henk van Twillert, Miguel Pais Clemente e Joaquim Gabriel
+- **18h00** – Ensaio: Orquestra BE_SAX (músicos amadores e alunos do 3º ciclo)
+- **18h45** – Ensaio: All Sax Orchestra (orquestra de alunos de nível avançado)
 - **21h30** – Concerto: Nuno Silva e Bruno Santos
   - **Local:** Salão Nobre do Conservatório de Guimarães
 
@@ -21,14 +22,14 @@
 
 ### Dia 8 (Quarta-feira, 8 de Julho)
 
-- **09h00 – 11h00** – Masterclass — Prof. Henk van Twillert, Prof. Nicolas Arsenijevic, Prof. Ties Mellema e Prof. Nuno Silva
+- **09h00** – Masterclass — Henk van Twillert, Nicolas Arsenijevic, Ties Mellema e Nuno Silva
   - _Nota: Cada aula individual tem a duração de 30 minutos._
-- **11h00 – 11h30** – Pausa para café (_Coffee break_)
-- **13h00** – _Pocket Show_ – Nuno Ramos
-- **14h30 – 16h00** – Masterclass — Prof. Nicolas Arsenijevic, Prof. Ties Mellema e Prof. Nuno Silva
+- **11h00 – 11h30** – Coffe break
+- **13h00** – _Pocket Show_ — Nuno Ramos
+- **14h30** – Masterclass — Nicolas Arsenijevic, Ties Mellema e Nuno Silva
   - _Nota: Cada aula individual tem a duração de 30 minutos._
-- **16h15 – 17h20** – Ensaio: Orquestra BE_SAX
-- **17h30 – 20h00** – Ensaio: All Sax Orchestra
+- **16h15** – Ensaio: Orquestra BE_SAX
+- **17h30** – Ensaio: All Sax Orchestra
 - **21h30** – Concerto: Henk van Twillert & Vento do Norte / Nicolas Arsenijevic
   - **Local:** Igreja de São Francisco
 
@@ -36,15 +37,14 @@
 
 ### Dia 9 (Quinta-feira, 9 de Julho)
 
-- **09h00 – 13h00** – Masterclass — Prof. Henk van Twillert, Prof. Ties Mellema, Prof. Nuno Silva e Prof. Bruno Santos
+- **09h00 – 13h00** – Masterclass — Henk van Twillert, Ties Mellema, Nuno Silva e Bruno Santos
   - _Nota: Cada aula individual tem a duração de 30 minutos._
-- **11h00 – 11h20** – Pausa para café (_Coffee break_)
-- **11h30 – 12h50** – Jazz workshop (Luís Miguel, Artista Eastman)
+- **11h00 – 11h20** – Coffe break
+- **11h30** – Jazz workshop (Luís Miguel, Artista Eastman)
 - **13h00** – Jazz Pocket Show
-- **14h30 – 17h15** – _Sponsor's Happy Hour_ (Espaço dos Patrocinadores)
-  - **Descrição:** Oportunidade para conhecer novos materiais, inovações técnicas e experimentar novos equipamentos que poderão contribuir para melhorar ainda mais a performance musical.
+- **14h30** – _Sponsor's Happy Hour_ (Espaço dos Patrocinadores)
 - **17h30** – Palestra com Ties Mellema: _"Find your own voice"_ (Encontra a tua própria voz)
-- **18h35 – 20h00** – Ensaio geral: All Sax Orchestra
+- **18h35** – Ensaio geral: All Sax Orchestra
 - **21h30** – Concerto CAAA: Ties Mellema e Luís Miguel Trio
 
 ---
@@ -56,9 +56,11 @@
   - Orquestra ALL SAX
   - Coro Cordão (Ensaio nas Bandas de Garagem do Teatro Jordão)
   - Stars of the Future
-- **11h00 – 11h20** – Pausa para café (_Coffee break_)
-- **11h30 – 11h50** – Apresentação da APS (Associação Portuguesa do Saxofone)
-- **15h15** – Concerto Ensemble de Saxofones da Universidade do Minho (Prof. Luís Ribeiro)
+  - Ensemble de Saxofones da Universidade do Minho
+- **11h00** – Coffe break
+- **11h30** – Apresentação da APS (Associação Portuguesa do Saxofone)
+- **15h15** – Concerto Ensemble de Saxofones da Universidade do Minho
+  - **Solista:** Nuno Silva
 - **17h00** – Concerto: Coro Cordão
   - **Local:** Bandas de Garagem do Teatro Jordão
 - **18h00** – Concerto Final
