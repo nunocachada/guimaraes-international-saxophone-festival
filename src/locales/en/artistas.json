@@ -36,20 +36,12 @@
       "subtitle": "Coffee break",
       "location": "Guimarães Conservatory, Teatro Jordão"
     },
-    "fest_0707_stars": {
-      "title": "Stars of the Future",
-      "subtitle": "Henk van Twillert",
-      "programDescription": "Henk van Twillert",
-      "description": "A programme for young saxophone talent. Special sessions with Henk van Twillert to nurture and spotlight the saxophone stars of tomorrow.",
-      "location": "Guimarães Conservatory, Teatro Jordão"
-    },
     "fest_0707_pocket_show": {
       "title": "Pocket Show",
-      "subtitle": "University of Minho Saxophone Ensemble",
-      "programDescription": "University of Minho Saxophone Ensemble",
-      "description": "Performance by the University of Minho Saxophone Ensemble.",
-      "location": "Guimarães Conservatory, Teatro Jordão",
-      "moreInfo": "Prof. Luís Ribeiro’s class"
+      "subtitle": "Gonçalo Silva",
+      "programDescription": "Gonçalo Silva",
+      "description": "Pocket show with saxophonist Gonçalo Silva.",
+      "location": "Guimarães Conservatory, Teatro Jordão"
     },
     "fest_0707_mc_tnn": {
       "title": "Masterclasses",
@@ -87,10 +79,10 @@
       "description": "Concert with saxophonists Nuno Silva and Bruno Santos.",
       "location": "Grand hall, Guimarães Conservatory"
     },
-    "fest_0708_mc_tnn": {
+    "fest_0708_mc_htnn": {
       "title": "Masterclasses",
-      "subtitle": "Nicolas Arsenijevic, Ties Mellema, Nuno Silva",
-      "programDescription": "Nicolas Arsenijevic, Ties Mellema, Nuno Silva",
+      "subtitle": "Henk van Twillert, Nicolas Arsenijevic, Ties Mellema, Nuno Silva",
+      "programDescription": "Henk van Twillert, Nicolas Arsenijevic, Ties Mellema, Nuno Silva",
       "description": "Each individual lesson lasts 30 minutes.",
       "location": "Guimarães Conservatory, Teatro Jordão"
     },
@@ -99,19 +91,11 @@
       "subtitle": "Coffee break",
       "location": "Guimarães Conservatory, Teatro Jordão"
     },
-    "fest_0708_stars": {
-      "title": "Stars of the Future",
-      "subtitle": "Henk van Twillert",
-      "programDescription": "Henk van Twillert",
-      "description": "A programme for young saxophone talent. Special sessions with Henk van Twillert to nurture and spotlight the saxophone stars of tomorrow.",
-      "location": "Guimarães Conservatory, Teatro Jordão",
-      "moreInfo": "To be confirmed"
-    },
-    "fest_0708_aps": {
-      "title": "Presentation",
-      "subtitle": "Portuguese Saxophone Association",
-      "programDescription": "Portuguese Saxophone Association",
-      "description": "Presentation by the Portuguese Saxophone Association.",
+    "fest_0708_pocket_show": {
+      "title": "Pocket Show",
+      "subtitle": "Nuno Ramos",
+      "programDescription": "Nuno Ramos",
+      "description": "Pocket show with saxophonist Nuno Ramos.",
       "location": "Guimarães Conservatory, Teatro Jordão"
     },
     "fest_0708_mc_tn": {
@@ -139,11 +123,28 @@
       "programDescription": "Henk van Twillert & Vento do Norte, Nicolas Arsenijevic",
       "location": "Church of São Francisco, Guimarães"
     },
-    "fest_0709_mc_tnbs": {
+    "fest_0709_mc_htnbs": {
       "title": "Masterclasses",
-      "subtitle": "Ties Mellema, Nuno Silva, Bruno Santos",
-      "programDescription": "Ties Mellema, Nuno Silva, Bruno Santos",
+      "subtitle": "Henk van Twillert, Ties Mellema, Nuno Silva, Bruno Santos",
+      "programDescription": "Henk van Twillert, Ties Mellema, Nuno Silva, Bruno Santos",
       "description": "Each individual lesson lasts 30 minutes.",
+      "location": "Guimarães Conservatory, Teatro Jordão"
+    },
+    "fest_0709_coffee": {
+      "title": "Coffee break",
+      "subtitle": "Coffee break",
+      "location": "Guimarães Conservatory, Teatro Jordão"
+    },
+    "fest_0709_jazz_ws": {
+      "title": "Jazz workshop",
+      "subtitle": "Luís Miguel",
+      "programDescription": "Luís Miguel",
+      "location": "Guimarães Conservatory, Teatro Jordão",
+      "moreInfo": "Eastman artist"
+    },
+    "fest_0709_jazz_pocket": {
+      "title": "Jazz Pocket Show",
+      "description": "Jazz pocket show by workshop participants.",
       "location": "Guimarães Conservatory, Teatro Jordão"
     },
     "fest_0709_sponsors": {
@@ -165,29 +166,36 @@
       "location": "Guimarães Conservatory, Teatro Jordão"
     },
     "fest_0709_concerto_ties": {
-      "title": "CAA concert",
-      "subtitle": "Ties Mellema and Luís Miguel",
-      "programDescription": "Ties Mellema and Luís Miguel",
+      "title": "CAAA concert",
+      "subtitle": "Ties Mellema and Luís Miguel Trio",
+      "programDescription": "Ties Mellema and Luís Miguel Trio",
       "location": "CAAA Guimarães"
     },
     "fest_0710_prep": {
       "title": "Rehearsals for the closing concert",
-      "subtitle": "BE_SAX Orchestra, ALL SAX Orchestra, Cordão choir",
+      "subtitle": "BE_SAX Orchestra, ALL SAX Orchestra, Cordão choir, Stars of the Future",
       "description": "Final preparation rehearsals. The Cordão choir rehearsal takes place in the Garage Bands room at Teatro Jordão.",
       "location": "Guimarães Conservatory, Teatro Jordão"
     },
-    "fest_0710_jazz_ws": {
-      "title": "Jazz workshop",
-      "subtitle": "Luís Miguel",
-      "programDescription": "Luís Miguel",
-      "location": "Garage Bands room, Guimarães Conservatory",
-      "moreInfo": "Eastman artist"
+    "fest_0710_coffee": {
+      "title": "Coffee break",
+      "subtitle": "Coffee break",
+      "location": "Guimarães Conservatory, Teatro Jordão"
     },
-    "fest_0710_jazz_concert": {
-      "title": "Jazz concert",
-      "description": "Jazz concert by participants in the workshop.",
-      "location": "Garage Bands room, Guimarães Conservatory",
-      "moreInfo": "Duration: 20 minutes"
+    "fest_0710_aps": {
+      "title": "Presentation",
+      "subtitle": "Portuguese Saxophone Association",
+      "programDescription": "Portuguese Saxophone Association",
+      "description": "Presentation by the Portuguese Saxophone Association.",
+      "location": "Guimarães Conservatory, Teatro Jordão"
+    },
+    "fest_0710_ensemble_minho": {
+      "title": "Concert",
+      "subtitle": "University of Minho Saxophone Ensemble",
+      "programDescription": "University of Minho Saxophone Ensemble (Prof. Luís Ribeiro)",
+      "description": "Concert by the University of Minho Saxophone Ensemble.",
+      "location": "Guimarães Conservatory, Teatro Jordão",
+      "moreInfo": "Prof. Luís Ribeiro’s class"
     },
     "fest_0710_coro": {
       "title": "Cordão choir concert",
@@ -198,8 +206,8 @@
     },
     "fest_0710_final": {
       "title": "Closing concert",
-      "subtitle": "Tiago Costa — Saxophone Orchestra",
-      "programDescription": "Tiago Costa",
+      "subtitle": "Be_SAX & ALL_SAX, Vento do Norte & Tiago Costa",
+      "programDescription": "Be_SAX & ALL_SAX, Vento do Norte & Tiago Costa",
       "location": "Teatro Jordão, Guimarães",
       "moreInfo": "Soloist: Tiago Costa"
     }

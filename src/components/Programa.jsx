@@ -32,17 +32,10 @@ const programa = [
         end: '11:30',
       },
       {
-        i18nKey: 'fest_0707_stars',
-        name: 'Stars of the Future',
-        description: 'Henk van Twillert',
-        start: '11:30',
-        end: '12:30',
-      },
-      {
         i18nKey: 'fest_0707_pocket_show',
         name: 'Pocket Show',
-        description: 'Ensemble de Saxofones da Universidade do Minho',
-        start: '13:10',
+        description: 'Gonçalo Silva',
+        start: '13:00',
         end: '13:30',
       },
       {
@@ -89,13 +82,13 @@ const programa = [
     dateLabelKey: 'jul08',
     dateTime: '2026-07-08',
     summary:
-      'Segundo dia com masterclasses, Stars of the Future, apresentação da APS e concerto na Igreja de São Francisco.',
+      'Segundo dia com masterclasses, pocket show e concerto na Igreja de São Francisco.',
     timeSlots: [
       {
-        i18nKey: 'fest_0708_mc_tnn',
+        i18nKey: 'fest_0708_mc_htnn',
         name: 'Masterclasses',
         description:
-          'Nicolas Arsenijevic, Ties Mellema, Nuno Silva',
+          'Henk van Twillert, Nicolas Arsenijevic, Ties Mellema, Nuno Silva',
         start: '09:00',
         end: '11:00',
       },
@@ -107,24 +100,17 @@ const programa = [
         end: '11:30',
       },
       {
-        i18nKey: 'fest_0708_stars',
-        name: 'Stars of the Future',
-        description: 'Henk van Twillert',
-        start: '11:30',
-        end: '12:30',
-      },
-      {
-        i18nKey: 'fest_0708_aps',
-        name: 'Apresentação',
-        description: 'Associação Portuguesa do Saxofone',
-        start: '13:10',
+        i18nKey: 'fest_0708_pocket_show',
+        name: 'Pocket Show',
+        description: 'Nuno Ramos',
+        start: '13:00',
         end: '13:30',
       },
       {
         i18nKey: 'fest_0708_mc_tn',
         name: 'Masterclasses',
         description:
-          'Nicolas Arsenijevic / Ties Mellema / Nuno Silva',
+          'Nicolas Arsenijevic, Ties Mellema, Nuno Silva',
         start: '14:30',
         end: '16:00',
       },
@@ -157,14 +143,36 @@ const programa = [
     dateLabelKey: 'jul09',
     dateTime: '2026-07-09',
     summary:
-      'Terceiro dia com masterclasses, Sponsor\'s Happy Hour, palestra de Ties Mellema e concerto CAA.',
+      'Terceiro dia com masterclasses, workshop de jazz, Sponsor\'s Happy Hour, palestra de Ties Mellema e concerto CAAA.',
     timeSlots: [
       {
-        i18nKey: 'fest_0709_mc_tnbs',
+        i18nKey: 'fest_0709_mc_htnbs',
         name: 'Masterclasses',
-        description: 'Ties Mellema / Nuno Silva / Bruno Santos',
+        description:
+          'Henk van Twillert, Ties Mellema, Nuno Silva, Bruno Santos',
         start: '09:00',
         end: '13:00',
+      },
+      {
+        i18nKey: 'fest_0709_coffee',
+        name: 'Pausa para café',
+        description: null,
+        start: '11:00',
+        end: '11:20',
+      },
+      {
+        i18nKey: 'fest_0709_jazz_ws',
+        name: 'Workshop de Jazz',
+        description: 'Luís Miguel',
+        start: '11:30',
+        end: '12:50',
+      },
+      {
+        i18nKey: 'fest_0709_jazz_pocket',
+        name: 'Jazz Pocket Show',
+        description: null,
+        start: '13:00',
+        end: '13:20',
       },
       {
         i18nKey: 'fest_0709_sponsors',
@@ -189,10 +197,10 @@ const programa = [
       },
       {
         i18nKey: 'fest_0709_concerto_ties',
-        name: 'Concerto CAA',
-        description: 'Ties Mellema e Luís Miguel',
-        start: '22:00',
-        end: '23:00',
+        name: 'Concerto CAAA',
+        description: 'Ties Mellema e Luís Miguel Trio',
+        start: '21:30',
+        end: '22:30',
       },
     ],
   },
@@ -201,7 +209,7 @@ const programa = [
     dateLabelKey: 'jul10',
     dateTime: '2026-07-10',
     summary:
-      'Dia final com ensaios de preparação, workshop de jazz, concerto do Coro Cordão e concerto final no Teatro Jordão.',
+      'Dia final com ensaios de preparação, apresentação da APS, concerto do Coro Cordão e concerto final no Teatro Jordão.',
     timeSlots: [
       {
         i18nKey: 'fest_0710_prep',
@@ -211,18 +219,26 @@ const programa = [
         end: '13:00',
       },
       {
-        i18nKey: 'fest_0710_jazz_ws',
-        name: 'Workshop de Jazz',
-        description: 'Luís Miguel',
-        start: '11:15',
-        end: '12:50',
+        i18nKey: 'fest_0710_coffee',
+        name: 'Pausa para café',
+        description: null,
+        start: '11:00',
+        end: '11:20',
       },
       {
-        i18nKey: 'fest_0710_jazz_concert',
-        name: 'Concerto de Jazz',
-        description: null,
-        start: '13:00',
-        end: '13:20',
+        i18nKey: 'fest_0710_aps',
+        name: 'Apresentação',
+        description: 'Associação Portuguesa do Saxofone',
+        start: '11:30',
+        end: '11:50',
+      },
+      {
+        i18nKey: 'fest_0710_ensemble_minho',
+        name: 'Concerto',
+        description:
+          'Ensemble de Saxofones da Universidade do Minho (Prof. Luís Ribeiro)',
+        start: '15:15',
+        end: '16:15',
       },
       {
         i18nKey: 'fest_0710_coro',
@@ -234,7 +250,7 @@ const programa = [
       {
         i18nKey: 'fest_0710_final',
         name: 'Concerto Final',
-        description: 'Tiago Costa',
+        description: 'Be_SAX & ALL_SAX, Vento do Norte & Tiago Costa',
         start: '18:00',
         end: '20:00',
       },
